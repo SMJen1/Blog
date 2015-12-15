@@ -9,4 +9,3 @@ Application contains the basic framework to Integarete Following features in the
   4. Bower: To Load Client Side Modules
   5. Grunt: To Load server Modules
   6. Angular: To Integrate Client Side Angular Library
-  
