@@ -1,4 +1,4 @@
-# node-framework
+# Node-Framework
 Basic Node Framework
 
 Application contains the basic framework to Integarete Following features in the Node Project
