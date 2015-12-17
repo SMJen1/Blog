@@ -1,0 +1,14 @@
+{
+  "name": "Mayank",
+  "version": "0.0.0",
+  "description": "Demo Application",
+  "main": "server.js",
+  "author": {
+    "name": "Mayank",
+    "email": "mayankgupta688@gmail.com"
+  },
+  "dependencies": {
+    "vash": "~0.11.0",
+    "express": "~4.13.3"
+  }
+}
