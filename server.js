@@ -4,8 +4,19 @@ var http = require('http');
 // Express act as a routing Engine 
 var express = require('express');
 
+// Used as a templating engine
+var vash = require('vash');
+
 // Express is initialized to carry ot routing process
 var app = express();
+
+app.set("view engine", "vash");
+
+app.use(express.static(__dirname + '/public'));
+
+app.get('/index', function(req, res) {
+  res.render('index', {});
+})
 
 app.get('/', function(req, res) {
   res.send("Hi All");
