@@ -1,4 +1,4 @@
-# Node-Framework
+# MEAN Stack Application
 Basic Node Framework
 
 This project shall serve you as a starting point for MEAN application.
