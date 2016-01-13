@@ -14,11 +14,15 @@ app.set("view engine", "vash");
 
 app.use(express.static(__dirname + '/public'));
 
-app.get('/index', function(req, res) {
-  res.render('index', {});
+app.get('/', function(req, res) {
+  res.render('layout.vash', {});
 })
 
-app.get('/', function(req, res) {
+app.get('/index/index.vash', function(req, res) {
+  res.render('index/index.vash', {});
+})
+
+app.get('/data', function(req, res) {
   res.send("Hi All");
 })
 
