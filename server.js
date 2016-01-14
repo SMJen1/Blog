@@ -15,7 +15,7 @@ app.set("view engine", "vash");
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req, res) {
-  res.render('layout.vash', {});
+  res.render('layout', {});
 })
 
 app.get('/index/index.vash', function(req, res) {

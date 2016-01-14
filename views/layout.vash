@@ -1,13 +1,13 @@
 <html>
   <head>
     <link href="./css/index.css" rel='stylesheet'/>
-    <script src="./lib/angular/angular.js"></script>
-    <script src="./lib/angular-route/angular-route.js"></script>
-    <script src="./scripts/main.js"></script>
-    <script src="./scripts/index-controller.js"></script>
+
+    <script src="./lib/requirejs/require.js" data-main="./scripts/config.js"></script>
+
   </head>
   <body>
-    <div ng-app="myModule">
+    <div>
+      <h2>This is my Layout</h2>
       <div ng-view></ng-view>
     </div>
   </body>
