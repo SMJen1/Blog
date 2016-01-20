@@ -1,12 +1,7 @@
-(function() {
-
-  var myModule = angular.module('myModule');
-
+define('indexController', [], function() {
   var indexController = function($scope) {
     $scope.name = "Mayank";
     $scope.age = 27;
   }
-
-  myModule.controller('indexController', ['$scope', indexController]);
-  
-})();
+  return indexController;
+});

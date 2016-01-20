@@ -2,7 +2,8 @@ require.config({
   paths: {
     angular: '../lib/angular/angular',
     angularRoute: '../lib/angular-route/angular-route',
-    main: 'main'
+    main: 'main',
+    indexController: 'index-controller'
   },
   shim: {
     angular: {
@@ -14,5 +15,9 @@ require.config({
   }
 });
 
-require(['main'], function(main) {
+require(["angular", "angularRoute"], function() {
+  require(['main', 'indexController'], function(myModule, indexController) {
+    myModule.controller('indexController', ['$scope', indexController]);
+    angular.bootstrap(document, ['myModule']);
+  });
 });

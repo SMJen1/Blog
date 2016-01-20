@@ -1,4 +1,4 @@
-define('main',["angular", "angularRoute"], function(angular) {
+define('main', [], function(angular) {
 
   var angular = require("angular");
   var myModule = angular.module("myModule", ['ngRoute']);
@@ -11,15 +11,6 @@ define('main',["angular", "angularRoute"], function(angular) {
       redirectTo: '/'
     });
   }]);
-
-  var indexController = function($scope) {
-    $scope.name = "Mayank";
-    $scope.age = 27;
-  }
-
-  myModule.controller('indexController', ['$scope', indexController]);
-
-  angular.bootstrap(document, ['myModule']);
 
   return myModule;
 
