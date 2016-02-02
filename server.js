@@ -14,17 +14,9 @@ app.set("view engine", "vash");
 
 app.use(express.static(__dirname + '/public'));
 
-app.get('/', function(req, res) {
-  res.render('layout', {});
-})
+var controller = require("./controller");
 
-app.get('/index/index.vash', function(req, res) {
-  res.render('index/index.vash', {});
-})
-
-app.get('/data', function(req, res) {
-  res.send("Hi All");
-})
+controller.init(app);
 
 // Server is created and express is used as a middleware to configure the routes
 var server = http.createServer(app);
