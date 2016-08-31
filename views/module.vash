@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sility - Material Design Vcard & CV HTML Template</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css" rel="stylesheet">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="fonts/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="css/owl.carousel.css" rel="stylesheet">
+  <link href="css/owl.theme.default.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/app.css">
+ </head>
+	<body>
+
+<link rel="stylesheet" href="custom.css">
+
+		<!-- Search -->
+		<div class="search-overlay"></div>
+		<div class="search">
+			<a href="" class="search-close"><i class="md md-close"></i></a>
+			<div class="row">
+				<div class="col-sm-6 col-sm-offset-3">
+					<h4>Just Start Typing Text and Press Enter</h4>
+					<form class="search-form">
+						<input type="text" id="search" name="search" class="text-center" />
+					</form> <!-- end .search-form -->
+				</div> <!-- end .col-sm-6 -->
+			</div> <!-- end .row -->
+		</div> <!-- end .row -->
+		<!-- Slide Out -->
+		<div class="slide-out-overlay"></div>
+		<div class="slide-out">
+			<header class="slide-out-header clearfix">
+				<div class="clearfix">
+					<a href="" class="slide-out-close pull-left"><i class="md md-close"></i></a>
+					<a href="" class="open-search pull-right"><i class="md md-search"></i></a>
+					<a href="" class="slide-out-share pull-right"><i class="md md-more-vert"></i></a>
+				</div> <!-- end .clearfix -->
+				<!-- Popup -->
+				<div class="slide-out-popup">
+					<nav class="social-nav">
+						<ul class="list-unstyled">
+							<li><a href="">Facebook</a></li>
+							<li><a href="">Twitter</a></li>
+							<li><a href="">Linkedin</a></li>
+							<li><a href="">Google+</a></li>
+							<li><a href="">Behance</a></li>
+						</ul> <!-- end .list-unstyled -->
+					</nav> <!-- end .social-nav -->
+				</div> <!-- end .slide-out-popup -->
+				<div class="image"><img src="images/head01.png" alt="alt text" class="img-responsive"></div>
+				<div class="content">
+					<h5>Benjamin Thomson</h5>
+					<span>Web & UX Designer</span>
+				</div> <!-- end .content -->
+				<div class="text-right">
+					<a href="" class="button link-button white icon-left"><i class="md md-file-download"></i>Download Resume</a>
+				</div> <!-- end .text-right -->
+			</header> <!-- end .slide-out-header -->
+			<div class="slide-out-widgets">
+				<div class="slide-out-widget">
+					<h4>Drink A Coffee With Me Today</h4>
+					<form action="scripts/contact.php" method="post" class="form-horizontal contact-form">
+						<div class="form-group">
+							<label class="col-sm-3 control-label">Name</label>
+							<div class="col-sm-9">
+								<input type="text" class="contact-name" name="contact-name" />
+							</div> <!-- end .col-sm-9 -->
+						</div> <!-- end .form-group -->
+						<div class="form-group">
+							<label class="col-sm-3 control-label">Email</label>
+							<div class="col-sm-9">
+								<input type="email" class="contact-email" name="contact-email" />
+							</div> <!-- end .col-sm-9 -->
+						</div> <!-- end .form-group -->
+						<div class="form-group">
+							<label class="col-sm-3 control-label">Message</label>
+							<div class="col-sm-9">
+								<textarea name="contact-message" class="contact-message" rows="3"></textarea>
+							</div> <!-- end .col-sm-9 -->
+						</div> <!-- end .form-group -->
+						<div class="form-group">
+							<div class="col-sm-9 col-sm-offset-3">
+								<button type="submit" class="button solid-button purple">Send Message</button>
+							</div> <!-- end .col-sm-9 -->
+						</div> <!-- end .form-group -->
+						<div class="contact-loading alert alert-info form-alert">
+							<span class="message">Loading...</span>
+							<button type="button" class="close" data-hide="alert" aria-label="Close"><i class="fa fa-times"></i></button>
+						</div>
+						<div class="contact-success alert alert-success form-alert">
+							<span class="message">Success!</span>
+							<button type="button" class="close" data-hide="alert" aria-label="Close"><i class="fa fa-times"></i></button>
+						</div>
+						<div class="contact-error alert alert-danger form-alert">
+							<span class="message">Error!</span>
+							<button type="button" class="close" data-hide="alert" aria-label="Close"><i class="fa fa-times"></i></button>
+						</div>
+					</form> <!-- end contact-form -->
+				</div> <!-- end .slide-out-widget -->
+				<div class="slide-out-widget">
+					<h4>Follow On Instagram</h4>
+					<div class="instagram">
+						<a href=""><img src="images/instagram01.jpg" alt="alt text" class="img-responsive"></a>
+						<a href=""><img src="images/instagram02.jpg" alt="alt text" class="img-responsive"></a>
+						<a href=""><img src="images/instagram03.jpg" alt="alt text" class="img-responsive"></a>
+						<a href=""><img src="images/instagram04.jpg" alt="alt text" class="img-responsive"></a>
+						<a href=""><img src="images/instagram05.jpg" alt="alt text" class="img-responsive"></a>
+						<a href=""><img src="images/instagram06.jpg" alt="alt text" class="img-responsive"></a>
+					</div> <!-- end .instagram -->
+				</div> <!-- end .slide-out-widget -->
+			</div> <!-- end .slide-out-widgets -->
+		</div> <!-- end .slide-out -->
+
+		<!-- Header -->
+		<header class="header">
+			<div class="top clearfix">
+				<a href="#section8" class="available"><i class="ion-ios-email-outline"></i><span>Available For Freelance</span></a>
+				<div class="right-icons">
+					<a href="" class="open-search header-open-search"><i class="md md-search"></i></a>
+					<a href="" class="download"><i class="md md-file-download"></i></a>
+					<a href="" class="share"><i class="md md-more-vert"></i></a>
+				</div> <!-- end .right-icons -->
+				<!-- Popup -->
+				<div class="popup">
+					<nav class="social-nav">
+						<ul class="list-unstyled">
+							<li><a href="">Facebook</a></li>
+							<li><a href="">Twitter</a></li>
+							<li><a href="">Linkedin</a></li>
+							<li><a href="">Google+</a></li>
+							<li><a href="">Behance</a></li>
+						</ul> <!-- end .list-unstyled -->
+					</nav> <!-- end .social-nav -->
+				</div> <!-- end .popup -->
+			</div> <!-- end .top -->
+			<div class="bottom clearfix">
+				<div class="title"><a href="index.html">Sility</a></div>
+				<div class="header-action-button-wrapper">
+					<a href="" class="header-action-button action-button"><i class="md md-add"></i></a>
+				</div> <!-- end .header-action-button-wrapper -->
+				<a href="" class="responsive-menu-open">Menu <i class="fa fa-bars"></i></a>
+				<nav class="main-nav">
+					<ul class="list-unstyled">
+						<li><a href="index.html#section1">Home</a></li>
+						<li><a href="about.html">About</a></li>
+					</ul>
+				</nav> <!-- end .main-nav -->
+			</div> <!-- end .bottom -->
+		</header> <!-- end .header -->
+		<div class="responsive-menu">
+			<a href="" class="responsive-menu-close">Close <i class="ion-android-close"></i></a>
+			<nav class="responsive-nav"></nav> <!-- end .responsive-nav -->
+		</div> <!-- end .responsive-menu -->
+
+		<!-- Sections -->
+		<div class="sections">
+			<div class="sections-wrapper clearfix">
+
+				<!--Single Blog Post -->
+				<section>
+					<div class="container">
+						<div class="single-blog-post">
+							<header class="blog-header clearfix">
+								<div class="content">
+									<span class="date">March 11, 2015</span>
+									<h4 style="font-size: 12px">Module Pattern in JavaScript</h4>
+									<span class="meta"><a href="">7 Comments</a> | <a href="">By Admin</a></span>
+									<div class="footer">
+										<p class="button-row blog-button-row"><a href="" class="button solid-button dark">Prev</a><a href="" class="button solid-button purple">Next</a></p>
+									</div>
+								</div> <!-- end .content -->
+								<div class="image" style="background-image: url('images/javascript-logo-large.jpg');"></div>
+							</header> <!-- end .blog-header -->
+							<div class="blog-post">
+
+
+
+
+								<div class="blog-post-content">
+
+								<h2>Module Pattern</h2>
+
+<p>Module pattern is one of the most common JavaScript coding pattern. It&nbsp;keeps the design very simple and easy to read and use. We do not have repetative use of &nbsp;<strong>&quot;this&quot; </strong>&nbsp;and &quot;<strong>prototype</strong>&quot; keywords, hence creating less confusion. We shall study about <strong>&quot;prototype&quot;&nbsp;</strong>&nbsp;later in the upcoming tutorials.</p>
+
+<p>&nbsp;</p>
+
+<p>JavaScript Module enables user to &nbsp;wrap public, private methods/variables&nbsp;into a single entity and exposing only the public members to the world outside of module. It provides us with the Object Oriented feature of &quot;Encapsulation&quot;, in which only specific and relavant data is exposed out of the specific function.</p>
+
+<p>&nbsp;</p>
+
+<h3>Why Modules are Required</h3>
+
+<p>We shall require Modules to be created inside our function in order to ensure the following:</p>
+
+<p>&nbsp;</p>
+
+<p id="2f93" name="2f93"><strong>1) Maintainability:</strong>&nbsp;Set of all related functionalities and properties can be enclosed inside a single module. By definition, a module is self-contained. A well-designed module aims to lessen the dependencies on other parts of the codebase as much as possible, so that it can grow and improve independently. Updating a single module is much easier when the module is decoupled from other pieces of code.</p>
+
+<p name="2f93">&nbsp;</p>
+
+<p id="5c56" name="5c56"><strong>2) Namespacing:</strong>&nbsp;Modules ensure that the commonproblem of &quot;Namespace Pollution&quot; can be avoided. If every function is added to the global namespace it may pollute the global scope.&nbsp;</p>
+
+<p name="5c56">Example if we have two entities: Employee and Manager and each of the entity require a function &quot;calculateSalary&quot;, in this case if we add 2 function with the same name to the global scope, one shall be shadowed. In order to prevent such situations application shall define different namespace for both the entities &quot;Employee&quot; and &quot;Maanager&quot; and shall all the related features to the corresponding Namespace.</p>
+
+<p name="5c56">&nbsp;</p>
+
+<p id="59ca" name="59ca"><strong>3) Reusability:</strong>&nbsp;The modules hence defined shall contain reusable code. The Modules shall expose certain set to functionalities and properties to the outer scope which can be reused at several places in the code.</p>
+
+<p>&nbsp;</p>
+
+<h3>IIFE (Immediately Invokable function Expressions)</h3>
+
+<p>In order to understand about the module pattern, we need to first understand about function Expressions and IIFE (Immediately Invokable Function Expression). Here is a small implementation of IIFE</p>
+
+<pre>
+<code class="lang-javascript">
+(function(){
+
+  alert(&quot;Function does not start with keyword &quot;function&quot;, therefore Function Expression&quot;);
+
+})();</code></pre>
+
+<p>&nbsp;</p>
+
+<p>This is a self invoking function expressions. IIFEs are executed by themselves. When it&nbsp;is encountered inside a code, a sepecate function scope is created. IIFE can execute like any other function, but the difference is that IIFEs are self invoking functions. For more details and implementation details&nbsp;on IIFE, please refer to following:&nbsp;http://www.codeproject.com/Articles/1110916/JavaScript-IIFE-Design-Pattern</p>
+
+<p>&nbsp;</p>
+
+<h3>Module Pattern and IIFE</h3>
+
+<p>Module Pattern make use of IIFE for its implementation.&nbsp;</p>
+
+<p>Implementation Ideology of Module Pattern:</p>
+
+<p>1. Application shall create an anonymous function.</p>
+
+<p>2. This anonymous function is self invoked. Here we are referencing to an IIFE.</p>
+
+<p>3.&nbsp;An IIFE shall create a seperate scope and a private enclosure where user shall define function and variables.</p>
+
+<p>4. The idea is to then return set of variables and function that are needed to be exposed to outside world.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>In short, the basic requirement of&nbsp;Module pattern is to wrap all the functions&nbsp;and variable is an anonymous function and return only the required set of variables and functions from the anonymous function. We execute this&nbsp;function expression which returns an object containing all the public members as its properties.&nbsp;Now this returned Object shall contain set of reusable properties and functions.</p>
+
+<p>&nbsp;</p>
+
+<h3>Module Pattern Implementation</h3>
+
+<p>Lets start implementation of a Module Pattern, step by step. First lets create an anonymous function without any further implementation. The below code is a simple anonymous function with no implementation.</p>
+
+<pre>
+<code class="lang-javascript">
+(function(){
+
+});</code></pre>
+
+<p>&nbsp;</p>
+
+<p>The next step is to invoke this anonymous function expression. Anonymous function expression along with self invokation feature constitutes an IIFE. So the next step is to create an IIFE ie Self invoke and anonymous function.</p>
+
+<p>In the below code we can see that the anonymous function is invoked using&quot;()&quot; at the end.&nbsp;This is a simple IIFE.</p>
+
+<pre>
+<code class="lang-javascript">
+(function(){
+
+})();</code></pre>
+
+<p>&nbsp;</p>
+
+<p>The next step is to initialize a set of functionalities and variable inside the IIFE. So lets create a function for an Employee which contains name, age, salary field along with the functionality to calculate bonus and net salary. In the below code we created variables name, salary and also created functions like netSalary and calculateBonus.&nbsp;</p>
+
+<pre>
+<code class="lang-javascript">
+(function(){
+
+&nbsp; var name = &#39;Mayank&#39;;
+  var salary = 0;
+  var tax = 0;
+
+&nbsp; function setDetails(name, salary, tax) {
+    name = name;
+    salary = salary;
+    tax = tax;&nbsp;
+  };
+
+
+&nbsp; function getDetails(name, salary, tax) {
+    console.log(name + salary + tax);
+  };
+
+&nbsp; function calculateBonus() {
+&nbsp;   return salary * .1;
+  }
+
+&nbsp; function netSalary() {
+&nbsp;   return salary + (salary * .14);
+  }
+
+})();</code></pre>
+
+<p>&nbsp;</p>
+
+<p>In the above code we have already created few variables and functions. The next step is to expose the features (variables and functions) t the user using a &quot;return&quot; keyword. Return shall expose the variable and functions that are required by external enviroment. We shall be exposing the functions and variables required outside this function scope.</p>
+
+<p>&nbsp;</p>
+
+<p>Now lets assume that&nbsp;the user need to see the name of the Employee along with functionality to set the User, get the user and calculate the Bonus and Net Salary. The code below shall expose the following variables and functions using a return keyword. The returned Object shall be assigned to a variable.</p>
+
+<pre>
+<code class="lang-javascript">
+var Employee = (function(){
+
+&nbsp; var name = &#39;Mayank&#39;;
+  var salary = 0;
+  var tax = 0;
+
+&nbsp; function setDetails(name, salary, tax) {
+    name = name;
+    salary = salary;
+    tax = tax;&nbsp;
+  };
+
+
+&nbsp; function getDetails(name, salary, tax) {
+    console.log(name + salary + tax);
+  };
+
+&nbsp; function calculateBonus() {
+&nbsp;   return salary * .1;
+  }
+
+&nbsp; function netSalary() {
+&nbsp;   return salary + (salary * .14);
+  }
+
+&nbsp; return {
+&nbsp;   name: name,
+&nbsp;   getDetails: getDetails,
+    setDetails: setDetails,
+    calculateBonus: calculateBonus,
+    netSalary: netSalary
+&nbsp; }
+
+})();</code></pre>
+
+<p>&nbsp;</p>
+
+<p>The above code uses the return keyword, this signify that the variables and functions specified inside the return statement shall be exposed to the outer scope and shall be refered by object &quot;Employee&quot;. So now the user can access the following functionalities and functions:</p>
+
+<p>1. Employee.name</p>
+
+<p>2. Employee.netSalary()</p>
+
+<p>3. Employee.calculateBonus()</p>
+
+<p>4. Employee.getDetails()</p>
+
+<p>5. Employee.setDetails()</p>
+
+<p>&nbsp;</p>
+
+<p>Only following set of variables and functions are available outside the function Expression. The IIFE shall return the specified properties and functions to be used outside the scope.</p>
+
+<p>&nbsp;</p>
+
+<p>Other variables and functionalities that are not exposed using return will be a part of private variables. The outer scope cannot access the private variables diirectly but the public function can access the private variables.Lets look for these details.</p>
+
+<p>&nbsp;</p>
+
+<h3>Private Variables in Module Pattern</h3>
+
+<p>We can create private variables using Module Pattern. This shall enable us to cater the OOPS concept of Abstraction. Variables that are not returned by the anonymous function is a part of private variable declaration of the Object. In the code below we are trying to access the salary of the Employee Object. The salary variable exist inside the closure as a part of private variable. We cannot access any variable or property that is not a part of return statement from outside.</p>
+
+<p>Although we can see that the function &quot;calculateBonus&quot; tries to access the variable &quot;salary&quot;. The &quot;calculateBonus&quot; function can access the private variable &quot;salary&quot; since the vbariable &quot;salary&quot; exists inside closure created by &quot;Employee&quot; Object.</p>
+
+<p>&nbsp;</p>
+
+<pre>
+<code class="lang-javascript">
+console.log(Employee.salary);</code></pre>
+
+<p>&nbsp;</p>
+
+<p>Any such access to the private variable shall not be allowed by the outer scope.</p>
+
+<p>&nbsp;</p>
+
+<h3>Summary</h3>
+
+<p>As per the discussion above, we can see that the module pattern can enable user to create private and public variables. The public properties and functionalities are a part of shared features.</p>
+
+<p>&nbsp;</p>
+
+<p>We can see that the Module pattern shall enable us to</p>
+
+<p>1. Create a Maintainable solution by implementing all the functionalities related to same Module at a fixed place.&nbsp;</p>
+
+<p>2. The Module defined created a Namespace, all related functionalities defined under same namespace</p>
+
+<p>3. The Employee Object returned shall be reusable.</p>
+
+
+								</div> <!-- end .blog-post-content -->
+
+							</div> <!-- end .blog-post -->
+							<div class="blog-details">
+								<div class="section">
+									<h5>Author Details</h5>
+									<div class="author">
+										<div class="image"><img src="images/mayank.jpg" alt="alt text" class="img-responsive"></div>
+										<span class="title">Mayank Gupta</span>
+										<p>voluptatem accusantium doloremque laudanto tam rem aperiam, eaque ipsa quae. ab illo inventore veritatis et quasi architecto.</p>
+									</div>
+								</div> <!-- end .section -->
+								<div class="section">
+									<h5>Share Post</h5>
+									<div class="social-icons">
+										<a href="" class="social-icon"><i class="fa fa-facebook"></i></a>
+										<a href="" class="social-icon"><i class="fa fa-twitter"></i></a>
+										<a href="" class="social-icon"><i class="fa fa-google-plus"></i></a>
+										<a href="" class="social-icon"><i class="fa fa-behance"></i></a>
+										<a href="" class="social-icon"><i class="fa fa-dribbble"></i></a>
+									</div> <!-- end .social-icons -->
+								</div> <!-- end .section -->
+								<div class="section">
+									<h5>Tags</h5>
+									<div class="tags"><a href="">Music</a><span>|</span><a href="">Mobile</a><span>|</span><a href="">Tablet</a><span>|</span><a href="">Live</a></div>
+								</div> <!-- end .section -->
+							</div> <!-- end .blog-details -->
+						</div> <!-- end .single-blog-post -->
+					</div> <!-- end .container -->
+				</section>
+
+			</div> <!-- end .sections-wrapper -->
+		</div> <!-- end .sections -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <h4>Address</h4>
+              <p>A-8, Milansar Appartment, Rohini<br />Delhi, India</p>
+            </div> <!-- end .col-sm-4 -->
+            <div class="col-sm-4">
+              <h4>Connect</h4>
+              <div class="social-icons">
+                <a href="" class="social-icon"><i class="fa fa-facebook"></i></a>
+                <a href="" class="social-icon"><i class="fa fa-twitter"></i></a>
+                <a href="" class="social-icon"><i class="fa fa-google-plus"></i></a>
+                <a href="" class="social-icon"><i class="fa fa-behance"></i></a>
+                <a href="" class="social-icon"><i class="fa fa-dribbble"></i></a>
+              </div> <!-- end .social-icons -->
+            </div> <!-- end .col-sm-4 -->
+            <div class="col-sm-4">
+              <h4>Contact</h4>
+              <p>Tel: +91 9711083089<br />Mail: mayankgupta688@gmail.com</p>
+            </div> <!-- end .col-sm-4 -->
+          </div> <!-- end .row -->
+        </div> <!-- end .container -->
+      </div> <!-- end .footer -->
+      <div class="bottom">Copyright &copy; Sility. All Rights Reserved.</div> <!-- end .bottom -->
+    </footer> <!-- end .footer -->
+
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.inview.min.js"></script>
+  <script src="js/smoothscroll.js"></script>
+  <script src="js/jquery.knob.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/rainbow.js"></script>
+  <script defer src="js/analytics.js"></script>
+
+	</body>
+</html>

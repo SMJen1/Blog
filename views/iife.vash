@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sility - Material Design Vcard & CV HTML Template</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css" rel="stylesheet">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="fonts/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="css/owl.carousel.css" rel="stylesheet">
+  <link href="css/owl.theme.default.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/app.css">
+ </head>
+	<body>
+
+<link rel="stylesheet" href="custom.css">
+
+		<!-- Search -->
+		<div class="search-overlay"></div>
+		<div class="search">
+			<a href="" class="search-close"><i class="md md-close"></i></a>
+			<div class="row">
+				<div class="col-sm-6 col-sm-offset-3">
+					<h4>Just Start Typing Text and Press Enter</h4>
+					<form class="search-form">
+						<input type="text" id="search" name="search" class="text-center" />
+					</form> <!-- end .search-form -->
+				</div> <!-- end .col-sm-6 -->
+			</div> <!-- end .row -->
+		</div> <!-- end .row -->
+		<!-- Slide Out -->
+		<div class="slide-out-overlay"></div>
+		<div class="slide-out">
+			<header class="slide-out-header clearfix">
+				<div class="clearfix">
+					<a href="" class="slide-out-close pull-left"><i class="md md-close"></i></a>
+					<a href="" class="open-search pull-right"><i class="md md-search"></i></a>
+					<a href="" class="slide-out-share pull-right"><i class="md md-more-vert"></i></a>
+				</div> <!-- end .clearfix -->
+				<!-- Popup -->
+				<div class="slide-out-popup">
+					<nav class="social-nav">
+						<ul class="list-unstyled">
+							<li><a href="">Facebook</a></li>
+							<li><a href="">Twitter</a></li>
+							<li><a href="">Linkedin</a></li>
+							<li><a href="">Google+</a></li>
+							<li><a href="">Behance</a></li>
+						</ul> <!-- end .list-unstyled -->
+					</nav> <!-- end .social-nav -->
+				</div> <!-- end .slide-out-popup -->
+				<div class="image"><img src="images/head01.png" alt="alt text" class="img-responsive"></div>
+				<div class="content">
+					<h5>Benjamin Thomson</h5>
+					<span>Web & UX Designer</span>
+				</div> <!-- end .content -->
+				<div class="text-right">
+					<a href="" class="button link-button white icon-left"><i class="md md-file-download"></i>Download Resume</a>
+				</div> <!-- end .text-right -->
+			</header> <!-- end .slide-out-header -->
+			<div class="slide-out-widgets">
+				<div class="slide-out-widget">
+					<h4>Drink A Coffee With Me Today</h4>
+					<form action="scripts/contact.php" method="post" class="form-horizontal contact-form">
+						<div class="form-group">
+							<label class="col-sm-3 control-label">Name</label>
+							<div class="col-sm-9">
+								<input type="text" class="contact-name" name="contact-name" />
+							</div> <!-- end .col-sm-9 -->
+						</div> <!-- end .form-group -->
+						<div class="form-group">
+							<label class="col-sm-3 control-label">Email</label>
+							<div class="col-sm-9">
+								<input type="email" class="contact-email" name="contact-email" />
+							</div> <!-- end .col-sm-9 -->
+						</div> <!-- end .form-group -->
+						<div class="form-group">
+							<label class="col-sm-3 control-label">Message</label>
+							<div class="col-sm-9">
+								<textarea name="contact-message" class="contact-message" rows="3"></textarea>
+							</div> <!-- end .col-sm-9 -->
+						</div> <!-- end .form-group -->
+						<div class="form-group">
+							<div class="col-sm-9 col-sm-offset-3">
+								<button type="submit" class="button solid-button purple">Send Message</button>
+							</div> <!-- end .col-sm-9 -->
+						</div> <!-- end .form-group -->
+						<div class="contact-loading alert alert-info form-alert">
+							<span class="message">Loading...</span>
+							<button type="button" class="close" data-hide="alert" aria-label="Close"><i class="fa fa-times"></i></button>
+						</div>
+						<div class="contact-success alert alert-success form-alert">
+							<span class="message">Success!</span>
+							<button type="button" class="close" data-hide="alert" aria-label="Close"><i class="fa fa-times"></i></button>
+						</div>
+						<div class="contact-error alert alert-danger form-alert">
+							<span class="message">Error!</span>
+							<button type="button" class="close" data-hide="alert" aria-label="Close"><i class="fa fa-times"></i></button>
+						</div>
+					</form> <!-- end contact-form -->
+				</div> <!-- end .slide-out-widget -->
+				<div class="slide-out-widget">
+					<h4>Follow On Instagram</h4>
+					<div class="instagram">
+						<a href=""><img src="images/instagram01.jpg" alt="alt text" class="img-responsive"></a>
+						<a href=""><img src="images/instagram02.jpg" alt="alt text" class="img-responsive"></a>
+						<a href=""><img src="images/instagram03.jpg" alt="alt text" class="img-responsive"></a>
+						<a href=""><img src="images/instagram04.jpg" alt="alt text" class="img-responsive"></a>
+						<a href=""><img src="images/instagram05.jpg" alt="alt text" class="img-responsive"></a>
+						<a href=""><img src="images/instagram06.jpg" alt="alt text" class="img-responsive"></a>
+					</div> <!-- end .instagram -->
+				</div> <!-- end .slide-out-widget -->
+			</div> <!-- end .slide-out-widgets -->
+		</div> <!-- end .slide-out -->
+
+		<!-- Header -->
+		<header class="header">
+			<div class="top clearfix">
+				<a href="#section8" class="available"><i class="ion-ios-email-outline"></i><span>Available For Freelance</span></a>
+				<div class="right-icons">
+					<a href="" class="open-search header-open-search"><i class="md md-search"></i></a>
+					<a href="" class="download"><i class="md md-file-download"></i></a>
+					<a href="" class="share"><i class="md md-more-vert"></i></a>
+				</div> <!-- end .right-icons -->
+				<!-- Popup -->
+				<div class="popup">
+					<nav class="social-nav">
+						<ul class="list-unstyled">
+							<li><a href="">Facebook</a></li>
+							<li><a href="">Twitter</a></li>
+							<li><a href="">Linkedin</a></li>
+							<li><a href="">Google+</a></li>
+							<li><a href="">Behance</a></li>
+						</ul> <!-- end .list-unstyled -->
+					</nav> <!-- end .social-nav -->
+				</div> <!-- end .popup -->
+			</div> <!-- end .top -->
+			<div class="bottom clearfix">
+				<div class="title"><a href="index.html">Sility</a></div>
+				<div class="header-action-button-wrapper">
+					<a href="" class="header-action-button action-button"><i class="md md-add"></i></a>
+				</div> <!-- end .header-action-button-wrapper -->
+				<a href="" class="responsive-menu-open">Menu <i class="fa fa-bars"></i></a>
+				<nav class="main-nav">
+					<ul class="list-unstyled">
+						<li><a href="index.html#section1">Home</a></li>
+						<li><a href="about.html">About</a></li>
+					</ul>
+				</nav> <!-- end .main-nav -->
+			</div> <!-- end .bottom -->
+		</header> <!-- end .header -->
+		<div class="responsive-menu">
+			<a href="" class="responsive-menu-close">Close <i class="ion-android-close"></i></a>
+			<nav class="responsive-nav"></nav> <!-- end .responsive-nav -->
+		</div> <!-- end .responsive-menu -->
+
+		<!-- Sections -->
+		<div class="sections">
+			<div class="sections-wrapper clearfix">
+
+				<!--Single Blog Post -->
+				<section>
+					<div class="container">
+						<div class="single-blog-post">
+							<header class="blog-header clearfix">
+								<div class="content">
+									<span class="date">March 11, 2015</span>
+									<h4 style="font-size: 12px">Immediately Invokable Function Expression</h4>
+									<span class="meta"><a href="">7 Comments</a> | <a href="">By Admin</a></span>
+									<div class="footer">
+										<p class="button-row blog-button-row"><a href="" class="button solid-button dark">Prev</a><a href="" class="button solid-button purple">Next</a></p>
+									</div>
+								</div> <!-- end .content -->
+								<div class="image" style="background-image: url('images/javascript-logo-large.jpg');"></div>
+							</header> <!-- end .blog-header -->
+							<div class="blog-post">
+
+
+
+
+								<div class="blog-post-content">
+
+										<h3>Immediately Invokable Function Expression</h3>
+
+          <div>
+            <strong>IIFE (Immediately Invokable Function Expression)</strong>&nbsp;is a important concept in JavaScript. it is a commonly used <strong>Design Pattern</strong> which is used to wrap set of variables and functions which cannot be accessed outside the enclosed scope.</div>
+          <div>&nbsp;</div>
+          <div>These are&nbsp;<strong>Anonymous Function</strong> that is wrapped inside a set of paranthesis and is called immediately.</div>
+          <div>&nbsp;</div>
+          <div>The common advantage of IIFE is that any &quot;<strong>Function or Variable</strong>&quot; defined inside IIFE, cannot be accessed outside the IIFE block, thus preventing global scope from getting polluted. Also helps us manage memory in an efficient manner.</div>
+          <div>&nbsp;</div>
+          <div>In order to understand the concept of IIFE, we need to understand the difference between the following:</div>
+          <p>1. Function Definition</p>
+          <p>2. Function Expression</p>
+          <p>&nbsp;</p>
+          <h4>Function Definition:&nbsp;</h4>
+          <p>Lets look at a very simple &quot;Function Definition&quot;:</p>
+
+          <pre>
+<code class="lang-javascript">
+var demoFunction = function(){
+
+  alert(&quot;This is the function Definition&quot;);
+
+};
+
+</code></pre>
+
+
+             <p>So the simplest way to understand &quot;Function Declaration&quot; is that, it starts with &quot;<strong>function</strong>&quot; keyword.</p>
+             <p>The biggest benefit of function definition over Function Expressions is that they are <strong>&quot;Hoisted&quot;</strong> by the JavaScript Compiler. This also&nbsp;<b>means</b>&nbsp;that a variable can appear to be used before it&#39;s declared. This behavior is called &quot;<b>Hoisting</b>&quot;, as it appears that the variable declaration is moved to the top of the function or global code by the compiler.</p>
+             <p>Hoisting is when a JS declaration is lifted (&ldquo;hoisted&rdquo;) to the top of it&rsquo;s scope. What this really means is that a variable or function isn&rsquo;t necessarily declared where you think it is. Function Definition and Variable Declaration are always Hoisted on the top of the Function Scope or Global Scope.</p>
+             <p>This can be understood by this small example:</p> <pre>
+<code class="lang-javascript">
+demoFunction();
+
+var demoFunction = function(){
+
+  alert(&quot;This is the function Definition&quot;);
+
+};
+
+</code></pre>
+  <p>Here we can see that the user is trying to access &quot;demoFunction()&quot; even before the compiler reaches its &quot;Function Definition&quot;, In this case function will be executed. It will be called by the compliler and shall output a alert message. The function definition is hoisted on the top of the Scope by the compiler, therefore it is available even before its Function Definition during script execution.&nbsp;</p>
+  <p>The concept of Hoisting does not adher to Function Expressions. Function Expressions are never Hoisted.</p>
+  <p>Function Expressions has got its own benefits which we shall be evaluating in a short while.</p>
+  <h4>&nbsp;</h4>
+  <h4>Function Expressions:</h4>
+  <p>&quot;<strong>Function Expression&quot;</strong> would be any function defined which does start &quot;function&quot; keyword.</p>
+  <p>Another way to define a function expression is to assign a function to a variable.&nbsp;</p>
+  <p>This is another common way to create a function apart from the &quot;Function Declaration&quot; Syntax above.</p> <pre>
+<code class="lang-javascript">
+var demoFunction = function(){
+
+  alert(&quot;This is function Expression&quot;);
+
+};
+
+</code></pre>
+  <p>Since the above function does start the keyword &quot;function&quot;, its a <strong>&quot;Function Expression&quot;</strong> </p>
+  <p>The above code assigns a function definition to a variable &quot;demoFunction&quot;.&nbsp;</p>
+  <p>This would mean that the variable <strong>&quot;demoFunction&quot;</strong> shall now&nbsp;represent a function definition.</p>
+  <p>The function can now be called using following line of code: <strong>&quot;demoFunction()&quot;</strong> </p>
+  <p>&nbsp;</p>
+  <h2><strong>What are IIFE ...</strong></h2>
+  <p><strong>IIFE&nbsp;</strong>(<strong>Immediately Invoked Function Expression</strong>)&nbsp;is a&nbsp;<a href="https://developer.mozilla.org/en-US/docs/Glossary/JavaScript" title="JavaScript: JavaScript (JS) is a programming language mostly  client-side to dynamically script webpages, but often also server-side.">JavaScript</a>&nbsp;<a href="https://developer.mozilla.org/en-US/docs/Glossary/function" title="function: A function is a code snippet that can be called by other code or by itself, or a variable that refers to the function. When a function is called, arguments are passed to the function as input, and the function can optionally return an output. A function in JavaScript is also an object.">function</a>&nbsp;that runs as soon as it is defined.&nbsp;</p> <pre>
+<code class="lang-javascript">
+(function(){
+
+&nbsp; alert(&quot;Function does not start with keyword &quot;function&quot;, therefore Function Expression&quot;);
+
+})();
+</code></pre>
+  <p>This is a simple function in which anything written inside the function block shall be executed immediately.&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>In the above example, once the code is executed, following events occur:</p>
+  <p>1. A function Instance is created.</p>
+  <p>2. Function is Executed.</p>
+  <p>3. Function created is discarded.&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>The variable and functions that were declared in the scope of IIFE are available for garbage collection, once the IIFE is executed. Hence managing Memory in an efficient manner and ensures that the function and variables do not bind itself to the global scope.</p>
+  <p>&nbsp;</p>
+  <p>In order to understand, we can break down the above code into 2 parts:</p>
+  <p>1. Creating Function Expression</p>
+  <p>2. Invoking the Function Expression</p>
+  <p>&nbsp;</p>
+  <h3><strong>Part One: (Function Expression)</strong></h3>
+  <p>Breaking the code further,&nbsp;we will get a &quot;Function Expression&quot; enclosed within &quot;Brackets&quot;.</p>
+  <p>When a function definition does not contain &quot;function&quot; keyword in the starting of an executable line of code, it is called Function Expression.</p>
+  <p>In this code we can see that the function definition starts with &quot;(&quot;, therefore its a function Expression.</p> <pre>
+<code class="lang-javascript">
+(function(){
+
+&nbsp; alert(&quot;Function enclosed within Simple Brackets, therefore Expression&quot;);
+
+});
+</code></pre>
+  <p>This is a simple Function Expression.</p>
+  <p>Similarly,&nbsp;IIFE&nbsp;it does starting the keyword &quot;function&quot;, it is also a&nbsp;&quot;<strong>Function Expression</strong>&quot;.&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>So, we first get a <strong>&quot;Function Expression&quot;</strong> that contain some code enclosed in it.</p> <pre>
+<code class="lang-javascript">
+(function(){
+
+  alert(&quot;Function enclosed within Simple Brackets, therefore Expression&quot;);
+
+});
+</code></pre>
+  <p>The next step will be calling the &quot;Function Expression&quot; just like any other function using&quot;()&quot;.</p>
+  <p>&nbsp;</p>
+  <p>** Note: Important difference between Function Expression and Function Declaration is:</p>
+  <p><em>&quot;Function Declaration can be Hoisted, but Function Expressions cannot be Hoisted&quot;.&nbsp;</em> </p>
+  <p>&nbsp;</p>
+  <h3><strong>Part Two: (Function Invocation)</strong></h3>
+  <p>Once the function Expression is defined, it is invoked using &quot;()&quot;, in the same manner as we call a function.</p> <pre>
+<code class="lang-javascript">
+(function(){
+
+  alert(&quot;Function Expression Invoked using () at the end&quot;);
+
+})();
+
+// Here the function call in made using &#39;()&#39;
+</code></pre>
+  <p>Once&nbsp;the Function Expression is invoked, the code inside the function expression shall execute.</p>
+  <p>&nbsp;</p>
+  <p>So the above discussion about the IIFE can be compiled as:</p>
+  <p><strong>A Function Expression immediately invoked using &quot;()&quot;.</strong> </p>
+  <p>So here we can see that a IIFE is a &quot;Function Expression&quot; called immediately after its definition.</p>
+  <p>&nbsp;</p>
+  <h3>Breaking IIFE into parts:</h3>
+  <p>So the above IIFE code can be rewritten as:</p> <pre>
+<code class="lang-javascript">
+var functionExpression = (function(){
+
+  alert(&quot;Function Expression assigned to variable.&quot;);
+
+});
+
+functionExpression();
+</code></pre>
+  <p>This code can be analysed in the following way:</p>
+  <p>1. &quot;Function Expression&quot; is created and stored in a variable &quot;functionExpression&quot;</p>
+  <p>2. Function Expression is called just like any other function.</p>
+  <p>&nbsp;</p>
+  <h2><strong>Why do we require IIFE..</strong></h2>
+  <p>Benefits of IIFE are:</p>
+  <h4>1. Avoids Global Scope from getting Polluted.</h4>
+  <p>One of the main reason to create IIFE is to avoid global scope from getting polluted.</p>
+  <p>Lets understand this with a simple example:</p> <pre>
+<code class="lang-javascript">
+(function(){
+
+ &nbsp;var sampleVariable = &quot;test Variable&quot;;
+
+&nbsp; var sampleVariable = function(){
+
+ &nbsp;  alert(&quot;Function does not start with keyword &quot;function&quot;, therefore Function Expression&quot;);
+
+&nbsp; }
+
+})();
+</code></pre>
+  <p>Here in the above function, we have created a &quot;Variable&quot; and a &quot;Function&quot;, this variables and function are enclosed within an IIFE Expression, therefore the scope of the variable and function lies within the IIFE. These variables and functions are not added to Global Scope.</p>
+  <p>We may use IIFE when we want to define some functions and variable that are just required to be executed for a single time on a page.&nbsp;</p>
+  <p>Lets say that we have a device and we have to set the Theme according to the device that is used by the user. Here when the user logs into our Application, we need to check the Device just once since the device wont change. In such a case, variables and functions required to detect the Device wont be required once executed. In such a case wee would not like to add these variables and function to the global scope and consume Browser space. So these functionalities can be enclosed within an IIFE, so that once executed, all the variables and function defined for the same can be made available for Garbage Collection.</p>
+  <p>&nbsp;</p>
+  <p><strong>2. Manage Browser Memory:</strong> </p>
+  <p>If the functions are such that they require single execution, as specified in above example, we need not to add those function and variable to the gobal scope. Adding them to global scope would consume space on the Browser Memory.&nbsp;</p>
+  <p>So once these functions are executed, we would like them to be Garbage Collected.</p>
+  <p>Following Events occur when a IIFE is encountered:</p>
+  <p>1. A function Instance is created.</p>
+  <p>2. Function is Executed.</p>
+  <p>3. Function created is discarded.&nbsp;</p>
+  <p>When the IIFE is executed, the required functions and variables are created, used and once IIFE has finished execution, they are available for Garbage Collection, Hence freeing the Browser Memory.</p>
+  <p>&nbsp;</p>
+  <p><strong>3.&nbsp;Minification Optimization</strong> </p>
+  <p>IIFE&nbsp;also helps us with the minification. Since we can paas values to the arguments in IIFE, we areable to reduce the name of each global object to a one letter word.</p>
+  <p>The Example shall help you understand it better:</p> <pre>
+<code class="lang-javascript">
+(function(w){
+
+  alert(&#39;Window object is now renamed to &quot;w&quot;&#39;);
+
+})(window);
+</code></pre>
+  <p>Here we can see that the &quot;Window&quot; object is passed as to the IIFE, &quot;Window&quot; object is passed to an argument &quot;w&quot;. So now the window object shall be refered as &quot;w&quot; instead of &quot;window&quot;, hence helping us with the minification process.&nbsp;</p>
+  <h3>Passing Arguments to IIFE Function:</h3>
+  <p>We can simply pass arguments to IIFE in the following manner:</p> <pre>
+<code class="lang-javascript">
+var Name = &quot;Mayank&quot;;
+
+var Age = 27;
+
+(function(name, age){
+
+  alert(&quot;Name: &quot; + name);
+
+})(Name, Age);
+
+Here the Arguments are enclosed within &quot;()&quot; brackets.
+</code></pre>
+  <p>In the above example we can see:</p>
+  <p>1. We have variable &quot;Name&quot; and &quot;Age&quot; at Global Level</p>
+  <p>2. We need to pass these variable to &quot;IIFE&quot;,&nbsp;</p>
+  <p>3. IIFE accepts 2 parameters &quot;name&quot; and &quot;age&quot;.</p>
+  <p>4. Global Variable &quot;Name&quot; and &quot;Age&quot; are enclosed withing the Function Invokation Brackets.</p>
+  <p>5. &quot;Name and Age&quot; shall now be available to IIFE as arguments passed from outside enviroment.</p>
+  <p>&nbsp;</p>
+  <p>**Note:</p>
+  <p>Please do not confuse between the following implementation of IIFE.</p>
+  <p>Both shall represent the same IIFE Expression.</p>
+  <p>Please see the difference in placement of Brackets &quot;()&quot; while function invocation.</p> <pre>
+<code class="lang-javascript">
+(function(){
+
+  alert(&quot;Name: &quot; + name);
+
+})()
+</code></pre>
+  <div>The above implementation of IIFE is same as the one below. The onle difference is the placement of brackets during function Invokation</div> <pre>
+<code class="lang-javascript">
+(function(){
+
+  alert(&quot;Name: &quot; + name);
+
+}());
+</code></pre>
+  <p>&nbsp;</p>
+  <p><strong>IIFE is an amazing Design Pattern offering Lots of Benefits. Try using IIFE in your Code to Optimise it Further. Hope the article shall provide help to people who are trtying to understand the concept.&nbsp;</strong> </p>
+  <p>&nbsp;</p>
+
+
+
+								</div> <!-- end .blog-post-content -->
+							</div> <!-- end .blog-post -->
+							<div class="blog-details">
+								<div class="section">
+									<h5>Author Details</h5>
+									<div class="author">
+										<div class="image"><img src="images/mayank.jpg" alt="alt text" class="img-responsive"></div>
+										<span class="title">Mayank Gupta</span>
+										<p>voluptatem accusantium doloremque laudanto tam rem aperiam, eaque ipsa quae. ab illo inventore veritatis et quasi architecto.</p>
+									</div>
+								</div> <!-- end .section -->
+								<div class="section">
+									<h5>Share Post</h5>
+									<div class="social-icons">
+										<a href="" class="social-icon"><i class="fa fa-facebook"></i></a>
+										<a href="" class="social-icon"><i class="fa fa-twitter"></i></a>
+										<a href="" class="social-icon"><i class="fa fa-google-plus"></i></a>
+										<a href="" class="social-icon"><i class="fa fa-behance"></i></a>
+										<a href="" class="social-icon"><i class="fa fa-dribbble"></i></a>
+									</div> <!-- end .social-icons -->
+								</div> <!-- end .section -->
+								<div class="section">
+									<h5>Tags</h5>
+									<div class="tags"><a href="">Music</a><span>|</span><a href="">Mobile</a><span>|</span><a href="">Tablet</a><span>|</span><a href="">Live</a></div>
+								</div> <!-- end .section -->
+							</div> <!-- end .blog-details -->
+						</div> <!-- end .single-blog-post -->
+					</div> <!-- end .container -->
+				</section>
+
+			</div> <!-- end .sections-wrapper -->
+		</div> <!-- end .sections -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <h4>Address</h4>
+              <p>A-8, Milansar Appartment, Rohini<br />Delhi, India</p>
+            </div> <!-- end .col-sm-4 -->
+            <div class="col-sm-4">
+              <h4>Connect</h4>
+              <div class="social-icons">
+                <a href="" class="social-icon"><i class="fa fa-facebook"></i></a>
+                <a href="" class="social-icon"><i class="fa fa-twitter"></i></a>
+                <a href="" class="social-icon"><i class="fa fa-google-plus"></i></a>
+                <a href="" class="social-icon"><i class="fa fa-behance"></i></a>
+                <a href="" class="social-icon"><i class="fa fa-dribbble"></i></a>
+              </div> <!-- end .social-icons -->
+            </div> <!-- end .col-sm-4 -->
+            <div class="col-sm-4">
+              <h4>Contact</h4>
+              <p>Tel: +91 9711083089<br />Mail: mayankgupta688@gmail.com</p>
+            </div> <!-- end .col-sm-4 -->
+          </div> <!-- end .row -->
+        </div> <!-- end .container -->
+      </div> <!-- end .footer -->
+      <div class="bottom">Copyright &copy; Sility. All Rights Reserved.</div> <!-- end .bottom -->
+    </footer> <!-- end .footer -->
+
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.inview.min.js"></script>
+  <script src="js/smoothscroll.js"></script>
+  <script src="js/jquery.knob.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/rainbow.js"></script>
+  <script defer src="js/analytics.js"></script>
+
+	</body>
+</html>
