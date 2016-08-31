@@ -171,7 +171,7 @@
       </div>
       <!-- end .top -->
       <div class="bottom clearfix">
-        <div class="title"><a href="index.html">Sility</a></div>
+        <div class="title"><a href="/">Mayank</a></div>
         <div class="header-action-button-wrapper">
           <a href="" class="header-action-button action-button"><i class="md md-add"></i></a>
         </div>
@@ -515,34 +515,7 @@ demoFunction = function(){
                 <p>&nbsp;</p>
               </div>
               <!-- end .blog-post -->
-              <div class="blog-details">
-                <div class="section">
-                  <h5>Author Details</h5>
-                  <div class="author">
-                    <div class="image"><img src="images/mayank.jpg" alt="alt text" class="img-responsive"></div>
-                    <span class="title">Mayank Gupta</span>
-                    <p>voluptatem accusantium doloremque laudanto tam rem aperiam, eaque ipsa quae. ab illo inventore veritatis et quasi architecto.</p>
-                  </div>
-                </div>
-                <!-- end .section -->
-                <div class="section">
-                  <h5>Share Post</h5>
-                  <div class="social-icons">
-                    <a href="" class="social-icon"><i class="fa fa-facebook"></i></a>
-                    <a href="" class="social-icon"><i class="fa fa-twitter"></i></a>
-                    <a href="" class="social-icon"><i class="fa fa-google-plus"></i></a>
-                    <a href="" class="social-icon"><i class="fa fa-behance"></i></a>
-                    <a href="" class="social-icon"><i class="fa fa-dribbble"></i></a>
-                  </div>
-                  <!-- end .social-icons -->
-                </div>
-                <!-- end .section -->
-                <div class="section">
-                  <h5>Tags</h5>
-                  <div class="tags"><a href="">Music</a><span>|</span><a href="">Mobile</a><span>|</span><a href="">Tablet</a><span>|</span><a href="">Live</a></div>
-                </div>
-                <!-- end .section -->
-              </div>
+
               <!-- end .blog-details -->
             </div>
             <!-- end .single-blog-post -->
