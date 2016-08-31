@@ -2,20 +2,41 @@
 
 	routeConroller.init = function(app) {
 		app.get('/', function(req, res) {
-		  res.render('layout', {});
+		  res.render('index', {});
 		})
 
-		app.get('/:name', function(req, res) {
-		  res.render('layout', {});
+		app.get('/about', function(req, res) {
+		  res.render('about', {});
 		})
 
-		app.get('/index/index.vash', function(req, res) {
-		  res.render('index/index.vash', {});
-		});
+    app.get('/iife', function(req, res) {
+      res.render('iife', {});
+    })
 
-		app.get('/index/new.vash', function(req, res) {
-		  res.render('index/new.vash', {});
-		});
+    app.get('/module', function(req, res) {
+      res.render('module', {});
+    })
+
+    app.get('/singleton', function(req, res) {
+      res.render('singleton', {});
+    })
+
+    app.get('/hoisting', function(req, res) {
+      res.render('hoisting', {});
+    })
+
+    app.get('/prototype', function(req, res) {
+      res.render('prototype', {});
+    })
+
+    app.get('/scopes', function(req, res) {
+      res.render('scopes', {});
+    })
+
+    app.get('/objects', function(req, res) {
+      res.render('objects', {});
+    })
+
 	};
 
 })(module.exports)
