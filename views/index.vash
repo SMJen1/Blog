@@ -35,11 +35,7 @@
     <header class="header">
       <div class="top clearfix">
         <a href="#section8" class="available"><i class="ion-ios-email-outline"></i><span>Available For Freelance</span></a>
-        <div class="right-icons">
-          <a href="" class="open-search header-open-search"><i class="md md-search"></i></a>
-          <a href="" class="download"><i class="md md-file-download"></i></a>
-          <a href="" class="share"><i class="md md-more-vert"></i></a>
-        </div> <!-- end .right-icons -->
+
 
       </div> <!-- end .top -->
       <div class="bottom clearfix">
@@ -83,10 +79,10 @@
                 <div class="inner">
                   <a href="single-blog-post.html"><div class="image" style="background-image: url('images/JavaScript-logo.png');"></div></a>
                   <div class="content">
-                    <span class="date">March 14, 2015</span>
+                    <span class="date">August 14, 2016</span>
                     <h5><a href="/iife">Immediately Invokable Function Expressions</a></h5>
                     <footer>
-                      <span class="comments-link"><a href="single-blog-post.html">3 Comments</a></span>
+                      <span class="comments-link"><a href="single-blog-post.html"></a></span>
                       <span class="share-link"><a href="/iife"><i class="fa fa-share-alt"></i></a></span>
                     </footer>
                   </div> <!-- end .content -->
@@ -95,7 +91,7 @@
               <div class="blog-post">
                 <div class="inner">
                   <div class="content">
-                    <span class="date">March 15, 2015</span>
+                    <span class="date">August 15, 2016</span>
                     <h4><a href="module">Module Pattern in JavaScript</a></h4>
                     <footer>
                       <span class="share-link"><a href="/module"><i class="fa fa-share-alt"></i></a></span>
@@ -105,12 +101,12 @@
               </div> <!-- end .blog-post -->
               <div class="blog-post image-top">
                 <div class="inner">
-                  <a href="single-blog-post.html"><div class="image" style="background-image: url('images/node.jpg');"></div></a>
+                  <a href="/scopes"><div class="image" style="background-image: url('images/node.jpg');"></div></a>
                   <div class="content">
-                    <span class="date">March 13, 2015</span>
-                    <h4><a href="/single-blog-post.html">Single Threaded Architecture of Node</a></h4>
+                    <span class="date">August 13, 2016</span>
+                    <h4><a href="/scopes">Scopes in JavaScript</a></h4>
                     <footer>
-                      <span class="comments-link"><a href="single-blog-post.html">4 Comments</a></span>
+                      <span class="comments-link"><a href="single-blog-post.html"></a></span>
                       <span class="share-link"><a href="single-blog-post.html"><i class="fa fa-share-alt"></i></a></span>
                     </footer>
                   </div> <!-- end .content -->
@@ -120,10 +116,10 @@
                 <div class="inner">
                   <a href="single-blog-post.html"><div class="image" style="background-image: url('images/javascript.jpg');"></div></a>
                   <div class="content">
-                    <span class="date">March 12, 2015</span>
+                    <span class="date">August 12, 2016</span>
                     <h4><a href="/objects">Creating Objects in JavaScript</a></h4>
                     <footer>
-                      <span class="comments-link"><a href="single-blog-post.html">10 Comments</a></span>
+                      <span class="comments-link"><a href="single-blog-post.html"></a></span>
                       <span class="share-link"><a href="single-blog-post.html"><i class="fa fa-share-alt"></i></a></span>
                     </footer>
                   </div> <!-- end .content -->
@@ -133,10 +129,10 @@
                 <div class="inner">
                   <a href="single-blog-post.html"><div class="image" style="background-image: url('images/objects.jpg');"></div></a>
                   <div class="content">
-                    <span class="date">March 11, 2015</span>
+                    <span class="date">August 11, 2016</span>
                     <h4><a href="/singleton">Singleton Object in JavaScript</a></h4>
                     <footer>
-                      <span class="comments-link"><a href="single-blog-post.html">5 Comments</a></span>
+                      <span class="comments-link"><a href="single-blog-post.html"></a></span>
                       <span class="share-link"><a href="single-blog-post.html"><i class="fa fa-share-alt"></i></a></span>
                     </footer>
                   </div> <!-- end .content -->
@@ -145,10 +141,10 @@
               <div class="blog-post">
                 <div class="inner">
                   <div class="content">
-                    <span class="date">March 10, 2015</span>
+                    <span class="date">August 10, 2016</span>
                     <h4><a href="/hoisting">Function Hoisting in JavaScript</a></h4>
                     <footer>
-                      <span class="comments-link"><a href="single-blog-post.html">3 Comments</a></span>
+                      <span class="comments-link"><a href="single-blog-post.html"></a></span>
                       <span class="share-link"><a href="single-blog-post.html"><i class="fa fa-share-alt"></i></a></span>
                     </footer>
                   </div> <!-- end .content -->
@@ -158,10 +154,10 @@
                 <div class="inner">
                   <a href="/prototype"><div class="image" style="background-image: url('images/es6.jpg');"></div></a>
                   <div class="content">
-                    <span class="date">March 9, 2015</span>
+                    <span class="date">August 9, 2016</span>
                     <h4><a href="/prototype">JavaScript Prototype Pattern</a></h4>
                     <footer>
-                      <span class="comments-link"><a href="single-blog-post.html">6 Comments</a></span>
+                      <span class="comments-link"><a href="single-blog-post.html"></a></span>
                       <span class="share-link"><a href="single-blog-post.html"><i class="fa fa-share-alt"></i></a></span>
                     </footer>
                   </div> <!-- end .content -->

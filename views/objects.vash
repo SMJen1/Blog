@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sility - Material Design Vcard & CV HTML Template</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="fonts/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.default.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/app.css">
+<script src="js/rainbow.js"></script>
+
+  </head>
+  <body>
+    <style>
+      pre {
+      margin-left: 13px;
+      min-width: 600px;
+      margin-top: 20px;
+      margin-bottom: 40px;
+      max-width: 1000px;
+      color: #0f0c01;
+      }
+    </style>
+    <!-- Search -->
+    <div class="search-overlay"></div>
+    <div class="search">
+      <a href="" class="search-close"><i class="md md-close"></i></a>
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <h4>Just Start Typing Text and Press Enter</h4>
+          <form class="search-form">
+            <input type="text" id="search" name="search" class="text-center" />
+          </form>
+          <!-- end .search-form -->
+        </div>
+        <!-- end .col-sm-6 -->
+      </div>
+      <!-- end .row -->
+    </div>
+    <!-- end .row -->
+    <!-- Slide Out -->
+    <div class="slide-out-overlay"></div>
+    <div class="slide-out">
+      <header class="slide-out-header clearfix">
+        <div class="clearfix">
+          <a href="" class="slide-out-close pull-left"><i class="md md-close"></i></a>
+          <a href="" class="open-search pull-right"><i class="md md-search"></i></a>
+          <a href="" class="slide-out-share pull-right"><i class="md md-more-vert"></i></a>
+        </div>
+        <!-- end .clearfix -->
+        <!-- Popup -->
+        <div class="slide-out-popup">
+          <nav class="social-nav">
+            <ul class="list-unstyled">
+              <li><a href="">Facebook</a></li>
+              <li><a href="">Twitter</a></li>
+              <li><a href="">Linkedin</a></li>
+              <li><a href="">Google+</a></li>
+              <li><a href="">Behance</a></li>
+            </ul>
+            <!-- end .list-unstyled -->
+          </nav>
+          <!-- end .social-nav -->
+        </div>
+        <!-- end .slide-out-popup -->
+        <div class="image"><img src="images/head01.png" alt="alt text" class="img-responsive"></div>
+        <div class="content">
+          <h5>Benjamin Thomson</h5>
+          <span>Web & UX Designer</span>
+        </div>
+        <!-- end .content -->
+        <div class="text-right">
+          <a href="" class="button link-button white icon-left"><i class="md md-file-download"></i>Download Resume</a>
+        </div>
+        <!-- end .text-right -->
+      </header>
+      <!-- end .slide-out-header -->
+      <div class="slide-out-widgets">
+        <div class="slide-out-widget">
+          <h4>Drink A Coffee With Me Today</h4>
+          <form action="scripts/contact.php" method="post" class="form-horizontal contact-form">
+            <div class="form-group">
+              <label class="col-sm-3 control-label">Name</label>
+              <div class="col-sm-9">
+                <input type="text" class="contact-name" name="contact-name" />
+              </div>
+              <!-- end .col-sm-9 -->
+            </div>
+            <!-- end .form-group -->
+            <div class="form-group">
+              <label class="col-sm-3 control-label">Email</label>
+              <div class="col-sm-9">
+                <input type="email" class="contact-email" name="contact-email" />
+              </div>
+              <!-- end .col-sm-9 -->
+            </div>
+            <!-- end .form-group -->
+            <div class="form-group">
+              <label class="col-sm-3 control-label">Message</label>
+              <div class="col-sm-9">
+                <textarea name="contact-message" class="contact-message" rows="3"></textarea>
+              </div>
+              <!-- end .col-sm-9 -->
+            </div>
+            <!-- end .form-group -->
+            <div class="form-group">
+              <div class="col-sm-9 col-sm-offset-3">
+                <button type="submit" class="button solid-button purple">Send Message</button>
+              </div>
+              <!-- end .col-sm-9 -->
+            </div>
+            <!-- end .form-group -->
+            <div class="contact-loading alert alert-info form-alert">
+              <span class="message">Loading...</span>
+              <button type="button" class="close" data-hide="alert" aria-label="Close"><i class="fa fa-times"></i></button>
+            </div>
+            <div class="contact-success alert alert-success form-alert">
+              <span class="message">Success!</span>
+              <button type="button" class="close" data-hide="alert" aria-label="Close"><i class="fa fa-times"></i></button>
+            </div>
+            <div class="contact-error alert alert-danger form-alert">
+              <span class="message">Error!</span>
+              <button type="button" class="close" data-hide="alert" aria-label="Close"><i class="fa fa-times"></i></button>
+            </div>
+          </form>
+          <!-- end contact-form -->
+        </div>
+        <!-- end .slide-out-widget -->
+        <div class="slide-out-widget">
+          <h4>Follow On Instagram</h4>
+          <div class="instagram">
+            <a href=""><img src="images/instagram01.jpg" alt="alt text" class="img-responsive"></a>
+            <a href=""><img src="images/instagram02.jpg" alt="alt text" class="img-responsive"></a>
+            <a href=""><img src="images/instagram03.jpg" alt="alt text" class="img-responsive"></a>
+            <a href=""><img src="images/instagram04.jpg" alt="alt text" class="img-responsive"></a>
+            <a href=""><img src="images/instagram05.jpg" alt="alt text" class="img-responsive"></a>
+            <a href=""><img src="images/instagram06.jpg" alt="alt text" class="img-responsive"></a>
+          </div>
+          <!-- end .instagram -->
+        </div>
+        <!-- end .slide-out-widget -->
+      </div>
+      <!-- end .slide-out-widgets -->
+    </div>
+    <!-- end .slide-out -->
+    <!-- Header -->
+    <header class="header">
+      <div class="top clearfix">
+        <a href="#section8" class="available"><i class="ion-ios-email-outline"></i><span>Available For Freelance</span></a>
+        <div class="right-icons">
+          <a href="" class="open-search header-open-search"><i class="md md-search"></i></a>
+          <a href="" class="download"><i class="md md-file-download"></i></a>
+          <a href="" class="share"><i class="md md-more-vert"></i></a>
+        </div>
+        <!-- end .right-icons -->
+        <!-- Popup -->
+        <div class="popup">
+          <nav class="social-nav">
+            <ul class="list-unstyled">
+              <li><a href="">Facebook</a></li>
+              <li><a href="">Twitter</a></li>
+              <li><a href="">Linkedin</a></li>
+              <li><a href="">Google+</a></li>
+              <li><a href="">Behance</a></li>
+            </ul>
+            <!-- end .list-unstyled -->
+          </nav>
+          <!-- end .social-nav -->
+        </div>
+        <!-- end .popup -->
+      </div>
+      <!-- end .top -->
+      <div class="bottom clearfix">
+        <div class="title"><a href="index.html">Sility</a></div>
+        <div class="header-action-button-wrapper">
+          <a href="" class="header-action-button action-button"><i class="md md-add"></i></a>
+        </div>
+        <!-- end .header-action-button-wrapper -->
+        <a href="" class="responsive-menu-open">Menu <i class="fa fa-bars"></i></a>
+        <nav class="main-nav">
+          <ul class="list-unstyled">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+          </ul>
+        </nav>
+        <!-- end .main-nav -->
+      </div>
+      <!-- end .bottom -->
+    </header>
+    <!-- end .header -->
+    <div class="responsive-menu">
+      <a href="" class="responsive-menu-close">Close <i class="ion-android-close"></i></a>
+      <nav class="responsive-nav"></nav>
+      <!-- end .responsive-nav -->
+    </div>
+    <!-- end .responsive-menu -->
+    <!-- Sections -->
+    <div class="sections">
+      <div class="sections-wrapper clearfix">
+        <!--Single Blog Post -->
+        <section>
+          <div class="container">
+            <div class="single-blog-post">
+              <header class="blog-header clearfix">
+                <div class="content">
+                  <span class="date">March 11, 2015</span>
+                  <h4 style="font-size: 12px">Immediately Invokable Function Expression</h4>
+                  <div class="footer">
+                    <p class="button-row blog-button-row"><a href="" class="button solid-button dark">Prev</a><a href="" class="button solid-button purple">Next</a></p>
+                  </div>
+                </div>
+                <!-- end .content -->
+                <div class="image" style="background-image: url('images/javascript-logo-large.jpg');"></div>
+              </header>
+              <!-- end .blog-header -->
+              <div class="blog-post">
+                <div class="blog-post-content">
+                  <h1><strong>JavaScript Objects</strong></h1>
+                  <p>In the following article, we shall be covering different methods to create Objects in JavaScript</p>
+                  <p>The article shall cover the Following topics:</p>
+                  <p>1. Object creation using <strong>Object Literal</strong></p>
+                  <p>2. Creating Objects using <strong>&quot;New Object&quot;</strong></p>
+                  <p>3. Using <strong>&quot;Constructor Function&quot; </strong>to create Objects</p>
+                  <p>&nbsp;</p>
+                  <p>We shall also discuss in details about the difference in each method.</p>
+                  <p>&nbsp;</p>
+                  <h2><strong>Object Literal</strong></h2>
+                  <p>Object Literal is the simplest form of creating Objects in JavaScript.&nbsp;</p>
+                  <p>Object Literal is a set of comma seperated values enclosed inside &quot;{&nbsp;}&quot;</p>
+                  <p>It do not require &quot;new&quot; keyword to be initialised.</p>
+                  <p>Lets see a small example:</p>
+                  <pre>
+var Employee = {
+
+  name: &#39;Mayank&#39;,
+
+  age: &#39;28,
+
+  designation: &#39;Engineer&#39;
+
+}</pre>
+                  <p>&nbsp;</p>
+                  <p>This is a simple Employee Object.</p>
+                  <p>We can access the properties of this Object in the following way:</p>
+                  <pre>
+1. Employee.name
+
+2. Employee[&#39;age&#39;]</pre>
+                  <p>&nbsp;</p>
+                  <p>Adding Properties to Object Literals:</p>
+                  <p>We can add further properties to the Object Literal Notation.</p>
+                  <pre>
+Employee.salary = &quot;1LPA&quot;;
+
+Employee.Address = &quot;Rohini&quot;;
+</pre>
+                  <p>&nbsp;</p>
+                  <p>We can add funtions to the Object Literals</p>
+                  <pre>
+var Employee = {
+
+  name: &#39;Mayank&#39;,
+
+  age: &#39;28,
+
+  designation: &#39;Engineer&#39;,
+
+  showDetails: function() {
+
+    // Some Code
+
+  }
+
+}</pre>
+                  <p>&nbsp;</p>
+                  <p>Also we can add function later once the Object Literal is defined.</p>
+                  <pre>
+Employee.getDetails = function() {
+
+  // Some Code
+
+}</pre>
+                  <p>&nbsp;</p>
+                  <p>Advantages of Object Literal:</p>
+                  <p>1.&nbsp;No need to invoke constructors directly</p>
+                  <p>2. No need to pass Arguments to the constructor function</p>
+                  <p>3. It creates a singleton Object</p>
+                  <p>4. It executes the fastest to create an Object</p>
+                  <p>&nbsp;</p>
+                  <h2><strong>Creating Objects using &quot;New Object&quot;</strong></h2>
+                  <p>The Other way to create object are to create them using &quot;new Object&quot;</p>
+                  <p>&nbsp;</p>
+                  <p>Lets look for the simple implementation of this method:</p>
+                  <pre>
+var Employee = new Object();
+
+Employee.name = &quot;Mayank&quot;;
+
+Employee.age = 28;
+
+Employee.showDetails = function() {
+
+  // Some Code
+
+}</pre>
+                  <p>&nbsp;</p>
+                  <p>The above method using &Ouml;bject Literal&quot;and this behaves in the similar manner.</p>
+                  <p>The outcome of both the methods are same.</p>
+                  <p>Object Literal is comparitively easier method to create an Object.</p>
+                  <p>&nbsp;</p>
+                  <p>Every Object is derived from &quot;&Ouml;bject&quot; in JavaScript.</p>
+                  <pre>
+var Employee = new Object();
+
+typeof Employee;    output: &quot;object&quot;</pre>
+                  <p>&nbsp;</p>
+                  <p>Similarly even Object literals would create a type of &quot;Object&quot;</p>
+                  <pre>
+var Employee = { };
+
+typeof Employee;    // output: &quot;object&quot;</pre>
+                  <p>&nbsp;</p>
+                  <p>Both the implementation shall result in the variable of type Object</p>
+                  <p>&nbsp;</p>
+                  <h4>Difference b/w <strong>Object Literal</strong> and <strong>&quot;new Object&quot;</strong></h4>
+                  <p>Since both of them results in the type &quot;Object&quot;, the difference lies in the performance</p>
+                  <p>Creating Object using Object Literals is the fastest way to create Object.</p>
+                  <p>&nbsp;</p>
+                  <p>Lets look what happens when a function executes:</p>
+                  <p>1. Each function executes under its own context</p>
+                  <p>2. A new Context is created every time when a function is executed</p>
+                  <p>3. Each context is created over the Context where it is already Executing.</p>
+                  <p>4. This new Context is stacked over the Existing Context.</p>
+                  <p>5. The main context is at the Allication Level, known as <strong>Global Context</strong></p>
+                  <p>6. It consumes some time in order to create the new Context for the Function.</p>
+                  <p>&nbsp;</p>
+                  <p>Now lets evaluate the difference between them considering the above steps</p>
+                  <p>1. When an Object is created using &quot;new Object&quot;, a new function is executing</p>
+                  <p>2. This new function shall create a Context for its Execution</p>
+                  <p>3. The function shall now execute under its own context.</p>
+                  <p>4. Creating and Executing under the context requires more time.</p>
+                  <p>&nbsp;</p>
+                  <p>Considering the overhead required to create an object using &quot;new Object&quot;.</p>
+                  <p>Object Literal shall execute faster in order to creat an Objecct.</p>
+                  <p>&nbsp;</p>
+                  <h2><strong>Using &quot;Constructor Function&quot;</strong></h2>
+                  <p>Constructor function is an efficient way to Create Objects in the following casses:</p>
+                  <p>1. Create a building block from which other Object can be created</p>
+                  <p>2. Design a basic architecture to create more Objects</p>
+                  <p>&nbsp;</p>
+                  <h3><strong>What is a Constructor Function</strong></h3>
+                  <h5>Lets create Object using constructor function</h5>
+                  <pre id="pre322316">
+function Employee (name, age, designation) {
+
+  this.Name = name;
+
+  this.Age = age;
+
+  this.Designation = designation;
+
+}</pre>
+                  <p>&nbsp;</p>
+                  <p>This is a simple Implementation of the Consructor Function.&nbsp;</p>
+                  <p>Constructor function act as a building block to store the detail of any Employee.</p>
+                  <p>All the variables added to &quot;this&quot; keywod shall act as a public member to the created Object.</p>
+                  <p>&nbsp;</p>
+                  <p>For those who belong to language like Java and C#, a constructor function shall resembel to a &quot;Class&quot;.</p>
+                  <p>We can create Objects from Constructor function just as we create Objects from Classes.</p>
+                  <p>&nbsp;</p>
+                  <h5><strong>We can even add properties to the constructor function:</strong></h5>
+                  <pre id="pre734858">
+function Employee (name, age, designation) {
+
+  this.Name = name;
+
+  this.Age = age;
+
+  this.Designation = designation;
+
+  this.showDetails = function() [
+
+    console.log(&quot;Age: &quot; + this.Age + &quot; Name: &quot; + this.Name);
+
+  }
+
+}</pre>
+                  <p>The added function will be available to each of the Object created.&nbsp;</p>
+                  <p>&nbsp;</p>
+                  <h3><strong>Creating Object from Constructor Function</strong></h3>
+                  <p>&nbsp;</p>
+                  <p>Lets create a Object from a Constructor Function.</p>
+                  <pre id="pre381661">
+var newEmployee = new Employee(&quot;Mayank&quot;, 28, &quot;Senior Software Developer&quot;); </pre>
+                  <p>We can create multiple instances of Employee using this &quot;new&quot; keyword.</p>
+                  <p>&nbsp;</p>
+                  <h5><strong>Lets evaluate what is getting done in the above code:</strong></h5>
+                  <p>1. We are creating a &quot;New Object&quot; using Constructor Function</p>
+                  <p>2. It uses a keyword &quot;new&quot; to implement a new Object</p>
+                  <p>3. We pass parameters to the constructor function.</p>
+                  <p>4. These parameter values are getting assigned to the Object&#39;s Properties</p>
+                  <p>&nbsp;</p>
+                  <h5><strong>We can now access the properties of the New Object in the following manner</strong></h5>
+                  <pre>
+1. newEmployee.Name
+
+2. newEmployee[&#39;Age&#39;]</pre>
+                  <p>&nbsp;</p>
+                  <h5><strong>Lets see what &quot;New Keyword&quot; does while creating a new Object.</strong></h5>
+                  <p>1. Create a new scope in the memory</p>
+                  <p>2. Bind variables to the new scope</p>
+                  <p>3. Refer to the newly created scope by &quot;this&quot;</p>
+                  <p>4. Return &quot;this&quot; Object from the constructor function.</p>
+                  <p>&nbsp;</p>
+                  <h3><strong>Difference b/w Constructor function and other Implementations</strong></h3>
+                  <p>&nbsp;</p>
+                  <p>Constructor Function Implementation provides you the following benefits:</p>
+                  <p>1. Object created is not Singleton</p>
+                  <p>2. Constructor function can be used to create any number of Objects</p>
+                  <p>3. Contains Prototype Property which helps us to add shared functionalities.</p>
+                  <p>4. Although creating Object using Constructor Function is slowest method.</p>
+                  <p>&nbsp;</p>
+                  <h2><strong>Conclusion:</strong></h2>
+                  <p>Any of the method can be used to create an Onject.</p>
+                  <p>It all depends on the Requirement of the Project</p>
+                </div>
+                <!-- end .blog-post-content -->
+                <div class="blog-post-comments">
+                  <h4>7 Comments</h4>
+                  <div class="comment">
+                    <div class="inner clearfix">
+                      <div class="image"><img src="images/comment01.jpg" alt="alt text" class="img-responsive"></div>
+                      <div class="content">
+                        <h5>Stone Gold</h5>
+                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placey eat facere possimus, omnis voluptas assumenda est.</p>
+                        <span class="meta">25 March 2015 - 9.00AM</span>
+                        <a href="" class="reply">Reply<i class="fa fa-reply"></i></a>
+                      </div>
+                      <!-- end .content -->
+                    </div>
+                    <!-- end .inner -->
+                    <div class="comment">
+                      <div class="inner clearfix">
+                        <div class="image"><img src="images/comment02.jpg" alt="alt text" class="img-responsive"></div>
+                        <div class="content">
+                          <h5>Anna Salina</h5>
+                          <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placey eat facere possimus, omnis voluptas assumenda est.</p>
+                          <span class="meta">25 March 2015 - 9.00AM</span>
+                          <a href="" class="reply">Reply<i class="fa fa-reply"></i></a>
+                        </div>
+                        <!-- end .content -->
+                      </div>
+                      <!-- end .inner -->
+                    </div>
+                    <!-- end .comment -->
+                  </div>
+                  <!-- end .comment -->
+                  <div class="comment">
+                    <div class="inner clearfix">
+                      <div class="image"><img src="images/comment03.jpg" alt="alt text" class="img-responsive"></div>
+                      <div class="content">
+                        <h5>Tom Cruis</h5>
+                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placey eat facere possimus, omnis voluptas assumenda est.</p>
+                        <span class="meta">25 March 2015 - 9.00AM</span>
+                        <a href="" class="reply">Reply<i class="fa fa-reply"></i></a>
+                      </div>
+                      <!-- end .content -->
+                    </div>
+                    <!-- end .inner -->
+                  </div>
+                  <!-- end .comment -->
+                </div>
+                <!-- end .blog-post-comments -->
+                <div class="leave-comment">
+                  <h4>Leave A Comment</h4>
+                  <div class="inner">
+                    <form action="single-blog-post.html" method="post" class="form-horizontal">
+                      <div class="form-group">
+                        <label class="col-sm-2 control-label">Name</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="contact-name" name="contact-name" />
+                        </div>
+                        <!-- end .col-sm-10 -->
+                      </div>
+                      <!-- end .form-group -->
+                      <div class="form-group">
+                        <label class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                          <input type="email" class="contact-email" name="contact-email" />
+                        </div>
+                        <!-- end .col-sm-10 -->
+                      </div>
+                      <!-- end .form-group -->
+                      <div class="form-group">
+                        <label class="col-sm-2 control-label">Message</label>
+                        <div class="col-sm-10">
+                          <textarea name="contact-message" class="contact-message" rows="3"></textarea>
+                        </div>
+                        <!-- end .col-sm-10 -->
+                      </div>
+                      <!-- end .form-group -->
+                      <div class="form-group">
+                        <div class="col-sm-10 col-sm-offset-2">
+                          <button type="submit" class="button solid-button purple">Send Message</button>
+                        </div>
+                        <!-- end .col-sm-10 -->
+                      </div>
+                      <!-- end .form-group -->
+                    </form>
+                  </div>
+                  <!-- end .inner -->
+                </div>
+                <!-- end .leave-comment -->
+              </div>
+              <!-- end .blog-post -->
+              <div class="blog-details">
+                <div class="section">
+                  <h5>Author Details</h5>
+                  <div class="author">
+                    <div class="image"><img src="images/mayank.jpg" alt="alt text" class="img-responsive"></div>
+                    <span class="title">Mayank Gupta</span>
+                    <p>voluptatem accusantium doloremque laudanto tam rem aperiam, eaque ipsa quae. ab illo inventore veritatis et quasi architecto.</p>
+                  </div>
+                </div>
+                <!-- end .section -->
+                <div class="section">
+                  <h5>Share Post</h5>
+                  <div class="social-icons">
+                    <a href="" class="social-icon"><i class="fa fa-facebook"></i></a>
+                    <a href="" class="social-icon"><i class="fa fa-twitter"></i></a>
+                    <a href="" class="social-icon"><i class="fa fa-google-plus"></i></a>
+                    <a href="" class="social-icon"><i class="fa fa-behance"></i></a>
+                    <a href="" class="social-icon"><i class="fa fa-dribbble"></i></a>
+                  </div>
+                  <!-- end .social-icons -->
+                </div>
+                <!-- end .section -->
+                <div class="section">
+                  <h5>Tags</h5>
+                  <div class="tags"><a href="">Music</a><span>|</span><a href="">Mobile</a><span>|</span><a href="">Tablet</a><span>|</span><a href="">Live</a></div>
+                </div>
+                <!-- end .section -->
+              </div>
+              <!-- end .blog-details -->
+            </div>
+            <!-- end .single-blog-post -->
+          </div>
+          <!-- end .container -->
+        </section>
+      </div>
+      <!-- end .sections-wrapper -->
+    </div>
+    <!-- end .sections -->
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <h4>Address</h4>
+              <p>A-8, Milansar Appartment, Rohini<br />Delhi, India</p>
+            </div>
+            <!-- end .col-sm-4 -->
+            <div class="col-sm-4">
+              <h4>Connect</h4>
+              <div class="social-icons">
+                <a href="" class="social-icon"><i class="fa fa-facebook"></i></a>
+                <a href="" class="social-icon"><i class="fa fa-twitter"></i></a>
+                <a href="" class="social-icon"><i class="fa fa-google-plus"></i></a>
+                <a href="" class="social-icon"><i class="fa fa-behance"></i></a>
+                <a href="" class="social-icon"><i class="fa fa-dribbble"></i></a>
+              </div>
+              <!-- end .social-icons -->
+            </div>
+            <!-- end .col-sm-4 -->
+            <div class="col-sm-4">
+              <h4>Contact</h4>
+              <p>Tel: +91 9711083089<br />Mail: mayankgupta688@gmail.com</p>
+            </div>
+            <!-- end .col-sm-4 -->
+          </div>
+          <!-- end .row -->
+        </div>
+        <!-- end .container -->
+      </div>
+      <!-- end .footer -->
+      <div class="bottom">Copyright &copy; Sility. All Rights Reserved.</div>
+      <!-- end .bottom -->
+    </footer>
+    <!-- end .footer -->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/jquery.knob.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/rainbow.js"></script>
+    <script defer src="js/analytics.js"></script>
+  </body>
+</html>
