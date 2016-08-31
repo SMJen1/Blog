@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow">
     <title>Learn JavaScript Concepts</title>
-    <meta name="description" content="Learn JavaScript Basic Concepts like Patterns, Scopes and Other Related Terminologies." />
+    <meta name="description" content="Understanding Basic JavaScript Concepts" />
     <meta name="keywords" content="Prototype, Learn JavaScript, JavaScript Basics, JavaScript, Patterns in JavaScript, Closures, Singleton, IIFE, Closures, Functions in JavaScript, Functions, Classes, Abstraction in JavaScript, Mayank Gupta, JavaScript Patterns, Patterns, Module Pattern, Prototype Pattern"/>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css" rel="stylesheet">
