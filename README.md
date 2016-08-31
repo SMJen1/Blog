@@ -3,7 +3,7 @@ Basic Node Framework
 
 This project shall serve you as a starting point for MEAN application.
 
-User shall continue building his architecture on the initial framework already created. 
+User shall continue building his architecture on the initial framework already created.
 
 Application contains the basic framework to Integarete Following features in the Node Project
 

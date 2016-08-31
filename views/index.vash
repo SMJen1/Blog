@@ -48,8 +48,8 @@
         <a href="" class="responsive-menu-open">Menu <i class="fa fa-bars"></i></a>
         <nav class="main-nav">
           <ul class="list-unstyled">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="about">About</a></li>
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
           </ul>
         </nav> <!-- end .main-nav -->
       </div> <!-- end .bottom -->
@@ -98,7 +98,6 @@
                     <span class="date">March 15, 2015</span>
                     <h4><a href="module">Module Pattern in JavaScript</a></h4>
                     <footer>
-                      <span class="comments-link"><a href="single-blog-post.html">7 Comments</a></span>
                       <span class="share-link"><a href="/module"><i class="fa fa-share-alt"></i></a></span>
                     </footer>
                   </div> <!-- end .content -->

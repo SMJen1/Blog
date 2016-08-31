@@ -147,8 +147,8 @@
 				<a href="" class="responsive-menu-open">Menu <i class="fa fa-bars"></i></a>
 				<nav class="main-nav">
 					<ul class="list-unstyled">
-						<li><a href="index.html#section1">Home</a></li>
-						<li><a href="about.html">About</a></li>
+						<li class="active"><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
 					</ul>
 				</nav> <!-- end .main-nav -->
 			</div> <!-- end .bottom -->
@@ -170,7 +170,6 @@
 								<div class="content">
 									<span class="date">March 11, 2015</span>
 									<h4 style="font-size: 12px">Immediately Invokable Function Expression</h4>
-									<span class="meta"><a href="">7 Comments</a> | <a href="">By Admin</a></span>
 									<div class="footer">
 										<p class="button-row blog-button-row"><a href="" class="button solid-button dark">Prev</a><a href="" class="button solid-button purple">Next</a></p>
 									</div>
