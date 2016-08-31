@@ -4,7 +4,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sility - Material Design Vcard & CV HTML Template</title>
+  <meta name="robots" content="index, follow">
+  <title>Prototype Patterns in JavaScript</title>
+  <meta name="description" content="Understanding IIFE concept in JavaScript" />
+  <meta name="keywords" content="Prototype Pattern, Pattern in JavaScript, Prototype in JavaScript, JavaScript Pattern, Prototype, Creating Object, Objects in JavaScript, What is Prototype Pattern, www.dofactory.com/javascript/prototype-design-pattern"/>
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css" rel="stylesheet">
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">

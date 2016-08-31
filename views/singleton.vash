@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sility - Material Design Vcard & CV HTML Template</title>
+    <meta name="robots" content="index, follow">
+    <title>Understanding Singleton Patterns in JavaScript</title>
+    <meta name="description" content="Understand Singleton Pattern in JavaScipts" />
+    <meta name="keywords" content="Singleton Pattern, Patterns in JavaScript, Singleton, What is Singleton, Singleton Pattern JavaScipt, What is singleton Patterns, tutorialspoint.com/design_pattern/singleton_pattern.htm"/>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css" rel="stylesheet">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">

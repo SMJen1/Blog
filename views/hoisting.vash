@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sility - Material Design Vcard & CV HTML Template</title>
+    <meta name="robots" content="index, follow">
+    <title>Variable and Function Hoisting</title>
+    <meta name="description" content="Learn concept of Variable and Function Hoisting in Details" />
+    <meta name="keywords" content="Hoisting, Function Hoisting, Variable Hoisting, Hoisting in JavaScript, JavaScript Hoisting, Hoisting Concepts, Variable Declaration, variable Definition, Function Expressions, Function Declaration, Expression in JavaScript, Expressions, Function Expression"/>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css" rel="stylesheet">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">

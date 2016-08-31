@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sility - Material Design Vcard & CV HTML Template</title>
+    <meta name="robots" content="index, follow">
+    <title>Creating Objects in JavaScript</title>
+    <meta name="description" content="Creating Objects in JavaScript" />
+    <meta name="keywords" content="Patterns, Object Literals, creating new Object, Constructor Function, Object Creation, Objects in JavaScript, JavaScript Objects, Creating Objects in JavaScript, Object in JavaScipt, new Object in JavaScript, constructor function in JavaScript, Constructor Method in JavaScript, developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript" />
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css" rel="stylesheet">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
