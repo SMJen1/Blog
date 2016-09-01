@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sility - Material Design Vcard & CV HTML Template</title>
+    <meta name="robots" content="index, follow">
+    <title>Variable and Function Hoisting</title>
+    <meta name="description" content="Learn concept of Variable and Function Hoisting in Details" />
+    <meta name="keywords" content="Hoisting, Function Hoisting, Variable Hoisting, Hoisting in JavaScript, JavaScript Hoisting, Hoisting Concepts, Variable Declaration, variable Definition, Function Expressions, Function Declaration, Expression in JavaScript, Expressions, Function Expression"/>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css" rel="stylesheet">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
@@ -168,7 +171,7 @@
       </div>
       <!-- end .top -->
       <div class="bottom clearfix">
-        <div class="title"><a href="index.html">Sility</a></div>
+        <div class="title"><a href="/">Mayank</a></div>
         <div class="header-action-button-wrapper">
           <a href="" class="header-action-button action-button"><i class="md md-add"></i></a>
         </div>
@@ -512,34 +515,7 @@ demoFunction = function(){
                 <p>&nbsp;</p>
               </div>
               <!-- end .blog-post -->
-              <div class="blog-details">
-                <div class="section">
-                  <h5>Author Details</h5>
-                  <div class="author">
-                    <div class="image"><img src="images/mayank.jpg" alt="alt text" class="img-responsive"></div>
-                    <span class="title">Mayank Gupta</span>
-                    <p>voluptatem accusantium doloremque laudanto tam rem aperiam, eaque ipsa quae. ab illo inventore veritatis et quasi architecto.</p>
-                  </div>
-                </div>
-                <!-- end .section -->
-                <div class="section">
-                  <h5>Share Post</h5>
-                  <div class="social-icons">
-                    <a href="" class="social-icon"><i class="fa fa-facebook"></i></a>
-                    <a href="" class="social-icon"><i class="fa fa-twitter"></i></a>
-                    <a href="" class="social-icon"><i class="fa fa-google-plus"></i></a>
-                    <a href="" class="social-icon"><i class="fa fa-behance"></i></a>
-                    <a href="" class="social-icon"><i class="fa fa-dribbble"></i></a>
-                  </div>
-                  <!-- end .social-icons -->
-                </div>
-                <!-- end .section -->
-                <div class="section">
-                  <h5>Tags</h5>
-                  <div class="tags"><a href="">Music</a><span>|</span><a href="">Mobile</a><span>|</span><a href="">Tablet</a><span>|</span><a href="">Live</a></div>
-                </div>
-                <!-- end .section -->
-              </div>
+
               <!-- end .blog-details -->
             </div>
             <!-- end .single-blog-post -->
