@@ -1,4 +1,5 @@
-
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -84,7 +85,7 @@
     <div class="sections">
       <div class="sections-wrapper clearfix">
 
-       
+
         <section>
           <div class="container">
             <h2>Blog Post</h2>
@@ -186,7 +187,7 @@
 
       </div> <!-- end .sections-wrapper -->
     </div> <!-- end .sections -->
-    
+
     <footer class="footer">
       <div class="top">
         <div class="container">
