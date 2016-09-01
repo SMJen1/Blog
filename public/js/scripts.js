@@ -239,6 +239,7 @@
 		$('.available').on('click', function() {
 			slide('mainNav', $(this));
 		});
+		$('a.forward, .section-nav a.backward, .main-nav a, .responsive-nav a, .available').smoothScroll();
 
 		/*==========  Testimonial Slider  ==========*/
 		$('.testimonial-slider').owlCarousel({

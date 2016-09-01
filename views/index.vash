@@ -16,7 +16,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
     <script src="js/jquery-1.11.2.min.js"></script>
-    <script defer src="js/scripts.js"></script>
+    <script defer src="js/scriptRefined.js"></script>
 
     <style>
     .fa-share-alt {
