@@ -1,40 +1,51 @@
 (function(routeConroller) {
 
+  routeConroller.count = 0;
+
 	routeConroller.init = function(app) {
 		app.get('/', function(req, res) {
-		  res.render('index', {});
+      routeConroller.count++;
+		  res.render('index', {'count': routeConroller.count});
 		})
 
 		app.get('/about', function(req, res) {
-		  res.render('about', {});
+      routeConroller.count++;
+		  res.render('about', { 'count': routeConroller.count });
 		})
 
     app.get('/iife', function(req, res) {
-      res.render('iife', {});
+      routeConroller.count++;
+      res.render('iife', { 'count': routeConroller.count });
     })
 
     app.get('/module', function(req, res) {
-      res.render('module', {});
+      routeConroller.count++;
+      res.render('module', { 'count': routeConroller.count });
     })
 
     app.get('/singleton', function(req, res) {
-      res.render('singleton', {});
+      routeConroller.count++;
+      res.render('singleton', { 'count': routeConroller.count });
     })
 
     app.get('/hoisting', function(req, res) {
-      res.render('hoisting', {});
+      routeConroller.count++;
+      res.render('hoisting', { 'count': routeConroller.count });
     })
 
     app.get('/prototype', function(req, res) {
-      res.render('prototype', {});
+      routeConroller.count++;
+      res.render('prototype', { 'count': routeConroller.count });
     })
 
     app.get('/scopes', function(req, res) {
-      res.render('scopes', {});
+      routeConroller.count++;
+      res.render('scopes', { 'count': routeConroller.count });
     })
 
     app.get('/objects', function(req, res) {
-      res.render('objects', {});
+      routeConroller.count++;
+      res.render('objects', { 'count': routeConroller.count });
     })
 
 	};
