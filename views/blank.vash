@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+   <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sility - Material Design Vcard & CV HTML Template</title>
+    <meta name="robots" content="index, follow">
+    <title>Learn JavaScript Concepts</title>
+    <meta name="description" content="Understanding Basic JavaScript Concepts" />
+    <meta name="keywords" content="Prototype, Learn JavaScript, JavaScript Basics, JavaScript, Patterns in JavaScript, Closures, Singleton, IIFE, Closures, Functions in JavaScript, Functions, Classes, Abstraction in JavaScript, Mayank Gupta, JavaScript Patterns, Patterns, Module Pattern, Prototype Pattern"/>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css" rel="stylesheet">
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="fonts/ionicons/css/ionicons.min.css" rel="stylesheet">
     <link href="css/owl.carousel.css" rel="stylesheet">
     <link href="css/owl.theme.default.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/app.css">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script defer src="js/scripts.js"></script>
   </head>
   <body>
     <style>

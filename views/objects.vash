@@ -8,16 +8,17 @@
     <title>Creating Objects in JavaScript</title>
     <meta name="description" content="Creating Objects in JavaScript" />
     <meta name="keywords" content="Patterns, Object Literals, creating new Object, Constructor Function, Object Creation, Objects in JavaScript, JavaScript Objects, Creating Objects in JavaScript, Object in JavaScipt, new Object in JavaScript, constructor function in JavaScript, Constructor Method in JavaScript, developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript" />
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css" rel="stylesheet">
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+ <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="fonts/ionicons/css/ionicons.min.css" rel="stylesheet">
     <link href="css/owl.carousel.css" rel="stylesheet">
     <link href="css/owl.theme.default.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/app.css">
-<script src="js/rainbow.js"></script>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script defer src="js/scripts.js"></script>
+    <script src="js/rainbow.js"></script>
 
   </head>
   <body>
@@ -579,9 +580,6 @@ var newEmployee = new Employee(&quot;Mayank&quot;, 28, &quot;Senior Software Dev
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
-    
-    <script src="js/scripts.js"></script>
-    <script src="js/rainbow.js"></script>
     <script defer src="js/analytics.js"></script>
   </body>
 </html>
