@@ -20,7 +20,6 @@
     <link href="css/owl.carousel.css" rel="stylesheet">
     <link href="css/owl.theme.default.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/index.css">
 
@@ -686,7 +685,7 @@
   <script src="js/isotope.pkgd.min.js"></script>
   <script src="js/imagesloaded.pkgd.min.js"></script>
   
-  <script src="js/scripts.js"></script>
+  <script src="js/scriptRefined.js"></script>
   <script src="js/rainbow.js"></script>
   <script defer src="js/analytics.js"></script>
 </html>
