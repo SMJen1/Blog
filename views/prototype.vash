@@ -8,15 +8,7 @@
   <title>Prototype Patterns in JavaScript</title>
   <meta name="description" content="Understanding IIFE concept in JavaScript" />
   <meta name="keywords" content="Prototype Pattern, Pattern in JavaScript, Prototype in JavaScript, JavaScript Pattern, Prototype, Creating Object, Objects in JavaScript, What is Prototype Pattern, www.dofactory.com/javascript/prototype-design-pattern"/>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="fonts/ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/owl.theme.default.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/app.css">
-    <script src="js/jquery-1.11.2.min.js"></script>
-    <script defer src="js/scripts.js"></script>
+<link rel="stylesheet" href="css/shrink.css">
     <script src="js/rainbow.js"></script>
 
  </head>
@@ -173,7 +165,7 @@
   </div> <!-- end .responsive-menu -->
 
   <!-- Sections -->
-  <div class="sections">
+  <div class="sections content-study">
    <div class="sections-wrapper clearfix">
 
     <!--Single Blog Post -->
@@ -580,10 +572,7 @@ Employee.prototype.showDetails = function() {
       </div> <!-- end .footer -->
       <div class="bottom">Copyright &copy; Sility. All Rights Reserved.</div> <!-- end .bottom -->
     </footer> <!-- end .footer -->
-
-<script  src="js/bootstrap.min.js"></script>
-    <script  src="js/imagesloaded.pkgd.min.js"></script>
-    <script  src="js/analytics.js"></script>
+    <script async src="js/analytics.js"></script>
 
  </body>
 </html>

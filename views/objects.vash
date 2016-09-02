@@ -8,15 +8,7 @@
     <title>Creating Objects in JavaScript</title>
     <meta name="description" content="Creating Objects in JavaScript" />
     <meta name="keywords" content="Patterns, Object Literals, creating new Object, Constructor Function, Object Creation, Objects in JavaScript, JavaScript Objects, Creating Objects in JavaScript, Object in JavaScipt, new Object in JavaScript, constructor function in JavaScript, Constructor Method in JavaScript, developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript" />
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="fonts/ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/owl.theme.default.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/app.css">
-    <script src="js/jquery-1.11.2.min.js"></script>
-    <script defer src="js/scripts.js"></script>
+<link rel="stylesheet" href="css/shrink.css">
     <script src="js/rainbow.js"></script>
 
   </head>
@@ -205,7 +197,7 @@
     </div>
     <!-- end .responsive-menu -->
     <!-- Sections -->
-    <div class="sections">
+    <div class="sections content-study">
       <div class="sections-wrapper clearfix">
         <!--Single Blog Post -->
         <section>
@@ -570,9 +562,6 @@ var newEmployee = new Employee(&quot;Mayank&quot;, 28, &quot;Senior Software Dev
       <div class="bottom">Copyright &copy; Sility. All Rights Reserved.</div>
       <!-- end .bottom -->
     </footer>
-    <!-- end .footer -->
-<script  src="js/bootstrap.min.js"></script>
-    <script  src="js/imagesloaded.pkgd.min.js"></script>
-    <script  src="js/analytics.js"></script>
+    <script async src="js/analytics.js"></script>
   </body>
 </html>

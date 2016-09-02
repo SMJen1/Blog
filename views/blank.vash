@@ -403,7 +403,7 @@
     <script src="js/smoothscroll.js"></script>
     <script src="js/jquery.knob.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
+    <script async src="js/isotope.pkgd.min.js"></script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
     
     <script src="js/scripts.js"></script>

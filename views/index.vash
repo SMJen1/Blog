@@ -8,15 +8,9 @@
     <title>Learn JavaScript Concepts</title>
     <meta name="description" content="Understanding Basic JavaScript Concepts" />
     <meta name="keywords" content="Prototype, Learn JavaScript, JavaScript Basics, JavaScript, Patterns in JavaScript, Closures, Singleton, IIFE, Closures, Functions in JavaScript, Functions, Classes, Abstraction in JavaScript, Mayank Gupta, JavaScript Patterns, Patterns, Module Pattern, Prototype Pattern"/>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="fonts/ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/owl.theme.default.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/shrink.css">
     <script src="js/jquery-1.11.2.min.js"></script>
-    <script defer src="js/scriptRefined.js"></script>
+    <script async src="js/scriptRefined.js"></script>
 
     <style>
     .fa-share-alt {
@@ -83,7 +77,7 @@
     </div> <!-- end .section-nav -->
 
     <!-- Sections -->
-    <div class="sections">
+    <div class="sections" style="margin-bottom:200px;">
       <div class="sections-wrapper clearfix">
 
 
@@ -218,9 +212,9 @@
     </footer> <!-- end .footer -->
 
     <script  src="js/bootstrap.min.js"></script>
-    <script  src="js/isotope.pkgd.min.js"></script>
-    <script  src="js/imagesloaded.pkgd.min.js"></script>
-    <script  src="js/analytics.js"></script>
+    <script async src="js/isotope.pkgd.min.js"></script>
+    <script asyc src="js/imagesloaded.pkgd.min.js"></script>
+    <script async src="js/analytics.js"></script>
 
   </body>
 </html>
