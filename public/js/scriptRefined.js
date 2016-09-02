@@ -1,8 +1,7 @@
 (function ($) {
 	"use strict";
 
-	// Page Loaded...
-	$(document).ready(function () {
+
 
 		/*==========  Tooltip  ==========*/
 		$('.tool-tip').tooltip();
@@ -87,7 +86,7 @@
 		$('.available').on('click', function() {
 			slide('mainNav', $(this));
 		});
-	});
+
 	
 
 })(jQuery);

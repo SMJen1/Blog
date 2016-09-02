@@ -18,6 +18,11 @@
       res.render('iife', { 'count': routeConroller.count });
     })
 
+    app.get('/copy', function(req, res) {
+      routeConroller.count++;
+      res.render('copy', { 'count': routeConroller.count });
+    })
+
     app.get('/module', function(req, res) {
       routeConroller.count++;
       res.render('module', { 'count': routeConroller.count });
