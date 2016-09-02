@@ -1,35 +1,18 @@
-.education .item {
-  width: 33% !important;
+.expandMenu {
+  background-color: red;
+  position: fixed;
+  right: 10px;
+  border-radius: 30px;
 }
 
-
-html {
-  height: 100%;
-  box-sizing: border-box;
+md-list-item:nth-child(odd) {
+  background-color: #f3f3f3;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body {
-  position: relative;
-  margin: 0;
-  padding-bottom: 6rem;
-  min-height: 100%;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-}
-
-/**
- * Footer Styles
- */
-
-.footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background-color: #efefef;
-  text-align: center;
+md-content {
+	height: 100%;
+	width: 100%;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top: 100px;
 }

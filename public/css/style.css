@@ -908,9 +908,9 @@ input:not([type=submit]):not([type=file]):focus, select:focus, textarea:focus {
 	transition: .5s;
 }
 .sections-wrapper > section {
-	width: 80%;
+	width: 1600px;
 	height: auto;
-	margin: auto;
+	float: left;
 	padding: 72px 12px;
 }
 .sections-wrapper > section.no-padding-bottom {
@@ -2063,19 +2063,5 @@ input:not([type=submit]):not([type=file]):focus, select:focus, textarea:focus {
 }
 
 .container {
-  width: 80%;
-}
-
-pre {
-  margin-left: 13px !important;
-  min-width: 600px !important;
-  margin-top: 20px !important;
-  margin-bottom: 40px !important;
-  max-width: 1000px !important;
-  color: #0f0c01 !important;
-  padding-bottom: 20px !important;
-}
-
-h5 {
-	font-size: 12px !important;
+  width: 70% !important;
 }
