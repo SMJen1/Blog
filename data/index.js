@@ -1,10 +1,12 @@
-(function(database) {
+(function(index) {
 
-	var mongodb = reqquire('mongodb');
-	var mongoUrl = "mongodb://localhost:27017/myData";
+	var mongodb = require('mongodb');
+	var mongoUrl = "mongodb://localhost:27017/Comments";
 	var theDb = null;
 
-	database.getDb = function(next) {
+	index.Name = "Mayank";
+
+	index.getDb = function(next) {
 		if (theDb) {
 			next(null, theDb)
 		}
@@ -15,12 +17,13 @@
 				}
 				else {
 					theDb = {
-						db: db
+						db: db,
+						users: db.collection('users'),
+						iife: db.collection('iife')
 					};
 					next(null, theDb)
 				}
 			})
 		}
 	}
-
 })(module.exports);

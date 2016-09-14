@@ -13,17 +13,17 @@
 		  res.render('about', { 'count': routeConroller.count });
 		})
 
-    app.get('/iife', function(req, res) {
+    app.get('/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern', function(req, res) {
       routeConroller.count++;
       res.render('iife', { 'count': routeConroller.count });
     })
 
     app.get('/copy', function(req, res) {
       routeConroller.count++;
-      res.render('copy', { 'count': routeConroller.count });
+      res.render('copy ', { 'count': routeConroller.count });
     })
 
-    app.get('/module', function(req, res) {
+    app.get('/javascript-module-pattern-design', function(req, res) {
       routeConroller.count++;
       res.render('module', { 'count': routeConroller.count });
     })

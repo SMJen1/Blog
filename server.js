@@ -1,5 +1,7 @@
 var cpuCount = require('os').cpus().length;
 
+var bodyParser = require('body-parser')
+
 var cluster = require('cluster');  
 
 var express = require('express');
@@ -11,6 +13,8 @@ var app = express();
 app.set("view engine", "vash");
 
 app.use(express.static(__dirname + '/public'));
+
+app.use(bodyParser.json())
 
 var controller = require("./controller");
 

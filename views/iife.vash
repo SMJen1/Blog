@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="index, follow">
-  <title>Immediately Invokable Function Expression (IIFE)</title>
-  <meta name="description" content="Understanding IIFE concept in JavaScript" />
-  <meta name="keywords" content="IIFE, Immediately Invokable Function Expression, IIFE in JavaScript, JavaScript IIFE, JavaScript Patterns, Function Exressions in JavaScript, JavaScript Basic Concepts, Learn JavaScript, IIFE concepts, Function Expressions, Expressions, Learn IIFE, IIFE Expressions, What are IIFE"/>
- 
-    <link rel="stylesheet" href="css/shrink.css">
-    <script src="js/rainbow.js"></script>
- </head>
+ 	<head>
+	  <meta charset="utf-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta name="robots" content="index, follow">
+	  <title>Immediately Invokable Function Expression (IIFE)</title>
+
+	  <meta name="description" content="Immediately Invokable Function Expression (IIFE) is a JavaScript Design Pattern is an Anonymous Function which is Self Invoking. Function Expression is called as soon as it isInitialized" />
+
+	  <meta name="keywords" content="Learn JavaScript, IIFE, Immediately Invokable Function Expression, IIFE in JavaScript, JavaScript IIFE, JavaScript Patterns, Function Exressions in JavaScript, JavaScript Basic Concepts, Learn JavaScript, IIFE concepts, Function Expressions, Expressions, Learn IIFE, IIFE Expressions, What are IIFE"/>
+	 
+	  <link rel="stylesheet" href="css/shrink.css">
+	  <script src="js/rainbow.js"></script>
+	  <script src="lib/angular/angular.js"></script>
+ 	</head>
 	<body>
 
 
@@ -166,7 +169,46 @@
 							<header class="blog-header clearfix">
 								<div class="content">
 									<span class="date">March 11, 2015</span>
-									<h4 style="font-size: 12px">Immediately Invokable Function Expression</h4>
+									<h3 style="font-size: 14px"><b>Immediately Invokable Function Expression</b></h3>
+
+									<div>
+										<h6>Other Related JavaScript Articles:</h6>
+										<p class="other-articles">
+												<a href="/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern">
+													IIFE Pattern
+												</a>
+              			</p>
+										<p class="other-articles">
+												<a href="/javascript-module-pattern-design">
+													Module Pattern in JavaScript
+												</a>
+              			</p>
+              			<p class="other-articles">
+												<a href="/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern">
+													Singleton Pattern In JavaScript
+												</a>
+              			</p>
+              			<p class="other-articles">
+												<a href="/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern">
+													Scopes in JavaScript
+												</a>
+              			</p>
+              			<p class="other-articles">
+												<a href="/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern">
+													Creating Object In JavaScript
+												</a>
+              			</p>
+              			<p class="other-articles">
+												<a href="/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern">
+													Hoisting in JavaScript
+												</a>
+              			</p>
+              			<p class="other-articles">
+												<a href="/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern">
+													Prototype Pattern JavaScript
+												</a>
+              			</p>
+									</div>
 									<div class="footer">
 										<p class="button-row blog-button-row"><a href="" class="button solid-button dark">Prev</a><a href="" class="button solid-button purple">Next</a></p>
 									</div>
@@ -413,6 +455,90 @@ Here the Arguments are enclosed within &quot;()&quot; brackets.
 
 
 								</div> <!-- end .blog-post-content -->
+
+
+
+
+
+	<div  ng-app="myApp" ng-controller="commentController"  style="display: none;">
+		<div class="blog-post-comments"  ng-show="commentList.length > 0">
+         <h4>{{Count}} Comments</h4>
+
+          
+          <div class="comment" ng-repeat="comment in commentList">
+           <div class="inner clearfix">
+            <div class="content">
+             <h5>{{comment.user}}</h5>
+             <p>{{comment.message}}</p>
+             <span style="margin-right: 20px" class="meta">{{comment.date.substring(0, 10)}}</span>
+             <a href="" class="reply"><i></i></a>
+            </div> <!-- end .content -->
+
+         	</div> <!-- end .comment -->
+         	</div>
+        </div> <!-- end .blog-post-comments -->
+        <div class="leave-comment" style="display: none;">
+         <h4>Leave A Comment</h4>
+         <div class="inner">
+          <form class="form-horizontal" name="commentForm">
+           <div class="form-group">
+            <label class="col-sm-2 control-label">Name</label>
+            <div class="col-sm-10">
+             <input type="text" required class="contact-name" name="contact-name" ng-model="commentData.user" placeholder="Enter User Name"/>
+            </div> <!-- end .col-sm-10 -->
+           </div> <!-- end .form-group -->
+           <div class="form-group">
+            <label class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-10">
+             <input type="email" required class="contact-email" name="contact-email" ng-model="commentData.email" placeholder="Enter Email"/>
+            </div> <!-- end .col-sm-10 -->
+           </div> <!-- end .form-group -->
+           <div class="form-group">
+            <label class="col-sm-2 control-label">Comment
+            </label>
+            <div class="col-sm-10">
+             <textarea required name="contact-message" class="contact-message" rows="3" ng-model="commentData.message" placeholder="Enter Comment"></textarea>
+            </div> <!-- end .col-sm-10 -->
+           </div> <!-- end .form-group -->
+           <div class="form-group">
+            <div class="col-sm-10 col-sm-offset-2">
+             <input ng-disabled="commentForm.$invalid" type="submit" ng-click="addComment()" value="Hi All" />
+            </div> <!-- end .col-sm-10 -->
+           </div> <!-- end .form-group -->
+          </form>
+         </div> <!-- end .inner -->
+        </div> <!-- end .leave-comment -->
+       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 							</div> <!-- end .blog-post -->
 
 						</div> <!-- end .single-blog-post -->
@@ -451,6 +577,7 @@ Here the Arguments are enclosed within &quot;()&quot; brackets.
       <div class="bottom">Copyright &copy; Sility. All Rights Reserved.</div> <!-- end .bottom -->
     </footer> <!-- end .footer -->
     <script async src="js/analytics.js"></script>
+    <script src="scripts/commentUtility.js"></script>
 
 	</body>
 </html>

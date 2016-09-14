@@ -370,7 +370,7 @@
                 <div class="leave-comment">
                   <h4>Leave A Comment</h4>
                   <div class="inner">
-                    <form action="single-blog-post.html" method="post" class="form-horizontal">
+                    <form method="post" class="form-horizontal">
                       <div class="form-group">
                         <label class="col-sm-2 control-label">Name</label>
                         <div class="col-sm-10">
