@@ -9,7 +9,7 @@
 
 	  <meta name="description" content="Immediately Invokable Function Expression (IIFE) is a JavaScript Design Pattern is an Anonymous Function which is Self Invoking. Function Expression is called as soon as it isInitialized" />
 
-	  <meta name="keywords" content="Learn JavaScript, IIFE, Immediately Invokable Function Expression, IIFE in JavaScript, JavaScript IIFE, JavaScript Patterns, Function Exressions in JavaScript, JavaScript Basic Concepts, Learn JavaScript, IIFE concepts, Function Expressions, Expressions, Learn IIFE, IIFE Expressions, What are IIFE"/>
+	  <meta name="keywords" content="Learn JavaScript, JavaScript Patterns, IIFE, Immediately Invokable Function Expression, IIFE in JavaScript, JavaScript IIFE, JavaScript Patterns, Function Exressions in JavaScript, JavaScript Basic Concepts, Learn JavaScript, IIFE concepts, Function Expressions, Expressions, Learn IIFE, IIFE Expressions, What are IIFE"/>
 	 
 	  <link rel="stylesheet" href="css/shrink.css">
 	  <script src="js/rainbow.js"></script>
@@ -179,7 +179,7 @@
 												</a>
               			</p>
 										<p class="other-articles">
-												<a href="/javascript-module-pattern-design">
+												<a href="/javascript-module-pattern-design-singleton">
 													Module Pattern in JavaScript
 												</a>
               			</p>

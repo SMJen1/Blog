@@ -23,7 +23,7 @@
       res.render('copy ', { 'count': routeConroller.count });
     })
 
-    app.get('/javascript-module-pattern-design', function(req, res) {
+    app.get('/javascript-module-pattern-design-singleton', function(req, res) {
       routeConroller.count++;
       res.render('module', { 'count': routeConroller.count });
     })

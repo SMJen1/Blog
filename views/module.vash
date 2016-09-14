@@ -5,9 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index, follow">
-  <title>Module Pattern in JavaScript</title>
+
+  <title>Module Pattern in JavaScript shall allow user to return a Object from a function. It is one of the most famous Design Pattern in JavaScript</title>
+
   <meta name="description" content="Learning Module Pattern in JavaScript" />
-  <meta name="keywords" content="Module Pattern, Patterns in JavaScript, Learning JavaScript Patterns, JavaScript Module Pattern, Module in JavaScript, Creating Module in JavaScript, What is Module Pattern, Understanding Module Pattern, Modules in JavaScript, JavaScript Modules, Modules JavaScript"/>
+  <meta name="keywords" content="JavaScript Patterns, Module Pattern, Patterns in JavaScript, Learning JavaScript Patterns, JavaScript Module Pattern, Module in JavaScript, Creating Module in JavaScript, What is Module Pattern, Understanding Module Pattern, Modules in JavaScript, JavaScript Modules, Modules JavaScript"/>
 <link rel="stylesheet" href="css/shrink.css">
     <script src="js/rainbow.js"></script>
  </head>
@@ -156,7 +158,7 @@
 
 		<!-- Sections -->
 		<div class="sections content-study">
-			<div class="sections-wrapper clearfix">
+			<div class="sections-wrapper clearfix"><br>
 
 				<!--Single Blog Post -->
 				<section>
@@ -165,7 +167,44 @@
 							<header class="blog-header clearfix">
 								<div class="content">
 									<span class="date">March 11, 2015</span>
-									<h4 style="font-size: 12px">Module Pattern in JavaScript</h4>
+									<h4 style="font-size: 14px">Module Pattern in JavaScript</h4>
+									<div>
+										<h6>Other Related JavaScript Articles:</h6>
+										<p class="other-articles">
+												<a href="/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern">
+													IIFE Pattern
+												</a>
+              			</p>
+										<p class="other-articles">
+												<a href="/javascript-module-pattern-design-singleton">
+													Module Pattern in JavaScript
+												</a>
+              			</p>
+              			<p class="other-articles">
+												<a href="/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern">
+													Singleton Pattern In JavaScript
+												</a>
+              			</p>
+              			<p class="other-articles">
+												<a href="/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern">
+													Scopes in JavaScript
+												</a>
+              			</p>
+              			<p class="other-articles">
+												<a href="/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern">
+													Creating Object In JavaScript
+												</a>
+              			</p>
+              			<p class="other-articles">
+												<a href="/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern">
+													Hoisting in JavaScript
+												</a>
+              			</p>
+              			<p class="other-articles">
+												<a href="/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern">
+													Prototype Pattern JavaScript
+												</a>
+              			</p></div>
 									<div class="footer">
 										<p class="button-row blog-button-row"><a href="" class="button solid-button dark">Prev</a><a href="" class="button solid-button purple">Next</a></p>
 									</div>
