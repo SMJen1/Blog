@@ -8,9 +8,11 @@
     <title>Variable and Function Hoisting</title>
     <meta name="description" content="Learn concept of Variable and Function Hoisting in Details" />
     <meta name="keywords" content="Hoisting, Function Hoisting, Variable Hoisting, Hoisting in JavaScript, JavaScript Hoisting, Hoisting Concepts, Variable Declaration, variable Definition, Function Expressions, Function Declaration, Expression in JavaScript, Expressions, Function Expression"/>
-<link rel="stylesheet" href="css/shrink.css">
+    <link rel="stylesheet" href="css/shrink.css">
     <link rel="stylesheet" href="css/app.css">
     <script src="js/rainbow.js"></script>
+    <meta name="msvalidate.01" content="F77C0434F58CEA255020E3CCDE1B58D6" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
   </head>
   <body>

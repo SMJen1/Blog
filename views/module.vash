@@ -8,10 +8,12 @@
 
   <title>Module Pattern in JavaScript shall allow user to return a Object from a function. It is one of the most famous Design Pattern in JavaScript</title>
 
+  <meta name="msvalidate.01" content="F77C0434F58CEA255020E3CCDE1B58D6" />
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <meta name="description" content="Learning Module Pattern in JavaScript" />
   <meta name="keywords" content="JavaScript Patterns, Module Pattern, Patterns in JavaScript, Learning JavaScript Patterns, JavaScript Module Pattern, Module in JavaScript, Creating Module in JavaScript, What is Module Pattern, Understanding Module Pattern, Modules in JavaScript, JavaScript Modules, Modules JavaScript"/>
-<link rel="stylesheet" href="css/shrink.css">
-    <script src="js/rainbow.js"></script>
+	<link rel="stylesheet" href="css/shrink.css">
+  <script src="js/rainbow.js"></script>
  </head>
 	<body>
 
