@@ -54,7 +54,7 @@
 						</ul> <!-- end .list-unstyled -->
 					</nav> <!-- end .social-nav -->
 				</div> <!-- end .slide-out-popup -->
-				<div class="image"><img src="images/head01.png" alt="alt text" class="img-responsive"></div>
+				<div class="image"><img src="" alt="alt text" class="img-responsive"></div>
 				<div class="content">
 					<h5>Benjamin Thomson</h5>
 					<span>Web & UX Designer</span>
@@ -107,12 +107,6 @@
 				<div class="slide-out-widget">
 					<h4>Follow On Instagram</h4>
 					<div class="instagram">
-						<a href=""><img src="images/instagram01.jpg" alt="alt text" class="img-responsive"></a>
-						<a href=""><img src="images/instagram02.jpg" alt="alt text" class="img-responsive"></a>
-						<a href=""><img src="images/instagram03.jpg" alt="alt text" class="img-responsive"></a>
-						<a href=""><img src="images/instagram04.jpg" alt="alt text" class="img-responsive"></a>
-						<a href=""><img src="images/instagram05.jpg" alt="alt text" class="img-responsive"></a>
-						<a href=""><img src="images/instagram06.jpg" alt="alt text" class="img-responsive"></a>
 					</div> <!-- end .instagram -->
 				</div> <!-- end .slide-out-widget -->
 			</div> <!-- end .slide-out-widgets -->
@@ -185,34 +179,32 @@
 												</a>
               			</p>
               			<p class="other-articles">
-												<a href="/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern">
+												<a href="/singleton">
 													Singleton Pattern In JavaScript
 												</a>
               			</p>
               			<p class="other-articles">
-												<a href="/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern">
+												<a href="/scopes">
 													Scopes in JavaScript
 												</a>
               			</p>
               			<p class="other-articles">
-												<a href="/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern">
+												<a href="/objects">
 													Creating Object In JavaScript
 												</a>
               			</p>
               			<p class="other-articles">
-												<a href="/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern">
+												<a href="/hoisting">
 													Hoisting in JavaScript
 												</a>
               			</p>
               			<p class="other-articles">
-												<a href="/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern">
+												<a href="/prototype">
 													Prototype Pattern JavaScript
 												</a>
               			</p>
 									</div>
-									<div class="footer">
-										<p class="button-row blog-button-row"><a href="" class="button solid-button dark">Prev</a><a href="" class="button solid-button purple">Next</a></p>
-									</div>
+
 								</div> <!-- end .content -->
 								<div class="image" style="background-image: url('images/javascript-logo-large.jpg');"></div>
 							</header> <!-- end .blog-header -->
