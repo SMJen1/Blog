@@ -9,10 +9,14 @@
 <loc>http://learn-javascript.in/about</loc>
 </url>
 <url>
-<loc>http://learn-javascript.in/iife</loc>
+<loc>
+http://learn-javascript.in/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern
+</loc>
 </url>
 <url>
-<loc>http://learn-javascript.in/module</loc>
+<loc>
+http://learn-javascript.in/javascript-module-pattern-design-singleton
+</loc>
 </url>
 <url>
 <loc>http://learn-javascript.in/scopes</loc>
@@ -28,5 +32,9 @@
 </url>
 <url>
 <loc>http://learn-javascript.in/prototype</loc>
+</url>
+<url>
+<loc>http://learn-javascript.in/Files/ResumeMayank.doc</loc>
+<lastmod>2016-09-17T08:47:06+00:00</lastmod>
 </url>
 </urlset>
