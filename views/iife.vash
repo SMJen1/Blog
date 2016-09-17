@@ -210,7 +210,7 @@
                       </a>
                     </p>
                     <p class="other-articles">
-                      <a href="/singleton">
+                      <a href="/singleton-design-pattern-javascript-design-pattern-module-pattern">
                       Singleton Pattern In JavaScript
                       </a>
                     </p>
@@ -244,30 +244,30 @@
                 <div class="blog-post-content">
                   <h1 class="heading">Immediately Invokable Function Expression</h1>
                   <div>
-                    <b>IIFE (Immediately Invokable Function Expression)</b>&nbsp;is a important concept in JavaScript. It is a commonly used <b>JavaScript Design Pattern</b> which is used to wrap set of variables and functions which cannot be accessed outside the enclosed scope.
+                    <b>IIFE (Immediately Invokable Function Expression)</b> is a important concept in JavaScript. It is a commonly used <b>JavaScript Design Pattern</b> which is used to wrap set of variables and functions which cannot be accessed outside the enclosed scope.
                   </div>
-                  <div>&nbsp;</div>
-                  <div>These are&nbsp;<b>JavaScript Anonymous Function</b> that is wrapped inside a set of paranthesis and is called immediately.</div>
-                  <div>&nbsp;</div>
+                  <div> </div>
+                  <div>These are <b>JavaScript Anonymous Function</b> that is wrapped inside a set of paranthesis and is called immediately.</div>
+                  <div> </div>
                   <div>The advantage of IIFE is that any Function or Variable defined inside IIFE, cannot be accessed outside the IIFE block, thus preventing global scope from getting polluted. Also helps us manage memory in an efficient manner.</div>
-                  <div>&nbsp;</div>
+                  <div> </div>
                   <div>In order to understand the concept of IIFE, we need to understand the difference between the following:</div>
                   <p>1. Function Definition</p>
                   <p>2. Function Expression</p>
-                  <p>&nbsp;</p>
-                  <h2 class="topic">Function Definition:&nbsp;</h2>
+                  <p> </p><br>
+                  <h2 class="topic">Function Definition: </h2>
                   <p>Lets look at a very simple <b>Function Definition</b>:</p>
                   <pre>
 <code class="lang-javascript">
 function demoFunction(){
 
-  alert(&quot;This is the function Definition&quot;);
+  alert("This is the function Definition");
 
 };
 
 </code></pre>
-                  <p>So the simplest way to understand <b>Function Declaration</b> is that, it starts with &quot;<b>function</b>&quot; keyword.</p><br>
-                  <p>The biggest benefit of <b>Function Definition</b> over <b>Function Expressions</b> is that they are <b>&quot;Hoisted&quot;</b> by the JavaScript Compiler. This also means that a variable can be called before it&#39;s declared. This behavior is called &quot;<b>Hoisting</b>&quot;</p><br>
+                  <p>So the simplest way to understand <b>Function Declaration</b> is that, it starts with "<b>function</b>" keyword.</p><br>
+                  <p>The biggest benefit of <b>Function Definition</b> over <b>Function Expressions</b> is that they are <b>"Hoisted"</b> by the JavaScript Compiler. This also means that a variable can be called before it&#39;s declared. This behavior is called "<b>Hoisting</b>"</p><br>
                   <p>Hoisting is when a JS declaration is lifted (&ldquo;hoisted&rdquo;) to the top of it&rsquo;s scope. What this really means is that a variable or function isn&rsquo;t necessarily declared where you think it is. Function Definition and Variable Declaration are always Hoisted on the top of the Function Scope or Global Scope.</p><br/>
                   <p>This can be understood by this small example:</p>
                   <pre>
@@ -276,124 +276,124 @@ demoFunction();
 
 var demoFunction = function(){
 
-  alert(&quot;This is the function Definition&quot;);
+  alert("This is the function Definition");
 
 };
 
 </code></pre>
-                  <p>Here we can see that the user is trying to access &quot;demoFunction()&quot; even before the compiler reaches its &quot;Function Definition&quot;, In this case function will be executed. It will be called by the compliler and shall output a alert message. The function definition is hoisted on the top of the Scope by the compiler, therefore it is available even before its Function Definition during script execution.&nbsp;</p><br/>
+                  <p>Here we can see that the user is trying to access "demoFunction()" even before the compiler reaches its "Function Definition", In this case function will be executed. It will be called by the compliler and shall output a alert message. The function definition is hoisted on the top of the Scope by the compiler, therefore it is available even before its Function Definition during script execution. </p><br/>
                   <p>The concept of Hoisting does not adher to Function Expressions. Function Expressions are never Hoisted.</p>
                   <p>Look for the following link to learn more about <a href="/hoisting">Function Hoisting</a></p> 
-                  <h4>&nbsp;</h4>
+                  <h4> </h4>
                   
 
                   <h2 class="topic">Function Expressions:</h2>
-                  <p>&quot;<b>Function Expression&quot;</b> would be any function which does not start with &quot;function&quot; keyword.</p><br>
-                  <p>Common way to define a function expression is to assign a function to a variable.&nbsp;</p><br>
+                  <p>"<b>Function Expression"</b> would be any function which does not start with "function" keyword.</p><br>
+                  <p>Common way to define a function expression is to assign a function to a variable. </p><br>
                   
                   <pre>
 <code class="lang-javascript">
 var demoFunction = function(){
 
-  alert(&quot;This is function Expression&quot;);
+  alert("This is function Expression");
 
 };
 
 demoFunction();
 
 </code></pre>
-                  <p>Since the above function does start the keyword &quot;function&quot;, its a <b>&quot;Function Expression&quot;</b> </p>
-                  <p>The above code assigns a function definition to a variable &quot;demoFunction&quot;.&nbsp;</p>
-                  <p>This would mean that the variable <b>&quot;demoFunction&quot;</b> shall now&nbsp;represent a function expression.</p>
-                  <p>The function can now be called using following line of code: <b>&quot;demoFunction()&quot;</b> </p>
-                  <p>&nbsp;</p>
+                  <p>Since the above function does start the keyword "function", its a <b>"Function Expression"</b> </p>
+                  <p>The above code assigns a function definition to a variable "demoFunction". </p>
+                  <p>This would mean that the variable <b>"demoFunction"</b> shall now represent a function expression.</p>
+                  <p>The function can now be called using following line of code: <b>"demoFunction()"</b> </p>
+                  <p> </p><br>
                   <h2 class="topic"><b>What are IIFE ...</b></h2>
-                  <p><b>IIFE&nbsp;</b>(<b>Immediately Invoked Function Expression</b>)&nbsp;is a&nbsp; JavaScript function that runs as soon as it is defined.&nbsp;</p>
+                  <p><b>IIFE </b>(<b>Immediately Invoked Function Expression</b>) is a  JavaScript function that runs as soon as it is defined. </p>
                   <pre>
 <code class="lang-javascript">
 (function(){
 
-&nbsp; alert(&quot;Function does not start with keyword function&quot;);
+  alert("Function does not start with keyword function");
 
 })();
 </code></pre>
-                  <p>This is a simple function in which anything written inside the function block shall be executed immediately.&nbsp;</p>
-                  <p>&nbsp;</p>
+                  <p>This is a simple function in which anything written inside the function block shall be executed immediately. </p>
+                  <p> </p>
                   <p>In the above example, once the code is executed, following events occur:</p>
                   <p>1. A function Instance is created.</p>
                   <p>2. Function is Executed.</p>
-                  <p>3. Function along with variable declared inside it is Garbage Colloected.&nbsp;</p>
-                  <p>&nbsp;</p>
+                  <p>3. Function along with variable declared inside it is Garbage Colloected. </p>
+                  <p> </p>
                   <p>The variable and functions that were declared in the scope of IIFE are available for garbage collection, once the IIFE is executed. Hence managing Memory in an efficient manner and ensures that the function and variables do not bind itself to the global scope.</p>
-                  <p>&nbsp;</p>
+                  <p> </p>
                   <p>In order to understand, we can break down the above code into 2 parts:</p>
                   <p>1. Creating Function Expression</p>
                   <p>2. Invoking the Function Expression</p>
-                  <p>&nbsp;</p>
+                  <p> </p><br>
                   <h2 class="topic"><b>Part One: (Function Expression)</b></h3>
-                  <p>Breaking the code further,&nbsp;we will get a &quot;Function Expression&quot; enclosed within &quot;Brackets&quot;.</p><br>
-                  <p>When a function definition does not contain &quot;function&quot; keyword in the starting of an executable line of code, it is called Function Expression.</p>
-                  <p>In this code we can see that the function definition starts with &quot;(&quot;, therefore its a function Expression.</p>
+                  <p>Breaking the code further, we will get a "Function Expression" enclosed within "Brackets".</p><br>
+                  <p>When a function definition does not contain "function" keyword in the starting of an executable line of code, it is called Function Expression.</p>
+                  <p>In this code we can see that the function definition starts with "(", therefore its a function Expression.</p>
                   <pre>
 <code class="lang-javascript">
 (function(){
 
-&nbsp; alert(&quot;Function enclosed within Simple Brackets, therefore Expression&quot;);
+  alert("Function enclosed within Simple Brackets, therefore Expression");
 
 });
 </code></pre>
                   <p>This is a simple Function Expression.</p>
-                  <p>Similarly,&nbsp;IIFE&nbsp;it does starting the keyword &quot;function&quot;, it is also a&nbsp;&quot;<b>Function Expression</b>&quot;.&nbsp;</p>
-                  <p>&nbsp;</p>
-                  <p>So, we first get a <b>&quot;Function Expression&quot;</b> that contain some code enclosed in it.</p>
+                  <p>Similarly, IIFE it does starting the keyword "function", it is also a "<b>Function Expression</b>". </p>
+                  <p> </p>
+                  <p>So, we first get a <b>"Function Expression"</b> that contain some code enclosed in it.</p>
                   <pre>
 <code class="lang-javascript">
 (function(){
 
-  alert(&quot;Function enclosed within Simple Brackets, therefore Expression&quot;);
+  alert("Function enclosed within Simple Brackets, therefore Expression");
 
 });
 </code></pre>
-                  <p>The next step will be calling the &quot;Function Expression&quot; just like any other function using&quot;()&quot;.</p>
-                  <p>&nbsp;</p>
+                  <p>The next step will be calling the "Function Expression" just like any other function using"()".</p>
+                  <p> </p>
                   <p>** Note: Important difference between Function Expression and Function Declaration is:</p>
-                  <p><em>&quot;Function Declaration can be Hoisted, but Function Expressions cannot be Hoisted&quot;.&nbsp;</em> </p>
-                  <p>&nbsp;</p>
+                  <p><em>"Function Declaration can be Hoisted, but Function Expressions cannot be Hoisted". </em> </p>
+                  <p> </p><br>
                   <h2 class="topic"><b>Part Two: (Function Invocation)</b></h2>
-                  <p>Once the function Expression is defined, it is invoked using &quot;()&quot;, in the same manner as we call a function.</p>
+                  <p>Once the function Expression is defined, it is invoked using "()", in the same manner as we call a function.</p>
                   <pre>
 <code class="lang-javascript">
 (function(){
 
-  alert(&quot;Function Expression Invoked using () at the end&quot;);
+  alert("Function Expression Invoked using () at the end");
 
 })();
 
 // Here the function call in made using &#39;()&#39;
 </code></pre>
-                  <p>Once&nbsp;the Function Expression is invoked, the code inside the function expression shall execute.</p>
-                  <p>&nbsp;</p>
+                  <p>Once the Function Expression is invoked, the code inside the function expression shall execute.</p>
+                  <p> </p>
                   <p>So the above discussion about the IIFE can be compiled as:</p>
-                  <p><b>A Function Expression immediately invoked using &quot;()&quot;.</b> </p>
-                  <p>So here we can see that a IIFE is a &quot;Function Expression&quot; called immediately after its definition.</p>
-                  <p>&nbsp;</p>
+                  <p><b>A Function Expression immediately invoked using "()".</b> </p>
+                  <p>So here we can see that a IIFE is a "Function Expression" called immediately after its definition.</p>
+                  <p> </p><br>
                   <h2 class="topic">Breaking IIFE into parts:</h2>
                   <p>So the above IIFE code can be rewritten as:</p>
                   <pre>
 <code class="lang-javascript">
 var functionExpression = (function(){
 
-  alert(&quot;Function Expression assigned to variable.&quot;);
+  alert("Function Expression assigned to variable.");
 
 });
 
 functionExpression();
 </code></pre>
                   <p>This code can be analysed in the following way:</p>
-                  <p>1. &quot;Function Expression&quot; is created and stored in a variable &quot;functionExpression&quot;</p>
+                  <p>1. "Function Expression" is created and stored in a variable "functionExpression"</p>
                   <p>2. Function Expression is called just like any other function.</p>
-                  <p>&nbsp;</p>
-                  <h2><b>Why do we require IIFE..</b></h2>
+                  <p> </p><br>
+                  <h2 class="topic">Why do we require IIFE..</h2>
                   <p>Benefits of IIFE are:</p><br>
                   <b>1. Avoids Global Scope from getting Polluted.</b><br><br>
                   <p>One of the main reason to create IIFE is to avoid global scope from getting polluted.</p>
@@ -402,73 +402,73 @@ functionExpression();
 <code class="lang-javascript">
 (function(){
 
- &nbsp;var sampleVariable = &quot;test Variable&quot;;
+  var sampleVariable = "test Variable";
 
-&nbsp; var sampleVariable = function(){
+  var sampleVariable = function(){
 
- &nbsp;  alert(&quot;Function does not start with keyword function&quot;);
+    alert("Function does not start with keyword function");
 
-&nbsp; }
+  }
 
 })();
 </code></pre>
-                  <p>Here in the above function, we have created a &quot;Variable&quot; and a &quot;Function&quot;, this variables and function are enclosed within an IIFE Expression, therefore the scope of the variable and function lies within the IIFE. These variables and functions are not added to Global Scope.</p>
-                  <p>We may use IIFE when we want to define some functions and variable that are just required to be executed for a single time on a page.&nbsp;</p>
+                  <p>Here in the above function, we have created a "Variable" and a "Function", this variables and function are enclosed within an IIFE Expression, therefore the scope of the variable and function lies within the IIFE. These variables and functions are not added to Global Scope.</p>
+                  <p>We may use IIFE when we want to define some functions and variable that are just required to be executed for a single time on a page. </p>
                   <p>Lets say that we have a device and we have to set the Theme according to the device that is used by the user. Here when the user logs into our Application, we need to check the Device just once since the device wont change. In such a case, variables and functions required to detect the Device wont be required once executed. In such a case wee would not like to add these variables and function to the global scope and consume Browser space. So these functionalities can be enclosed within an IIFE, so that once executed, all the variables and function defined for the same can be made available for Garbage Collection.</p>
-                  <p>&nbsp;</p>
+                  <p> </p><br>
                   <p><b>2. Manage Browser Memory:</b> </p><br>
-                  <p>If the functions are such that they require single execution, as specified in above example, we need not to add those function and variable to the gobal scope. Adding them to global scope would consume space on the Browser Memory.&nbsp;</p>
+                  <p>If the functions are such that they require single execution, as specified in above example, we need not to add those function and variable to the gobal scope. Adding them to global scope would consume space on the Browser Memory. </p>
                   <p>So once these functions are executed, we would like them to be Garbage Collected.</p>
                   <p>Following Events occur when a IIFE is encountered:</p>
                   <p>1. A function Instance is created.</p>
                   <p>2. Function is Executed.</p>
-                  <p>3. Function created is discarded.&nbsp;</p>
+                  <p>3. Function created is discarded. </p>
                   <p>When the IIFE is executed, the required functions and variables are created, used and once IIFE has finished execution, they are available for Garbage Collection, Hence freeing the Browser Memory.</p>
-                  <p>&nbsp;</p>
-                  <p><b>3.&nbsp;Minification Optimization</b> </p><br>
-                  <p>IIFE&nbsp;also helps us with the minification. Since we can paas values to the arguments in IIFE, we areable to reduce the name of each global object to a one letter word.</p>
+                  <p> </p><br>
+                  <p><b>3. Minification Optimization</b> </p><br>
+                  <p>IIFE also helps us with the minification. Since we can paas values to the arguments in IIFE, we areable to reduce the name of each global object to a one letter word.</p>
                   <p>The Example shall help you understand it better:</p>
                   <pre>
 <code class="lang-javascript">
 (function(w){
 
-  alert(&#39;Window object is now renamed to &quot;w&quot;&#39;);
+  alert(&#39;Window object is now renamed to "w"&#39;);
 
 })(window);
 </code></pre>
-                  <p>Here we can see that the &quot;Window&quot; object is passed as to the IIFE, &quot;Window&quot; object is passed to an argument &quot;w&quot;. So now the window object shall be refered as &quot;w&quot; instead of &quot;window&quot;, hence helping us with the minification process.&nbsp;</p><br>
+                  <p>Here we can see that the "Window" object is passed as to the IIFE, "Window" object is passed to an argument "w". So now the window object shall be refered as "w" instead of "window", hence helping us with the minification process. </p><br>
                   <h2 class="topic">Passing Arguments to IIFE Function:</h3>
                   <p>We can simply pass arguments to IIFE in the following manner:</p>
                   <pre>
 <code class="lang-javascript">
-var Name = &quot;Mayank&quot;;
+var Name = "Mayank";
 
 var Age = 27;
 
 (function(name, age){
 
-  alert(&quot;Name: &quot; + name);
+  alert("Name: " + name);
 
 })(Name, Age);
 
-Here the Arguments are enclosed within &quot;()&quot; brackets.
+Here the Arguments are enclosed within "()" brackets.
 </code></pre>
                   <p>In the above example we can see:</p>
-                  <p>1. We have variable &quot;Name&quot; and &quot;Age&quot; at Global Level</p>
-                  <p>2. We need to pass these variable to &quot;IIFE&quot;,&nbsp;</p>
-                  <p>3. IIFE accepts 2 parameters &quot;name&quot; and &quot;age&quot;.</p>
-                  <p>4. Global Variable &quot;Name&quot; and &quot;Age&quot; are enclosed withing the Function Invokation Brackets.</p>
-                  <p>5. &quot;Name and Age&quot; shall now be available to IIFE as arguments passed from outside enviroment.</p>
-                  <p>&nbsp;</p>
+                  <p>1. We have variable "Name" and "Age" at Global Level</p>
+                  <p>2. We need to pass these variable to "IIFE", </p>
+                  <p>3. IIFE accepts 2 parameters "name" and "age".</p>
+                  <p>4. Global Variable "Name" and "Age" are enclosed withing the Function Invokation Brackets.</p>
+                  <p>5. "Name and Age" shall now be available to IIFE as arguments passed from outside enviroment.</p>
+                  <p> </p><br>
                   <b style="color: red;">**Note:</b>
                   <p>Please do not confuse between the following implementation of IIFE.</p>
                   <p>Both shall represent the same IIFE Expression.</p>
-                  <p>Please see the difference in placement of Brackets &quot;()&quot; while function invocation.</p>
+                  <p>Please see the difference in placement of Brackets "()" while function invocation.</p>
                   <pre>
 <code class="lang-javascript">
 (function(){
 
-  alert(&quot;Name: &quot; + name);
+  alert("Name: " + name);
 
 })();
 </code></pre>
@@ -477,13 +477,13 @@ Here the Arguments are enclosed within &quot;()&quot; brackets.
 <code class="lang-javascript">
 (function(){
 
-  alert(&quot;Name: &quot; + name);
+  alert("Name: " + name);
 
 }());
 </code></pre>
-                  <p>&nbsp;</p>
-                  <p><b>IIFE is an amazing Design Pattern offering Lots of Benefits. Try using IIFE in your Code to Optimise it Further. Hope the article shall provide help to people who are trtying to understand the concept.&nbsp;</b> </p>
-                  <p>&nbsp;</p>
+                  <p> </p>
+                  <p><b>IIFE is an amazing Design Pattern offering Lots of Benefits. Try using IIFE in your Code to Optimise it Further. Hope the article shall provide help to people who are trtying to understand the concept. </b> </p>
+                  <p> </p>
                 </div>
                 <!-- end .blog-post-content -->
                 <div  ng-app="myApp" ng-controller="commentController"  style="display: none;">

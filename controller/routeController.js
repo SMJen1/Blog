@@ -28,7 +28,7 @@
       res.render('module', { 'count': routeConroller.count });
     })
 
-    app.get('/singleton', function(req, res) {
+    app.get('/singleton-design-pattern-javascript-design-pattern-module-pattern', function(req, res) {
       routeConroller.count++;
       res.render('singleton', { 'count': routeConroller.count });
     })

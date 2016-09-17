@@ -144,7 +144,7 @@
                   <a><div class="image" style="background-image: url('images/objects.jpg');"></div></a>
                   <div class="content">
                     <span class="date">August 11, 2016</span>
-                    <h4><a href="/singleton">Singleton Object in JavaScript</a></h4>
+                    <h4><a href="/singleton-design-pattern-javascript-design-pattern-module-pattern">Singleton Object in JavaScript</a></h4>
                     <footer>
                       <span class="comments-link"><a href="/"></a></span>
                       <span class="share-link"><a href="/"><i class="fa fa-share-alt"></i></a></span>

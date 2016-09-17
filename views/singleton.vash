@@ -5,10 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow">
+
     <title>Understanding Singleton Patterns in JavaScript</title>
-    <meta name="description" content="Understand Singleton Pattern in JavaScipts" />
-    <meta name="keywords" content="Singleton Pattern, Patterns in JavaScript, Singleton, What is Singleton, Singleton Pattern JavaScipt, What is singleton Patterns, tutorialspoint.com/design_pattern/singleton_pattern.htm"/>
-<link rel="stylesheet" href="css/shrink.css">
+
+    <meta name="title" content="Singleton Pattern in JavaScript" />
+
+    <meta name="description" content="Singleton Pattern in JavaScript ina design Pattern to ensure that the Object contains only a single copy and cannot be used to create Further Objects." />
+
+    <meta name="keywords" content="Singleton Pattern, Design Patterns in JavaScript, Singleton, What is Singleton, Singleton Pattern JavaScipt, What is singleton Patterns"/>
+
+    <link rel="stylesheet" href="css/shrink.css">
+
     <script src="js/rainbow.js"></script>
     <meta name="msvalidate.01" content="F77C0434F58CEA255020E3CCDE1B58D6" />
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -28,7 +35,6 @@
       </div>
       <!-- end .row -->
     </div>
-
     <div class="slide-out">
       <header class="slide-out-header clearfix">
         <div class="clearfix">
@@ -125,7 +131,6 @@
       </div>
       <!-- end .slide-out-widgets -->
     </div>
-
     <header class="header">
       <div class="top clearfix">
         <a href="#section8" class="available"><i class="ion-ios-email-outline"></i><span>Available For Freelance</span></a>
@@ -169,166 +174,162 @@
       </div>
       <!-- end .bottom -->
     </header>
-
     <div class="responsive-menu">
       <a href="" class="responsive-menu-close">Close <i class="ion-android-close"></i></a>
       <nav class="responsive-nav"></nav>
     </div>
-
     <div class="sections content-study">
-    <div class="sections-wrapper clearfix">
-      <!--Single Blog Post -->
-      <section>
-        <div class="container">
-          <div class="single-blog-post">
-            <header class="blog-header clearfix">
-              <div class="content">
-                <span class="date">March 11, 2015</span>
-                <h4 style="font-size: 12px">Understanding Singleton Pattern in JavaScript</h4>
-                                  <div>
+      <div class="sections-wrapper clearfix">
+        <!--Single Blog Post -->
+        <section>
+          <div class="container">
+            <div class="single-blog-post">
+              <header class="blog-header clearfix">
+                <div class="content">
+                  <span class="date">March 11, 2015</span>
+                  <h4 style="font-size: 12px">Understanding Singleton Pattern in JavaScript</h4>
+                  <div>
                     <h6>Other Related JavaScript Articles:</h6>
                     <p class="other-articles">
-                        <a href="/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern">
-                          IIFE Pattern
-                        </a>
+                      <a href="/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern">
+                      IIFE Pattern
+                      </a>
                     </p>
                     <p class="other-articles">
-                        <a href="/javascript-module-pattern-design-singleton">
-                          Module Pattern in JavaScript
-                        </a>
+                      <a href="/javascript-module-pattern-design-singleton">
+                      Module Pattern in JavaScript
+                      </a>
                     </p>
                     <p class="other-articles">
-                        <a href="/singleton">
-                          Singleton Pattern In JavaScript
-                        </a>
+                      <a href="/singleton-design-pattern-javascript-design-pattern-module-pattern">
+                      Singleton Pattern In JavaScript
+                      </a>
                     </p>
                     <p class="other-articles">
-                        <a href="/scopes">
-                          Scopes in JavaScript
-                        </a>
+                      <a href="/scopes">
+                      Scopes in JavaScript
+                      </a>
                     </p>
                     <p class="other-articles">
-                        <a href="/objects">
-                          Creating Object In JavaScript
-                        </a>
+                      <a href="/objects">
+                      Creating Object In JavaScript
+                      </a>
                     </p>
                     <p class="other-articles">
-                        <a href="/hoisting">
-                          Hoisting in JavaScript
-                        </a>
+                      <a href="/hoisting">
+                      Hoisting in JavaScript
+                      </a>
                     </p>
                     <p class="other-articles">
-                        <a href="/prototype">
-                          Prototype Pattern JavaScript
-                        </a>
+                      <a href="/prototype">
+                      Prototype Pattern JavaScript
+                      </a>
                     </p>
                   </div>
-              </div>
-              <!-- end .content -->
-              <div class="image" style="background-image: url('images/javascript-logo-large.jpg');"></div>
-            </header>
-            <!-- end .blog-header -->
-            <div class="blog-post">
-              <div class="blog-post-content">
-                <h2>Singleton Pattern</h2>
-                <p>The intent of this article is to understand the concept of Singleton Pattern.</p>
-                <p>We would then learn how&nbsp;to implement the concept of &quot;Singleton&quot; in different ways</p>
-                <p>Singleton ensures that the number of instances of a particular type is restricted to only one.</p>
-                <p>This single instance is called as Singleton Object.</p>
-                <p>&nbsp;</p>
-                <h3><em>Features of Singleton:</em></h3>
-                <p>1. Singleton Ensures that only one instance of a class exists</p>
-                <p>2. Create a shared piece of functionality which can be accessed accross different part of application.</p>
-                <p>3. Provides a global access to an instance of Object</p>
-                <p>4. Helps with the memory Managment by sharing a set of functionality accross other Objects</p>
-                <p>5. Provides Modularity where set of related features can represent an Entity.</p>
-                <p>&nbsp;</p>
-                <h3><em>Creational Design Pattern</em></h3>
-                <p>Singleton Pattern exists as a part of Creational Design Pattern.</p>
-                <p>Creational patterns are the patterns which deals with creation of Object in the most efficient manner. The Creational logic is somehow hidden from the consumer, since the consumer of the object is not interested in &quot;how an instance is created&quot;, he is only interested in consuming the Object Information.</p>
-                <p>&nbsp;</p>
-                <h3><em>Practical Scenerio:</em></h3>
-                <p>Lets try to understand the usage of Singleton Pattern by taking a practical Problem:</p>
-                <p><strong><em>Lets consider a scenerio where a user access an Application and once the user provide Login Information, User Info is fetched from the Database, This Information is required in different part of application.&nbsp;</em></strong></p>
-                <p>&nbsp;</p>
-                <p>While resolving the specified problem statement, we need to take care of following factors:</p>
-                <p>1<strong>. We should not create multiple instances of User Object</strong></p>
-                <p>If we create multiple Object containing User data, each Object shall hold memory space, in an ideal design strategy, we should not consume access of Memory to store irrelevant data. If we are storing the same data in multiple Objects, it leads to Memory Loss. Therefore we need to ensure that the Information is stored in a single Object and there should be a single copy of that information.</p>
-                <p>&nbsp;</p>
-                <p><strong>2. The User Info should be accessible to all Places</strong></p>
-                <p>The User Information&nbsp;should be available to entire Application. In order to ensure that the information is available to other components, we should ensure that the Object contains a global visibility. The User Object should be saved inside a namespace from where it can be accessible to others.</p>
-                <p>&nbsp;</p>
-                <p><strong>3. Object should conatin set of Related Functionalities</strong></p>
-                <p>The Object created should be such that the set of functionalities and variable declared should refer to some Related Entity. It would not be a good practice to associate functionalities and variables which are not a part of User Info. Object created should be such that they represent a fixed entity. &quot;User&quot; in our case. If the Object contains functionalities that are irrelevant to the user, then it a wrong practice.</p>
-                <p>&nbsp;</p>
-                <h3>Simplest Singleton Implementation:</h3>
-                <p>Below is a simple singleton Object declared using Object Literal.</p>
-                <p>As the Article progreses we shall come accross further complex implementation Of Singleton.</p>
-                <pre>
+                </div>
+                <!-- end .content -->
+                <div class="image" style="background-image: url('images/javascript-logo-large.jpg');"></div>
+              </header>
+              <!-- end .blog-header -->
+              <div class="blog-post">
+                <div class="blog-post-content">
+                  <h1 class="heading">Singleton Pattern</h1>
+                  <p>The intent of this article is to understand the concept of <b>Singleton Pattern</b>.</p><br>
+                  <p>Singleton ensures that the <b>number of instances of a particular type is restricted to only one.</b></p><br>
+                  <p>This single instance is called as <b>Singleton Object</b>.</p>
+                  <br><br>
+                  <h2 class="topic">Features of Singleton Pattern:</h2>
+                  <p>1. Singleton Ensures that only one instance of a class exists</p>
+                  <p>2. Create a shared piece of functionality which can be accessed accross different part of application.</p>
+                  <p>3. Provides a global access to an instance of Object</p>
+                  <p>4. Helps with the memory Managment by sharing a set of functionality accross other Objects</p>
+                  <p>5. Provides Modularity where set of related features can represent an Entity.</p>
+                  <br><br>
+                  <h2 class="topic">Creational Design Pattern</h2>
+                  <p><b>Singleton Pattern</b> exists as a part of Creational Design Pattern.</p><br>
+                  <p>Creational patterns are the patterns which deals with creation of Object in the most efficient manner. The Creational logic is somehow hidden from the consumer, since the consumer of the object is not interested in "how an instance is created", he is only interested in consuming the Object Information.</p>
+                  <br><br>
+                  <h2 class="topic">Practical Scenerio:</h2>
+                  <p>Lets try to understand the usage of Singleton Pattern by taking a practical Problem:</p><br>
+                  <p><b>Lets consider a scenerio where a user access an Application and once the user provide Login Information, User Info is fetched from the Database, This Information is required in different part of application.</b></p>
+                  <br>
+                  <p>While resolving the specified problem statement, we need to take care of following factors:</p><br>
+                  <p>1<b>. We should not create multiple instances of User Object</b></p><br>
+                  <p>If we create multiple Object containing User data, each Object shall hold memory space, in an ideal design strategy, we should not consume access of Memory to store irrelevant data. If we are storing the same data in multiple Objects, it leads to Memory Loss. Therefore we need to ensure that the Information is stored in a single Object and there should be a single copy of that information.</p>
+                  <br>
+                  <p><b>2. The User Info should be accessible to all Places</b></p><br>
+                  <p>The User Information should be available to entire Application. In order to ensure that the information is available to other components, we should ensure that the Object contains a global visibility. The User Object should be saved inside a namespace from where it can be accessible to others.</p>
+                  <br>
+                  <p><b>3. Object should contain set of Related Functionalities</b></p><br>
+                  <p>The Object created should be such that the set of functionalities and variable declared should refer to some Related Entity. It would not be a good practice to associate functionalities and variables which are not a part of User Info. Object created should be such that they represent a fixed entity. "User" in our case. If the Object contains functionalities that are irrelevant to the user, then it a wrong practice.</p>
+                  <br><br>
+                  <h2 class="topic">Simplest Singleton Implementation:</h2>
+                  <p>Below is a simple <b>Singleton Object</b> declared using Object Literal.</p><br>
+                  <p>As the Article progreses we shall come accross further complex implementation Of Singleton.</p>
+                  <pre>
 <code class="lang-javascript">
 var Employee = {
-&nbsp; name: &#39;Mayank&#39;,
+  name: "Mayank",
   age: 28,
-&nbsp; designation: &#39;Senior Software Developer&#39;,
-&nbsp; showDetails: function() {
-&nbsp;   console.log(name + &#39; &#39; + designation);
-&nbsp; }
+  designation: "Senior Software Developer",
+  showDetails: function() {
+    console.log(name + " " + designation);
+  }
 }
 </code></pre>
-                <p>&nbsp;</p>
-                <p>We shall now evaluate whether the basic intent of creating a singleton is fulfilled or not in above implementation</p>
-                <p>Lets look for the features of the above specified block of code:</p>
-                <p>1. Employee is created using a Object literal, therefore we cannot create Objects from it.</p>
-                <p>2. User Information is saved in&nbsp;Namespace &quot;Employee&quot;, which can be accessed at other parts of application.</p>
-                <p>3. The Object &quot;Employee&quot; contains set of related functionalities and properties.</p>
-                <p>4. Creating a single Object that contains the User info, shall save memory space.</p>
-                <p>&nbsp;</p>
-                <h3><em>Different Implementation Of Singleton:</em></h3>
-                <p><strong><em>1. Using Object Literal:</em></strong></p>
-                <p>Object Literal is set of comma seperated list of name-value pair wrapped inside curly brackets.</p>
-                <p>It uses the following Syntax Rules:</p>
-                <ul>
-                  <li>A colon seperated Name Value Pair</li>
-                  <li>Comma seperate each name value pair from other.</li>
-                  <li>No comma at the last name-value pair</li>
-                </ul>
-                <p>The biggest advantage of using Object Literal is that we need not to call any constructor maintain correct order of arguments that need to be passed to the constructor function.</p>
-                <p>The simplest implementation of <strong>Singleton </strong>is using <strong>&quot;Object Literal&quot;</strong>. Lets see a simple implementation:</p>
-                <pre>
+                  <br>
+                  <p>We shall now evaluate whether the basic intent of creating a singleton is fulfilled or not in above implementation</p>
+                  <br><p>Lets look for the features of the above specified block of code:</p>
+                  <p>1. Employee is created using a Object literal, therefore we cannot create Objects from it.</p>
+                  <p>2. User Information is saved in Namespace "Employee", which can be accessed at other parts of application.</p>
+                  <p>3. The Object "Employee" contains set of related functionalities and properties.</p>
+                  <p>4. Creating a single Object that contains the User info, shall save memory space.</p>
+                  <br><br>
+                  <h2 class="topic">Different Implementation Of Singleton:</h2>
+                  <p><b><em>1. Using Object Literal:</em></b></p><br>
+                  <p>Object Literal is set of comma seperated list of name-value pair wrapped inside curly brackets.</p>
+                  <p>It uses the following Syntax Rules:</p>
+                  <ul>
+                    <li>A colon seperated Name Value Pair</li>
+                    <li>Comma seperate each name value pair from other.</li>
+                    <li>No comma at the last name-value pair</li>
+                  </ul>
+                  <p>The biggest advantage of using Object Literal is that we need not to call any constructor maintain correct order of arguments that need to be passed to the constructor function.</p><br>
+                  <p>The simplest implementation of <b>Singleton </b>is using <b>"Object Literal"</b>. Lets see a simple implementation:</p>
+                  <pre>
 <code class="lang-javascript">
 var Employee = {
-  name: &#39;Mayank&#39;,
+  name: "Mayank",
   age: 28,
-  designation: &#39;Senior Software Developer&#39;,
+  designation: "Senior Software Developer",
   showDetails: function() {
-    console.log(name + &#39; &#39; + designation);
-&nbsp; }
+    console.log(name + " " + designation);
+  }
 }
 
 </code></pre>
-                <p>&nbsp;</p>
-                <p>This Object is a single copy of the information, which is refered by a namespace &quot;Employee&quot;.&nbsp;</p>
-                <p>Set of related functionalities and variables are enclosed within a single block to form an entity</p>
-                <p>&nbsp;</p>
-                <p><em><strong>2. Using Module Pattern and IIFE:</strong></em></p>
-                <p>We can use Module pattern to create a Singleton Function.</p>
-                <p>Module pattern can be defined as an anonymous function which is self invoked (IIFE) and return a set of related functionalities and properties, which will then be assigned to a Namespace (Object).</p>
-                <p>Now lets see the implementation of Singleton Pattern using IIFE:</p>
-                <pre>
+                  <p>This Object is a single copy of the information, which is refered by a namespace "Employee". </p>
+                  <p>Set of related functionalities and variables are enclosed within a single block to form an entity</p>
+                  <br>
+                  <p><b>2. Using Module Pattern and IIFE:</b></p><br>
+                  <p>We can use Module pattern to create a Singleton Function.</p>
+                  <p>Module pattern can be defined as an anonymous function which is self invoked (IIFE) and return a set of related functionalities and properties, which will then be assigned to a Namespace (Object).</p>
+                  <p>Now lets see the implementation of Singleton Pattern using IIFE:</p>
+                  <pre>
 <code class="lang-javascript">
 var Employee = (function() {
-  var name = &quot;Mayank;
+  var name = "Mayank;
   var age = 28;
-  var designation = &#39;Senior Software Developer&#39;
+  var designation = "Senior Software Developer"
   var showDetails = function() {
-&nbsp;   console.log(name + &#39; &#39; + desination);
-&nbsp; }
+    console.log(name + " " + desination);
+  }
 
-&nbsp; return {
-&nbsp;   name: name,
-&nbsp;   age: age
-&nbsp;   showdetails: showDetails
-&nbsp; }
+  return {
+    name: name,
+    age: age
+    showdetails: showDetails
+  }
 }
 
 var myName = Employee.name;
@@ -339,122 +340,121 @@ Employee.designation;  // This is error since designation property is not expose
 Employee.showDetails();
 
 </code></pre>
-                <p>&nbsp;</p>
-                <p>Here we can see the Implementation of Singleton Object using IIFE.</p>
-                <p>According to the implemenatation:</p>
-                <p>1. A closure is created with the set of related functionalities and Object</p>
-                <p>2. These set of related data is a part of function scope ie private to the Anonymous Function</p>
-                <p>3. Set of functionalities are exposed to the Employee Namespace using &quot;return&quot; keyword.</p>
-                <p>4. The Employee namespace shall now contain the returned properties and functionalities.</p>
-                <p><strong>** Note:</strong> &quot;designation&quot; here is created as a private member inside IIFE, but the Object also exposes the &quot;showDetails&quot; function which need to access the &quot;designation&quot; variable. This function when accessed from outside the IIFE scope can still refer to the private member &quot;designation&quot;. This is because of the concept called Closure.</p>
-                <p>We shall learn the concepts of closure in a seperate article, but for now we need to remember that closure is a property of a variable or a function to remember the enviroment in which it was created. Since the function requires the access to the variable &quot;designation&quot;, the local enviroment in which the Object was created in remembered and hence we can still access the variable &quot;designation&quot;.</p>
-                <p>&nbsp;</p>
-                <p>3. More Complex Implementation of Singleton:</p>
-                <pre>
+                  
+                  <p>Here we can see the Implementation of Singleton Object using IIFE.</p>
+                  <p>According to the implemenatation:</p>
+                  <p>1. A closure is created with the set of related functionalities and Object</p>
+                  <p>2. These set of related data is a part of function scope ie private to the Anonymous Function</p>
+                  <p>3. Set of functionalities are exposed to the Employee Namespace using "return" keyword.</p>
+                  <p>4. The Employee namespace shall now contain the returned properties and functionalities.</p><br>
+                  <p><b>** Note:</b> "designation" here is created as a private member inside IIFE, but the Object also exposes the "showDetails" function which need to access the "designation" variable. This function when accessed from outside the IIFE scope can still refer to the private member "designation". This is because of the concept called Closure.</p>
+                  <p>We shall learn the concepts of closure in a seperate article, but for now we need to remember that closure is a property of a variable or a function to remember the enviroment in which it was created. Since the function requires the access to the variable "designation", the local enviroment in which the Object was created in remembered and hence we can still access the variable "designation".</p>
+                  <br>
+                  <b>3. More Complex Implementation of Singleton:</b>
+                  <pre>
 <code class="lang-javascript">
 var Employee = (function() {
 
-&nbsp; var details = null;
+  var details = null;
 
-&nbsp; var getInstance = function() {
-&nbsp;   if(details == null) {
-&nbsp;     details = {
-&nbsp;       name: &#39;Mayank&#39;,
-&nbsp; &nbsp; &nbsp; &nbsp; age: 28
+  var getInstance = function() {
+    if(details == null) {
+      details = {
+        name: "Mayank",
+        age: 28
       }
-&nbsp;   }
-&nbsp;   return details;
+    }
+    return details;
   }
-&nbsp;
-&nbsp; return {
-&nbsp;   getInstance: getInstance
-&nbsp; }
+ 
+  return {
+    getInstance: getInstance
+  }
 })();
 
 var myEmployee = Employee.getInstance();
 
 </code></pre>
-                <p>In the above specified implementation, we have created an IIFE, this anonymous function returns the &quot;getInstance&quot; function.</p>
-                <p>In the above implementation of Singleton, a closure is created using IIFE. &quot;getInstance&quot; refers to the &quot;details&quot; Object even when it is declared as private, &quot;getInstance&quot;&nbsp;shall have the access to &quot;details&quot; Object that was created inside the IIFE as private member.&nbsp;</p>
-                <p>&nbsp;</p>
-                <p>When we invoke &quot;getInstance&quot; function on Employee Object, following happens:</p>
-                <p>1. Runtime checks to see if we have Oject defined with the name &quot;details&quot;</p>
-                <p>2. If the details object is null, it created initializes the Object for Details and return it from the function.</p>
-                <p>3. If the details is already initialized, it is returned.</p>
-                <p>&nbsp;</p>
-                <p><strong>**Note: </strong>In the above implementation of Singleton, a closure is created for the variable &quot;details&quot;, so even when the variable is described as aprivate variable, it can still be accessed inside the publically exposed function &quot;getInstance&quot;, when it is executesd from outside the Closure Scope.</p>
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
-                <h3><em>Singleton </em>Instantiation<em>:</em></h3>
-                <h4>1. Lazy Instantiation</h4>
-                <p>In Lazy Instatiation, the Singleton variable will not get the momory untill we call the function which is responsible for creating and returning the Singleton Object.</p>
-                <pre>
+                  <p>In the above specified implementation, we have created an IIFE, this anonymous function returns the "getInstance" function.</p>
+                  <p>In the above implementation of Singleton, a closure is created using IIFE. "getInstance" refers to the "details" Object even when it is declared as private, "getInstance" shall have the access to "details" Object that was created inside the IIFE as private member. </p>
+                  <br>
+                  <p>When we invoke "getInstance" function on Employee Object, following happens:</p>
+                  <p>1. Runtime checks to see if we have Oject defined with the name "details"</p>
+                  <p>2. If the details object is null, it created initializes the Object for Details and return it from the function.</p>
+                  <p>3. If the details is already initialized, it is returned.</p>
+                  <br>
+                  <p><b>**Note: </b>In the above implementation of Singleton, a closure is created for the variable "details", so even when the variable is described as aprivate variable, it can still be accessed inside the publically exposed function "getInstance", when it is executesd from outside the Closure Scope.</p>
+                  <br>
+                  <h2 class="topic">Different Singleton Instantiation:</h2>
+                  <b>1. Lazy Instantiation</b><br>
+                  <p>In Lazy Instatiation, the Singleton variable will not get the momory untill we call the function which is responsible for creating and returning the Singleton Object.</p>
+                  <pre>
 <code class="lang-javascript">
 var Employee = (function() {
 
-&nbsp; var details = null;
+  var details = null;
 
-&nbsp; var getInstance = function() {
-&nbsp;   if(details == null) {
-&nbsp;     details = {
-&nbsp;       name: &#39;Mayank&#39;,
-&nbsp; &nbsp; &nbsp; &nbsp; age: 28
+  var getInstance = function() {
+    if(details == null) {
+      details = {
+        name: "Mayank",
+        age: 28
       }
-&nbsp;   }
-&nbsp;   return details;
+    }
+    return details;
   }
-&nbsp;
-&nbsp; return {
-&nbsp;   getInstance: getInstance
-&nbsp; }
+ 
+  return {
+    getInstance: getInstance
+  }
 })();
 
 var myEmployee = Employee.getInstance();
 
 </code></pre>
-                <p>In this Example, the IIFE contains a singleton Object &quot;details&quot;, the details object shall not be assigned memory untill the function &quot;getInstance&quot; is called, this is called Lazi=y Instantiation.</p>
-                <p>The advantage of using this pattern:</p>
-                <p>1. Object shall not consume space untill the function call is made</p>
-                <p>This ensures that the Object shall be instantiated with memory only when it is required by the user.</p>
-                <p>&nbsp;</p>
-                <p><strong>2. Early Instantiation</strong></p>
-                <p>In case of Early Instantiation, the singleton object is available to the user while initialization itself, the Singleton shall consume memory even if it is not used.&nbsp;</p>
-                <pre>
+                  <p>In this Example, the IIFE contains a singleton Object "details", the details object shall not be assigned memory untill the function "getInstance" is called, this is called Lazy Instantiation.</p><br>
+                  <p>The advantage of using this pattern:</p>
+                  <p>1. Object shall not consume space untill the function call is made</p>
+                  <p>This ensures that the Object shall be instantiated with memory only when it is required by the user.</p>
+                  <br>
+                  <p><b>2. Early Instantiation</b></p><br>
+                  <p>In case of Early Instantiation, the singleton object is available to the user while initialization itself, the Singleton shall consume memory even if it is not used. </p>
+                  <pre>
 <code class="lang-javascript">
 var Employee = (function() {
-  var name = &quot;Mayank;
+  var name = "Mayank;
   var age = 28;
-  var designation = &#39;Senior Software Developer&#39;
+  var designation = "Senior Software Developer"
   var showDetails = function() {
-&nbsp;   console.log(name + &#39; &#39; + desination);
-&nbsp; }
+    console.log(name + " " + desination);
+  }
 
-&nbsp; return {
-&nbsp;   name: name,
-&nbsp;   age: age
-&nbsp;   showdetails: showDetails
-&nbsp; }
+  return {
+    name: name,
+    age: age
+    showdetails: showDetails
+  }
 }
 
 </code></pre>
-                <p>In this Example, the IIFE shall return set of functionalities and properties from the function. Here once the IIFE is executed, the singleton shall hold the properties and functionalities returned from the function invokation.</p>
-                <p>&nbsp;</p>
-                <h3>Conclusion:</h3>
-                <p>Hope that the article was able to explain you the concept of Singleton Objects.</p>
-                <p>Please provide your reviews regarding the Article, this shall help me learn more and present some better articles in the near future. Thanks.</p>
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
+                  <p>In this Example, the IIFE shall return set of functionalities and properties from the function. Here once the IIFE is executed, the singleton shall hold the properties and functionalities returned from the function invokation.</p>
+                  <br><br>
+                  <h2 class="topic">Conclusion:</h2>
+                  <p>Hope that the article was able to explain you the concept of Singleton Objects.</p>
+                  <p>Please provide your reviews regarding the Article, this shall help me learn more and present some better articles in the near future. Thanks.</p>
+                  <br><br>
+                  <br><br>
+                </div>
+                <!-- end .blog-post -->
+                <!-- end .blog-details -->
               </div>
-              <!-- end .blog-post -->
-    
-              <!-- end .blog-details -->
+              <!-- end .single-blog-post -->
             </div>
-            <!-- end .single-blog-post -->
+            <!-- end .container -->
           </div>
-          <!-- end .container -->
-        </div>
-      </section>
-      </div> <!-- end .sections-wrapper -->
+        </section>
+      </div>
+      <!-- end .sections-wrapper -->
     </div>
     <!-- end .sections -->
     <!-- Footer -->
