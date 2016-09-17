@@ -578,7 +578,6 @@ Here the Arguments are enclosed within &quot;()&quot; brackets.
       <div class="bottom">Copyright &copy; Sility. All Rights Reserved.</div> <!-- end .bottom -->
     </footer> <!-- end .footer -->
     <script async src="js/analytics.js"></script>
-    <script src="scripts/commentUtility.js"></script>
 
 	</body>
 </html>
