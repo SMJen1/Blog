@@ -215,7 +215,7 @@
                         </a>
                     </p>
                     <p class="other-articles">
-                        <a href="/singleton-design-pattern-javascript-design-pattern-module-pattern">
+                        <a href="/singleton-design-pattern-javascript-module">
                           Singleton Pattern In JavaScript
                         </a>
                     </p>
@@ -230,7 +230,7 @@
                         </a>
                     </p>
                     <p class="other-articles">
-                        <a href="/hoisting">
+                        <a href="/function-and-variable-hoisting-javascript-closures">
                           Hoisting in JavaScript
                         </a>
                     </p>

@@ -28,12 +28,12 @@
       res.render('module', { 'count': routeConroller.count });
     })
 
-    app.get('/singleton-design-pattern-javascript-design-pattern-module-pattern', function(req, res) {
+    app.get('/singleton-design-pattern-javascript-module', function(req, res) {
       routeConroller.count++;
       res.render('singleton', { 'count': routeConroller.count });
     })
 
-    app.get('/hoisting', function(req, res) {
+    app.get('/function-and-variable-hoisting-javascript-closures', function(req, res) {
       routeConroller.count++;
       res.render('hoisting', { 'count': routeConroller.count });
     })

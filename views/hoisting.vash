@@ -5,9 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow">
-    <title>Variable and Function Hoisting</title>
-    <meta name="description" content="Learn concept of Variable and Function Hoisting in Details" />
-    <meta name="keywords" content="Hoisting, Function Hoisting, Variable Hoisting, Hoisting in JavaScript, JavaScript Hoisting, Hoisting Concepts, Variable Declaration, variable Definition, Function Expressions, Function Declaration, Expression in JavaScript, Expressions, Function Expression"/>
+
+    <title>Function Hoisting and Variable Hoisting JavaScript</title>
+
+    <meta name="title" content="Function Hoisting and Variable Hoisting JavaScript" />
+
+    <meta name="description" content="Functions and Variables are Hoisted in JavaScript. Variable and Function Hoisting enables the user to access variable before its Initialization." />
+
+    <meta name="keywords" content="Hoisting, JavaScript Hoisting, Function Hoisting, Variable Hoisting, Hoisting in JavaScript, JavaScript Hoisting, Hoisting Concepts, Variable Declaration, variable Definition, Function Expressions, Function Declaration, Expression in JavaScript, Expressions, Function Expression"/>
+
     <link rel="stylesheet" href="css/shrink.css">
     <link rel="stylesheet" href="css/app.css">
     <script src="js/rainbow.js"></script>
@@ -207,7 +213,7 @@
                         </a>
                     </p>
                     <p class="other-articles">
-                        <a href="/singleton-design-pattern-javascript-design-pattern-module-pattern">
+                        <a href="/singleton-design-pattern-javascript-module">
                           Singleton Pattern In JavaScript
                         </a>
                     </p>
@@ -222,7 +228,7 @@
                         </a>
                     </p>
                     <p class="other-articles">
-                        <a href="/hoisting">
+                        <a href="/function-and-variable-hoisting-javascript-closures">
                           Hoisting in JavaScript
                         </a>
                     </p>
@@ -239,136 +245,136 @@
             <!-- end .blog-header -->
             <div class="blog-post">
               <div class="blog-post-content">
-                <h1><strong>Introduction</strong></h1>
-                <p>The article shall give an overview of &quot;<strong>Variable and Function Hoisting Concepts&quot;.</strong></p>
-                <p>Making Varaible and Functions available even before its Declaration is called Hoisting.</p>
-                <p>Both Functions and Variables can be Hoisted.</p>
-                <p>&nbsp;</p>
-                <p>The Article shall help you understand the following Concepts:</p>
-                <p><strong>1. Difference between Variable Declaration and Variable Definition</strong></p>
-                <p><strong>2. What is Variable Hoisting.&nbsp;</strong></p>
-                <p><strong>3. Difference between Function Expressions and Function Expressions</strong></p>
-                <p><strong>4. What is&nbsp;Function Hoisting.&nbsp;</strong></p>
-                <p><strong>5. Why Function Expressions are not Hoisted.</strong></p>
-                <p><strong>6. Order of Variable and Function Hoisting.</strong></p>
-                <p>&nbsp;</p>
+                <h1 class="heading">Function and Variable Hoisting</h1>
+                <p>The article shall give an overview of "<b>Variable and Function Hoisting Concepts".</b></p><br>
+                <p>Making Variable and Functions available even before its Declaration is called <b>Hoisting</b>.</p><br>
+                <p>Both Functions and Variables can be <b>Hoisted</b>.</p>
+                <p><br></p>
+                <b>The Article shall help you understand the following Concepts:</b><br><br>
+                <p>1. Difference between <b>Variable Declaration and Variable Definition</b></p>
+                <p>2. What is <b>Variable Hoisting. </b></p>
+                <p>3. Difference between <b>Function Expressions and Function Expressions</b></p>
+                <p>4. What is <b>Function Hoisting. </b></p>
+                <p>5. Why <b>Function Expressions</b> are not Hoisted.</p>
+                <p>6. <b>Order of</b> Variable and Function Hoisting.</p>
+                <p><br></p>
                 <p>We shall cover all the topics in detail, so that we could have clear understanding of all these concepts.</p>
-                <p>&nbsp;</p>
-                <h2><strong>Variable Declaration and Definition:</strong></h2>
-                <p>We need to understand the concept of <strong>Variable Declaration and Definition</strong> to understand Hoisting.</p>
-                <p>&nbsp;</p>
-                <p><strong>Lets consider the following piece of code:</strong></p>
+                <p><br></p>
+                <h2 class="topic">Variable Declaration and Definition:</h2>
+                <p>We need to understand the concept of <b>Variable Declaration and Definition</b> to understand Hoisting.</p>
+                <p><br></p>
+                <p><b>Lets consider the following piece of code:</b></p>
                 <pre>
 <code class="lang-javascript">
 console.log(Employee);</code></pre>
-                <p>&nbsp;</p>
-                <p>In the above code we have not provided any Declaration and Definition for the variable &quot;Employee&quot;.&nbsp;</p>
-                <p>Therefore, if the variable is accessed,&nbsp;&quot;ReferenceError: Employee is not defined&quot; error shall appear.&nbsp;</p>
+                <p></p>
+                <p>In the above code we have not provided any Declaration and Definition for the variable "Employee". </p><br>
+                <p>Therefore, if the variable is accessed, "ReferenceError: Employee is not defined" error shall appear. </p><br>
                 <p>This simply means that:</p>
-                <p>1. JavaScript compiler has no idea about any implementation of variable &quot;Employee&quot;.&nbsp;</p>
+                <p>1. JavaScript compiler has no idea about any implementation of variable "Employee". </p>
                 <p>2. When the variable is encountered in the code it cannot find any reference to the specified variable.</p>
-                <p>3. Since no reference can be found,&nbsp;it returns &quot;Null Reference Error&quot;.</p>
-                <p>&nbsp;</p>
+                <p>3. Since no reference can be found, it returns "Null Reference Error".</p>
+                <p><br></p>
                 <p>Lets look into details of Declaration and Definition in order to understand Hoisting in Detail.</p>
-                <p>&nbsp;</p>
-                <h3><strong>Variable Declaration:</strong></h3>
+                <p><br></p>
+                <h2 class="topic">Variable Declaration:</h2>
                 <pre>
 <code class="lang-javascript">
 var Employee;</code></pre>
-                <p>This is a simple Variable Declaration.</p>
-                <p>Variable declaration simply signifies that a variable with name &quot;Employee&quot; is containing a reference.</p>
+                <p>This is a simple Variable Declaration.</p><br>
+                <p>Variable declaration simply signifies that a variable with name "Employee" is containing a reference.</p>
                 <p>This declared variable shall be accessed shortly. Therefore JavaScript creates a reference for the same.</p>
                 <p>Although in the above declaration, we are not providing any value to the variable.</p>
-                <p>&nbsp;</p>
+                <p><br></p>
                 <pre>
 <code class="lang-javascript">
 console.log(Employee);
 
 // output: undefined</code></pre>
                 <p>In above code the variable is declared without any value assigned to it.</p>
-                <p>Since we dont have any value assigned, <strong>an implicit value &quot;undefined&quot;</strong> shall be assigned to it.</p>
-                <p>The value &quot;<strong>undefined</strong>&quot; shall signify that we still <strong>need to define / initialize the value of variable</strong>.</p>
-                <p>&nbsp;</p>
-                <p><strong>**Note: we will shortly examine&nbsp;case&nbsp;where Declaration and Definition shall be provided in same line.</strong></p>
-                <p>&nbsp;</p>
-                <h3><strong>Variable Definition / Initialization:</strong></h3>
+                <p>Since we dont have any value assigned, <b>an implicit value "undefined"</b> shall be assigned to it.</p>
+                <p>The value "<b>undefined</b>" shall signify that we still <b>need to define / initialize the value of variable</b>.</p>
+                <p><br></p>
+                <p><b>**Note: we will shortly examine case where Declaration and Definition shall be provided in same line.</b></p>
+                <p><br></p>
+                <h2 class="topic">Variable Definition / Initialization:</h2>
                 <p>Variable Definition is assignment of a value to a variable.</p>
                 <pre>
 <code class="lang-javascript">
 var Employee; // Variable Declaration
 
-Employee = &#39;Mayank&#39;; // Variable Definition
+Employee = "Mayank"; // Variable Definition
 
 console.log(Employee); //output: Mayank
 </code></pre>
-                <p><strong>Variable Definition </strong>gives value to the variable.&nbsp;</p>
-                <p>The variable Reference is now assigned some value instead of &quot;undefined&quot;</p>
-                <p>&nbsp;</p>
+                <p><b>Variable Definition </b>gives value to the variable. </p><br>
+                <p>The variable Reference is now assigned some value instead of "undefined"</p>
+                <p><br></p>
                 <pre>
 <code class="lang-javascript">
-var Employee = &quot;Mayank&quot;;
+var Employee = "Mayank";
 
 console.log(Employee); //output: Mayank
 </code></pre>
                 <p>In the above code, Declaration and Definition of the variable is provided in a single line of code.</p>
-                <p>&nbsp;</p>
+                <p><br></p>
                 <p>Now since we have understanding of Function Declaration and Definition, we can now move to Hoisting.</p>
-                <p>&nbsp;</p>
-                <h2><strong>Variable Hoisting</strong></h2>
+                <p><br></p>
+                <h2 class="topic">Variable Hoisting</h2>
                 <pre>
 <code class="lang-javascript">
 console.log(Employee);
 
-var Employee = &quot;Mayank&quot;; </code></pre>
-                <div>In the above code the variable &quot;Employee&quot; is refered even before it is initialized.</div>
-                <p>&nbsp;</p>
-                <h3><strong>What output do you expect ?</strong></h3>
-                <p>If you are not aware of Hoisting Concepts, we would expect that ouput shall be &quot;Null Reference Exception&quot;.</p>
-                <p>Since there is no prior reference to &quot;Employee&quot; Object when compiler tries to run Line 1</p>
-                <p>&nbsp;</p>
-                <p>But lets see what is the output of the program: &nbsp;</p>
+var Employee = "Mayank"; </code></pre>
+                <div>In the above code the variable "Employee" is refered even before it is initialized.</div>
+                <p><br></p>
+                <h2 class="topic">What output do you expect ?</h2>
+                <p>If you are not aware of Hoisting Concepts, we would expect that ouput shall be "Null Reference Exception".</p><br>
+                <p>Since there is no prior reference to "Employee" Object when compiler tries to run Line 1</p>
+                <p><br></p>
+                <p>But lets see what is the output of the program:  </p>
                 <pre>
 <code class="lang-javascript">
 console.log(Employee); // Output: undefined
 
-var Employee = &quot;Mayank&quot;;</code></pre>
-                <p>Here we can see that the output is &quot;<strong>Undefined</strong>&quot;, rather we expected it to be a &quot;<strong>Reference Error&quot;.</strong></p>
-                <p>&nbsp;</p>
-                <h3><strong>Why do we get &quot;Undefined&quot; instead of &quot;Reference Error&quot; ?</strong></h3>
-                <p>The reason why the output is &quot;<strong>Undefined</strong>&quot; is because of <strong>Variable Hoising.</strong></p>
-                <p><strong>Variable Hoisting&nbsp;</strong>shall move the Variable Declaration to the top of the execing function.</p>
-                <p>Since the variable declaration is moved to the top, it is assigned a value <strong>&quot;undefined&quot;</strong></p>
+var Employee = "Mayank";</code></pre>
+                <p>Here we can see that the output is "<b>Undefined</b>", rather we expected it to be a "<b>Reference Error".</b></p>
+                <p><br></p>
+                <h2 class="topic">Why "Undefined" instead of "Reference Error" ?</h2>
+                <p>The reason why the output is "<b>Undefined</b>" is because of <b>Variable Hoising.</b></p><br>
+                <p><b>Variable Hoisting </b>shall move the Variable Declaration to the top of the execing function.</p><br>
+                <p>Since the variable declaration is moved to the top, it is assigned a value <b>"undefined"</b></p>
                 <p>Hoisting the declaration on the top makes it available to be accessed, even before the variable is declared.</p>
-                <p>&nbsp;</p>
-                <p><strong>**Note:</strong> Only Function declaration moves to the top, Declaration shall still remain at the same place.</p>
-                <p><strong>**</strong> Also if Declaration is moved to the top, variable is assigned the value at &quot;undefined&quot;</p>
-                <p>&nbsp;</p>
-                <p><strong>The above function call is equivalant to:</strong></p>
+                <p><br></p>
+                <p><b>**Note:</b> Only Function declaration moves to the top, Declaration shall still remain at the same place.</p>
+                <p><b>**</b> Also if Declaration is moved to the top, variable is assigned the value at "undefined"</p>
+                <p><br></p>
+                <p><b>The above function call is equivalant to:</b></p>
                 <pre>
 <code class="lang-javascript">
 var Employee;
 
 console.log(Employee); // Output: undefined
 
-Employee = &quot;Mayank&quot;;</code></pre>
+Employee = "Mayank";</code></pre>
                 <p>Here the Hoisting is moved to the top of the function.</p>
-                <p>Therefore when we display the output, it displays: &quot;undefined&quot; rather than giving&nbsp;a &quot;Reference Error&quot;.</p>
-                <p>&nbsp;</p>
-                <h3><em>** Only Variable Declaration are Hoisted</em></h3>
+                <p>Therefore when we display the output, it displays: "undefined" rather than giving a "Reference Error".</p>
+                <p><br></p>
+                <b>** Only Variable Declaration are Hoisted</b>
                 <p>It is important to note that only variable declaration moves to the top and not variable declaration.</p>
                 <p>Lets understand this with an Example:</p>
                 <pre>
 <code class="lang-javascript">
 console.log(Employee);
 
-var Employee = &quot;Mayank&quot;;
+var Employee = "Mayank";
 
 console.log(Employee);</code></pre>
-                <p>Here we can see that the variable is declared and defined in the same line of code.&nbsp;</p>
-                <p>&nbsp;</p>
-                <p><strong>What output do you expect in this case ?</strong></p>
-                <p>Since now we know that the variable are hoisted, so &quot;reference Error&quot; shall not be encountered.</p>
-                <p>So what output do you expect: <strong>&quot;undefined&quot;</strong> or <strong>&quot;Mayank&quot;. </strong>Lets see the output</p>
+                <p>Here we can see that the variable is declared and defined in the same line of code. </p>
+                <p><br></p>
+                <p><b>What output do you expect in this case ?</b></p>
+                <p>Since now we know that the variable are hoisted, so "reference Error" shall not be encountered.</p>
+                <p>So what output do you expect: <b>"undefined"</b> or <b>"Mayank". </b>Lets see the output</p>
                 <p>The above code id equivalent to the following code after Hoisting:</p>
                 <pre>
 <code class="lang-javascript">
@@ -376,38 +382,38 @@ Line 1: var Employee;
 
 Line 2: console.log(Employee); // output: undefined
 
-Line 3: Employee = &quot;Mayank&quot;;
+Line 3: Employee = "Mayank";
 
 Line 4: console.log(Employee); // output: Mayank</code></pre>
-                <p>&nbsp;</p>
-                <p>As stated earlier, only the variable declaration is hoisted, variable definition is not Hoisted.&nbsp;</p>
+                <p><br></p>
+                <p>As stated earlier, only the variable declaration is hoisted, variable definition is not Hoisted. </p>
                 <p>Therefore the variable Definition shall still remain at the same place, but the declaration shall be Hoisted.</p>
-                <p>&nbsp;</p>
+                <p><br></p>
                 <p>We can derive following Conclusions from the above Discussion:</p>
                 <p>1. Since the variables are Hoisted, Line 2 didnt encountered any Reference Error.</p>
-                <p>2. The Variable is Hoisted on the top and it is assigned the value &quot;undefined&quot;</p>
-                <p>3. Function shall output &quot;undefined&quot; at Line 2</p>
-                <p>4. Variable Declaration shall still remain at Line 3. So the value <strong>&quot;Mayank&quot;</strong> is assigned instead of &quot;<strong>undefined&quot;</strong></p>
-                <p>&nbsp;</p>
-                <p>This is how <strong>Variable Hoisting</strong> takes place inside JavaScript</p>
-                <p>&nbsp;</p>
-                <h3><strong>Now lets move to the implementation of Function Hoisting</strong></h3>
-                <h3><em>Function Definition and Function Expressions:</em></h3>
-                <p>In &nbsp;order to understand the concept of function Hoisting, we need to first understand the following:</p>
+                <p>2. The Variable is Hoisted on the top and it is assigned the value "undefined"</p>
+                <p>3. Function shall output "undefined" at Line 2</p>
+                <p>4. Variable Declaration shall still remain at Line 3. So the value <b>"Mayank"</b> is assigned instead of "<b>undefined"</b></p>
+                <p><br></p>
+                <p>This is how <b>Variable Hoisting</b> takes place inside JavaScript</p>
+                <p><br></p>
+                <h2 class="topic">Now lets move to the implementation of Function Hoisting</h2>
+                <h3 class="subtopic"><b>Function Definition and Function Expressions:</b></h3>
+                <p>In  order to understand the concept of function Hoisting, we need to first understand the following:</p>
                 <p>1. Function Expression</p>
                 <p>2. Function Declaration</p>
-                <p>&nbsp;</p>
-                <h4><em>Function Definition:&nbsp;</em></h4>
-                <p>Lets look at a very simple &quot;Function Definition&quot;:</p>
+                <p><br></p>
+                <h4>Function Definition:</h4>
+                <p>Lets look at a very simple "Function Definition":</p>
                 <pre>
 <code class="lang-javascript">
 function demoFunction(){
 
-  alert(&quot;This is the function Definition&quot;);
+  alert("This is the function Definition");
 
 }</code></pre>
-                <p>So the simplest way to understand &quot;Function Declaration&quot; is that, it starts with &quot;<strong>function</strong>&quot; keyword.</p>
-                <p>The benefit of Function Definition is that they are&nbsp;<strong>&quot;Hoisted&quot;</strong>&nbsp;by the JavaScript Compiler.</p>
+                <p>So the simplest way to understand "Function Declaration" is that, it starts with "<b>function</b>" keyword.</p>
+                <p>The benefit of Function Definition is that they are <b>"Hoisted"</b> by the JavaScript Compiler.</p>
                 <p>Functions are automatically Hoisted on the Top of the scope by the compiler, hence making it available to be called, even before it is declared.</p>
                 <p>This can be understood by this small example:</p>
                 <pre>
@@ -416,55 +422,54 @@ demoFunction();
 
 function demoFunction(){
 
-  alert(&quot;Function is already Hoisted&quot;);
+  alert("Function is already Hoisted");
 
 }</code></pre>
-                <p>Here the function definition &quot;demoFunction&quot; is hoisted at the top by default, making it available to the user to be called even before the Declaration of the Function.</p>
+                <p>Here the function definition "demoFunction" is hoisted at the top by default, making it available to the user to be called even before the Declaration of the Function.</p>
                 <p>The above piece of code is equivalent to:</p>
                 <pre>
 <code class="lang-javascript">
 function demoFunction(){
 
-  alert(&quot;Function is already Hoisted&quot;);
+  alert("Function is already Hoisted");
 
 }
 
 demoFunction();
 </code></pre>
-                <p>&nbsp;</p>
-                <h4><em>Function Expressions:</em></h4>
-                <p>&quot;<strong>Function Expression&quot;</strong>&nbsp;would be any function defined which does start &quot;function&quot; keyword.</p>
-                <p>Another way to define a function expression is to assign a function to a variable.&nbsp;</p>
-                <p>This is another common way to create a function apart from the &quot;Function Declaration&quot; Syntax above.</p>
+                <p><br></p>
+                <h4>Function Expressions:</h4>
+                <p>"<b>Function Expression"</b> would be any function defined which does start "function" keyword.</p>
+                <p>Another way to define a function expression is to assign a function to a variable. </p>
+                <p>This is another common way to create a function apart from the "Function Declaration" Syntax above.</p>
                 <pre>
 <code class="lang-javascript">
 var demoFunction = function(){
 
-  alert(&quot;This is function Expression&quot;);
+  alert("This is function Expression");
 
 };
 </code></pre>
-                <p>Since the above function does start the keyword &quot;function&quot;, its a&nbsp;<strong>&quot;Function Expression&quot;</strong></p>
-                <p>The above code assigns a function definition to a variable &quot;demoFunction&quot;.&nbsp;</p>
-                <p>This would mean that the variable&nbsp;<strong>&quot;demoFunction&quot;</strong>&nbsp;shall now&nbsp;represent a function definition.</p>
-                <p>The function can now be called using following line of code:&nbsp;<strong>&quot;demoFunction()&quot;</strong></p>
-                <p>&nbsp;</p>
-                <p><strong>Another example of Function Expression is an IIFE:</strong></p>
+                <p>Since the above function does start the keyword "function", its a <b>"Function Expression"</b></p>
+                <p>The above code assigns a function definition to a variable "demoFunction". </p>
+                <p>This would mean that the variable <b>"demoFunction"</b> shall now represent a function definition.</p>
+                <p>The function can now be called using following line of code: <b>"demoFunction()"</b></p>
+                <p><br></p>
+                <p><b>Another example of Function Expression is an IIFE:</b></p>
                 <pre>
 <code class="lang-javascript">
 (function(){
 
-  alert(&quot;This is function Expression&quot;);
+  alert("This is function Expression");
 
 })();
 </code></pre>
-                <p>Here also, we can see that the line of code does not start with &quot;function&quot; keyword, therefore its a expression.</p>
-                <p>&nbsp;</p>
-                <h3><strong>Function Hoisting:</strong></h3>
-                <p>Now, since we are familier with the Function Expressions and Function Declaration, lets understand <strong>&quot;Hoisting&quot;.</strong></p>
-                <p><strong>Function Hoisting</strong> is a concept where just like variables, functions are Hoisted on the top of the Scope.</p>
-                <p>Lets understand this by an Example:</p>
-                <p><strong>Any function Declaration is Hoisted on the top of the Scope.</strong></p>
+                <p>Here also, we can see that the line of code does not start with "function" keyword, therefore its a expression.</p>
+                <p><br></p>
+                <h2 class="topic">Function Hoisting:</h2>
+                <p>Now, since we are familier with the Function Expressions and Function Declaration, lets understand <b>"Hoisting".</b></p><br>
+                <p><b>Function Hoisting</b> is a concept where just like variables, functions are Hoisted on the top of the Scope.</p><br>
+                <p><b>Any function Declaration is Hoisted on the top of the Scope.</b></p><br>
                 <p>This can be understood by this small example:</p>
                 <pre>
 <code class="lang-javascript">
@@ -472,7 +477,7 @@ demoFunction();
 
 function demoFunction(){
 
-  alert(&quot;Function is already Hoisted&quot;);
+  alert("Function is already Hoisted");
 
 }</code></pre>
                 <p>The function Declaration shall be Hoisted on the top.</p>
@@ -481,16 +486,16 @@ function demoFunction(){
 <code class="lang-javascript">
 function demoFunction(){
 
-  alert(&quot;Function is already Hoisted&quot;);
+  alert("Function is already Hoisted");
 
 }
 
 demoFunction();
 </code></pre>
-                <p>&nbsp;</p>
-                <p><strong>** Note: The Hoisting takes place only for Function Declarations. Function Expressions are not Hoisted.</strong></p>
-                <p>&nbsp;</p>
-                <h4><strong>Why Function Expression are Not Hoisted ?</strong></h4>
+                <p><br></p>
+                <p><b>** Note: The Hoisting takes place only for Function Declarations. Function Expressions are not Hoisted.</b></p>
+                <p><br></p>
+                <h4><b>Why Function Expression are Not Hoisted ?</b></h4>
                 <p>Now since we are familier with the basic concept of Variable and Funation Hoisting, lets evaluate how compiler evaluates a simple function Expression.</p>
                 <p>Lets consider the following Example:</p>
                 <pre>
@@ -499,13 +504,13 @@ demoFunction();
 
 var DemoFunction = function(){
 
-  alert(&quot;Function is already Hoisted&quot;);
+  alert("Function is already Hoisted");
 
 }
 </code></pre>
                 <p>In the above code, we have a simple function Expression, function is called before the DemoFunction is declared.</p>
-                <p>&nbsp;</p>
-                <p><strong>Lets see how this code is Hoisted</strong></p>
+                <p><br></p>
+                <p><b>Lets see how this code is Hoisted</b></p>
                 <pre>
 <code class="lang-javascript">
 var demoFunction;
@@ -514,29 +519,29 @@ demoFunction();
 
 demoFunction = function(){
 
-  alert(&quot;Function is already Hoisted&quot;);
+  alert("Function is already Hoisted");
 
 }
 </code></pre>
                 <p>We can derive following results from the above Example:</p>
                 <p>1. The above Example can be seen as an example of Variable Hoisting</p>
-                <p>2. Variable &quot;demoFunction&quot; is assigned a function expression.</p>
-                <p>3. In this case variable &quot;demoFunction&quot; shall be hoisted on the top instead of function expression.</p>
+                <p>2. Variable "demoFunction" is assigned a function expression.</p>
+                <p>3. In this case variable "demoFunction" shall be hoisted on the top instead of function expression.</p>
                 <p>4. Since the variable is hoisted and not the function, we cannot access the function Expression</p>
-                <p>&nbsp;</p>
-                <h3><strong>Conclusion:</strong></h3>
+                <p><br></p>
+                <h2 class="topic">Conclusion:</h2>
                 <p>Important Concepts to remember are:</p>
-                <p><strong>1. Variables are Hoisted at the Top of the Function</strong></p>
-                <p><strong>2. Hoisted Variable shall take &quot;undefined&quot; as it value</strong></p>
-                <p><strong>3. Variable Definition shall not be Hoisted (only Declaration)</strong></p>
-                <p><strong>4. Function Definitions are Hoisted.</strong></p>
-                <p><strong>5. Function Expressions shall not be hoisted.</strong></p>
-                <p><strong>6. If we want functions to be Hoisted, use function Declaration instead of Function Expression.</strong></p>
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
-                <p>&nbsp;</p>
+                <p><b>1. Variables are Hoisted at the Top of the Function</b></p>
+                <p><b>2. Hoisted Variable shall take "undefined" as it value</b></p>
+                <p><b>3. Variable Definition shall not be Hoisted (only Declaration)</b></p>
+                <p><b>4. Function Definitions are Hoisted.</b></p>
+                <p><b>5. Function Expressions shall not be hoisted.</b></p>
+                <p><b>6. If we want functions to be Hoisted, use function Declaration instead of Function Expression.</b></p>
+                <p><br></p>
+                <p><br></p>
+                <p><br></p>
+                <p><br></p>
+                <p><br></p>
               </div>
               <!-- end .blog-post -->
 

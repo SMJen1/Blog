@@ -14,6 +14,7 @@
     <meta name="keywords" content="IIFE, Immediately Invokable Function Expression, IIFE in JavaScript, JavaScript IIFE, JavaScript Patterns, Learn JavaScript Design Pattern, JavaScript Patterns, Function Definition, Function Exressions in JavaScript, JavaScript Basic Concepts, Learn JavaScript, IIFE concepts, Function Expressions, JavaScript Function Expressions, Learn IIFE, IIFE Expressions, What are IIFE in JavaScript"/>
 
     <link rel="stylesheet" href="css/shrink.css">
+    <meta name="msvalidate.01" content="F77C0434F58CEA255020E3CCDE1B58D6" />
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="js/rainbow.js"></script>
     <script src="lib/angular/angular.js"></script>
@@ -210,7 +211,7 @@
                       </a>
                     </p>
                     <p class="other-articles">
-                      <a href="/singleton-design-pattern-javascript-design-pattern-module-pattern">
+                      <a href="/singleton-design-pattern-javascript-module">
                       Singleton Pattern In JavaScript
                       </a>
                     </p>
@@ -225,7 +226,7 @@
                       </a>
                     </p>
                     <p class="other-articles">
-                      <a href="/hoisting">
+                      <a href="/function-and-variable-hoisting-javascript-closures">
                       Hoisting in JavaScript
                       </a>
                     </p>
@@ -283,7 +284,7 @@ var demoFunction = function(){
 </code></pre>
                   <p>Here we can see that the user is trying to access "demoFunction()" even before the compiler reaches its "Function Definition", In this case function will be executed. It will be called by the compliler and shall output a alert message. The function definition is hoisted on the top of the Scope by the compiler, therefore it is available even before its Function Definition during script execution. </p><br/>
                   <p>The concept of Hoisting does not adher to Function Expressions. Function Expressions are never Hoisted.</p>
-                  <p>Look for the following link to learn more about <a href="/hoisting">Function Hoisting</a></p> 
+                  <p>Look for the following link to learn more about <a href="/function-and-variable-hoisting-javascript-closures">Function Hoisting</a></p> 
                   <h4> </h4>
                   
 
