@@ -1,7 +1,7 @@
 (function(index) {
 
 	var mongodb = require('mongodb');
-	var mongoUrl = "mongodb://localhost:27017/Comments";
+	var mongoUrl = "mongodb://mayankguptablog:a110cate@ds033116.mlab.com:33116/mayankguptablog";
 	var theDb = null;
 
 	index.Name = "Mayank";
