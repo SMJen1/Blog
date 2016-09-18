@@ -48,7 +48,7 @@
       res.render('scopes', { 'count': routeConroller.count });
     })
 
-    app.get('/objects', function(req, res) {
+    app.get('/create-javascript-object-string-literal-new-keyword-new-object', function(req, res) {
       routeConroller.count++;
       res.render('objects', { 'count': routeConroller.count });
     })

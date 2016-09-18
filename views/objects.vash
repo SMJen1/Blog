@@ -226,7 +226,7 @@
                         </a>
                     </p>
                     <p class="other-articles">
-                        <a href="/objects">
+                        <a href="/create-javascript-object-string-literal-new-keyword-new-object">
                           Creating Object In JavaScript
                         </a>
                     </p>
@@ -249,55 +249,55 @@
               <!-- end .blog-header -->
               <div class="blog-post">
                 <div class="blog-post-content">
-                  <h1><strong>JavaScript Objects</strong></h1>
-                  <p>In the following article, we shall be covering different methods to create Objects in JavaScript</p>
+                  <h1 class="heading">JavaScript Objects</h1>
+                  <p>In the following article, we shall be covering different methods to create Objects in JavaScript</p><br>
                   <p>The article shall cover the Following topics:</p>
-                  <p>1. Object creation using <strong>Object Literal</strong></p>
-                  <p>2. Creating Objects using <strong>&quot;New Object&quot;</strong></p>
-                  <p>3. Using <strong>&quot;Constructor Function&quot; </strong>to create Objects</p>
-                  <p>&nbsp;</p>
+                  <p>1. Object creation using <b>String Literal</b></p>
+                  <p>2. Creating Objects using <b>"New Object"</b></p>
+                  <p>3. Using <b>"Constructor Function" </b>to create Objects</p>
+                  <p><br></p>
                   <p>We shall also discuss in details about the difference in each method.</p>
-                  <p>&nbsp;</p>
-                  <h2><strong>Object Literal</strong></h2>
-                  <p>Object Literal is the simplest form of creating Objects in JavaScript.&nbsp;</p>
-                  <p>Object Literal is a set of comma seperated values enclosed inside &quot;{&nbsp;}&quot;</p>
-                  <p>It do not require &quot;new&quot; keyword to be initialised.</p>
+                  <p><br></p>
+                  <h2 class="topic">Object Literal</h2>
+                  <p><b>Object Literal</b> is the simplest form of creating Objects in JavaScript. </p><br>
+                  <p>It is a set of comma seperated values enclosed inside "{ }"</p><br>
+                  <b>It do not require "new" keyword to be initialised.</p><br><br>
                   <p>Lets see a small example:</p>
                   <pre>
 var Employee = {
 
-  name: &#39;Mayank&#39;,
+  name: 'Mayank',
 
-  age: &#39;28,
+  age: '28,
 
-  designation: &#39;Engineer&#39;
+  designation: 'Engineer'
 
 }</pre>
-                  <p>&nbsp;</p>
-                  <p>This is a simple Employee Object.</p>
-                  <p>We can access the properties of this Object in the following way:</p>
+                  <p>This is a simple Employee Object.</p><br>
+                  <b>Accessing Properties of Object Literal</b>
                   <pre>
 1. Employee.name
 
-2. Employee[&#39;age&#39;]</pre>
-                  <p>&nbsp;</p>
-                  <p>Adding Properties to Object Literals:</p>
+2. Employee['age']</pre>
+                  <p><br></p>
+                  <b>Adding Properties to Object Literals:</b><br><br>
                   <p>We can add further properties to the Object Literal Notation.</p>
                   <pre>
-Employee.salary = &quot;1LPA&quot;;
+Employee.salary = "1LPA";
 
-Employee.Address = &quot;Rohini&quot;;
+Employee.Address = "Rohini";
 </pre>
-                  <p>&nbsp;</p>
-                  <p>We can add funtions to the Object Literals</p>
+                  <p><br></p>
+                  <b>Adding Methods to Object Literal</b><br><br>
+                  <p>Apart from properties, we can add Methods to Object Literals</p>
                   <pre>
 var Employee = {
 
-  name: &#39;Mayank&#39;,
+  name: 'Mayank',
 
-  age: &#39;28,
+  age: '28,
 
-  designation: &#39;Engineer&#39;,
+  designation: 'Engineer',
 
   showDetails: function() {
 
@@ -306,7 +306,7 @@ var Employee = {
   }
 
 }</pre>
-                  <p>&nbsp;</p>
+                  <p><br></p>
                   <p>Also we can add function later once the Object Literal is defined.</p>
                   <pre>
 Employee.getDetails = function() {
@@ -314,21 +314,23 @@ Employee.getDetails = function() {
   // Some Code
 
 }</pre>
-                  <p>&nbsp;</p>
-                  <p>Advantages of Object Literal:</p>
-                  <p>1.&nbsp;No need to invoke constructors directly</p>
+                  <p><br></p>
+                  <b>Advantages of Object Literal:</b><br><br>
+                  <p>1. No need to invoke constructors directly</p>
                   <p>2. No need to pass Arguments to the constructor function</p>
                   <p>3. It creates a singleton Object</p>
                   <p>4. It executes the fastest to create an Object</p>
-                  <p>&nbsp;</p>
-                  <h2><strong>Creating Objects using &quot;New Object&quot;</strong></h2>
-                  <p>The Other way to create object are to create them using &quot;new Object&quot;</p>
-                  <p>&nbsp;</p>
+                  <p><br></p><br>
+
+
+                  <h2 class="topic">Creating Objects using "New Object"</h2>
+                  <p>The Other way to create object are to create them using "new Object"</p>
+                  <p><br></p>
                   <p>Lets look for the simple implementation of this method:</p>
                   <pre>
 var Employee = new Object();
 
-Employee.name = &quot;Mayank&quot;;
+Employee.name = "Mayank";
 
 Employee.age = 28;
 
@@ -337,53 +339,49 @@ Employee.showDetails = function() {
   // Some Code
 
 }</pre>
-                  <p>&nbsp;</p>
-                  <p>The above method using &Ouml;bject Literal&quot;and this behaves in the similar manner.</p>
-                  <p>The outcome of both the methods are same.</p>
+                  <p>The above method using &Ouml;bject Literal"and this behaves in the similar manner.</p>
+                  <br><p>The outcome of both the methods are same.</p>
                   <p>Object Literal is comparitively easier method to create an Object.</p>
-                  <p>&nbsp;</p>
-                  <p>Every Object is derived from &quot;&Ouml;bject&quot; in JavaScript.</p>
+                  <p><br></p>
+                  <p>Every Object is derived from "&Ouml;bject" in JavaScript.</p>
                   <pre>
 var Employee = new Object();
 
-typeof Employee;    output: &quot;object&quot;</pre>
-                  <p>&nbsp;</p>
-                  <p>Similarly even Object literals would create a type of &quot;Object&quot;</p>
+typeof Employee;    output: "object"</pre>
+                  <p>Similarly even Object literals would create a type of "Object"</p>
                   <pre>
 var Employee = { };
 
-typeof Employee;    // output: &quot;object&quot;</pre>
-                  <p>&nbsp;</p>
+typeof Employee;    // output: "object"</pre>
                   <p>Both the implementation shall result in the variable of type Object</p>
-                  <p>&nbsp;</p>
-                  <h4>Difference b/w <strong>Object Literal</strong> and <strong>&quot;new Object&quot;</strong></h4>
-                  <p>Since both of them results in the type &quot;Object&quot;, the difference lies in the performance</p>
+                  <p><br></p>
+                  <h2 class="topic">Difference b/w <b>Object Literal</b> and <b>"new Object"</b></h2>
+                  <p>Since both of them results in the type "Object", the difference lies in the performance</p>
                   <p>Creating Object using Object Literals is the fastest way to create Object.</p>
-                  <p>&nbsp;</p>
-                  <p>Lets look what happens when a function executes:</p>
+                  <p><br></p>
+                  <b>Lets look what happens when a function executes:</b><br><br>
                   <p>1. Each function executes under its own context</p>
                   <p>2. A new Context is created every time when a function is executed</p>
                   <p>3. Each context is created over the Context where it is already Executing.</p>
                   <p>4. This new Context is stacked over the Existing Context.</p>
-                  <p>5. The main context is at the Allication Level, known as <strong>Global Context</strong></p>
+                  <p>5. The main context is at the Allication Level, known as <b>Global Context</b></p>
                   <p>6. It consumes some time in order to create the new Context for the Function.</p>
-                  <p>&nbsp;</p>
-                  <p>Now lets evaluate the difference between them considering the above steps</p>
-                  <p>1. When an Object is created using &quot;new Object&quot;, a new function is executing</p>
+                  <p><br></p>
+                  <b>Now lets evaluate the difference between them considering the above steps</b><br><br>
+                  <p>1. When an Object is created using "new Object", a new function is executing</p>
                   <p>2. This new function shall create a Context for its Execution</p>
                   <p>3. The function shall now execute under its own context.</p>
                   <p>4. Creating and Executing under the context requires more time.</p>
-                  <p>&nbsp;</p>
-                  <p>Considering the overhead required to create an object using &quot;new Object&quot;.</p>
+                  <p><br></p>
+                  <p>Considering the overhead required to create an object using "new Object".</p>
                   <p>Object Literal shall execute faster in order to creat an Objecct.</p>
-                  <p>&nbsp;</p>
-                  <h2><strong>Using &quot;Constructor Function&quot;</strong></h2>
+                  <p><br></p>
+                  <h2 class="topic">Using "Constructor Function"</h2>
                   <p>Constructor function is an efficient way to Create Objects in the following casses:</p>
                   <p>1. Create a building block from which other Object can be created</p>
                   <p>2. Design a basic architecture to create more Objects</p>
-                  <p>&nbsp;</p>
-                  <h3><strong>What is a Constructor Function</strong></h3>
-                  <h5>Lets create Object using constructor function</h5>
+                  <p><br></p>
+                  <b>What is a Constructor Function</b>
                   <pre id="pre322316">
 function Employee (name, age, designation) {
 
@@ -394,15 +392,14 @@ function Employee (name, age, designation) {
   this.Designation = designation;
 
 }</pre>
-                  <p>&nbsp;</p>
-                  <p>This is a simple Implementation of the Consructor Function.&nbsp;</p>
+                  <p>This is a simple Implementation of the Consructor Function. </p><br>
                   <p>Constructor function act as a building block to store the detail of any Employee.</p>
-                  <p>All the variables added to &quot;this&quot; keywod shall act as a public member to the created Object.</p>
-                  <p>&nbsp;</p>
-                  <p>For those who belong to language like Java and C#, a constructor function shall resembel to a &quot;Class&quot;.</p>
+                  <p>All the variables added to "this" keywod shall act as a public member to the created Object.</p>
+                  <p><br></p>
+                  <p>For those who belong to language like Java and C#, a constructor function shall resembel to a "Class".</p>
                   <p>We can create Objects from Constructor function just as we create Objects from Classes.</p>
-                  <p>&nbsp;</p>
-                  <h5><strong>We can even add properties to the constructor function:</strong></h5>
+                  <p><br></p>
+                  <b>We can even add methods to the constructor function:</b>
                   <pre id="pre734858">
 function Employee (name, age, designation) {
 
@@ -414,47 +411,42 @@ function Employee (name, age, designation) {
 
   this.showDetails = function() [
 
-    console.log(&quot;Age: &quot; + this.Age + &quot; Name: &quot; + this.Name);
+    console.log("Age: " + this.Age + " Name: " + this.Name);
 
   }
 
 }</pre>
-                  <p>The added function will be available to each of the Object created.&nbsp;</p>
-                  <p>&nbsp;</p>
-                  <h3><strong>Creating Object from Constructor Function</strong></h3>
-                  <p>&nbsp;</p>
+                  <p>The added function will be available to each of the Object created. </p>
+                  <p><br></p><br>
+                  
+
+
+                  <h2 class="topic">Creating Object from Constructor Function</h3>
                   <p>Lets create a Object from a Constructor Function.</p>
                   <pre id="pre381661">
-var newEmployee = new Employee(&quot;Mayank&quot;, 28, &quot;Senior Software Developer&quot;); </pre>
-                  <p>We can create multiple instances of Employee using this &quot;new&quot; keyword.</p>
-                  <p>&nbsp;</p>
-                  <h5><strong>Lets evaluate what is getting done in the above code:</strong></h5>
-                  <p>1. We are creating a &quot;New Object&quot; using Constructor Function</p>
-                  <p>2. It uses a keyword &quot;new&quot; to implement a new Object</p>
-                  <p>3. We pass parameters to the constructor function.</p>
-                  <p>4. These parameter values are getting assigned to the Object&#39;s Properties</p>
-                  <p>&nbsp;</p>
-                  <h5><strong>We can now access the properties of the New Object in the following manner</strong></h5>
+var newEmployee = new Employee("Mayank", 28, "Senior Software Developer"); </pre>
+                  <p>We can create multiple instances of Employee using this "new" keyword.</p>
+                  <p><br></p>
+                  
+                  <b>We can now access the properties of the New Object in the following manner</b>
                   <pre>
 1. newEmployee.Name
 
-2. newEmployee[&#39;Age&#39;]</pre>
-                  <p>&nbsp;</p>
-                  <h5><strong>Lets see what &quot;New Keyword&quot; does while creating a new Object.</strong></h5>
+2. newEmployee['Age']</pre>
+                  <b>Lets see what "New Keyword" does while creating a new Object.</b><br><br>
                   <p>1. Create a new scope in the memory</p>
                   <p>2. Bind variables to the new scope</p>
-                  <p>3. Refer to the newly created scope by &quot;this&quot;</p>
-                  <p>4. Return &quot;this&quot; Object from the constructor function.</p>
-                  <p>&nbsp;</p>
-                  <h3><strong>Difference b/w Constructor function and other Implementations</strong></h3>
-                  <p>&nbsp;</p>
+                  <p>3. Refer to the newly created scope by "this"</p>
+                  <p>4. Return "this" Object from the constructor function.</p>
+                  <p><br></p>
+                  <h2 class="topic">Difference b/w Constructor function and other Implementations</h2>
                   <p>Constructor Function Implementation provides you the following benefits:</p>
                   <p>1. Object created is not Singleton</p>
                   <p>2. Constructor function can be used to create any number of Objects</p>
                   <p>3. Contains Prototype Property which helps us to add shared functionalities.</p>
                   <p>4. Although creating Object using Constructor Function is slowest method.</p>
-                  <p>&nbsp;</p>
-                  <h2><strong>Conclusion:</strong></h2>
+                  <p><br></p>
+                  <h2><b>Conclusion:</b></h2>
                   <p>Any of the method can be used to create an Onject.</p>
                   <p>It all depends on the Requirement of the Project</p>
                 </div>

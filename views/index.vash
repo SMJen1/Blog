@@ -118,7 +118,7 @@
                   <a href="/scopes"><div class="image" style="background-image: url('images/node.jpg');"></div></a>
                   <div class="content">
                     <span class="date">August 13, 2016</span>
-                    <h4><a href="/scopes">Scopes in JavaScript</a></h4>
+                    <h4><a href="/create-javascript-object-string-literal-new-keyword-new-object">Scopes in JavaScript</a></h4>
                     <footer>
                       <span class="comments-link"><a href="/"></a></span>
                       <span class="share-link"><a href="/"><i class="fa fa-share-alt"></i></a></span>
@@ -131,7 +131,7 @@
                   <a href="/"><div class="image" style="background-image: url('images/javascript.jpg');"></div></a>
                   <div class="content">
                     <span class="date">August 12, 2016</span>
-                    <h4><a href="/objects">Creating Objects in JavaScript</a></h4>
+                    <h4><a href="/create-javascript-object-string-literal-new-keyword-new-object">Creating Objects in JavaScript</a></h4>
                     <footer>
                       <span class="comments-link"><a href="/"></a></span>
                       <span class="share-link"><a href="/"><i class="fa fa-share-alt"></i></a></span>
@@ -141,7 +141,7 @@
               </div> <!-- end .blog-post -->
               <div class="blog-post image-right">
                 <div class="inner">
-                  <a><div class="image" style="background-image: url('images/objects.jpg');"></div></a>
+                  <a><div class="image" style="background-image: url('images/create-javascript-object-string-literal-new-keyword-new-object.jpg');"></div></a>
                   <div class="content">
                     <span class="date">August 11, 2016</span>
                     <h4><a href="/singleton-design-pattern-javascript-module">Singleton Object in JavaScript</a></h4>
