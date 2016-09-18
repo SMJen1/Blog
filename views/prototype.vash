@@ -1,261 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="index, follow">
-  <title>Prototype Patterns in JavaScript</title>
-  <meta name="description" content="Understanding IIFE concept in JavaScript" />
-  <meta name="keywords" content="Prototype Pattern, Pattern in JavaScript, Prototype in JavaScript, JavaScript Pattern, Prototype, Creating Object, Objects in JavaScript, What is Prototype Pattern, www.dofactory.com/javascript/prototype-design-pattern"/>
-<link rel="stylesheet" href="css/shrink.css">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+
+    <title>Prototype Patterns in JavaScript</title>
+    <meta name="title" content="Prototype Pattern In JavaScript" />
+
+    <meta name="description" content="Prototype Pattern Enabled user to create multiple instances of an Object. New Object shall be craeted using the new Keyword. Prototype Pattern create a constructor function." />
+
+    <meta name="keywords" content="Prototype Pattern JavaScript, Pattern in JavaScript, Constructor Function JavaScript, JavaScript Pattern, Prototype, Creating Object, Objects in JavaScript, What is Prototype Pattern, www.dofactory.com/javascript/prototype-design-pattern"/>
+
+    <link rel="stylesheet" href="css/shrink.css">
     <script src="js/rainbow.js"></script>
     <meta name="msvalidate.01" content="F77C0434F58CEA255020E3CCDE1B58D6" />
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
- </head>
- <body>
-
- <style>
-  pre {
-    margin-left: 13px;
-    min-width: 600px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    max-width: 1000px;
-    color: #0f0c01;
-  }
-</style>
-
-  <!-- Search -->
-  <div class="search-overlay"></div>
-  <div class="search">
-   <a href="" class="search-close"><i class="md md-close"></i></a>
-   <div class="row">
-    <div class="col-sm-6 col-sm-offset-3">
-     <h4>Just Start Typing Text and Press Enter</h4>
-     <form class="search-form">
-      <input type="text" id="search" name="search" class="text-center" />
-     </form> <!-- end .search-form -->
-    </div> <!-- end .col-sm-6 -->
-   </div> <!-- end .row -->
-  </div> <!-- end .row -->
-  <!-- Slide Out -->
-  <div class="slide-out-overlay"></div>
-  <div class="slide-out">
-   <header class="slide-out-header clearfix">
-    <div class="clearfix">
-     <a href="" class="slide-out-close pull-left"><i class="md md-close"></i></a>
-     <a href="" class="open-search pull-right"><i class="md md-search"></i></a>
-     <a href="" class="slide-out-share pull-right"><i class="md md-more-vert"></i></a>
-    </div> <!-- end .clearfix -->
-    <!-- Popup -->
-    <div class="slide-out-popup">
-     <nav class="social-nav">
-      <ul class="list-unstyled">
-       <li><a href="">Facebook</a></li>
-       <li><a href="">Twitter</a></li>
-       <li><a href="">Linkedin</a></li>
-       <li><a href="">Google+</a></li>
-       <li><a href="">Behance</a></li>
-      </ul> <!-- end .list-unstyled -->
-     </nav> <!-- end .social-nav -->
-    </div> <!-- end .slide-out-popup -->
-    <div class="image"><img src="" alt="alt text" class="img-responsive"></div>
-    <div class="content">
-     <h5>Benjamin Thomson</h5>
-     <span>Web & UX Designer</span>
-    </div> <!-- end .content -->
-    <div class="text-right">
-     <a href="" class="button link-button white icon-left"><i class="md md-file-download"></i>Download Resume</a>
-    </div> <!-- end .text-right -->
-   </header> <!-- end .slide-out-header -->
-   <div class="slide-out-widgets">
-    <div class="slide-out-widget">
-     <h4>Drink A Coffee With Me Today</h4>
-     <form action="scripts/contact.php" method="post" class="form-horizontal contact-form">
-      <div class="form-group">
-       <label class="col-sm-3 control-label">Name</label>
-       <div class="col-sm-9">
-        <input type="text" class="contact-name" name="contact-name" />
-       </div> <!-- end .col-sm-9 -->
-      </div> <!-- end .form-group -->
-      <div class="form-group">
-       <label class="col-sm-3 control-label">Email</label>
-       <div class="col-sm-9">
-        <input type="email" class="contact-email" name="contact-email" />
-       </div> <!-- end .col-sm-9 -->
-      </div> <!-- end .form-group -->
-      <div class="form-group">
-       <label class="col-sm-3 control-label">Message</label>
-       <div class="col-sm-9">
-        <textarea name="contact-message" class="contact-message" rows="3"></textarea>
-       </div> <!-- end .col-sm-9 -->
-      </div> <!-- end .form-group -->
-      <div class="form-group">
-       <div class="col-sm-9 col-sm-offset-3">
-        <button type="submit" class="button solid-button purple">Send Message</button>
-       </div> <!-- end .col-sm-9 -->
-      </div> <!-- end .form-group -->
-      <div class="contact-loading alert alert-info form-alert">
-       <span class="message">Loading...</span>
-       <button type="button" class="close" data-hide="alert" aria-label="Close"><i class="fa fa-times"></i></button>
+  </head>
+  <body>
+    <style>
+      pre {
+      margin-left: 13px;
+      min-width: 600px;
+      margin-top: 20px;
+      margin-bottom: 40px;
+      max-width: 1000px;
+      color: #0f0c01;
+      }
+    </style>
+    <!-- Search -->
+    <div class="search-overlay"></div>
+    <div class="search">
+      <a href="" class="search-close"><i class="md md-close"></i></a>
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <h4>Just Start Typing Text and Press Enter</h4>
+          <form class="search-form">
+            <input type="text" id="search" name="search" class="text-center" />
+          </form>
+          <!-- end .search-form -->
+        </div>
+        <!-- end .col-sm-6 -->
       </div>
-      <div class="contact-success alert alert-success form-alert">
-       <span class="message">Success!</span>
-       <button type="button" class="close" data-hide="alert" aria-label="Close"><i class="fa fa-times"></i></button>
-      </div>
-      <div class="contact-error alert alert-danger form-alert">
-       <span class="message">Error!</span>
-       <button type="button" class="close" data-hide="alert" aria-label="Close"><i class="fa fa-times"></i></button>
-      </div>
-     </form> <!-- end contact-form -->
-    </div> <!-- end .slide-out-widget -->
-    <div class="slide-out-widget">
-     <h4>Follow On Instagram</h4>
-     <div class="instagram">
-     </div> <!-- end .instagram -->
-    </div> <!-- end .slide-out-widget -->
-   </div> <!-- end .slide-out-widgets -->
-  </div> <!-- end .slide-out -->
-
-  <!-- Header -->
-  <header class="header">
-   <div class="top clearfix">
-    <a href="#section8" class="available"><i class="ion-ios-email-outline"></i><span>Available For Freelance</span></a>
-    <div class="right-icons">
-     <a href="" class="open-search header-open-search"><i class="md md-search"></i></a>
-     <a href="" class="download"><i class="md md-file-download"></i></a>
-     <a href="" class="share"><i class="md md-more-vert"></i></a>
-    </div> <!-- end .right-icons -->
-    <!-- Popup -->
-    <div class="popup">
-     <nav class="social-nav">
-      <ul class="list-unstyled">
-       <li><a href="">Facebook</a></li>
-       <li><a href="">Twitter</a></li>
-       <li><a href="">Linkedin</a></li>
-       <li><a href="">Google+</a></li>
-       <li><a href="">Behance</a></li>
-      </ul> <!-- end .list-unstyled -->
-     </nav> <!-- end .social-nav -->
-    </div> <!-- end .popup -->
-   </div> <!-- end .top -->
-   <div class="bottom clearfix">
-    <div class="title"><a href="/">Mayank</a></div>
-    <div class="header-action-button-wrapper">
-     <a href="" class="header-action-button action-button"><i class="md md-add"></i></a>
-    </div> <!-- end .header-action-button-wrapper -->
-    <a href="" class="responsive-menu-open">Menu <i class="fa fa-bars"></i></a>
-    <nav class="main-nav">
-     <ul class="list-unstyled">
-      <li class="active"><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-     </ul>
-    </nav> <!-- end .main-nav -->
-   </div> <!-- end .bottom -->
-  </header> <!-- end .header -->
-  <div class="responsive-menu">
-   <a href="" class="responsive-menu-close">Close <i class="ion-android-close"></i></a>
-   <nav class="responsive-nav"></nav> <!-- end .responsive-nav -->
-  </div> <!-- end .responsive-menu -->
-
-  <!-- Sections -->
-  <div class="sections content-study">
-   <div class="sections-wrapper clearfix">
-
-    <!--Single Blog Post -->
-    <section>
-     <div class="container">
-      <div class="single-blog-post">
-       <header class="blog-header clearfix">
+      <!-- end .row -->
+    </div>
+    <!-- end .row -->
+    <!-- Slide Out -->
+    <div class="slide-out-overlay"></div>
+    <div class="slide-out">
+      <header class="slide-out-header clearfix">
+        <div class="clearfix">
+          <a href="" class="slide-out-close pull-left"><i class="md md-close"></i></a>
+          <a href="" class="open-search pull-right"><i class="md md-search"></i></a>
+          <a href="" class="slide-out-share pull-right"><i class="md md-more-vert"></i></a>
+        </div>
+        <!-- end .clearfix -->
+        <!-- Popup -->
+        <div class="slide-out-popup">
+          <nav class="social-nav">
+            <ul class="list-unstyled">
+              <li><a href="">Facebook</a></li>
+              <li><a href="">Twitter</a></li>
+              <li><a href="">Linkedin</a></li>
+              <li><a href="">Google+</a></li>
+              <li><a href="">Behance</a></li>
+            </ul>
+            <!-- end .list-unstyled -->
+          </nav>
+          <!-- end .social-nav -->
+        </div>
+        <!-- end .slide-out-popup -->
+        <div class="image"><img src="" alt="alt text" class="img-responsive"></div>
         <div class="content">
-         <span class="date">March 11, 2015</span>
-         <h4 style="font-size: 12px">Prototype Pattern in JavaScript</h4>
-                          <div>
+          <h5>Benjamin Thomson</h5>
+          <span>Web & UX Designer</span>
+        </div>
+        <!-- end .content -->
+        <div class="text-right">
+          <a href="" class="button link-button white icon-left"><i class="md md-file-download"></i>Download Resume</a>
+        </div>
+        <!-- end .text-right -->
+      </header>
+      <!-- end .slide-out-header -->
+      <div class="slide-out-widgets">
+        <div class="slide-out-widget">
+          <h4>Drink A Coffee With Me Today</h4>
+          <form action="scripts/contact.php" method="post" class="form-horizontal contact-form">
+            <div class="form-group">
+              <label class="col-sm-3 control-label">Name</label>
+              <div class="col-sm-9">
+                <input type="text" class="contact-name" name="contact-name" />
+              </div>
+              <!-- end .col-sm-9 -->
+            </div>
+            <!-- end .form-group -->
+            <div class="form-group">
+              <label class="col-sm-3 control-label">Email</label>
+              <div class="col-sm-9">
+                <input type="email" class="contact-email" name="contact-email" />
+              </div>
+              <!-- end .col-sm-9 -->
+            </div>
+            <!-- end .form-group -->
+            <div class="form-group">
+              <label class="col-sm-3 control-label">Message</label>
+              <div class="col-sm-9">
+                <textarea name="contact-message" class="contact-message" rows="3"></textarea>
+              </div>
+              <!-- end .col-sm-9 -->
+            </div>
+            <!-- end .form-group -->
+            <div class="form-group">
+              <div class="col-sm-9 col-sm-offset-3">
+                <button type="submit" class="button solid-button purple">Send Message</button>
+              </div>
+              <!-- end .col-sm-9 -->
+            </div>
+            <!-- end .form-group -->
+            <div class="contact-loading alert alert-info form-alert">
+              <span class="message">Loading...</span>
+              <button type="button" class="close" data-hide="alert" aria-label="Close"><i class="fa fa-times"></i></button>
+            </div>
+            <div class="contact-success alert alert-success form-alert">
+              <span class="message">Success!</span>
+              <button type="button" class="close" data-hide="alert" aria-label="Close"><i class="fa fa-times"></i></button>
+            </div>
+            <div class="contact-error alert alert-danger form-alert">
+              <span class="message">Error!</span>
+              <button type="button" class="close" data-hide="alert" aria-label="Close"><i class="fa fa-times"></i></button>
+            </div>
+          </form>
+          <!-- end contact-form -->
+        </div>
+        <!-- end .slide-out-widget -->
+        <div class="slide-out-widget">
+          <h4>Follow On Instagram</h4>
+          <div class="instagram">
+          </div>
+          <!-- end .instagram -->
+        </div>
+        <!-- end .slide-out-widget -->
+      </div>
+      <!-- end .slide-out-widgets -->
+    </div>
+    <!-- end .slide-out -->
+    <!-- Header -->
+    <header class="header">
+      <div class="top clearfix">
+        <a href="#section8" class="available"><i class="ion-ios-email-outline"></i><span>Available For Freelance</span></a>
+        <div class="right-icons">
+          <a href="" class="open-search header-open-search"><i class="md md-search"></i></a>
+          <a href="" class="download"><i class="md md-file-download"></i></a>
+          <a href="" class="share"><i class="md md-more-vert"></i></a>
+        </div>
+        <!-- end .right-icons -->
+        <!-- Popup -->
+        <div class="popup">
+          <nav class="social-nav">
+            <ul class="list-unstyled">
+              <li><a href="">Facebook</a></li>
+              <li><a href="">Twitter</a></li>
+              <li><a href="">Linkedin</a></li>
+              <li><a href="">Google+</a></li>
+              <li><a href="">Behance</a></li>
+            </ul>
+            <!-- end .list-unstyled -->
+          </nav>
+          <!-- end .social-nav -->
+        </div>
+        <!-- end .popup -->
+      </div>
+      <!-- end .top -->
+      <div class="bottom clearfix">
+        <div class="title"><a href="/">Mayank</a></div>
+        <div class="header-action-button-wrapper">
+          <a href="" class="header-action-button action-button"><i class="md md-add"></i></a>
+        </div>
+        <!-- end .header-action-button-wrapper -->
+        <a href="" class="responsive-menu-open">Menu <i class="fa fa-bars"></i></a>
+        <nav class="main-nav">
+          <ul class="list-unstyled">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+          </ul>
+        </nav>
+        <!-- end .main-nav -->
+      </div>
+      <!-- end .bottom -->
+    </header>
+    <!-- end .header -->
+    <div class="responsive-menu">
+      <a href="" class="responsive-menu-close">Close <i class="ion-android-close"></i></a>
+      <nav class="responsive-nav"></nav>
+      <!-- end .responsive-nav -->
+    </div>
+    <!-- end .responsive-menu -->
+    <!-- Sections -->
+    <div class="sections content-study">
+      <div class="sections-wrapper clearfix">
+        <!--Single Blog Post -->
+        <section>
+          <div class="container">
+            <div class="single-blog-post">
+              <header class="blog-header clearfix">
+                <div class="content">
+                  <span class="date">March 11, 2015</span>
+                  <h4 style="font-size: 12px">Prototype Pattern in JavaScript</h4>
+                  <div>
                     <h6>Other Related JavaScript Articles:</h6>
                     <p class="other-articles">
-                        <a href="/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern">
-                          IIFE Pattern
-                        </a>
+                      <a href="/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern">
+                      IIFE Pattern
+                      </a>
                     </p>
                     <p class="other-articles">
-                        <a href="/javascript-module-pattern-design-singleton">
-                          Module Pattern in JavaScript
-                        </a>
+                      <a href="/javascript-module-pattern-design-singleton">
+                      Module Pattern in JavaScript
+                      </a>
                     </p>
                     <p class="other-articles">
-                        <a href="/singleton-design-pattern-javascript-module">
-                          Singleton Pattern In JavaScript
-                        </a>
+                      <a href="/singleton-design-pattern-javascript-module">
+                      Singleton Pattern In JavaScript
+                      </a>
                     </p>
                     <p class="other-articles">
-                        <a href="/scopes">
-                          Scopes in JavaScript
-                        </a>
+                      <a href="/scopes">
+                      Scopes in JavaScript
+                      </a>
                     </p>
                     <p class="other-articles">
-                        <a href="/objects">
-                          Creating Object In JavaScript
-                        </a>
+                      <a href="/objects">
+                      Creating Object In JavaScript
+                      </a>
                     </p>
                     <p class="other-articles">
-                        <a href="/function-and-variable-hoisting-javascript-closures">
-                          Hoisting in JavaScript
-                        </a>
+                      <a href="/function-and-variable-hoisting-javascript-closures">
+                      Hoisting in JavaScript
+                      </a>
                     </p>
                     <p class="other-articles">
-                        <a href="/prototype">
-                          Prototype Pattern JavaScript
-                        </a>
+                      <a href="/prototype-pattern-javascript-function-prototype">
+                      Prototype Pattern JavaScript
+                      </a>
                     </p>
                   </div>
+                </div>
+                <!-- end .content -->
+                <div class="image" style="background-image: url('images/javascript-logo-large.jpg');"></div>
+              </header>
+              <!-- end .blog-header -->
+              <div class="blog-post">
+                <div class="blog-post-content">
 
-        </div> <!-- end .content -->
-        <div class="image" style="background-image: url('images/javascript-logo-large.jpg');"></div>
-       </header> <!-- end .blog-header -->
-       <div class="blog-post">
+                  <h1 class="heading">Prototype Pattern in JavaScript</h1>
 
+                  <p><b>Prototype Pattern</b> in used to Create multiple Objects from a Constructor Function. Constructor function shall contain set of related functionalities and properties. these functionalities and properties can also be added to Prototype Property of the Constructor Function, this shall ensure that the properties and function are shared amongst all the Objects created out of it. We shall be understanding all these concepts in Details.</p><br>
 
+                  <p>In the following article, we would build our understanding regarding ProtoType Pattern.</p><br>
+                  <b>The article shall be focussed around 2 basic Concepts:</b><br><br>
+                  <p>1. JavaScript Constructor Function</p>
+                  <p>2. Prototype Keyword.</p><br>
 
+                  <b>We would cover the following Topic:</b><br><br>
+                  <p>1. JavaScript Constructor Function</p>
+                  <p>2. Creating Object from Constructor Function</p>
+                  <p>3. Understanding Prototype property</p>
+                  <p>4. Prototype Pattern Implementation</p>
+                  <p>5. Private Properties in Prototype Pattern</p>
+                  <p><br></p>
 
-        <div class="blog-post-content">
+                  <h2 class="topic">What is a Constructor Function</h2>
+                  <p>Constructor function can be used to create Multiple Objects. Creating Objects from Constructor Function shall ensure that the properties and function defined by the Constructor Function shall be available to all the Objects created from it.</p><br>
 
-        <h1><strong>Prototype Pattern in&nbsp;JavaScript</strong></h1>
-
-<p>&nbsp;</p>
-
-<p>In the following article, we would build our understanding regarding ProtoType Pattern.</p>
-
-<h5>We would cover the following Topic:</h5>
-
-<p>1. Constructor Function</p>
-
-<p>2. Creating Object from Constructor Function</p>
-
-<p>3. Understanding Prototype property</p>
-
-<p>4. Prototype Pattern Implementation</p>
-
-<p>5. Private Properties in Prototype Pattern</p>
-
-<p>&nbsp;</p>
-
-<h2><strong>What is a Constructor Function</strong></h2>
-
-<h5>Lets assume a scenerio:</h5>
-
-<p>1. There is a company with a certain Employee Strength</p>
-
-<p>2. The Employee Details shall contain the basic information about Name, Age and Designation.</p>
-
-<p>3.&nbsp;Company need to add the details of all th Employee</p>
-
-<p>&nbsp;</p>
-
-<h5>Lets create constructor function for the same:</h5>
-
-<pre>
+                  <b>Lets assume a scenerio for the same:</b><br><br>
+                  <p>1. There is a company with a certain Employee Strength</p>
+                  <p>2. The Employee Details shall contain the basic information about Name, Age and Designation.</p>
+                  <p>3. Company need to add the details of all the Employee</p>
+                  <p><br></p>
+                  <b>Lets create constructor function for the same scenerio:</b>
+                  <pre>
 <code class="lang-javascript">
 function Employee (name, age, designation) {
 
@@ -268,24 +292,14 @@ function Employee (name, age, designation) {
 }
 
 </code></pre>
-
-<p>This is a simple Implementation of the Consructor Function.&nbsp;</p>
-
-<p>Constructor function act as a building block to store the detail of any Employee.</p>
-
-<p>All the variables added to &quot;this&quot; keywod shall act as a public member to the created Object.</p>
-
-<p>&nbsp;</p>
-
-<p>For those who belong to language like Java and C#, a constructor function shall resembel to a &quot;Class&quot;.</p>
-
-<p>We can create Objects from Constructor function just as we create Objects from Classes.</p>
-
-<p>&nbsp;</p>
-
-<h5><strong>We can even add properties to the constructor function:</strong></h5>
-
-<pre>
+                  <p>This is a simple Implementation of the Consructor Function. </p><br>
+                  <p>Creating Constructor Function for the same shall ensure that the properties defined on the "this" keyword shall be available to all the Objects which are created using this Constructor function.It act as a building block to create multiple instances of same type. Every Object shall contain following properties "Name", "Age" and "Designation".All these variables shall act as a public member to the created Object.</p>
+                  <p><br></p>
+                  <p>For those who belong to language like Java and C#, a constructor function shall resembel to a "Class".</p><br>
+                  <p>We can create Objects from Constructor function just as we create Objects from Classes.</p>
+                  <p><br></p>
+                  <b>We can even add functions to the constructor function:</b>
+                  <pre>
 <code class="lang-javascript">
 function Employee (name, age, designation) {
 
@@ -297,67 +311,40 @@ function Employee (name, age, designation) {
 
   this.showDetails = function() [
 
-    console.log(&quot;Age: &quot; + this.Age + &quot; Name: &quot; + this.Name);
+    console.log("Age: " + this.Age + " Name: " + this.Name);
 
   }
 
 }</code></pre>
-
-<p>The added function will be available to each of the Object created.&nbsp;</p>
-
-<p>&nbsp;</p>
-
-<h2><strong>Creating Object from Constructor Function</strong></h2>
-
-<p>&nbsp;</p>
-
-<p>Lets create a Object from a Constructor Function.</p>
-
-<pre>
+                  <p>The added function will be available to each of the Object created. </p>
+                  <p><br></p>
+                  <h2 class="topic">Creating Object from Constructor Function</h2>
+                  <p>Lets create a Object from a Constructor Function.</p>
+                  <pre>
 <code class="lang-javascript">
-var newEmployee = new Employee(&quot;Mayank&quot;, 28, &quot;Senior Software Developer&quot;);
+var newEmployee = new Employee("Mayank", 28, "Senior Software Developer");
+
+console.log(newEmployee.Name);
 
 </code></pre>
+                  <p>In the above code, we can use "new" keyword to create Object from Constructor Function. The new Object created shall contain all the properties which were bound to "this" keyword. We can pass parameter to constructor function, which will assign these values to the Object properties.</p>
+                  <p><br></p>
 
-<p>We can create multiple instances of Employee using this &quot;new&quot; keyword.</p>
+                  <b>We can access the properties of the New Object in the following manner</b><br>
+                  <p>1. newEmployee.Name</p>
+                  <p>2. newEmployee["Age"]</p>
+                  <p><br></p>
+                  
+                  <b>Lets see what "New Keyword" does while creating a new Object.</b><br>
+                  <p>1. Create a new scope in the memory</p>
+                  <p>2. Bind variables to the new scope</p>
+                  <p>3. Refer to the newly created scope by "this"</p>
+                  <p>4. Return "this" Object from the constructor function.</p>
+                  <p><br></p>
 
-<p>&nbsp;</p>
-
-<h5><strong>Lets evaluate what is getting done in the above code:</strong></h5>
-
-<p>1. We are creating a &quot;New Object&quot; using Constructor Function</p>
-
-<p>2. It uses a keyword &quot;new&quot; to implement a new Object</p>
-
-<p>3. We pass parameters to the constructor function.</p>
-
-<p>4. These parameter values are getting assigned to the Object&#39;s Properties</p>
-
-<p>&nbsp;</p>
-
-<h5><strong>We can now access the properties of the New Object in the following manner</strong></h5>
-
-<p>1. newEmployee.Name</p>
-
-<p>2. newEmployee[&#39;Age&#39;]</p>
-
-<p>&nbsp;</p>
-
-<h5><strong>Lets see what &quot;New Keyword&quot; does while creating a new Object.</strong></h5>
-
-<p>1. Create a new scope in the memory</p>
-
-<p>2. Bind variables to the new scope</p>
-
-<p>3. Refer to the newly created scope by &quot;this&quot;</p>
-
-<p>4. Return &quot;this&quot; Object from the constructor function.</p>
-
-<p>&nbsp;</p>
-
-<h5><strong>Now lets look for the problem with the following implementation:</strong></h5>
-
-<pre>
+                  <h2 class="topic">Prototype Keyword in JavaScript</h2>
+                  <b>Lets evaluate the problem with above code:</b>
+                  <pre>
 <code class="lang-javascript">
 function Employee (name, age, designation) {
 
@@ -369,51 +356,30 @@ function Employee (name, age, designation) {
 
   this.showDetails = function() [
 
-    console.log(&quot;Age: &quot; + this.Age + &quot; Name: &quot; + this.Name);
+    console.log("Age: " + this.Age + " Name: " + this.Name);
 
   }
 
 }</code></pre>
-
-<p>&nbsp;</p>
-
-<p>&nbsp;</p>
-
-<p>In the above code, we are adding function to the &quot;Employee&quot; Object.</p>
-
-<p>So from the architectural point of view, lets consider the following points:</p>
-
-<p>1. Functions are not saving any state of the Object.</p>
-
-<p>2. When a new Object is created using &quot;new&quot;, seperate memory space is allocated for the function</p>
-
-<p>3. Since function implementation is same for each Object, it can be shared between them</p>
-
-<p>4. Sharing the function definition shall reduce the memory required for each function</p>
-
-<p>&nbsp;</p>
-
-<p>So, inorder to achieve the above specified results, we can use the &quot;<strong>Prototype</strong>&quot; property of constructor function.</p>
-
-<p>&nbsp;</p>
-
-<h2><strong>Understanding Prototype property</strong></h2>
-
-<p>Each constructor function created contains a &quot;Prototype&quot; Object.</p>
-
-<p>Prototype Property can be refered by the Object: <strong>&quot;Employee.prototype&quot;</strong></p>
-
-<p>&nbsp;</p>
-
-<h5>Using Prototype Object:</h5>
-
-<p>Variables and Functions added to Prototype is shared between Objects</p>
-
-<p>&nbsp;</p>
-
-<p>Lets see with an Example</p>
-
-<pre>
+                  <p><br></p>
+                  <p>In the above code, we are adding function to the "Employee" Object.</p><br>
+                  <b>So from the architectural point of view, lets consider the following points:</b><br><br>
+                  <p>1. Function do not store any state for the Object.</p>
+                  <p>2. When a new Object is created using "new", seperate memory space is allocated for each function</p>
+                  <p>3. Since function implementation is same for all Object, it can be shared between them</p>
+                  <p>4. Sharing the function definition shall reduce the memory required for each Object</p>
+                  <p><br></p>
+                  <p>So, inorder to achieve the above specified results, we can use the "<b>Prototype</b>" property of constructor function.</p>
+                  <p><br></p>
+                  <h2><b>Understanding Prototype property</b></h2>
+                  <p>Each constructor function created contains a "Prototype" property.</p><br>
+                  <p>Prototype Property can be refered using: <b>"Employee.prototype"</b></p>
+                  <p><br></p>
+                  <b>Using Prototype Object:</b><br><br>
+                  <p>Here we would see that the Properties and Functionality added to the Employee Constructor function shall be added as a shared piece of information, shared between the different instances created using "new" keyword.</p>
+                  <p><br></p>
+                  <p>Lets see with an Example</p>
+                  <pre>
 <code class="lang-javascript">
 function Employee (name, age, designation) {
 
@@ -427,37 +393,26 @@ function Employee (name, age, designation) {
 
 Employee.prototype.showDetails = function() { .. }
 
-var EmployeeOne = new Employee(&quot;Mayank&quot;, 28, &quot;Developer&quot;);
+var EmployeeOne = new Employee("Mayank", 28, "Developer");
 
-var EmployeeTwwo = new Employee(&quot;Mayank&quot;, 28, &quot;Developer&quot;);
+var EmployeeTwwo = new Employee("Mayank", 28, "Developer");
 
 EmployeeOne.showDetails()
 
 EmployeeTwo.showDetails()
 
 </code></pre>
-
-<p>&nbsp;</p>
-
-<p>Since the function &quot;showDetails&quot; is added to the &quot;prototype&quot; property of the constructor object, we will have access to the specified function in all the Objects created from Constructor Function.</p>
-
-<p>&nbsp;</p>
-
-<h5>The advantage of using Prototype is:</h5>
-
-<p>1. The variables and functions are shared between the Objects</p>
-
-<p>2. Every Object shall not have implementation of same function or variable</p>
-
-<p>3. Memory is shared between the Objects hence less utilisation</p>
-
-<p>&nbsp;</p>
-
-<h2><strong>Prototype Pattern Implementation</strong></h2>
-
-<p>Lets see the implementation of the Prototype Pattern:</p>
-
-<pre>
+                  <p><br></p>
+                  <p>Since the function "showDetails" is added to the "prototype" property of the constructor object, we will have access to the specified function in all the Objects created from Constructor Function.</p>
+                  <p><br></p>
+                  <b>The advantage of using Prototype are:</b><br><br>
+                  <p>1. The variables and functions are shared between the Objects</p>
+                  <p>2. Every Object shall not have implementation of same function or variable</p>
+                  <p>3. Memory is shared between the Objects hence less utilisation</p>
+                  <p><br></p>
+                  <h2><b>Prototype Pattern Implementation</b></h2>
+                  <p>Lets see the implementation of the Prototype Pattern:</p>
+                  <pre>
 <code class="lang-javascript">
 
 // Defining a Constructor Function
@@ -484,11 +439,11 @@ Employee.prototype.showDesignation = function() { ... }
 
 // Creating Objects from Prototype Property
 
-var myEmployee = new Employee(&#39;Mayank&#39;, 28, &#39;Developer&#39;);
+var myEmployee = new Employee("Mayank", 28, "Developer");
 
-var myEmployeeOne = new Employee(&#39;Mayank&#39;, 28, &#39;Developer&#39;);
+var myEmployeeOne = new Employee("Mayank", 28, "Developer");
 
-var myEmployeeTwo = new Employee(&#39;Mayank&#39;, 28, &#39;Developer&#39;);
+var myEmployeeTwo = new Employee("Mayank", 28, "Developer");
 
 
 // Accessing Prototype functions from Objects
@@ -500,31 +455,21 @@ myEmployeeOne.showName()
 myEmployeeTwo.showName()
 
 </code></pre>
-
-<p>&nbsp;</p>
-
-<p>Following are the points to be considered in above implementation:</p>
-
-<p>1. &quot;showDetails&quot;, &quot;showName&quot; is added top the prototype property of Employee</p>
-
-<p>2. These functions shall be shared between the Objects created using &quot;Constructor Function&quot;</p>
-
-<p>&nbsp;</p>
-
-<h2><strong>Private Properties in Prototype Pattern</strong></h2>
-
-<p><strong>Lets consider the following scenerio:</strong></p>
-
-<p>We have created a new variable &quot;otherInfo&quot; inside th constructor function.</p>
-
-<p>This variable is private to the &quot;Employee&quot; Constructor Function.</p>
-
-<p>Private variables cannot be accessed inside the Prototype Object.</p>
-<pre>
+                  <p><br></p>
+                  <p>Following are the points to be considered in above implementation:</p><br>
+                  <p>1. "showDetails", "showName" is added top the prototype property of Employee</p>
+                  <p>2. These functions shall be shared between the Objects created using "Constructor Function"</p>
+                  <p><br></p>
+                  <h2 class="topic">Private Properties in Prototype Pattern</h2>
+                  <p><b>Lets consider the following scenerio:</b></p>
+                  <p>We have created a new variable "otherInfo" inside th constructor function.</p>
+                  <p>This variable is private to the "Employee" Constructor Function.</p>
+                  <p>Private variables cannot be accessed inside the Prototype Object.</p>
+                  <pre>
 <code class="lang-javascript">
 function Employee (name, age, designation) {
 
-&nbsp; var otherInfo = &quot;Some Data&quot;;
+  var otherInfo = "Some Data";
 
   this.Name = name;
 
@@ -536,46 +481,34 @@ function Employee (name, age, designation) {
 
 Employee.prototype.showDetails = function() {
 
-&nbsp; console.log(otherInfo);  // This variable cannot be accessed
+  console.log(otherInfo);  // This variable cannot be accessed
 
 }
 
 </code></pre>
-
-<p>&nbsp;</p>
-
-<p>All the variables pivate to the &quot;Constructor&quot; function is not accessible inside the prototype Object</p>
-
-<p>Variables should be added to the &quot;this&quot; reference in order to refer it via prototype function.</p>
-
-<p>&nbsp;</p>
-
-<h2><strong>More References to Prototype Pattern:</strong></h2>
-
-<p>http://www.dofactory.com/javascript/prototype-design-pattern</p>
-
-<p>https://addyosmani.com/resources/essentialjsdesignpatterns/book/</p>
-
-<p>https://scotch.io/bar-talk/4-javascript-design-patterns-you-should-know</p>
-
-<p>&nbsp;</p>
-
-<p>&nbsp;</p>
-
-
-
-
-        </div> <!-- end .blog-post-content -->
-
-       </div> <!-- end .blog-post -->
-
-      </div> <!-- end .single-blog-post -->
-     </div> <!-- end .container -->
-    </section>
-
-   </div> <!-- end .sections-wrapper -->
-  </div> <!-- end .sections -->
-
+                  <p><br></p>
+                  <p>All the variables private to the "Constructor" function is not accessible inside the prototype Object</p>
+                  <p>Variables should be added to the "this" reference in order to refer it via prototype function.</p>
+                  <p><br></p>
+                  <h2><b>More References to Prototype Pattern:</b></h2>
+                  <p>http://www.dofactory.com/javascript/prototype-design-pattern</p>
+                  <p>https://addyosmani.com/resources/essentialjsdesignpatterns/book/</p>
+                  <p>https://scotch.io/bar-talk/4-javascript-design-patterns-you-should-know</p>
+                  <p><br></p>
+                  <p><br></p>
+                </div>
+                <!-- end .blog-post-content -->
+              </div>
+              <!-- end .blog-post -->
+            </div>
+            <!-- end .single-blog-post -->
+          </div>
+          <!-- end .container -->
+        </section>
+      </div>
+      <!-- end .sections-wrapper -->
+    </div>
+    <!-- end .sections -->
     <!-- Footer -->
     <footer class="footer">
       <div class="top">
@@ -584,7 +517,8 @@ Employee.prototype.showDetails = function() {
             <div class="col-sm-4">
               <h4>Address</h4>
               <p>A-8, Milansar Appartment, Rohini<br />Delhi, India</p>
-            </div> <!-- end .col-sm-4 -->
+            </div>
+            <!-- end .col-sm-4 -->
             <div class="col-sm-4">
               <h4>Connect</h4>
               <div class="social-icons">
@@ -593,18 +527,25 @@ Employee.prototype.showDetails = function() {
                 <a href="" class="social-icon"><i class="fa fa-google-plus"></i></a>
                 <a href="" class="social-icon"><i class="fa fa-behance"></i></a>
                 <a href="" class="social-icon"><i class="fa fa-dribbble"></i></a>
-              </div> <!-- end .social-icons -->
-            </div> <!-- end .col-sm-4 -->
+              </div>
+              <!-- end .social-icons -->
+            </div>
+            <!-- end .col-sm-4 -->
             <div class="col-sm-4">
               <h4>Contact</h4>
               <p>Tel: +91 9711083089<br />Mail: mayankgupta688@gmail.com</p>
-            </div> <!-- end .col-sm-4 -->
-          </div> <!-- end .row -->
-        </div> <!-- end .container -->
-      </div> <!-- end .footer -->
-      <div class="bottom">Copyright &copy; Sility. All Rights Reserved.</div> <!-- end .bottom -->
-    </footer> <!-- end .footer -->
+            </div>
+            <!-- end .col-sm-4 -->
+          </div>
+          <!-- end .row -->
+        </div>
+        <!-- end .container -->
+      </div>
+      <!-- end .footer -->
+      <div class="bottom">Copyright &copy; Sility. All Rights Reserved.</div>
+      <!-- end .bottom -->
+    </footer>
+    <!-- end .footer -->
     <script async src="js/analytics.js"></script>
-
- </body>
+  </body>
 </html>

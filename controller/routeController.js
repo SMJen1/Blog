@@ -38,7 +38,7 @@
       res.render('hoisting', { 'count': routeConroller.count });
     })
 
-    app.get('/prototype', function(req, res) {
+    app.get('/prototype-pattern-javascript-function-prototype', function(req, res) {
       routeConroller.count++;
       res.render('prototype', { 'count': routeConroller.count });
     })

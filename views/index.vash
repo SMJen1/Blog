@@ -166,10 +166,10 @@
               </div> <!-- end .blog-post -->
               <div class="blog-post image-left">
                 <div class="inner">
-                  <a href="/prototype"><div class="image" style="background-image: url('images/es6.jpg');"></div></a>
+                  <a href="/prototype-pattern-javascript-function-prototype"><div class="image" style="background-image: url('images/es6.jpg');"></div></a>
                   <div class="content">
                     <span class="date">August 9, 2016</span>
-                    <h4><a href="/prototype">JavaScript Prototype Pattern</a></h4>
+                    <h4><a href="/prototype-pattern-javascript-function-prototype">JavaScript Prototype Pattern</a></h4>
                     <footer>
                       <span class="comments-link"><a href="/"></a></span>
                       <span class="share-link"><a href="/"><i class="fa fa-share-alt"></i></a></span>
