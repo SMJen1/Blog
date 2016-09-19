@@ -248,108 +248,108 @@
               <!-- end .blog-header -->
               <div class="blog-post">
                 <div class="blog-post-content">
-                  <h2><strong>Scopes in JavaScript</strong></h2>
-                  <div>&nbsp;</div>
+                  <h2><b>Scopes in JavaScript</b></h2>
+                  <div> </div>
                   <div>It is important to understand the concept of scopes in JavaScript.</div>
-                  <div>&nbsp;</div>
-                  <div>Scope help us determine the availibility and accessibility of variable.&nbsp;</div>
-                  <div>&nbsp;</div>
+                  <div> </div>
+                  <div>Scope help us determine the availibility and accessibility of variable. </div>
+                  <div> </div>
                   <p>There are basically 2 different scopes in JavaScipt:</p>
-                  <p>1. Global Scope&nbsp;</p>
+                  <p>1. Global Scope </p>
                   <p>2. Function Scope</p>
-                  <p>&nbsp;</p>
-                  <h3><strong>Variable Declaration and Definition</strong></h3>
-                  <p>Lets first understand the concept of <strong>Function Declaration and Function Definition</strong></p>
-                  <p>&nbsp;</p>
-                  <h5><strong>1. var Name;</strong></h5>
+                  <p><br></p>
+                  <h3><b>Variable Declaration and Definition</b></h3>
+                  <p>Lets first understand the concept of <b>Function Declaration and Function Definition</b></p>
+                  <p><br></p>
+                  <h5><b>1. var Name;</b></h5>
                   <p>This is a simple variable Declaration. Function is simply Declared here.</p>
                   <p>Here we can see that no value is assigned to the variable, therefore its a simple Declaration</p>
-                  <p>The initial value of variable is taken as &quot;undefined&quot;</p>
-                  <p>&nbsp;</p>
-                  <h5><strong>2. Name = &quot;Mayank&quot;</strong></h5>
+                  <p>The initial value of variable is taken as "undefined"</p>
+                  <p><br></p>
+                  <h5><b>2. Name = "Mayank"</b></h5>
                   <p>This is a variable definition, Variable is defined with a value.</p>
-                  <p>Assigning value to a variable is called as Variable Declaration.&nbsp;</p>
-                  <p>Variable was initially containing&nbsp;&quot;undefined&quot;, now value changed to &quot;Mayank</p>
-                  <p>&nbsp;</p>
-                  <h5><strong>3. var Name = &quot;Mayank&quot;</strong></h5>
+                  <p>Assigning value to a variable is called as Variable Declaration. </p>
+                  <p>Variable was initially containing "undefined", now value changed to "Mayank</p>
+                  <p><br></p>
+                  <h5><b>3. var Name = "Mayank"</b></h5>
                   <p>In this case we can see that the declaration and the definitionis given in the same line.</p>
                   <p>This is the tricky Part, JavaScript implicitely break it into the following Code:</p>
                   <h5>var Name;</h5>
-                  <h5>Name = &quot;Mayank&quot;</h5>
-                  <p>&nbsp;</p>
+                  <h5>Name = "Mayank"</h5>
+                  <p><br></p>
                   <p>This is the simple explaination of Function Definition and Declaration.</p>
                   <p>For now this is enough for understanding the article.</p>
-                  <p>&nbsp;</p>
-                  <h3><strong>How Scopes are Determined in JavaScript</strong></h3>
+                  <p><br></p>
+                  <h3><b>How Scopes are Determined in JavaScript</b></h3>
                   <p>When JavaScript executes the code, it does the following</p>
                   <p>1. It traverse accross the code to find the Variable Declarations.</p>
                   <p>2. On the basis of where the variable is declared, variable scope is defined.</p>
                   <p>3. JavaScript then start Executing the Code with prior knoledge about the scopes.</p>
-                  <p>&nbsp;</p>
-                  <h3><strong>Different Scopes in JavaScript</strong></h3>
-                  <h5><strong>Global Scope Variables:</strong></h5>
-                  <p>Any variable which is declared outside a function definition is a <strong>Global Scope Variable</strong>.&nbsp;</p>
+                  <p><br></p>
+                  <h3><b>Different Scopes in JavaScript</b></h3>
+                  <h5><b>Global Scope Variables:</b></h5>
+                  <p>Any variable which is declared outside a function definition is a <b>Global Scope Variable</b>. </p>
                   <p>These variables can be accessed and modified throughtout the program.</p>
-                  <p>&nbsp;</p>
-                  <p>var Name = &quot;Mayank&quot;</p>
+                  <p><br></p>
+                  <p>var Name = "Mayank"</p>
                   <p>var Age = 28;</p>
-                  <p>&nbsp;</p>
+                  <p><br></p>
                   <p>Since these 2 variables are not defined inside any function, it is assigned to the Global Scope</p>
                   <p>JavaScript while initial traversing, will add these variable to the Global Scope.</p>
                   <p>Adding the variables to the global Scope shall allow them to be accessed anywhere.</p>
-                  <p>&nbsp;</p>
-                  <h5><strong>Function Scope Variable</strong></h5>
-                  <p>Whereas the variables that are declared inside a function are <strong>Function Scope Variable</strong>.</p>
+                  <p><br></p>
+                  <h5><b>Function Scope Variable</b></h5>
+                  <p>Whereas the variables that are declared inside a function are <b>Function Scope Variable</b>.</p>
                   <p>These Function Scope variables are destroyed as soon as function is executed.</p>
-                  <p>&nbsp;</p>
+                  <p><br></p>
                   <p>function showDetails() {</p>
-                  <p>&nbsp; var Name = &quot;Mayank&quot;;</p>
-                  <p>&nbsp; var Age = 28;</p>
+                  <p>  var Name = "Mayank";</p>
+                  <p>  var Age = 28;</p>
                   <p>}</p>
                   <p>Here in the above code, we can see that the variables are declared inside the Function.</p>
                   <p>Variables declared inside the functions are assigned with the function Scope</p>
                   <p>Function scope variables cannot be accessed outside the function definition.</p>
-                  <p>Variable &quot;Name&quot;&nbsp;and &Auml;ge&quot;cannot be accessed outside the &quot;showDetails&quot; function</p>
-                  <p>&nbsp;</p>
+                  <p>Variable "Name" and &Auml;ge"cannot be accessed outside the "showDetails" function</p>
+                  <p><br></p>
                   <p>function showDetails() {</p>
-                  <p>&nbsp; var Name = &quot;Mayank&quot;;</p>
-                  <p>&nbsp; var Age = 28;</p>
+                  <p>  var Name = "Mayank";</p>
+                  <p>  var Age = 28;</p>
                   <p>}</p>
                   <p>console.log(Name);</p>
-                  <p>&nbsp;</p>
-                  <p>The above code shall result in error, since &quot;Name&quot; is not available outside the &quot;showDetails&quot;function</p>
-                  <p>&nbsp;</p>
+                  <p><br></p>
+                  <p>The above code shall result in error, since "Name" is not available outside the "showDetails"function</p>
+                  <p><br></p>
                   <p>We can refer to Global scope Variable inside the Function Scope</p>
-                  <p>var Name = &quot;Mayank</p>
+                  <p>var Name = "Mayank"</p>
                   <p>function showDetails() {</p>
-                  <p>&nbsp; console.log(Name)</p>
+                  <p>  console.log(Name)</p>
                   <p>}</p>
-                  <p>In the above code &quot;Name&quot;&nbsp;is assigned to the Global Scope therefore it can be accessed inside the Function</p>
-                  <p>&nbsp;</p>
+                  <p>In the above code "Name" is assigned to the Global Scope therefore it can be accessed inside the Function</p>
+                  <p><br></p>
                   <p>Also Consider the following Case:</p>
-                  <p>var Name = &quot;Mayank</p>
+                  <p>var Name = "Mayank</p>
                   <p>function showDetails() {</p>
-                  <p>&nbsp; Age = 28;</p>
+                  <p>  Age = 28;</p>
                   <p>}</p>
                   <p>console.log(Age);</p>
-                  <p>In the above code, we cannot see the declaration of the &Auml;ge&quot;variable in the Global Scope.&nbsp;</p>
-                  <p>This variable is Defined inside the Function, without &quot;var&quot;keyword</p>
+                  <p>In the above code, we cannot see the declaration of the &Auml;ge"variable in the Global Scope. </p>
+                  <p>This variable is Defined inside the Function, without "var"keyword</p>
                   <p>Such Variables are assigned to the Global Scope.</p>
-                  <p>&nbsp;</p>
+                  <p><br></p>
                   <h5>How Scopes are defined in JavaScript</h5>
-                  <p>&nbsp;</p>
+                  <p><br></p>
                   <p>Compiler traverse the Entire JavaScript before execution.</p>
                   <p>Before actual Run the scope of Variables are defined.</p>
-                  <p>While Execution of JavaScript Code, compiler has prior information about &nbsp;variable Scopes.</p>
-                  <p>&nbsp;</p>
+                  <p>While Execution of JavaScript Code, compiler has prior information about  variable Scopes.</p>
+                  <p><br></p>
                   <p>The following operations are done when a JavaScript is Executed:</p>
                   <p>1. Before Executing a JavaScript, it first looks for all the variable declarations.</p>
                   <p>2. JavaScript compler evaluates the entire code and look for all the Declarations.</p>
                   <p>3. On thebasis of where the Variable is Declared, scope is assigned to the variable.</p>
                   <p>4. If variable is declared inside the Function, it is added to the Function Scope</p>
                   <p>5. If the Variable is not defined inside the Function, it is assigned to the GLobal Scope.</p>
-                  <p>&nbsp;</p>
-                  <p><strong>** Note: </strong></p>
+                  <p><br></p>
+                  <p><b>** Note: </b></p>
                   <p>Any variable if not declared in Global Scope and provide the definition directly inside a function, the variable is added to the Global Scope by the Compiler. This is demonstrated in the last Example provided.</p>
                 </div>
 
