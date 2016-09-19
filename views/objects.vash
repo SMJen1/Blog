@@ -241,7 +241,7 @@
                         </a>
                     </p>
                   </div>
-       
+
                 </div>
                 <!-- end .content -->
                 <div class="image" style="background-image: url('images/javascript-logo-large.jpg');"></div>
@@ -418,7 +418,7 @@ function Employee (name, age, designation) {
 }</pre>
                   <p>The added function will be available to each of the Object created. </p>
                   <p><br></p><br>
-                  
+
 
 
                   <h2 class="topic">Creating Object from Constructor Function</h3>
@@ -427,7 +427,7 @@ function Employee (name, age, designation) {
 var newEmployee = new Employee("Mayank", 28, "Senior Software Developer"); </pre>
                   <p>We can create multiple instances of Employee using this "new" keyword.</p>
                   <p><br></p>
-                  
+
                   <b>We can now access the properties of the New Object in the following manner</b>
                   <pre>
 1. newEmployee.Name
@@ -447,99 +447,14 @@ var newEmployee = new Employee("Mayank", 28, "Senior Software Developer"); </pre
                   <p>4. Although creating Object using Constructor Function is slowest method.</p>
                   <p><br></p>
                   <h2><b>Conclusion:</b></h2>
-                  <p>Any of the method can be used to create an Onject.</p>
+                  <p>Any of the method can be used to create an Object.</p>
                   <p>It all depends on the Requirement of the Project</p>
                 </div>
-                <!-- end .blog-post-content -->
-                <div class="blog-post-comments">
-                  <h4>7 Comments</h4>
-                  <div class="comment">
-                    <div class="inner clearfix">
-                      <div class="image"><img src="images/comment01.jpg" alt="alt text" class="img-responsive"></div>
-                      <div class="content">
-                        <h5>Stone Gold</h5>
-                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placey eat facere possimus, omnis voluptas assumenda est.</p>
-                        <span class="meta">25 March 2015 - 9.00AM</span>
-                        <a href="" class="reply">Reply<i class="fa fa-reply"></i></a>
-                      </div>
-                      <!-- end .content -->
-                    </div>
-                    <!-- end .inner -->
-                    <div class="comment">
-                      <div class="inner clearfix">
-                        <div class="image"><img src="images/comment02.jpg" alt="alt text" class="img-responsive"></div>
-                        <div class="content">
-                          <h5>Anna Salina</h5>
-                          <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placey eat facere possimus, omnis voluptas assumenda est.</p>
-                          <span class="meta">25 March 2015 - 9.00AM</span>
-                          <a href="" class="reply">Reply<i class="fa fa-reply"></i></a>
-                        </div>
-                        <!-- end .content -->
-                      </div>
-                      <!-- end .inner -->
-                    </div>
-                    <!-- end .comment -->
-                  </div>
-                  <!-- end .comment -->
-                  <div class="comment">
-                    <div class="inner clearfix">
-                      <div class="image"><img src="images/comment03.jpg" alt="alt text" class="img-responsive"></div>
-                      <div class="content">
-                        <h5>Tom Cruis</h5>
-                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placey eat facere possimus, omnis voluptas assumenda est.</p>
-                        <span class="meta">25 March 2015 - 9.00AM</span>
-                        <a href="" class="reply">Reply<i class="fa fa-reply"></i></a>
-                      </div>
-                      <!-- end .content -->
-                    </div>
-                    <!-- end .inner -->
-                  </div>
-                  <!-- end .comment -->
-                </div>
-                <!-- end .blog-post-comments -->
-                <div class="leave-comment">
-                  <h4>Leave A Comment</h4>
-                  <div class="inner">
-                    <form method="post" class="form-horizontal">
-                      <div class="form-group">
-                        <label class="col-sm-2 control-label">Name</label>
-                        <div class="col-sm-10">
-                          <input type="text" class="contact-name" name="contact-name" />
-                        </div>
-                        <!-- end .col-sm-10 -->
-                      </div>
-                      <!-- end .form-group -->
-                      <div class="form-group">
-                        <label class="col-sm-2 control-label">Email</label>
-                        <div class="col-sm-10">
-                          <input type="email" class="contact-email" name="contact-email" />
-                        </div>
-                        <!-- end .col-sm-10 -->
-                      </div>
-                      <!-- end .form-group -->
-                      <div class="form-group">
-                        <label class="col-sm-2 control-label">Message</label>
-                        <div class="col-sm-10">
-                          <textarea name="contact-message" class="contact-message" rows="3"></textarea>
-                        </div>
-                        <!-- end .col-sm-10 -->
-                      </div>
-                      <!-- end .form-group -->
-                      <div class="form-group">
-                        <div class="col-sm-10 col-sm-offset-2">
-                          <button type="submit" class="button solid-button purple">Send Message</button>
-                        </div>
-                        <!-- end .col-sm-10 -->
-                      </div>
-                      <!-- end .form-group -->
-                    </form>
-                  </div>
-                  <!-- end .inner -->
-                </div>
+
                 <!-- end .leave-comment -->
               </div>
               <!-- end .blog-post -->
-          
+
               <!-- end .blog-details -->
             </div>
             <!-- end .single-blog-post -->
