@@ -29,5 +29,5 @@ if (cluster.isMaster) {
     cluster.fork();
   }
 } else {
-  app.listen(3000);
+  app.listen(80);
 }
