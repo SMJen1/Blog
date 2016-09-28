@@ -16,28 +16,6 @@
     <link rel="stylesheet" href="css/main.css">
     <meta name="msvalidate.01" content="F77C0434F58CEA255020E3CCDE1B58D6" />
 
-    <style>
-      .fa-share-alt {
-        margin-top: 20px;
-      }
-
-      .social-icon i {
-        margin-top: 15px;
-      }
-
-      #index-page h1 {
-        font-size: 12px !important;
-        line-height: 24px !important;
-        font-weight: 700 !important;
-      }
-
-      #index-page p.details {
-        font-size: 12px !important;
-        height: 160px;
-        overflow-y: auto;
-      }
-
-    </style>
 
   </head>
   <body id="index-page">
@@ -101,6 +79,7 @@
 
         <section>
           <div class="container">
+          <span style="color: red;">This is the text</span>
             <h2>Learn JavaScript Design Patterns and Other Related Concepts</h2>
             <div class="blog-posts masonry" id="blog-masonry">
               <div class="blog-grid-sizer"></div>
