@@ -1,5 +1,7 @@
 var cpuCount = require('os').cpus().length;
 
+var compression = require('compression');
+
 var bodyParser = require('body-parser')
 
 var cluster = require('cluster');
@@ -10,6 +12,7 @@ var vash = require('vash');
 
 var app = express();
 
+app.use(compression());
 
 app.set("view engine", "vash");
 
