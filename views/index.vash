@@ -11,7 +11,7 @@
 
     <meta name="title" content="Object Oriented JavaScript and Design Patterns. Singleton, Module and Prototype Patterns." />
 
-    <meta name="keywords" content="object oriented javascript,javascript design patterns,learn javascript,prototype pattern,closures,singleton pattern,iife,functions javascript,module pattern"/>
+    <meta name="keywords" content="object oriented javascript,javascript design patterns,learn javascript,prototype pattern,closures,singleton pattern,iife,module pattern"/>
 
     <link rel="stylesheet" href="css/main.css">
     <meta name="msvalidate.01" content="F77C0434F58CEA255020E3CCDE1B58D6" />
@@ -24,10 +24,22 @@
       .social-icon i {
         margin-top: 15px;
       }
+
+      #index-page h1 {
+        font-size: 16px !important;
+        line-height: 24px !important;
+        font-weight: 700 !important;
+      }
+
+      #index-page p {
+        font-size: 12px !important;
+      }
+
+
     </style>
 
   </head>
-  <body>
+  <body id="index-page">
 
     <!-- Search -->
     <div class="search-overlay"></div>
@@ -97,23 +109,19 @@
                       <div class="image" style="background-image: url('images/JavaScript-logo.png');" alt="IIFE Immediately Invokable Function Expression JavaScript"></div>
                   </a>
                   <div class="content">
-                    <span class="date">August 14, 2016</span>
-                    <h5><a href="/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern">Immediately Invokable Function Expressions</a></h5>
-                    <footer>
-                      <span class="comments-link"></span>
-                      <span class="share-link"><a href="/iife"><i class="fa fa-share-alt"></i></a></span>
-                    </footer>
+                    <h1><a href="/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern">Immediately Invokable Function</a></h1>
+                    <p>
+                      <b>IIFE (Immediately Invokable Function Expressions)</b> are self invoking function expressions. This <b>Design Pattern</b> should be used in case function is required to be called just once.
+                    </p>
                   </div> <!-- end .content -->
                 </div> <!-- end .inner -->
               </div> <!-- end .blog-post -->
               <div class="blog-post">
                 <div class="inner">
                   <div class="content">
-                    <span class="date">August 15, 2016</span>
-                    <h4><a href="/javascript-module-pattern-design-singleton">Module Pattern in JavaScript</a></h4>
-                    <footer>
-                      <span class="share-link"><a href="/javascript-module-pattern-design-singleton"><i class="fa fa-share-alt"></i></a></span>
-                    </footer>
+                    <h1><a href="/javascript-module-pattern-design-singleton">Module Pattern in JavaScript</a></h1>
+                    <p><b>Module Pattern</b> is an efficient <b>Design Pattern</b> in case user need to return a simple Object from a function. Module Pattern acts like a singleton returning single reusable Object.
+                    </p>
                   </div> <!-- end .content -->
                 </div> <!-- end .inner -->
               </div> <!-- end .blog-post -->
@@ -121,12 +129,8 @@
                 <div class="inner">
                   <a href="/scopes"><div class="image" style="background-image: url('images/node.jpg');"></div></a>
                   <div class="content">
-                    <span class="date">August 13, 2016</span>
-                    <h4><a href="/create-javascript-object-string-literal-new-keyword-new-object">Scopes in JavaScript</a></h4>
-                    <footer>
-                      <span class="comments-link"><a href="/"></a></span>
-                      <span class="share-link"><a href="/"><i class="fa fa-share-alt"></i></a></span>
-                    </footer>
+                    <h1><a href="/create-javascript-object-string-literal-new-keyword-new-object">Scopes in JavaScript</a></h1>
+                    <p>Javascript consists of different <b>scopes</b> for Object which is defined. It helps compiler to determine the accessibility of a declared variable. We can have "block", "function" and "global" scopes.</p>
                   </div> <!-- end .content -->
                 </div> <!-- end .inner -->
               </div> <!-- end .blog-post -->
@@ -134,7 +138,7 @@
                 <div class="inner">
                   <a href="/"><div class="image" style="background-image: url('images/javascript.jpg');"></div></a>
                   <div class="content">
-                    <span class="date">August 12, 2016</span>
+                    <span class="date">March 12, 2016</span>
                     <h4><a href="/create-javascript-object-string-literal-new-keyword-new-object">Creating Objects in JavaScript</a></h4>
                     <footer>
                       <span class="comments-link"><a href="/"></a></span>
