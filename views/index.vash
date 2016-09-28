@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow">
-    <title>Learn JavaScript Design Patterns and Concepts like Module Pattern, Prototype Pattern, Singleton, Object Creation, Hoisting and other related stuff</title>
+    <title>JavaScript Design Patterns and OOPS Concepts</title>
 
-    <meta name="description" content="Learn JavaScript Design Patterns and Object Oriented Concepts like Module Pattern, Prototype Pattern, Singleton Pattern, IIFE, Object Creation, Hoisting and other related stuff" />
+    <meta name="description" content="Learn JavaScript Design Patterns and Object Oriented Concepts like Module Pattern, Prototype, Singleton Pattern, IIFE, Object Creation, Hoisting." />
 
-    <meta name="title" content="Learn JavaScript Design Patterns and Object Oriented Concepts like Module Pattern, Prototype Pattern, Singleton, Object Creation, Hoisting, IIFE and other related stuff" />
+    <meta name="title" content="Learn JavaScript Design Patterns like Module, Prototype, Singleton, Object Creation, Hoisting, IIFE" />
 
     <meta name="keywords" content="object oriented javascript,javascript design patterns,learn javascript,prototype pattern,closures,singleton pattern,iife,module pattern"/>
 
@@ -225,3 +225,5 @@
 
   </body>
 </html>
+
+
