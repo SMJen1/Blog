@@ -9,9 +9,11 @@
 
     <meta content="Immediately Invokable Function Expression (IIFE)" name="title" />
 
-    <meta name="description" content="Immediately Invokable Function Expression (IIFE) is a JavaScript Design Pattern. Is is an Anonymous Function which is Self Invoking. Function Expression is called as soon as it is Initialized" />
+    <meta name="title" content="(IIFE) Immediately Invokable Function Expressions JavaScript" />
 
-    <meta name="keywords" content="IIFE, Immediately Invokable Function Expression, IIFE in JavaScript, JavaScript IIFE, JavaScript Patterns, Learn JavaScript Design Pattern, JavaScript Patterns, Function Definition, Function Exressions in JavaScript, JavaScript Basic Concepts, Learn JavaScript, IIFE concepts, Function Expressions, JavaScript Function Expressions, Learn IIFE, IIFE Expressions, What are IIFE in JavaScript"/>
+    <meta name="description" content="Immediately Invokable Function Expression (IIFE) is a JavaScript Design Pattern. It's an Anonymous Function Expression which is Self Invoking. It is invoked as soon as it is Initialized" />
+
+    <meta name="keywords" content="iife,immediately invokable function expression,IIFE javascript,learn javascript design patterns,function definition,function exressions"/>
 
     <link rel="stylesheet" href="css/shrink.css">
     <meta name="msvalidate.01" content="F77C0434F58CEA255020E3CCDE1B58D6" />
@@ -284,14 +286,14 @@ var demoFunction = function(){
 </code></pre>
                   <p>Here we can see that the user is trying to access "demoFunction()" even before the compiler reaches its "Function Definition", In this case function will be executed. It will be called by the compliler and shall output a alert message. The function definition is hoisted on the top of the Scope by the compiler, therefore it is available even before its Function Definition during script execution. </p><br/>
                   <p>The concept of Hoisting does not adher to Function Expressions. Function Expressions are never Hoisted.</p>
-                  <p>Look for the following link to learn more about <a href="/function-and-variable-hoisting-javascript-closures">Function Hoisting</a></p> 
+                  <p>Look for the following link to learn more about <a href="/function-and-variable-hoisting-javascript-closures">Function Hoisting</a></p>
                   <h4> </h4>
-                  
+
 
                   <h2 class="topic">Function Expressions:</h2>
                   <p>"<b>Function Expression"</b> would be any function which does not start with "function" keyword.</p><br>
                   <p>Common way to define a function expression is to assign a function to a variable. </p><br>
-                  
+
                   <pre>
 <code class="lang-javascript">
 var demoFunction = function(){
