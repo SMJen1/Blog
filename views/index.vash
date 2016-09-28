@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow">
-    <title>Learn JavaScript Concepts</title>
+    <title>Learn JavaScript Design Patterns and Concepts like Module Pattern, Prototype Pattern, Singleton, Object Creation, Hoisting and other related stuff</title>
 
-    <meta name="description" content="Object Oriented JavaScript and JavaScript Design Patterns. Learn Module Pattern, Singleton, Prototype Pattern, Closures and other related Concepts." />
+    <meta name="description" content="Learn JavaScript Design Patterns and Object Oriented Concepts like Module Pattern, Prototype Pattern, Singleton Pattern, IIFE, Object Creation, Hoisting and other related stuff" />
 
-    <meta name="title" content="Object Oriented JavaScript and Design Patterns. Singleton, Module and Prototype Patterns." />
+    <meta name="title" content="Learn JavaScript Design Patterns and Object Oriented Concepts like Module Pattern, Prototype Pattern, Singleton, Object Creation, Hoisting, IIFE and other related stuff" />
 
     <meta name="keywords" content="object oriented javascript,javascript design patterns,learn javascript,prototype pattern,closures,singleton pattern,iife,module pattern"/>
 
@@ -36,7 +36,6 @@
         height: 160px;
         overflow-y: auto;
       }
-
 
     </style>
 
@@ -102,7 +101,7 @@
 
         <section>
           <div class="container">
-            <h2>Blog Post</h2>
+            <h2>Learn JavaScript Design Patterns and Other Related Concepts</h2>
             <div class="blog-posts masonry" id="blog-masonry">
               <div class="blog-grid-sizer"></div>
               <div class="blog-post image-left">
@@ -111,7 +110,7 @@
                       <div class="image" style="background-image: url('images/JavaScript-logo.png');" alt="IIFE Immediately Invokable Function Expression JavaScript"></div>
                   </a>
                   <div class="content">
-                    <h1><a href="/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern">Immediately Invokable Function</a></h1>
+                    <h1><a href="/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern">Immediately Invokable Function Expression (IIFE)</a></h1>
                     <p class="details">
                       <b>IIFE (Immediately Invokable Function Expressions)</b> are self invoking function expressions. This <b>Design Pattern</b> should be used in case function is required to be called just once.
                     </p>
