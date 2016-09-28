@@ -10,7 +10,6 @@ var vash = require('vash');
 
 var app = express();
 
-app.use(express.compress());
 
 app.set("view engine", "vash");
 
