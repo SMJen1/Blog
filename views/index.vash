@@ -7,11 +7,11 @@
     <meta name="robots" content="index, follow">
     <title>Learn JavaScript Concepts</title>
 
-    <meta name="description" content="Understanding Basic Object Oriented Concept and Design Patterns in JavaScript, Module Pattern, Singleton, Protype Pattern and other related stuff." />
+    <meta name="description" content="Object Oriented JavaScript and JavaScript Design Patterns. Learn Module Pattern, Singleton, Prototype Pattern, Closures and other related Concepts." />
 
-    <meta name="title" content="Learn Object Oriented Concept in JavaScript" />
+    <meta name="title" content="Object Oriented JavaScript and Design Patterns. Singleton, Module and Prototype Patterns." />
 
-    <meta name="keywords" content="Prototype, Learn JavaScript, JavaScript Basics, JavaScript, Patterns in JavaScript, Closures, Singleton, IIFE, Closures, Functions in JavaScript, Functions, Classes, Abstraction in JavaScript, Mayank Gupta, JavaScript Patterns, Patterns, Module Pattern, Prototype Pattern"/>
+    <meta name="keywords" content="object oriented javascript,javascript design patterns,learn javascript,prototype pattern,closures,singleton pattern,iife,functions javascript,module pattern"/>
 
     <link rel="stylesheet" href="css/shrink.css">
     <meta name="msvalidate.01" content="F77C0434F58CEA255020E3CCDE1B58D6" />
@@ -95,7 +95,7 @@
               <div class="blog-post image-left">
                 <div class="inner">
                   <a href="/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern">
-                      <div class="image" style="background-image: url('images/JavaScript-logo.png'); alt="IIFE Immediately Invokable Function Expression JavaScript"></div>
+                      <div class="image" style="background-image: url('images/JavaScript-logo.png');" alt="IIFE Immediately Invokable Function Expression JavaScript"></div>
                   </a>
                   <div class="content">
                     <span class="date">August 14, 2016</span>
