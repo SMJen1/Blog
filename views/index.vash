@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <meta name="robots" content="index, follow">
+
     <title>Learn JavaScript Concepts</title>
 
     <meta name="description" content="Object Oriented JavaScript and JavaScript Design Patterns. Learn Module Pattern, Singleton, Prototype Pattern, Closures and other related Concepts." />
@@ -13,19 +16,23 @@
 
     <meta name="keywords" content="object oriented javascript,javascript design patterns,learn javascript,prototype pattern,closures,singleton pattern,iife,functions javascript,module pattern"/>
 
-    <link rel="stylesheet" href="css/shrink.css">
     <meta name="msvalidate.01" content="F77C0434F58CEA255020E3CCDE1B58D6" />
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
     <script src="js/jquery-1.11.2.min.js"></script>
 
     <style>
-    .fa-share-alt {
-      margin-top: 20px;
-    }
 
-    .social-icon i {
-      margin-top: 15px;
-    }
+      @import url("css/shrink.css");
+      @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
+
+      .fa-share-alt {
+        margin-top: 20px;
+      }
+
+      .social-icon i {
+        margin-top: 15px;
+      }
+
     </style>
   </head>
   <body>
