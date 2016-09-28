@@ -26,13 +26,15 @@
       }
 
       #index-page h1 {
-        font-size: 16px !important;
+        font-size: 12px !important;
         line-height: 24px !important;
         font-weight: 700 !important;
       }
 
-      #index-page p {
+      #index-page p.details {
         font-size: 12px !important;
+        height: 160px;
+        overflow-y: auto;
       }
 
 
@@ -110,7 +112,7 @@
                   </a>
                   <div class="content">
                     <h1><a href="/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern">Immediately Invokable Function</a></h1>
-                    <p>
+                    <p class="details">
                       <b>IIFE (Immediately Invokable Function Expressions)</b> are self invoking function expressions. This <b>Design Pattern</b> should be used in case function is required to be called just once.
                     </p>
                   </div> <!-- end .content -->
@@ -120,7 +122,7 @@
                 <div class="inner">
                   <div class="content">
                     <h1><a href="/javascript-module-pattern-design-singleton">Module Pattern in JavaScript</a></h1>
-                    <p><b>Module Pattern</b> is an efficient <b>Design Pattern</b> in case user need to return a simple Object from a function. Module Pattern acts like a singleton returning single reusable Object.
+                    <p class="details"><b>Module Pattern</b> is an efficient <b>Design Pattern</b> in case user need to return a simple Object from a function. Module Pattern acts like a singleton returning single reusable Object.
                     </p>
                   </div> <!-- end .content -->
                 </div> <!-- end .inner -->
@@ -130,7 +132,7 @@
                   <a href="/scopes"><div class="image" style="background-image: url('images/node.jpg');"></div></a>
                   <div class="content">
                     <h1><a href="/create-javascript-object-string-literal-new-keyword-new-object">Scopes in JavaScript</a></h1>
-                    <p>Javascript consists of different <b>scopes</b> for Object which is defined. It helps compiler to determine the accessibility of a declared variable. We can have "block", "function" and "global" scopes.</p>
+                    <p class="details"><b>Scopes</b> in Javascript determine the accessibility of a declared variable. Variables cannot be accessed outside the scope in which it is defined. We can have "block", "function" and "global" scopes.</p>
                   </div> <!-- end .content -->
                 </div> <!-- end .inner -->
               </div> <!-- end .blog-post -->
@@ -138,12 +140,10 @@
                 <div class="inner">
                   <a href="/"><div class="image" style="background-image: url('images/javascript.jpg');"></div></a>
                   <div class="content">
-                    <span class="date">March 12, 2016</span>
-                    <h4><a href="/create-javascript-object-string-literal-new-keyword-new-object">Creating Objects in JavaScript</a></h4>
-                    <footer>
-                      <span class="comments-link"><a href="/"></a></span>
-                      <span class="share-link"><a href="/"><i class="fa fa-share-alt"></i></a></span>
-                    </footer>
+                    <h1><a href="/create-javascript-object-string-literal-new-keyword-new-object">JavaScript Object Creation</a></h1>
+                    <p class="details">
+                      <b>Objects can be created</b> in different ways. In the following article we shall be learning about the different ways in which they can be created and associated advantages and disadvantages.
+                    </p>
                   </div> <!-- end .content -->
                 </div> <!-- end .inner -->
               </div> <!-- end .blog-post -->
@@ -151,24 +151,20 @@
                 <div class="inner">
                   <a><div class="image" style="background-image: url('images/objects.jpg');"></div></a>
                   <div class="content">
-                    <span class="date">August 11, 2016</span>
-                    <h4><a href="/singleton-design-pattern-javascript-module">Singleton Object in JavaScript</a></h4>
-                    <footer>
-                      <span class="comments-link"><a href="/"></a></span>
-                      <span class="share-link"><a href="/"><i class="fa fa-share-alt"></i></a></span>
-                    </footer>
+                    <h1><a href="/singleton-design-pattern-javascript-module">Singleton in JavaScript</a></h1>
+                    <p class="details">
+                      <b>Singleton Design Pattern</b> ensures that we cannot have multiple instances of a particular Object. Singleton Design Pattern are set of functions and variables exposed from a function.
+                    </p>
                   </div> <!-- end .content -->
                 </div> <!-- end .inner -->
               </div> <!-- end .blog-post -->
               <div class="blog-post">
                 <div class="inner">
                   <div class="content">
-                    <span class="date">August 10, 2016</span>
-                    <h4><a href="/function-and-variable-hoisting-javascript-closures">Function Hoisting in JavaScript</a></h4>
-                    <footer>
-                      <span class="comments-link"><a href="/"></a></span>
-                      <span class="share-link"><a href="/"><i class="fa fa-share-alt"></i></a></span>
-                    </footer>
+                    <h1><a href="/function-and-variable-hoisting-javascript-closures">Hoisting in JavaScript</a></h1>
+                    <p class="details">
+                      <b>Hoisting</b> is one of the most important features of JavaScript. Function Definition and Variable Declarations are by default moved to the top of function Definition. Hence making it accessible even before it is declared.
+                    </p>
                   </div> <!-- end .content -->
                 </div> <!-- end .inner -->
               </div> <!-- end .blog-post -->
@@ -176,12 +172,11 @@
                 <div class="inner">
                   <a href="/prototype-pattern-javascript-function-prototype"><div class="image" style="background-image: url('images/es6.jpg');"></div></a>
                   <div class="content">
-                    <span class="date">August 9, 2016</span>
-                    <h4><a href="/prototype-pattern-javascript-function-prototype">JavaScript Prototype Pattern</a></h4>
-                    <footer>
-                      <span class="comments-link"><a href="/"></a></span>
-                      <span class="share-link"><a href="/"><i class="fa fa-share-alt"></i></a></span>
-                    </footer>
+                    <h1><a href="/prototype-pattern-javascript-function-prototype">JavaScript Prototype Pattern</a></h1>
+                    <p class="details">
+                      <b>Prototype Pattern</b> is used at the places where we need to create multiple Objects of a specicif type. It is a <b>constructor function</b> using which multiple instances of the same type can be created.
+                    </p>
+
                   </div> <!-- end .content -->
                 </div> <!-- end .inner -->
               </div> <!-- end .blog-post -->
