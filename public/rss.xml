@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Learn Object Oriented JavaScript</title>
+    <link>http://www.learn-javascript.in</link>
+    <description>Learn Object Oriented JavaScript and Design Patterns</description>
+    <item>
+      <title>Learn Singleton Pattern</title>
+      <link>http://www.http://learn-javascript.in/singleton-design-pattern-javascript-module</link>
+      <description>
+        Singleton Design Pattern ensures that we cannot have multiple instances of a particular Object. Singleton Design Pattern are set of functions and variables exposed from a function.
+      </description>
+    </item>
+  </channel>
+</rss>

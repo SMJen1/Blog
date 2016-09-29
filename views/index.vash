@@ -80,7 +80,6 @@
 
         <section>
           <div class="container">
-          <span style="color: red;">This is the text</span>
             <h2>Learn JavaScript Design Patterns and Other Related Concepts</h2>
             <div class="blog-posts masonry" id="blog-masonry">
               <div class="blog-grid-sizer"></div>
