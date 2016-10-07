@@ -16,7 +16,9 @@ app.use(compression());
 
 app.set("view engine", "vash");
 
-app.use(express.static(__dirname + '/public', { maxAge: 31536000000 }));
+app.use(express.static(__dirname + '/public'));
+
+//app.use(express.static(__dirname + '/public', { maxAge: 31536000000 }));
 
 app.use(bodyParser.json())
 
@@ -29,5 +31,5 @@ if (cluster.isMaster) {
     cluster.fork();
   }
 } else {
-  app.listen(80);
+  app.listen(3000);
 }

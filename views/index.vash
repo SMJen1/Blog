@@ -227,12 +227,12 @@
       <div class="bottom">Copyright &copy; Sility. All Rights Reserved.</div> <!-- end .bottom -->
     </footer> <!-- end .footer -->
 
-    <script defer src="js/jquery-1.11.2.min.js"></script>
-    <script defer src="js/bootstrap.min.js"></script>
-    <script defer src="js/isotope.pkgd.min.js"></script>
-    <script defer src="js/imagesloaded.pkgd.min.js"></script>
-    <script defer src="js/scriptRefined.js"></script>
-    <script async src="js/analytics.js"></script>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/scriptRefined.js"></script>
+    <script src="js/analytics.js"></script>
 
   </body>
 </html>
