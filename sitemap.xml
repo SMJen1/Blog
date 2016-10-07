@@ -1,6 +1,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!--
- created with Free Online Sitemap Generator www.xml-sitemaps.com 
+ created with Free Online Sitemap Generator www.xml-sitemaps.com
 -->
 <url>
 <loc>http://learn-javascript.in/</loc>
@@ -10,7 +10,7 @@
 </url>
 <url>
 <loc>
-http://learn-javascript.in/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern
+http://learn-javascript.in/iife-immediately-invoked-function-expressions-javascript-singleton-design-pattern-closures
 </loc>
 </url>
 <url>

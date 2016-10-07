@@ -13,7 +13,7 @@
 		  res.render('about', { 'count': routeConroller.count });
 		})
 
-    app.get('/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern', function(req, res) {
+    app.get('/iife-immediately-invoked-function-expressions-javascript-singleton-design-pattern-closures', function(req, res) {
       routeConroller.count++;
       res.render('iife', { 'count': routeConroller.count });
     })

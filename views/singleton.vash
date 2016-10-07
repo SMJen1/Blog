@@ -191,7 +191,7 @@
                   <div>
                     <h6>Other Related JavaScript Articles:</h6>
                     <p class="other-articles">
-                      <a href="/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern">
+                      <a href="/iife-immediately-invoked-function-expressions-javascript-singleton-design-pattern-closures">
                       IIFE Pattern
                       </a>
                     </p>
@@ -340,7 +340,7 @@ Employee.designation;  // This is error since designation property is not expose
 Employee.showDetails();
 
 </code></pre>
-                  
+
                   <p>Here we can see the Implementation of Singleton Object using IIFE.</p>
                   <p>According to the implemenatation:</p>
                   <p>1. A closure is created with the set of related functionalities and Object</p>
@@ -366,7 +366,7 @@ var Employee = (function() {
     }
     return details;
   }
- 
+
   return {
     getInstance: getInstance
   }
@@ -403,7 +403,7 @@ var Employee = (function() {
     }
     return details;
   }
- 
+
   return {
     getInstance: getInstance
   }

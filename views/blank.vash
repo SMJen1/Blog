@@ -103,7 +103,7 @@
         </div> <!-- end .slide-out-widget -->
         <div class="slide-out-widget">
           <h4>Follow On Instagram</h4>
-  
+
         </div> <!-- end .slide-out-widget -->
       </div> <!-- end .slide-out-widgets -->
     </div> <!-- end .slide-out -->
@@ -164,7 +164,7 @@
                   <div>
                     <h6>Other Related JavaScript Articles:</h6>
                     <p class="other-articles">
-                        <a href="/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern">
+                        <a href="/iife-immediately-invoked-function-expressions-javascript-singleton-design-pattern-closures">
                           IIFE Pattern
                         </a>
                             </p>
@@ -199,8 +199,8 @@
                         </a>
                     </p>
                   </div>
-                  
-                
+
+
                 </div> <!-- end .content -->
                 <div class="image" style="background-image: url('images/javascript-logo-large.jpg');"></div>
               </header> <!-- end .blog-header -->
@@ -439,7 +439,7 @@ console.log(Employee.salary);</code></pre>
                 </div> <!-- end .blog-post-content -->
 
               </div> <!-- end .blog-post -->
-          
+
             </div> <!-- end .single-blog-post -->
           </div> <!-- end .container -->
         </section>

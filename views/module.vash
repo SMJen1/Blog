@@ -8,11 +8,11 @@
     <title>Module Pattern in JavaScript shall allow user to return a Object from a function. It is one of the most famous Design Pattern in JavaScript</title>
     <meta name="msvalidate.01" content="F77C0434F58CEA255020E3CCDE1B58D6" />
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    
+
     <meta name="title" content="Module Pattern in JavaScript" />
-    
+
     <meta name="description" content="Module Pattern is most used Design Pattern in JavaScript. An Object is returned back from the function. It also creates a Singleton Object." />
-    
+
     <meta name="keywords" content="Module Pattern, Design Patterns in JavaScript, JavaScript Module Pattern, Module in JavaScript, Creating Modules in JavaScript, What is Module Pattern, Understanding Module Pattern, Modules in JavaScript, JavaScript Modules, Modules JavaScript"/>
     <link rel="stylesheet" href="css/shrink.css">
     <script src="js/rainbow.js"></script>
@@ -197,7 +197,7 @@
                   <div>
                     <h6>Other Related JavaScript Articles:</h6>
                     <p class="other-articles">
-                      <a href="/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern">
+                      <a href="/iife-immediately-invoked-function-expressions-javascript-singleton-design-pattern-closures">
                       IIFE Pattern
                       </a>
                     </p>
@@ -276,7 +276,7 @@
                   <p> </p>
                   <p>This is a self invoking function expressions. IIFEs are executed by themselves. When it is encountered inside a code, a sepecate function scope is created. IIFE can execute like any other function, but the difference is that IIFEs are self invoking functions.
                   <br><br>For more details and implementation details on IIFE, please refer to following:
-                  <a href="/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern"><b>
+                  <a href="/iife-immediately-invoked-function-expressions-javascript-singleton-design-pattern-closures"><b>
                   	IIFE Design Pattern
                 	</b></a>
                   </p>
@@ -302,8 +302,8 @@
 });</code></pre>
                   <p> </p>
                   <p>The next step is to invoke this <b>Anonymous Function Expression</b>. Anonymous function expression along with self invokation feature constitutes an IIFE. So the next step is to create an IIFE ie Self invoke and anonymous function.</p><br>
-                  <p>In the below code we can see that the anonymous function is invoked using ()  at the end. This is a simple 
-                  <a href="/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern"><b>IIFE Design Pattern</b></a>.</p>
+                  <p>In the below code we can see that the anonymous function is invoked using ()  at the end. This is a simple
+                  <a href="/iife-immediately-invoked-function-expressions-javascript-singleton-design-pattern-closures"><b>IIFE Design Pattern</b></a>.</p>
                   <pre>
 <code class="lang-javascript">
 (function(){
@@ -322,7 +322,7 @@
   function setDetails(name, salary, tax) {
     name = name;
     salary = salary;
-    tax = tax; 
+    tax = tax;
   };
 
 
@@ -354,7 +354,7 @@ var Employee = (function(){
   function setDetails(name, salary, tax) {
     name = name;
     salary = salary;
-    tax = tax; 
+    tax = tax;
   };
 
 

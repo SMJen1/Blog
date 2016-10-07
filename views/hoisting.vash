@@ -203,7 +203,7 @@
                                   <div>
                     <h6>Other Related JavaScript Articles:</h6>
                     <p class="other-articles">
-                        <a href="/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern">
+                        <a href="/iife-immediately-invoked-function-expressions-javascript-singleton-design-pattern-closures">
                           IIFE Pattern
                         </a>
                     </p>

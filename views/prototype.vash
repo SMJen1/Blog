@@ -210,7 +210,7 @@
                   <div>
                     <h6>Other Related JavaScript Articles:</h6>
                     <p class="other-articles">
-                      <a href="/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern">
+                      <a href="/iife-immediately-invoked-function-expressions-javascript-singleton-design-pattern-closures">
                       IIFE Pattern
                       </a>
                     </p>
@@ -334,7 +334,7 @@ console.log(newEmployee.Name);
                   <p>1. newEmployee.Name</p>
                   <p>2. newEmployee["Age"]</p>
                   <p><br></p>
-                  
+
                   <b>Lets see what "New Keyword" does while creating a new Object.</b><br>
                   <p>1. Create a new scope in the memory</p>
                   <p>2. Bind variables to the new scope</p>

@@ -13,7 +13,7 @@
 
     <meta name="description" content="Immediately Invokable Function Expression (IIFE) is a JavaScript Design Pattern. It's an Anonymous Function Expression which is Self Invoking. It is invoked as soon as it is Initialized" />
 
-    <meta name="keywords" content="iife,immediately invokable function expression,IIFE javascript,learn javascript design patterns,function definition,function exressions"/>
+    <meta name="keywords" content="iife javascript,immediately invokable function expression,IIFE javascript,learn javascript design patterns,function definition,function exressions"/>
 
     <meta name="msvalidate.01" content="F77C0434F58CEA255020E3CCDE1B58D6" />
 
@@ -202,7 +202,7 @@
                   <div>
                     <h6>Other Related JavaScript Articles:</h6>
                     <p class="other-articles">
-                      <a href="/javascript-what-is-immediately-invokable-function-expressions-iife-singleton-design-pattern">
+                      <a href="/iife-immediately-invoked-function-expressions-javascript-singleton-design-pattern-closures">
                       IIFE Pattern
                       </a>
                     </p>
