@@ -182,14 +182,14 @@
                   <div class="content">
                     <h1><a href="/delete-keyword-javascript-properties-object">Delete Keyword JavaScript</a></h1>
                     <p class="details">
-                      <b>Hoisting</b> is one of the most important features of JavaScript. Function Definition and Variable Declarations are by default moved to the top of function Definition. Hence making it accessible even before it is declared.
+                      <b>Delete Keyword</b> in used in JavaScript in order to delete properties and Objects. However <b>delete</b> cannot be used in case where we have non-configurable properties.
                     </p>
                   </div> <!-- end .content -->
                 </div> <!-- end .inner -->
               </div> <!-- end .blog-post -->
 
 
-              <div class="blog-post image-left">
+              <div class="blog-post image-left" style="display: none;">
                 <div class="inner">
                   <a href="/iife-immediately-invoked-function-expressions-javascript-singleton-design-pattern-closures">
                       <div class="image" style="background-image: url('images/JavaScript-logo.png');" alt="IIFE Immediately Invokable Function Expression JavaScript"></div>
