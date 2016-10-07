@@ -53,6 +53,11 @@
       res.render('objects', { 'count': routeConroller.count });
     })
 
+    app.get('/delete-keyword-javascript-properties-object', function(req, res) {
+      routeConroller.count++;
+      res.render('delete', { 'count': routeConroller.count });
+    })
+
 	};
 
 })(module.exports)

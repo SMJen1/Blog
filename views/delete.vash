@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow">
-    <title>Immediately Invokable Function Expression (IIFE)</title>
+    <title>JavaScript Delete Function</title>
 
-    <meta content="Immediately Invokable Function Expression (IIFE)" name="title" />
+    <meta content="Delete Function in JavaScript" name="title" />
 
-    <meta name="title" content="(IIFE) Immediately Invokable Function Expressions JavaScript" />
+    <meta name="title" content="JavaScript Delete Function. Delete Object and Properties" />
 
-    <meta name="description" content="Immediately Invokable Function Expression (IIFE) is a JavaScript Design Pattern. It's an Anonymous Function Expression which is Self Invoking. It is invoked as soon as it is Initialized" />
+    <meta name="description" content="Delete Keyword is used to delete Objects anf Properties inside an Object. In this article, we shall be disscussing about using Delete in JavaScript." />
 
-    <meta name="keywords" content="iife javascript,immediately invokable function expression,IIFE javascript,learn javascript design patterns,function definition,function exressions"/>
+    <meta name="keywords" content="delete keyword,delete object in javascript, delete properties, delete strict mode, delete array element"/>
 
     <meta name="msvalidate.01" content="F77C0434F58CEA255020E3CCDE1B58D6" />
 
@@ -138,7 +138,7 @@
     </div>
     <!-- end .slide-out -->
     <!-- Header -->
-    <header class="header">
+    <header class="heading">
       <div class="top clearfix">
         <a href="#section8" class="available"><i class="ion-ios-email-outline"></i><span>Available For Freelance</span></a>
         <div class="right-icons">
@@ -249,248 +249,380 @@
               <!-- end .blog-header -->
               <div class="blog-post">
                 <div class="blog-post-content">
-                  <h1 class="heading">Immediately Invokable Function Expression</h1>
-                  <div>
-                    <b>IIFE (Immediately Invokable Function Expression)</b> is a important concept in JavaScript. It is a commonly used <b>JavaScript Design Pattern</b> which is used to wrap set of variables and functions which cannot be accessed outside the enclosed scope.
-                  </div>
-                  <div> </div>
-                  <div>These are <b>JavaScript Anonymous Function</b> that is wrapped inside a set of paranthesis and is called immediately.</div>
-                  <div> </div>
-                  <div>The advantage of IIFE is that any Function or Variable defined inside IIFE, cannot be accessed outside the IIFE block, thus preventing global scope from getting polluted. Also helps us manage memory in an efficient manner.</div>
-                  <div> </div>
-                  <div>In order to understand the concept of IIFE, we need to understand the difference between the following:</div>
-                  <p>1. Function Definition</p>
-                  <p>2. Function Expression</p>
-                  <p> </p><br>
-                  <h2 class="topic">Function Definition: </h2>
-                  <p>Lets look at a very simple <b>Function Definition</b>:</p>
-                  <pre>
-<code class="lang-javascript">
-function demoFunction(){
 
-  alert("This is the function Definition");
+
+
+
+
+<h1 class="heading">Delete Keyword in JavaScript</h1>
+
+<p></p><br>
+
+<p>This article shall help you understand the following:</p>
+
+<p>1. Using <strong>Delete Keyword</strong> in JavaScript</p>
+
+<p>2. Deleting Object Properties</p>
+
+<p>3. Cases where the Properties of JavaScript cannot be Deleted</p>
+
+<p>4. Correctly Using <strong>Delete Keyword</strong></p>
+
+<p></p><br>
+
+<h2 class="topic"><strong>Using Delete Keyword:</strong></h2>
+
+<p><strong>Delete Keyword</strong> is basically used to delete properties in JavaScript Object.</p>
+
+<p>One of the misconception is that "<strong>delete keyword</strong>" is used to free my memory.</p>
+
+<p></p><br>
+
+<p>How <strong>delete keyword</strong> works:</p>
+
+<p>1. It de-references the property from the Object</p>
+
+<p>2. The de-referenced property is then available to Garbage Collector.</p>
+
+<p>** Delete Keyword has nothing to do with directly freeing the momory for Garbage Collection</p>
+
+<p></p><br>
+
+<p>delete keyword returns:</p>
+
+<p>1. "true" in case the property is deleted and also when property is not found</p>
+
+<p>2. "false" in case properties cannot be deleted</p>
+
+<p></p><br>
+
+<h2 class="topic"><strong>Syntax for Deleting Keyword</strong></h2>
+
+<pre>
+<code class="lang-javascript">
+var Sales = {
+
+  products: 'Paste',
+
+  Quantity: 10
+
+}
+
+console.log(delete Sales.Quantity);    // returns "true"
+
+console.log(Sales.Quantity)            // returns "undefined"</code></pre>
+
+<p>This is a simple scenerio where:</p>
+
+<p>1. Properties "product" and "Quantity" are added to "Sales" Object.</p>
+
+<p>2. "Quantity" property is deleted from Sales Object and "true" is returned.</p>
+
+<p>3. When user try to access "Quantity", it is "undefined".</p>
+
+<p></p><br>
+
+<h2 class="topic"><strong>Non-configurable properties</strong></h2>
+
+<p>We can mark the property of an object as "Non Configurable". </p>
+
+<p>Non-Configurable properties cannot be deleted.</p>
+
+<p></p><br>
+
+<p>Each property defined for an Object contains 4 properties:</p>
+
+<p>1. <strong>value</strong>: contains value of the property</p>
+
+<p>2. <strong>writable: </strong>indicates whether the property can be edited/changed</p>
+
+<p>3. <strong>enumerable: </strong>states whether the property can be enumerated or not</p>
+
+<p>4. <strong>configurable: </strong>indicates whether we can change the configuration of the property</p>
+
+<p></p><br>
+
+<pre>
+<code class="lang-javascript">
+// An empty Object Employee is Defined
+
+var Employee = { };
+
+// Add a property "name" to "Employee" and mark it "non-configurable"
+
+Object.defineProperty(Employee, "name", { configurable: false });</code></pre>
+
+<p>In the above example, a new property "name" is added to "Employee" Object.</p>
+
+<p>This property is marked as "Non Configurable".</p>
+
+<p></p><br>
+
+<p>Here is the code to check the Properties of a variable:</p>
+
+<pre>
+<code class="lang-javascript">
+// Check if property is Configurable or not
+
+var name = "Mayank";
+
+var propDescriptor = Object.getOwnPropertyDescriptor(window, 'name')
+
+console.log(propDescriptor);
+
+output: {
+  value: "Mayank",
+  writable: true,
+  enumerable: true,
+  configurable: false
+}</code></pre>
+
+<p>In the above code, we can see that the variable "name" is marked as "non-configurable" property.</p>
+
+<p>Since it is defined with "var" keyword.</p>
+
+<p></p><br>
+
+<pre>
+<code class="lang-javascript">
+// Check if property is Configurable or not
+
+name = "Mayank";
+
+var propDescriptor = Object.getOwnPropertyDescriptor(window, 'name')
+
+console.log(propDescriptor);
+
+output: {
+  value: "Mayank",
+  writable: true,
+  enumerable: true,
+  configurable: true
+}</code></pre>
+
+<p>Here the property is marked as "non-configurable", since it is declared without "var" keyword.</p>
+
+<p></p><br>
+
+<h2 class="topic">Special Cases for <strong>"Delete Keyword"</strong></h2>
+
+<p><strong>Object Properties that does not Exists returns "true"</strong></p>
+
+<p>When the property which user is trying to delete does not exists, it return "true". </p>
+
+<p>This is important to consider since it can create confusion</p>
+
+<pre>
+<code class="lang-javascript">
+var Sales = {
+
+  products: 'Paste',
+
+  Quantity: 10
+
+}
+
+console.log(delete Sales.Cost);        // returns "true"</code></pre>
+
+<p></p><br>
+
+<p><strong>Variables declared with "var" keyword cannot be deleted</strong></p>
+
+<p>Any variable declared inside function or global scope with keyword "var", cannot be deleted.</p>
+
+<p>Since we cannot delete any non-configurable properties.</p>
+
+<pre>
+<code class="lang-javascript">
+var Name = "Ankit";
+
+var Designation = "Developer"
+
+console.log(delete Designation); // returns "false"
+
+console.log(delete Name); // returns "false"</code></pre>
+
+<p></p><br>
+
+<p>Whereas, if a property is added without to global scope without "var" keyword, it can be deleted.</p>
+
+<p>Property added without "var" keyword are marked as configurable</p>
+
+<pre>
+<code class="lang-javascript">
+// variable Name and Designation is added without "var" keyword
+
+// These variables are added to the Global Scope
+
+Name = "Ankit";
+
+Designation = "Developer"
+
+//variable that are not declared using "var" keyword, can be deleted
+
+console.log(delete Designation); // returns "true"
+
+console.log(delete Name); // returns "true
+</code></pre>
+
+<p></p><br>
+
+<p>Whenever a variable is declared with "var" keyword, it is marked as "non-configurable".</p>
+
+<p>We shall be discussing about "non-configurable" properties below.</p>
+
+<p></p><br>
+
+<p><strong>Lets try delete Objects instead of Variables:</strong></p>
+
+<p></p><br>
+
+<p>We can even delete Objects from "Global Object" if not declared with "var" keyword</p>
+
+<p>Again, the same logic goes here, Global Objects without "var" are declared "non-configurable"</p>
+
+<pre>
+<code class="lang-javascript">
+// Lets an an Object to Global Scope.
+
+// It is added to global scope with "var"
+
+// Therefore it cannot be deleted from "window" object
+
+var EmployeeDetails = {
+
+  empName: 'Abc',
+
+  empAge: 20;
 
 };
 
+console.log(delete window.EmployeeDetails;)     // returns false
 </code></pre>
-                  <p>So the simplest way to understand <b>Function Declaration</b> is that, it starts with "<b>function</b>" keyword.</p><br>
-                  <p>The biggest benefit of <b>Function Definition</b> over <b>Function Expressions</b> is that they are <b>"Hoisted"</b> by the JavaScript Compiler. This also means that a variable can be called before it&#39;s declared. This behavior is called "<b>Hoisting</b>"</p><br>
-                  <p>Hoisting is when a JS declaration is lifted (&ldquo;hoisted&rdquo;) to the top of it&rsquo;s scope. What this really means is that a variable or function isn&rsquo;t necessarily declared where you think it is. Function Definition and Variable Declaration are always Hoisted on the top of the Function Scope or Global Scope.</p><br/>
-                  <p>This can be understood by this small example:</p>
-                  <pre>
+
+<p>In the above code, we saw that Object "EmployeeDetails" cannot be deteted.</p>
+
+<p></p><br>
+
+<p>Lets take another Example where we add an Object without "var" keyword:</p>
+
+<pre>
 <code class="lang-javascript">
-demoFunction();
+// Lets an an Object to Global Scope without using "var"
 
-var demoFunction = function(){
+EmployeeDetails = {
 
-  alert("This is the function Definition");
+empName: 'Abc',
+
+  empAge: 20;
 
 };
 
-</code></pre>
-                  <p>Here we can see that the user is trying to access "demoFunction()" even before the compiler reaches its "Function Definition", In this case function will be executed. It will be called by the compliler and shall output a alert message. The function definition is hoisted on the top of the Scope by the compiler, therefore it is available even before its Function Definition during script execution. </p><br/>
-                  <p>The concept of Hoisting does not adher to Function Expressions. Function Expressions are never Hoisted.</p>
-                  <p>Look for the following link to learn more about <a href="/function-and-variable-hoisting-javascript-closures">Function Hoisting</a></p>
-                  <h4> </h4>
+console.log(delete window.EmployeeDetails;) // returns true</code></pre>
 
+<p>In the above case, we are able to delete object from Global Object since iit is configurable property.</p>
 
-                  <h2 class="topic">Function Expressions:</h2>
-                  <p>"<b>Function Expression"</b> would be any function which does not start with "function" keyword.</p><br>
-                  <p>Common way to define a function expression is to assign a function to a variable. </p><br>
+<p>Here the Object is marked as "Configurable".</p>
 
-                  <pre>
+<p></p><br>
+
+<p><strong>Cannot delete Build-In Objects</strong></p>
+
+<p>We cannot delete any "built-in" Object and related property.</p>
+
+<p>It includes Objects Like "Array", "Math" and "Object".</p>
+
+<pre>
 <code class="lang-javascript">
-var demoFunction = function(){
+// Lets try to delete Built-In Object and its Properties
 
-  alert("This is function Expression");
+delete window.Array     // return false
 
-};
+delete Math.round       // return false
 
-demoFunction();
+delete window.Object    // return false
 
 </code></pre>
-                  <p>Since the above function does start the keyword "function", its a <b>"Function Expression"</b> </p>
-                  <p>The above code assigns a function definition to a variable "demoFunction". </p>
-                  <p>This would mean that the variable <b>"demoFunction"</b> shall now represent a function expression.</p>
-                  <p>The function can now be called using following line of code: <b>"demoFunction()"</b> </p>
-                  <p> </p><br>
-                  <h2 class="topic"><b>What are IIFE ...</b></h2>
-                  <p><b>IIFE </b>(<b>Immediately Invoked Function Expression</b>) is a  JavaScript function that runs as soon as it is defined. </p>
-                  <pre>
+
+<p></p><br>
+
+<p><strong>Deleting Array Elements</strong></p>
+
+<p>When an array element is deleted, its length does not change</p>
+
+<p>Deleting the element from Array shall assign "undefined" to element value</p>
+
+<p></p><br>
+
+<p>Lets evaluate with an Example</p>
+
+<pre>
 <code class="lang-javascript">
-(function(){
+delete window.Array // return false
 
-  alert("Function does not start with keyword function");
+var elementArray = ["1", "2", "3"]
 
-})();
+delete elementArray[1];
+
+console.log(elementArray)
+
+output: ["1", undefined, "2"]
+
 </code></pre>
-                  <p>This is a simple function in which anything written inside the function block shall be executed immediately. </p>
-                  <p> </p>
-                  <p>In the above example, once the code is executed, following events occur:</p>
-                  <p>1. A function Instance is created.</p>
-                  <p>2. Function is Executed.</p>
-                  <p>3. Function along with variable declared inside it is Garbage Colloected. </p>
-                  <p> </p>
-                  <p>The variable and functions that were declared in the scope of IIFE are available for garbage collection, once the IIFE is executed. Hence managing Memory in an efficient manner and ensures that the function and variables do not bind itself to the global scope.</p>
-                  <p> </p>
-                  <p>In order to understand, we can break down the above code into 2 parts:</p>
-                  <p>1. Creating Function Expression</p>
-                  <p>2. Invoking the Function Expression</p>
-                  <p> </p><br>
-                  <h2 class="topic"><b>Part One: (Function Expression)</b></h3>
-                  <p>Breaking the code further, we will get a "Function Expression" enclosed within "Brackets".</p><br>
-                  <p>When a function definition does not contain "function" keyword in the starting of an executable line of code, it is called Function Expression.</p>
-                  <p>In this code we can see that the function definition starts with "(", therefore its a function Expression.</p>
-                  <pre>
+
+<p>In the above example, we can see that the element value is replaced by "undefined"</p>
+
+<p>The length of Array is still the same.</p>
+
+<p></p><br>
+
+<p><strong>Using "use strict"</strong></p>
+
+<p>This is the special case which needs extra attension.</p>
+
+<p></p><br>
+
+<p>Strict Mode shall give "Syntax Error" in case it references to:</p>
+
+<p>1. Variable </p>
+
+<p>2. Function Argument</p>
+
+<p>3. Function Name</p>
+
+<p><br />
+So, in case of "Strict Mode", we cannot apply "delete keyword" on any of these situation.</p>
+
+<p></p><br>
+
+<pre>
 <code class="lang-javascript">
-(function(){
+function Employee() { }
 
-  alert("Function enclosed within Simple Brackets, therefore Expression");
+delete Employee                        // Syntax Error
 
-});
+var myData = "";
+
+delete myData;                         // Syntax error
+
+function getSalary(int salary) {
+
+delete salary;                         // Syntax error
+
+}
 </code></pre>
-                  <p>This is a simple Function Expression.</p>
-                  <p>Similarly, IIFE it does starting the keyword "function", it is also a "<b>Function Expression</b>". </p>
-                  <p> </p>
-                  <p>So, we first get a <b>"Function Expression"</b> that contain some code enclosed in it.</p>
-                  <pre>
-<code class="lang-javascript">
-(function(){
 
-  alert("Function enclosed within Simple Brackets, therefore Expression");
+<p></p><br>
 
-});
-</code></pre>
-                  <p>The next step will be calling the "Function Expression" just like any other function using"()".</p>
-                  <p> </p>
-                  <p>** Note: Important difference between Function Expression and Function Declaration is:</p>
-                  <p><em>"Function Declaration can be Hoisted, but Function Expressions cannot be Hoisted". </em> </p>
-                  <p> </p><br>
-                  <h2 class="topic"><b>Part Two: (Function Invocation)</b></h2>
-                  <p>Once the function Expression is defined, it is invoked using "()", in the same manner as we call a function.</p>
-                  <pre>
-<code class="lang-javascript">
-(function(){
+<h1 class="heading">Other References:</h1>
 
-  alert("Function Expression Invoked using () at the end");
+<p>You can refer following Documents for more Information:</p>
 
-})();
+<p>1. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete</p>
+<br><br>
 
-// Here the function call in made using &#39;()&#39;
-</code></pre>
-                  <p>Once the Function Expression is invoked, the code inside the function expression shall execute.</p>
-                  <p> </p>
-                  <p>So the above discussion about the IIFE can be compiled as:</p>
-                  <p><b>A Function Expression immediately invoked using "()".</b> </p>
-                  <p>So here we can see that a IIFE is a "Function Expression" called immediately after its definition.</p>
-                  <p> </p><br>
-                  <h2 class="topic">Breaking IIFE into parts:</h2>
-                  <p>So the above IIFE code can be rewritten as:</p>
-                  <pre>
-<code class="lang-javascript">
-var functionExpression = (function(){
 
-  alert("Function Expression assigned to variable.");
 
-});
-
-functionExpression();
-</code></pre>
-                  <p>This code can be analysed in the following way:</p>
-                  <p>1. "Function Expression" is created and stored in a variable "functionExpression"</p>
-                  <p>2. Function Expression is called just like any other function.</p>
-                  <p> </p><br>
-                  <h2 class="topic">Why do we require IIFE..</h2>
-                  <p>Benefits of IIFE are:</p><br>
-                  <b>1. Avoids Global Scope from getting Polluted.</b><br><br>
-                  <p>One of the main reason to create IIFE is to avoid global scope from getting polluted.</p>
-                  <p>Lets understand this with a simple example:</p>
-                  <pre>
-<code class="lang-javascript">
-(function(){
-
-  var sampleVariable = "test Variable";
-
-  var sampleVariable = function(){
-
-    alert("Function does not start with keyword function");
-
-  }
-
-})();
-</code></pre>
-                  <p>Here in the above function, we have created a "Variable" and a "Function", this variables and function are enclosed within an IIFE Expression, therefore the scope of the variable and function lies within the IIFE. These variables and functions are not added to Global Scope.</p>
-                  <p>We may use IIFE when we want to define some functions and variable that are just required to be executed for a single time on a page. </p>
-                  <p>Lets say that we have a device and we have to set the Theme according to the device that is used by the user. Here when the user logs into our Application, we need to check the Device just once since the device wont change. In such a case, variables and functions required to detect the Device wont be required once executed. In such a case wee would not like to add these variables and function to the global scope and consume Browser space. So these functionalities can be enclosed within an IIFE, so that once executed, all the variables and function defined for the same can be made available for Garbage Collection.</p>
-                  <p> </p><br>
-                  <p><b>2. Manage Browser Memory:</b> </p><br>
-                  <p>If the functions are such that they require single execution, as specified in above example, we need not to add those function and variable to the gobal scope. Adding them to global scope would consume space on the Browser Memory. </p>
-                  <p>So once these functions are executed, we would like them to be Garbage Collected.</p>
-                  <p>Following Events occur when a IIFE is encountered:</p>
-                  <p>1. A function Instance is created.</p>
-                  <p>2. Function is Executed.</p>
-                  <p>3. Function created is discarded. </p>
-                  <p>When the IIFE is executed, the required functions and variables are created, used and once IIFE has finished execution, they are available for Garbage Collection, Hence freeing the Browser Memory.</p>
-                  <p> </p><br>
-                  <p><b>3. Minification Optimization</b> </p><br>
-                  <p>IIFE also helps us with the minification. Since we can paas values to the arguments in IIFE, we areable to reduce the name of each global object to a one letter word.</p>
-                  <p>The Example shall help you understand it better:</p>
-                  <pre>
-<code class="lang-javascript">
-(function(w){
-
-  alert(&#39;Window object is now renamed to "w"&#39;);
-
-})(window);
-</code></pre>
-                  <p>Here we can see that the "Window" object is passed as to the IIFE, "Window" object is passed to an argument "w". So now the window object shall be refered as "w" instead of "window", hence helping us with the minification process. </p><br>
-                  <h2 class="topic">Passing Arguments to IIFE Function:</h3>
-                  <p>We can simply pass arguments to IIFE in the following manner:</p>
-                  <pre>
-<code class="lang-javascript">
-var Name = "Mayank";
-
-var Age = 27;
-
-(function(name, age){
-
-  alert("Name: " + name);
-
-})(Name, Age);
-
-Here the Arguments are enclosed within "()" brackets.
-</code></pre>
-                  <p>In the above example we can see:</p>
-                  <p>1. We have variable "Name" and "Age" at Global Level</p>
-                  <p>2. We need to pass these variable to "IIFE", </p>
-                  <p>3. IIFE accepts 2 parameters "name" and "age".</p>
-                  <p>4. Global Variable "Name" and "Age" are enclosed withing the Function Invokation Brackets.</p>
-                  <p>5. "Name and Age" shall now be available to IIFE as arguments passed from outside enviroment.</p>
-                  <p> </p><br>
-                  <b style="color: red;">**Note:</b>
-                  <p>Please do not confuse between the following implementation of IIFE.</p>
-                  <p>Both shall represent the same IIFE Expression.</p>
-                  <p>Please see the difference in placement of Brackets "()" while function invocation.</p>
-                  <pre>
-<code class="lang-javascript">
-(function(){
-
-  alert("Name: " + name);
-
-})();
-</code></pre>
-                  <div>The above implementation of IIFE is same as the one below. The onle difference is the placement of brackets during function Invokation</div>
-                  <pre>
-<code class="lang-javascript">
-(function(){
-
-  alert("Name: " + name);
-
-}());
-</code></pre>
-                  <p> </p>
-                  <p><b>IIFE is an amazing Design Pattern offering Lots of Benefits. Try using IIFE in your Code to Optimise it Further. Hope the article shall provide help to people who are trtying to understand the concept. </b> </p>
-                  <p> </p>
                 </div>
                 <!-- end .blog-post-content -->
                 <div  ng-app="myApp" ng-controller="commentController"  style="display: none;">
