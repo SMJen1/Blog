@@ -52,7 +52,21 @@
         <div class="title"></div>
 
         <a href="" class="responsive-menu-open">Menu <i class="fa fa-bars"></i></a>
-        <nav class="main-nav">
+        <div style="inline-block; float: left; width:50%; margin-left: 30px;" class="search-input">
+          <script>
+            (function() {
+              var cx = '001992214099567997391:jyqubfp75yo';
+              var gcse = document.createElement('script');
+              gcse.type = 'text/javascript';
+              gcse.async = true;
+              gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(gcse, s);
+            })();
+          </script>
+          <gcse:searchbox-only></gcse:searchbox-only>
+        </div>
+        <nav style="inline-block" class="main-nav">
           <ul class="list-unstyled">
             <li class="active"><a href="/">Home</a></li>
             <li><a href="/about">About</a></li>
