@@ -496,9 +496,9 @@ Employee.prototype.showDetails = function() {
                   <p>Variables should be added to the "this" reference in order to refer it via prototype function.</p>
                   <p><br></p>
                   <h2><b>More References to Prototype Pattern:</b></h2>
-                  <p>http://www.dofactory.com/javascript/prototype-design-pattern</p>
-                  <p>https://addyosmani.com/resources/essentialjsdesignpatterns/book/</p>
-                  <p>https://scotch.io/bar-talk/4-javascript-design-patterns-you-should-know</p>
+                  <a href="http://www.dofactory.com/javascript/prototype-design-pattern">http://www.dofactory.com/javascript/prototype-design-pattern</a><br>
+                  <a href="https://addyosmani.com/resources/essentialjsdesignpatterns/book/">https://addyosmani.com/resources/essentialjsdesignpatterns/book/</a><br>
+                  <a href="https://scotch.io/bar-talk/4-javascript-design-patterns-you-should-know">https://scotch.io/bar-talk/4-javascript-design-patterns-you-should-know</a>
                   <p><br></p>
                   <p><br></p>
                 </div>

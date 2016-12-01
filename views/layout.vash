@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <title>Immediately Invokable Function Expression (IIFE)</title>
+    <meta content="Immediately Invokable Function Expression (IIFE)" name="title" />
+    <meta name="title" content="(IIFE) Immediately Invokable Function Expressions JavaScript" />
+    <meta name="description" content="Immediately Invokable Function Expression (IIFE) is a JavaScript Design Pattern. It's an Anonymous Function Expression which is Self Invoking. It is invoked as soon as it is Initialized" />
+    <meta name="keywords" content="iife javascript,immediately invokable function expression,IIFE javascript,learn javascript design patterns,function definition,function exressions"/>
+    <meta name="msvalidate.01" content="F77C0434F58CEA255020E3CCDE1B58D6" />
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <!-- Search -->
+    <div class="search-overlay"></div>
+    <div class="search">
+      <a href="" class="search-close"><i class="md md-close"></i></a>
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <h4>Just Start Typing Text and Press Enter</h4>
+          <form class="search-form">
+            <input type="text" id="search" name="search" class="text-center" />
+          </form>
+          <!-- end .search-form -->
+        </div>
+        <!-- end .col-sm-6 -->
+      </div>
+      <!-- end .row -->
+    </div>
+    <!-- end .row -->
+    <!-- Slide Out -->
+    <div class="slide-out-overlay"></div>
+    <div class="slide-out">
+      <header class="slide-out-header clearfix">
+        <div class="clearfix">
+          <a href="" class="slide-out-close pull-left"><i class="md md-close"></i></a>
+          <a href="" class="open-search pull-right"><i class="md md-search"></i></a>
+          <a href="" class="slide-out-share pull-right"><i class="md md-more-vert"></i></a>
+        </div>
+        <!-- end .clearfix -->
+        <!-- Popup -->
+        <div class="slide-out-popup">
+          <nav class="social-nav">
+            <ul class="list-unstyled">
+              <li><a href="">Facebook</a></li>
+              <li><a href="">Twitter</a></li>
+              <li><a href="">Linkedin</a></li>
+              <li><a href="">Google+</a></li>
+              <li><a href="">Behance</a></li>
+            </ul>
+            <!-- end .list-unstyled -->
+          </nav>
+          <!-- end .social-nav -->
+        </div>
+        <!-- end .slide-out-popup -->
+        <div class="image"><img src="" alt="alt text" class="img-responsive"></div>
+        <div class="content">
+          <h5>Benjamin Thomson</h5>
+          <span>Web & UX Designer</span>
+        </div>
+        <!-- end .content -->
+        <div class="text-right">
+          <a href="" class="button link-button white icon-left"><i class="md md-file-download"></i>Download Resume</a>
+        </div>
+        <!-- end .text-right -->
+      </header>
+      <!-- end .slide-out-header -->
+      <div class="slide-out-widgets">
+        <div class="slide-out-widget">
+          <h4>Drink A Coffee With Me Today</h4>
+          <form action="scripts/contact.php" method="post" class="form-horizontal contact-form">
+            <div class="form-group">
+              <label class="col-sm-3 control-label">Name</label>
+              <div class="col-sm-9">
+                <input type="text" class="contact-name" name="contact-name" />
+              </div>
+              <!-- end .col-sm-9 -->
+            </div>
+            <!-- end .form-group -->
+            <div class="form-group">
+              <label class="col-sm-3 control-label">Email</label>
+              <div class="col-sm-9">
+                <input type="email" class="contact-email" name="contact-email" />
+              </div>
+              <!-- end .col-sm-9 -->
+            </div>
+            <!-- end .form-group -->
+            <div class="form-group">
+              <label class="col-sm-3 control-label">Message</label>
+              <div class="col-sm-9">
+                <textarea name="contact-message" class="contact-message" rows="3"></textarea>
+              </div>
+              <!-- end .col-sm-9 -->
+            </div>
+            <!-- end .form-group -->
+            <div class="form-group">
+              <div class="col-sm-9 col-sm-offset-3">
+                <button type="submit" class="button solid-button purple">Send Message</button>
+              </div>
+              <!-- end .col-sm-9 -->
+            </div>
+            <!-- end .form-group -->
+            <div class="contact-loading alert alert-info form-alert">
+              <span class="message">Loading...</span>
+              <button type="button" class="close" data-hide="alert" aria-label="Close"><i class="fa fa-times"></i></button>
+            </div>
+            <div class="contact-success alert alert-success form-alert">
+              <span class="message">Success!</span>
+              <button type="button" class="close" data-hide="alert" aria-label="Close"><i class="fa fa-times"></i></button>
+            </div>
+            <div class="contact-error alert alert-danger form-alert">
+              <span class="message">Error!</span>
+              <button type="button" class="close" data-hide="alert" aria-label="Close"><i class="fa fa-times"></i></button>
+            </div>
+          </form>
+          <!-- end contact-form -->
+        </div>
+        <!-- end .slide-out-widget -->
+        <div class="slide-out-widget">
+          <h4>Follow On Instagram</h4>
+          <div class="instagram">
+          </div>
+          <!-- end .instagram -->
+        </div>
+        <!-- end .slide-out-widget -->
+      </div>
+      <!-- end .slide-out-widgets -->
+    </div>
+    <!-- end .slide-out -->
+    <!-- Header -->
+    <header class="header">
+      <div class="top clearfix">
+        <a href="#section8" class="available"><i class="ion-ios-email-outline"></i><span>Mayank Gupta (+91-9711083089)</span></a>
+        <div class="right-icons">
+          <a href="" class="open-search header-open-search"><i class="md md-search"></i></a>
+          <a href="" class="download"><i class="md md-file-download"></i></a>
+          <a href="" class="share"><i class="md md-more-vert"></i></a>
+        </div>
+        <!-- end .right-icons -->
+        <!-- Popup -->
+        <div class="popup">
+          <nav class="social-nav">
+            <ul class="list-unstyled">
+              <li><a href="">Facebook</a></li>
+              <li><a href="">Twitter</a></li>
+              <li><a href="">Linkedin</a></li>
+              <li><a href="">Google+</a></li>
+              <li><a href="">Behance</a></li>
+            </ul>
+            <!-- end .list-unstyled -->
+          </nav>
+          <!-- end .social-nav -->
+        </div>
+        <!-- end .popup -->
+      </div>
+      <!-- end .top -->
+      <div class="bottom clearfix">
+        <div class="title"></div>
+
+        <a href="" class="responsive-menu-open">Menu <i class="fa fa-bars"></i></a>
+        <div style="inline-block; float: left; width:50%; margin-left: 30px;" class="search-input">
+          <script>
+            (function() {
+              var cx = '001992214099567997391:jyqubfp75yo';
+              var gcse = document.createElement('script');
+              gcse.type = 'text/javascript';
+              gcse.async = true;
+              gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(gcse, s);
+            })();
+          </script>
+          <gcse:searchbox-only></gcse:searchbox-only>
+        </div>
+        <nav style="inline-block" class="main-nav">
+          <ul class="list-unstyled">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+          </ul>
+        </nav> <!-- end .main-nav -->
+      </div>
+      <!-- end .bottom -->
+    </header>
+    <!-- end .header -->
+    <div class="responsive-menu">
+      <a href="" class="responsive-menu-close">Close <i class="ion-android-close"></i></a>
+      <nav class="responsive-nav"></nav>
+      <!-- end .responsive-nav -->
+    </div>
+    <!-- end .responsive-menu -->
+    <!-- Sections -->
+    <div class="sections-wrapper clearfix">
+      <!--Single Blog Post -->
+      <section>
+        <div class="container" style="width:90%">
+          <div class="single-blog-post">
+            <header class="blog-header clearfix">
+              <div class="content" style="width:30%; height:100%;box-shadow: 0 1px 5px rgba(0,0,0,.2)">
+                <span class="date">March 11, 2015</span>
+                <h3 style="font-size: 14px"><b>Immediately Invokable Function Expression</b></h3>
+                <div>
+                  <h6>Other Related JavaScript Articles:</h6>
+                  <p class="other-articles">
+                    <a href="/">
+                    Home Page
+                    </a>
+                  </p>
+                  <p class="other-articles">
+                    <a href="/javascript-module-pattern-design-singleton">
+                    Module Pattern in JavaScript
+                    </a>
+                  </p>
+                  <p class="other-articles">
+                    <a href="/iife-immediately-invoked-function-expressions-javascript-singleton-design-pattern-closures">
+                    IIFE Pattern
+                    </a>
+                  </p>
+                  <p class="other-articles">
+                    <a href="/singleton-design-pattern-javascript-module">
+                    Singleton Pattern In JavaScript
+                    </a>
+                  </p>
+                  <p class="other-articles">
+                    <a href="/scopes">
+                    Scopes in JavaScript
+                    </a>
+                  </p>
+                  <p class="other-articles">
+                    <a href="/create-javascript-object-string-literal-new-keyword-new-object">
+                    Creating Object In JavaScript
+                    </a>
+                  </p>
+                  <p class="other-articles">
+                    <a href="/function-and-variable-hoisting-javascript-closures">
+                    Hoisting in JavaScript
+                    </a>
+                  </p>
+                  <p class="other-articles">
+                    <a href="/prototype-pattern-javascript-function-prototype">
+                    Prototype Pattern JavaScript
+                    </a>
+                  </p>
+                  <p class="other-articles">
+                    <a href="/delete-keyword-javascript-properties-object">
+                    Delete Keyword in JavaScript
+                    </a>
+                  </p>
+                  <p class="other-articles">
+                    <a href="/javascript-function-chaining-jquery-chaining">
+                    JavaScript Function Chaining
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <!-- end .content -->
+              <div style="width:70%; display:inline-block;padding-bottom: 160px;">
+                <img src="images/javascript-logo-large.jpg" style="height:400px; width:100%">
+                <div style="padding-left:20px; background-color: white; padding: 48px 40px;">
+                  @html.block("body")
+                </div>
+              </div>
+            </header>
+            <!-- end .blog-header -->
+            
+            <!-- end .single-blog-post -->
+          </div>
+          <!-- end .container -->
+      </section>
+      </div>
+      <!-- end .sections-wrapper -->
+    </div>
+    <!-- end .sections -->
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <h4>Address</h4>
+              <p>A-8, Milansar Appartment, Rohini<br />Delhi, India</p>
+            </div>
+            <!-- end .col-sm-4 -->
+            <div class="col-sm-4">
+              <h4>Connect</h4>
+              <div class="social-icons">
+                <a href="" class="social-icon"><i class="fa fa-facebook"></i></a>
+                <a href="" class="social-icon"><i class="fa fa-twitter"></i></a>
+                <a href="" class="social-icon"><i class="fa fa-google-plus"></i></a>
+                <a href="" class="social-icon"><i class="fa fa-behance"></i></a>
+                <a href="" class="social-icon"><i class="fa fa-dribbble"></i></a>
+              </div>
+              <!-- end .social-icons -->
+            </div>
+            <!-- end .col-sm-4 -->
+            <div class="col-sm-4">
+              <h4>Contact</h4>
+              <p>Tel: +91 9711083089<br />Mail: mayankgupta688@gmail.com</p>
+            </div>
+            <!-- end .col-sm-4 -->
+          </div>
+          <!-- end .row -->
+        </div>
+        <!-- end .container -->
+      </div>
+      <!-- end .footer -->
+      <div class="bottom">Copyright &copy; Sility. All Rights Reserved.</div>
+      <!-- end .bottom -->
+    </footer>
+    <!-- end .footer -->
+    <script defer src="js/rainbow.js"></script>
+    <script defer src="js/analytics.js"></script>
+  </body>
+</html>

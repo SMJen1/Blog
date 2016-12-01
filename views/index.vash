@@ -189,19 +189,22 @@
               </div> <!-- end .blog-post -->
 
 
-              <div class="blog-post image-left" style="display: none;">
+              <div class="blog-post image-left">
                 <div class="inner">
-                  <a href="/iife-immediately-invoked-function-expressions-javascript-singleton-design-pattern-closures">
+                  <a href="/javascript-function-chaining-jquery-chaining">
                       <div class="image" style="background-image: url('images/JavaScript-logo.png');" alt="IIFE Immediately Invokable Function Expression JavaScript"></div>
                   </a>
                   <div class="content">
                     <h1><a href="/iife-immediately-invoked-function-expressions-javascript-singleton-design-pattern-closures">Function Chaining in JavaScript</a></h1>
                     <p class="details">
-                      <b>IIFE (Immediately Invokable Function Expressions)</b> are self invoking function expressions. This <b>Design Pattern</b> should be used in case function is required to be called just once.
+                      <b>Function Chaining</b> is the concept which is followed by Framework Like JQuery. Function can be chained together and called in a single line. We can utilize function chaining concept to build efficient code.
                     </p>
                   </div> <!-- end .content -->
                 </div> <!-- end .inner -->
               </div> <!-- end .blog-post -->
+
+
+
 
 
             </div> <!-- end .blog-posts -->
