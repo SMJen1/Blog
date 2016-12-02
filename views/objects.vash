@@ -1,274 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="index, follow">
+@html.extend('layout', function(model) {
+
+
+  @html.block("header", function(model) {
+    <meta name="title" content="Creating Objects in JavaScript" />
+    
     <title>Creating Objects in JavaScript</title>
     <meta name="description" content="Creating Objects in JavaScript" />
     <meta name="keywords" content="Patterns, Object Literals, creating new Object, Constructor Function, Object Creation, Objects in JavaScript, JavaScript Objects, Creating Objects in JavaScript, Object in JavaScipt, new Object in JavaScript, constructor function in JavaScript, Constructor Method in JavaScript, developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript" />
-<link rel="stylesheet" href="css/shrink.css">
-    <script src="js/rainbow.js"></script>
-    <meta name="msvalidate.01" content="F77C0434F58CEA255020E3CCDE1B58D6" />
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  });
 
-  </head>
-  <body>
-    <style>
-      pre {
-      margin-left: 13px;
-      min-width: 600px;
-      margin-top: 20px;
-      margin-bottom: 40px;
-      max-width: 1000px;
-      color: #0f0c01;
-      }
-    </style>
-    <!-- Search -->
-    <div class="search-overlay"></div>
-    <div class="search">
-      <a href="" class="search-close"><i class="md md-close"></i></a>
-      <div class="row">
-        <div class="col-sm-6 col-sm-offset-3">
-          <h4>Just Start Typing Text and Press Enter</h4>
-          <form class="search-form">
-            <input type="text" id="search" name="search" class="text-center" />
-          </form>
-          <!-- end .search-form -->
-        </div>
-        <!-- end .col-sm-6 -->
-      </div>
-      <!-- end .row -->
-    </div>
-    <!-- end .row -->
-    <!-- Slide Out -->
-    <div class="slide-out-overlay"></div>
-    <div class="slide-out">
-      <header class="slide-out-header clearfix">
-        <div class="clearfix">
-          <a href="" class="slide-out-close pull-left"><i class="md md-close"></i></a>
-          <a href="" class="open-search pull-right"><i class="md md-search"></i></a>
-          <a href="" class="slide-out-share pull-right"><i class="md md-more-vert"></i></a>
-        </div>
-        <!-- end .clearfix -->
-        <!-- Popup -->
-        <div class="slide-out-popup">
-          <nav class="social-nav">
-            <ul class="list-unstyled">
-              <li><a href="">Facebook</a></li>
-              <li><a href="">Twitter</a></li>
-              <li><a href="">Linkedin</a></li>
-              <li><a href="">Google+</a></li>
-              <li><a href="">Behance</a></li>
-            </ul>
-            <!-- end .list-unstyled -->
-          </nav>
-          <!-- end .social-nav -->
-        </div>
-        <!-- end .slide-out-popup -->
-        <div class="image"><img src="" alt="alt text" class="img-responsive"></div>
-        <div class="content">
-          <h5>Benjamin Thomson</h5>
-          <span>Web & UX Designer</span>
-        </div>
-        <!-- end .content -->
-        <div class="text-right">
-          <a href="" class="button link-button white icon-left"><i class="md md-file-download"></i>Download Resume</a>
-        </div>
-        <!-- end .text-right -->
-      </header>
-      <!-- end .slide-out-header -->
-      <div class="slide-out-widgets">
-        <div class="slide-out-widget">
-          <h4>Drink A Coffee With Me Today</h4>
-          <form action="scripts/contact.php" method="post" class="form-horizontal contact-form">
-            <div class="form-group">
-              <label class="col-sm-3 control-label">Name</label>
-              <div class="col-sm-9">
-                <input type="text" class="contact-name" name="contact-name" />
-              </div>
-              <!-- end .col-sm-9 -->
-            </div>
-            <!-- end .form-group -->
-            <div class="form-group">
-              <label class="col-sm-3 control-label">Email</label>
-              <div class="col-sm-9">
-                <input type="email" class="contact-email" name="contact-email" />
-              </div>
-              <!-- end .col-sm-9 -->
-            </div>
-            <!-- end .form-group -->
-            <div class="form-group">
-              <label class="col-sm-3 control-label">Message</label>
-              <div class="col-sm-9">
-                <textarea name="contact-message" class="contact-message" rows="3"></textarea>
-              </div>
-              <!-- end .col-sm-9 -->
-            </div>
-            <!-- end .form-group -->
-            <div class="form-group">
-              <div class="col-sm-9 col-sm-offset-3">
-                <button type="submit" class="button solid-button purple">Send Message</button>
-              </div>
-              <!-- end .col-sm-9 -->
-            </div>
-            <!-- end .form-group -->
-            <div class="contact-loading alert alert-info form-alert">
-              <span class="message">Loading...</span>
-              <button type="button" class="close" data-hide="alert" aria-label="Close"><i class="fa fa-times"></i></button>
-            </div>
-            <div class="contact-success alert alert-success form-alert">
-              <span class="message">Success!</span>
-              <button type="button" class="close" data-hide="alert" aria-label="Close"><i class="fa fa-times"></i></button>
-            </div>
-            <div class="contact-error alert alert-danger form-alert">
-              <span class="message">Error!</span>
-              <button type="button" class="close" data-hide="alert" aria-label="Close"><i class="fa fa-times"></i></button>
-            </div>
-          </form>
-          <!-- end contact-form -->
-        </div>
-        <!-- end .slide-out-widget -->
-        <div class="slide-out-widget">
-          <h4>Follow On Instagram</h4>
-          <div class="instagram">
-          </div>
-          <!-- end .instagram -->
-        </div>
-        <!-- end .slide-out-widget -->
-      </div>
-      <!-- end .slide-out-widgets -->
-    </div>
-    <!-- end .slide-out -->
-    <!-- Header -->
-    <header class="header">
-      <div class="top clearfix">
-        <a href="#section8" class="available"><i class="ion-ios-email-outline"></i><span>Available For Freelance</span></a>
-        <div class="right-icons">
-          <a href="" class="open-search header-open-search"><i class="md md-search"></i></a>
-          <a href="" class="download"><i class="md md-file-download"></i></a>
-          <a href="" class="share"><i class="md md-more-vert"></i></a>
-        </div>
-        <!-- end .right-icons -->
-        <!-- Popup -->
-        <div class="popup">
-          <nav class="social-nav">
-            <ul class="list-unstyled">
-              <li><a href="">Facebook</a></li>
-              <li><a href="">Twitter</a></li>
-              <li><a href="">Linkedin</a></li>
-              <li><a href="">Google+</a></li>
-              <li><a href="">Behance</a></li>
-            </ul>
-            <!-- end .list-unstyled -->
-          </nav>
-          <!-- end .social-nav -->
-        </div>
-        <!-- end .popup -->
-      </div>
-      <!-- end .top -->
-      <div class="bottom clearfix">
-        <div class="title"><a href="/">Mayank</a></div>
-        <div class="header-action-button-wrapper">
-          <a href="" class="header-action-button action-button"><i class="md md-add"></i></a>
-        </div>
-        <!-- end .header-action-button-wrapper -->
-        <a href="" class="responsive-menu-open">Menu <i class="fa fa-bars"></i></a>
-        <nav class="main-nav">
-          <ul class="list-unstyled">
-            <li class="active"><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-          </ul>
-        </nav>
-        <!-- end .main-nav -->
-      </div>
-      <!-- end .bottom -->
-    </header>
-    <!-- end .header -->
-    <div class="responsive-menu">
-      <a href="" class="responsive-menu-close">Close <i class="ion-android-close"></i></a>
-      <nav class="responsive-nav"></nav>
-      <!-- end .responsive-nav -->
-    </div>
-    <!-- end .responsive-menu -->
-    <!-- Sections -->
-    <div class="sections content-study">
-      <div class="sections-wrapper clearfix">
-        <!--Single Blog Post -->
-        <section>
-          <div class="container">
-            <div class="single-blog-post">
-              <header class="blog-header clearfix">
-                <div class="content">
-                  <span class="date">March 11, 2015</span>
-                  <h4 style="font-size: 12px">Creating Objects in JavaScript</h4>
-                                    <div>
-                    <h6>Other Related JavaScript Articles:</h6>
-                    <p class="other-articles">
-                        <a href="/iife-immediately-invoked-function-expressions-javascript-singleton-design-pattern-closures">
-                          IIFE Pattern
-                        </a>
-                    </p>
-                    <p class="other-articles">
-                        <a href="/javascript-module-pattern-design-singleton">
-                          Module Pattern in JavaScript
-                        </a>
-                    </p>
-                    <p class="other-articles">
-                        <a href="/singleton-design-pattern-javascript-module">
-                          Singleton Pattern In JavaScript
-                        </a>
-                    </p>
-                    <p class="other-articles">
-                        <a href="/scopes">
-                          Scopes in JavaScript
-                        </a>
-                    </p>
-                    <p class="other-articles">
-                        <a href="/create-javascript-object-string-literal-new-keyword-new-object">
-                          Creating Object In JavaScript
-                        </a>
-                    </p>
-                    <p class="other-articles">
-                        <a href="/function-and-variable-hoisting-javascript-closures">
-                          Hoisting in JavaScript
-                        </a>
-                    </p>
-                    <p class="other-articles">
-                        <a href="/prototype-pattern-javascript-function-prototype">
-                          Prototype Pattern JavaScript
-                        </a>
-                    </p>
-                    <p class="other-articles">
-                      <a href="/delete-keyword-javascript-properties-object">
-                      Delete Keyword in JavaScript
-                      </a>
-                    </p>
-                  </div>
+  @html.block("body", function(model) {
 
-                </div>
-                <!-- end .content -->
-                <div class="image" style="background-image: url('images/javascript-logo-large.jpg');"></div>
-              </header>
-              <!-- end .blog-header -->
-              <div class="blog-post">
-                <div class="blog-post-content">
-                  <h1 class="heading">JavaScript Objects</h1>
-                  <p>In the following article, we shall be covering different methods to create Objects in JavaScript</p><br>
-                  <p>The article shall cover the Following topics:</p>
-                  <p>1. Object creation using <b>String Literal</b></p>
-                  <p>2. Creating Objects using <b>"New Object"</b></p>
-                  <p>3. Using <b>"Constructor Function" </b>to create Objects</p>
-                  <p><br></p>
-                  <p>We shall also discuss in details about the difference in each method.</p>
-                  <p><br></p>
-                  <h2 class="topic">Object Literal</h2>
-                  <p><b>Object Literal</b> is the simplest form of creating Objects in JavaScript. </p><br>
-                  <p>It is a set of comma seperated values enclosed inside "{ }"</p><br>
-                  <b>It do not require "new" keyword to be initialised.</p><br><br>
-                  <p>Lets see a small example:</p>
-                  <pre>
+    <div class="blog-post-content">
+  <h1 class="heading">JavaScript Objects</h1>
+  <p>In the following article, we shall be covering different methods to create Objects in JavaScript</p>
+  <br>
+  <p>The article shall cover the Following topics:</p>
+  <p>1. Object creation using <b>String Literal</b></p>
+  <p>2. Creating Objects using <b>"New Object"</b></p>
+  <p>3. Using <b>"Constructor Function" </b>to create Objects</p>
+  <p><br></p>
+  <p>We shall also discuss in details about the difference in each method.</p>
+  <p><br></p>
+  <h2 class="topic">Object Literal</h2>
+  <p><b>Object Literal</b> is the simplest form of creating Objects in JavaScript. </p>
+  <br>
+  <p>It is a set of comma seperated values enclosed inside "{ }"</p>
+  <br>
+  <b>It do not require "new" keyword to be initialised.</p><br><br>
+  <p>Lets see a small example:</p>
+  <pre><code class="lang-javascript">
 var Employee = {
 
   name: 'Mayank',
@@ -277,25 +38,26 @@ var Employee = {
 
   designation: 'Engineer'
 
-}</pre>
-                  <p>This is a simple Employee Object.</p><br>
-                  <b>Accessing Properties of Object Literal</b>
-                  <pre>
+}</code></pre>
+  <p>This is a simple Employee Object.</p>
+  <br>
+  <b>Accessing Properties of Object Literal</b>
+  <pre><code class="lang-javascript">
 1. Employee.name
 
-2. Employee['age']</pre>
-                  <p><br></p>
-                  <b>Adding Properties to Object Literals:</b><br><br>
-                  <p>We can add further properties to the Object Literal Notation.</p>
-                  <pre>
+2. Employee['age']</code></pre>
+  <p><br></p>
+  <b>Adding Properties to Object Literals:</b><br><br>
+  <p>We can add further properties to the Object Literal Notation.</p>
+  <pre><code class="lang-javascript">
 Employee.salary = "1LPA";
 
 Employee.Address = "Rohini";
-</pre>
-                  <p><br></p>
-                  <b>Adding Methods to Object Literal</b><br><br>
-                  <p>Apart from properties, we can add Methods to Object Literals</p>
-                  <pre>
+</code></pre>
+  <p><br></p>
+  <b>Adding Methods to Object Literal</b><br><br>
+  <p>Apart from properties, we can add Methods to Object Literals</p>
+  <pre><code class="lang-javascript">
 var Employee = {
 
   name: 'Mayank',
@@ -310,29 +72,28 @@ var Employee = {
 
   }
 
-}</pre>
-                  <p><br></p>
-                  <p>Also we can add function later once the Object Literal is defined.</p>
-                  <pre>
+}</code></pre>
+  <p><br></p>
+  <p>Also we can add function later once the Object Literal is defined.</p>
+  <pre><code class="lang-javascript">
 Employee.getDetails = function() {
 
   // Some Code
 
-}</pre>
-                  <p><br></p>
-                  <b>Advantages of Object Literal:</b><br><br>
-                  <p>1. No need to invoke constructors directly</p>
-                  <p>2. No need to pass Arguments to the constructor function</p>
-                  <p>3. It creates a singleton Object</p>
-                  <p>4. It executes the fastest to create an Object</p>
-                  <p><br></p><br>
-
-
-                  <h2 class="topic">Creating Objects using "New Object"</h2>
-                  <p>The Other way to create object are to create them using "new Object"</p>
-                  <p><br></p>
-                  <p>Lets look for the simple implementation of this method:</p>
-                  <pre>
+}</code></pre>
+  <p><br></p>
+  <b>Advantages of Object Literal:</b><br><br>
+  <p>1. No need to invoke constructors directly</p>
+  <p>2. No need to pass Arguments to the constructor function</p>
+  <p>3. It creates a singleton Object</p>
+  <p>4. It executes the fastest to create an Object</p>
+  <p><br></p>
+  <br>
+  <h2 class="topic">Creating Objects using "New Object"</h2>
+  <p>The Other way to create object are to create them using "new Object"</p>
+  <p><br></p>
+  <p>Lets look for the simple implementation of this method:</p>
+  <pre><code class="lang-javascript">
 var Employee = new Object();
 
 Employee.name = "Mayank";
@@ -343,51 +104,52 @@ Employee.showDetails = function() {
 
   // Some Code
 
-}</pre>
-                  <p>The above method using &Ouml;bject Literal"and this behaves in the similar manner.</p>
-                  <br><p>The outcome of both the methods are same.</p>
-                  <p>Object Literal is comparitively easier method to create an Object.</p>
-                  <p><br></p>
-                  <p>Every Object is derived from "&Ouml;bject" in JavaScript.</p>
-                  <pre>
+}</code></pre>
+  <p>The above method using &Ouml;bject Literal"and this behaves in the similar manner.</p>
+  <br>
+  <p>The outcome of both the methods are same.</p>
+  <p>Object Literal is comparitively easier method to create an Object.</p>
+  <p><br></p>
+  <p>Every Object is derived from "&Ouml;bject" in JavaScript.</p>
+  <pre><code class="lang-javascript">
 var Employee = new Object();
 
-typeof Employee;    output: "object"</pre>
-                  <p>Similarly even Object literals would create a type of "Object"</p>
-                  <pre>
+typeof Employee;    output: "object"</code></pre>
+  <p>Similarly even Object literals would create a type of "Object"</p>
+  <pre><code class="lang-javascript">
 var Employee = { };
 
-typeof Employee;    // output: "object"</pre>
-                  <p>Both the implementation shall result in the variable of type Object</p>
-                  <p><br></p>
-                  <h2 class="topic">Difference b/w <b>Object Literal</b> and <b>"new Object"</b></h2>
-                  <p>Since both of them results in the type "Object", the difference lies in the performance</p>
-                  <p>Creating Object using Object Literals is the fastest way to create Object.</p>
-                  <p><br></p>
-                  <b>Lets look what happens when a function executes:</b><br><br>
-                  <p>1. Each function executes under its own context</p>
-                  <p>2. A new Context is created every time when a function is executed</p>
-                  <p>3. Each context is created over the Context where it is already Executing.</p>
-                  <p>4. This new Context is stacked over the Existing Context.</p>
-                  <p>5. The main context is at the Allication Level, known as <b>Global Context</b></p>
-                  <p>6. It consumes some time in order to create the new Context for the Function.</p>
-                  <p><br></p>
-                  <b>Now lets evaluate the difference between them considering the above steps</b><br><br>
-                  <p>1. When an Object is created using "new Object", a new function is executing</p>
-                  <p>2. This new function shall create a Context for its Execution</p>
-                  <p>3. The function shall now execute under its own context.</p>
-                  <p>4. Creating and Executing under the context requires more time.</p>
-                  <p><br></p>
-                  <p>Considering the overhead required to create an object using "new Object".</p>
-                  <p>Object Literal shall execute faster in order to creat an Objecct.</p>
-                  <p><br></p>
-                  <h2 class="topic">Using "Constructor Function"</h2>
-                  <p>Constructor function is an efficient way to Create Objects in the following casses:</p>
-                  <p>1. Create a building block from which other Object can be created</p>
-                  <p>2. Design a basic architecture to create more Objects</p>
-                  <p><br></p>
-                  <b>What is a Constructor Function</b>
-                  <pre id="pre322316">
+typeof Employee;    // output: "object"</code></pre>
+  <p>Both the implementation shall result in the variable of type Object</p>
+  <p><br></p>
+  <h2 class="topic">Difference b/w <b>Object Literal</b> and <b>"new Object"</b></h2>
+  <p>Since both of them results in the type "Object", the difference lies in the performance</p>
+  <p>Creating Object using Object Literals is the fastest way to create Object.</p>
+  <p><br></p>
+  <b>Lets look what happens when a function executes:</b><br><br>
+  <p>1. Each function executes under its own context</p>
+  <p>2. A new Context is created every time when a function is executed</p>
+  <p>3. Each context is created over the Context where it is already Executing.</p>
+  <p>4. This new Context is stacked over the Existing Context.</p>
+  <p>5. The main context is at the Allication Level, known as <b>Global Context</b></p>
+  <p>6. It consumes some time in order to create the new Context for the Function.</p>
+  <p><br></p>
+  <b>Now lets evaluate the difference between them considering the above steps</b><br><br>
+  <p>1. When an Object is created using "new Object", a new function is executing</p>
+  <p>2. This new function shall create a Context for its Execution</p>
+  <p>3. The function shall now execute under its own context.</p>
+  <p>4. Creating and Executing under the context requires more time.</p>
+  <p><br></p>
+  <p>Considering the overhead required to create an object using "new Object".</p>
+  <p>Object Literal shall execute faster in order to creat an Objecct.</p>
+  <p><br></p>
+  <h2 class="topic">Using "Constructor Function"</h2>
+  <p>Constructor function is an efficient way to Create Objects in the following casses:</p>
+  <p>1. Create a building block from which other Object can be created</p>
+  <p>2. Design a basic architecture to create more Objects</p>
+  <p><br></p>
+  <b>What is a Constructor Function</b>
+  <pre><code class="lang-javascript">
 function Employee (name, age, designation) {
 
   this.Name = name;
@@ -396,16 +158,17 @@ function Employee (name, age, designation) {
 
   this.Designation = designation;
 
-}</pre>
-                  <p>This is a simple Implementation of the Consructor Function. </p><br>
-                  <p>Constructor function act as a building block to store the detail of any Employee.</p>
-                  <p>All the variables added to "this" keywod shall act as a public member to the created Object.</p>
-                  <p><br></p>
-                  <p>For those who belong to language like Java and C#, a constructor function shall resembel to a "Class".</p>
-                  <p>We can create Objects from Constructor function just as we create Objects from Classes.</p>
-                  <p><br></p>
-                  <b>We can even add methods to the constructor function:</b>
-                  <pre id="pre734858">
+}</code></pre>
+  <p>This is a simple Implementation of the Consructor Function. </p>
+  <br>
+  <p>Constructor function act as a building block to store the detail of any Employee.</p>
+  <p>All the variables added to "this" keywod shall act as a public member to the created Object.</p>
+  <p><br></p>
+  <p>For those who belong to language like Java and C#, a constructor function shall resembel to a "Class".</p>
+  <p>We can create Objects from Constructor function just as we create Objects from Classes.</p>
+  <p><br></p>
+  <b>We can even add methods to the constructor function:</b>
+  <pre><code class="lang-javascript">
 function Employee (name, age, designation) {
 
   this.Name = name;
@@ -420,92 +183,41 @@ function Employee (name, age, designation) {
 
   }
 
-}</pre>
-                  <p>The added function will be available to each of the Object created. </p>
-                  <p><br></p><br>
-
-
-
-                  <h2 class="topic">Creating Object from Constructor Function</h3>
-                  <p>Lets create a Object from a Constructor Function.</p>
-                  <pre id="pre381661">
-var newEmployee = new Employee("Mayank", 28, "Senior Software Developer"); </pre>
-                  <p>We can create multiple instances of Employee using this "new" keyword.</p>
-                  <p><br></p>
-
-                  <b>We can now access the properties of the New Object in the following manner</b>
-                  <pre>
+}</code></pre>
+  <p>The added function will be available to each of the Object created. </p>
+  <p><br></p>
+  <br>
+  <h2 class="topic">
+  Creating Object from Constructor Function</h3>
+  <p>Lets create a Object from a Constructor Function.</p>
+  <pre><code class="lang-javascript">
+var newEmployee = new Employee("Mayank", 28, "Senior Software Developer"); </code></pre>
+  <p>We can create multiple instances of Employee using this "new" keyword.</p>
+  <p><br></p>
+  <b>We can now access the properties of the New Object in the following manner</b>
+  <pre><code class="lang-javascript">
 1. newEmployee.Name
 
-2. newEmployee['Age']</pre>
-                  <b>Lets see what "New Keyword" does while creating a new Object.</b><br><br>
-                  <p>1. Create a new scope in the memory</p>
-                  <p>2. Bind variables to the new scope</p>
-                  <p>3. Refer to the newly created scope by "this"</p>
-                  <p>4. Return "this" Object from the constructor function.</p>
-                  <p><br></p>
-                  <h2 class="topic">Difference b/w Constructor function and other Implementations</h2>
-                  <p>Constructor Function Implementation provides you the following benefits:</p>
-                  <p>1. Object created is not Singleton</p>
-                  <p>2. Constructor function can be used to create any number of Objects</p>
-                  <p>3. Contains Prototype Property which helps us to add shared functionalities.</p>
-                  <p>4. Although creating Object using Constructor Function is slowest method.</p>
-                  <p><br></p>
-                  <h2><b>Conclusion:</b></h2>
-                  <p>Any of the method can be used to create an Object.</p>
-                  <p>It all depends on the Requirement of the Project</p>
-                </div>
+2. newEmployee['Age']</code></pre>
+  <b>Lets see what "New Keyword" does while creating a new Object.</b><br><br>
+  <p>1. Create a new scope in the memory</p>
+  <p>2. Bind variables to the new scope</p>
+  <p>3. Refer to the newly created scope by "this"</p>
+  <p>4. Return "this" Object from the constructor function.</p>
+  <p><br></p>
+  <h2 class="topic">Difference b/w Constructor function and other Implementations</h2>
+  <p>Constructor Function Implementation provides you the following benefits:</p>
+  <p>1. Object created is not Singleton</p>
+  <p>2. Constructor function can be used to create any number of Objects</p>
+  <p>3. Contains Prototype Property which helps us to add shared functionalities.</p>
+  <p>4. Although creating Object using Constructor Function is slowest method.</p>
+  <p><br></p>
+  <h2><b>Conclusion:</b></h2>
+  <p>Any of the method can be used to create an Object.</p>
+  <p>It all depends on the Requirement of the Project</p>
+</div>
 
-                <!-- end .leave-comment -->
-              </div>
-              <!-- end .blog-post -->
 
-              <!-- end .blog-details -->
-            </div>
-            <!-- end .single-blog-post -->
-          </div>
-          <!-- end .container -->
-        </section>
-      </div>
-      <!-- end .sections-wrapper -->
-    </div>
-    <!-- end .sections -->
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="top">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-4">
-              <h4>Address</h4>
-              <p>A-8, Milansar Appartment, Rohini<br />Delhi, India</p>
-            </div>
-            <!-- end .col-sm-4 -->
-            <div class="col-sm-4">
-              <h4>Connect</h4>
-              <div class="social-icons">
-                <a href="" class="social-icon"><i class="fa fa-facebook"></i></a>
-                <a href="" class="social-icon"><i class="fa fa-twitter"></i></a>
-                <a href="" class="social-icon"><i class="fa fa-google-plus"></i></a>
-                <a href="" class="social-icon"><i class="fa fa-behance"></i></a>
-                <a href="" class="social-icon"><i class="fa fa-dribbble"></i></a>
-              </div>
-              <!-- end .social-icons -->
-            </div>
-            <!-- end .col-sm-4 -->
-            <div class="col-sm-4">
-              <h4>Contact</h4>
-              <p>Tel: +91 9711083089<br />Mail: mayankgupta688@gmail.com</p>
-            </div>
-            <!-- end .col-sm-4 -->
-          </div>
-          <!-- end .row -->
-        </div>
-        <!-- end .container -->
-      </div>
-      <!-- end .footer -->
-      <div class="bottom">Copyright &copy; Sility. All Rights Reserved.</div>
-      <!-- end .bottom -->
-    </footer>
-    <script async src="js/analytics.js"></script>
-  </body>
-</html>
+  });
+
+});

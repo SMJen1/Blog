@@ -5,11 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow">
-    <title>Immediately Invokable Function Expression (IIFE)</title>
-    <meta content="Immediately Invokable Function Expression (IIFE)" name="title" />
-    <meta name="title" content="(IIFE) Immediately Invokable Function Expressions JavaScript" />
-    <meta name="description" content="Immediately Invokable Function Expression (IIFE) is a JavaScript Design Pattern. It's an Anonymous Function Expression which is Self Invoking. It is invoked as soon as it is Initialized" />
-    <meta name="keywords" content="iife javascript,immediately invokable function expression,IIFE javascript,learn javascript design patterns,function definition,function exressions"/>
+    @html.block("header")
     <meta name="msvalidate.01" content="F77C0434F58CEA255020E3CCDE1B58D6" />
     <link rel="stylesheet" href="css/main.css">
   </head>
@@ -224,7 +220,7 @@
                     </a>
                   </p>
                   <p class="other-articles">
-                    <a href="/scopes">
+                    <a href="/javascript-scopes-function-scope-global-scope">
                     Scopes in JavaScript
                     </a>
                   </p>

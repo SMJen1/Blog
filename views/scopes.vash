@@ -1,413 +1,123 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="index, follow">
+@html.extend('layout', function(model) {
+
+
+  @html.block("header", function(model) {
+    <meta content="Scopes in JavaScript" name="title" />
     <title>Understanding Scopes in JavaScipt</title>
     <meta name="description" content="Understand Scopes in JavaScipts" />
     <meta name="keywords" content="Functional Scopes, Lexical Scope, Scope in JavaScipt, JavaScript Scope, Global Scope, Function Scope, Scoping in JavaScript,toddmotto.com/everything-you-wanted-to-know-about-javascript-scope/"/>
-<link rel="stylesheet" href="css/shrink.css">
-<meta name="msvalidate.01" content="F77C0434F58CEA255020E3CCDE1B58D6" />
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <script src="js/rainbow.js"></script>
-  </head>
-  <body>
-    <style>
-      pre {
-      margin-left: 13px;
-      min-width: 600px;
-      margin-top: 20px;
-      margin-bottom: 40px;
-      max-width: 1000px;
-      color: #0f0c01;
-      }
-    </style>
-    <!-- Search -->
-    <div class="search-overlay"></div>
-    <div class="search">
-      <a href="" class="search-close"><i class="md md-close"></i></a>
-      <div class="row">
-        <div class="col-sm-6 col-sm-offset-3">
-          <h4>Just Start Typing Text and Press Enter</h4>
-          <form class="search-form">
-            <input type="text" id="search" name="search" class="text-center" />
-          </form>
-          <!-- end .search-form -->
-        </div>
-        <!-- end .col-sm-6 -->
-      </div>
-      <!-- end .row -->
-    </div>
-    <!-- end .row -->
-    <!-- Slide Out -->
-    <div class="slide-out-overlay"></div>
-    <div class="slide-out">
-      <header class="slide-out-header clearfix">
-        <div class="clearfix">
-          <a href="" class="slide-out-close pull-left"><i class="md md-close"></i></a>
-          <a href="" class="open-search pull-right"><i class="md md-search"></i></a>
-          <a href="" class="slide-out-share pull-right"><i class="md md-more-vert"></i></a>
-        </div>
-        <!-- end .clearfix -->
-        <!-- Popup -->
-        <div class="slide-out-popup">
-          <nav class="social-nav">
-            <ul class="list-unstyled">
-              <li><a href="">Facebook</a></li>
-              <li><a href="">Twitter</a></li>
-              <li><a href="">Linkedin</a></li>
-              <li><a href="">Google+</a></li>
-              <li><a href="">Behance</a></li>
-            </ul>
-            <!-- end .list-unstyled -->
-          </nav>
-          <!-- end .social-nav -->
-        </div>
-        <!-- end .slide-out-popup -->
-        <div class="image"><img src="" alt="alt text" class="img-responsive"></div>
-        <div class="content">
-          <h5>Benjamin Thomson</h5>
-          <span>Web & UX Designer</span>
-        </div>
-        <!-- end .content -->
-        <div class="text-right">
-          <a href="" class="button link-button white icon-left"><i class="md md-file-download"></i>Download Resume</a>
-        </div>
-        <!-- end .text-right -->
-      </header>
-      <!-- end .slide-out-header -->
-      <div class="slide-out-widgets">
-        <div class="slide-out-widget">
-          <h4>Drink A Coffee With Me Today</h4>
-          <form action="scripts/contact.php" method="post" class="form-horizontal contact-form">
-            <div class="form-group">
-              <label class="col-sm-3 control-label">Name</label>
-              <div class="col-sm-9">
-                <input type="text" class="contact-name" name="contact-name" />
-              </div>
-              <!-- end .col-sm-9 -->
-            </div>
-            <!-- end .form-group -->
-            <div class="form-group">
-              <label class="col-sm-3 control-label">Email</label>
-              <div class="col-sm-9">
-                <input type="email" class="contact-email" name="contact-email" />
-              </div>
-              <!-- end .col-sm-9 -->
-            </div>
-            <!-- end .form-group -->
-            <div class="form-group">
-              <label class="col-sm-3 control-label">Message</label>
-              <div class="col-sm-9">
-                <textarea name="contact-message" class="contact-message" rows="3"></textarea>
-              </div>
-              <!-- end .col-sm-9 -->
-            </div>
-            <!-- end .form-group -->
-            <div class="form-group">
-              <div class="col-sm-9 col-sm-offset-3">
-                <button type="submit" class="button solid-button purple">Send Message</button>
-              </div>
-              <!-- end .col-sm-9 -->
-            </div>
-            <!-- end .form-group -->
-            <div class="contact-loading alert alert-info form-alert">
-              <span class="message">Loading...</span>
-              <button type="button" class="close" data-hide="alert" aria-label="Close"><i class="fa fa-times"></i></button>
-            </div>
-            <div class="contact-success alert alert-success form-alert">
-              <span class="message">Success!</span>
-              <button type="button" class="close" data-hide="alert" aria-label="Close"><i class="fa fa-times"></i></button>
-            </div>
-            <div class="contact-error alert alert-danger form-alert">
-              <span class="message">Error!</span>
-              <button type="button" class="close" data-hide="alert" aria-label="Close"><i class="fa fa-times"></i></button>
-            </div>
-          </form>
-          <!-- end contact-form -->
-        </div>
-        <!-- end .slide-out-widget -->
-        <div class="slide-out-widget">
-          <h4>Follow On Instagram</h4>
-          <div class="instagram">
-          </div>
-          <!-- end .instagram -->
-        </div>
-        <!-- end .slide-out-widget -->
-      </div>
-      <!-- end .slide-out-widgets -->
-    </div>
-    <!-- end .slide-out -->
-    <!-- Header -->
-    <header class="header">
-      <div class="top clearfix">
-        <a href="#section8" class="available"><i class="ion-ios-email-outline"></i><span>Available For Freelance</span></a>
-        <div class="right-icons">
-          <a href="" class="open-search header-open-search"><i class="md md-search"></i></a>
-          <a href="" class="download"><i class="md md-file-download"></i></a>
-          <a href="" class="share"><i class="md md-more-vert"></i></a>
-        </div>
-        <!-- end .right-icons -->
-        <!-- Popup -->
-        <div class="popup">
-          <nav class="social-nav">
-            <ul class="list-unstyled">
-              <li><a href="">Facebook</a></li>
-              <li><a href="">Twitter</a></li>
-              <li><a href="">Linkedin</a></li>
-              <li><a href="">Google+</a></li>
-              <li><a href="">Behance</a></li>
-            </ul>
-            <!-- end .list-unstyled -->
-          </nav>
-          <!-- end .social-nav -->
-        </div>
-        <!-- end .popup -->
-      </div>
-      <!-- end .top -->
-      <div class="bottom clearfix">
-        <div class="title"><a href="/">Mayank</a></div>
-        <div class="header-action-button-wrapper">
-          <a href="" class="header-action-button action-button"><i class="md md-add"></i></a>
-        </div>
-        <!-- end .header-action-button-wrapper -->
-        <a href="" class="responsive-menu-open">Menu <i class="fa fa-bars"></i></a>
-        <nav class="main-nav">
-          <ul class="list-unstyled">
-            <li class="active"><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-          </ul>
-        </nav>
-        <!-- end .main-nav -->
-      </div>
-      <!-- end .bottom -->
-    </header>
-    <!-- end .header -->
-    <div class="responsive-menu">
-      <a href="" class="responsive-menu-close">Close <i class="ion-android-close"></i></a>
-      <nav class="responsive-nav"></nav>
-      <!-- end .responsive-nav -->
-    </div>
-    <!-- end .responsive-menu -->
-    <!-- Sections -->
-    <div class="sections content-study">
-      <div class="sections-wrapper clearfix">
-        <!--Single Blog Post -->
-        <section>
-          <div class="container">
-            <div class="single-blog-post">
-              <header class="blog-header clearfix">
-                <div class="content">
-                  <span class="date">March 11, 2015</span>
-                  <h4 style="font-size: 12px">Understanding Scopes in JavaScript</h4>
-                                    <div>
-                    <h6>Other Related JavaScript Articles:</h6>
-                    <p class="other-articles">
-                        <a href="/iife-immediately-invoked-function-expressions-javascript-singleton-design-pattern-closures">
-                          IIFE Pattern
-                        </a>
-                    </p>
-                    <p class="other-articles">
-                        <a href="/javascript-module-pattern-design-singleton">
-                          Module Pattern in JavaScript
-                        </a>
-                    </p>
-                    <p class="other-articles">
-                        <a href="/singleton-design-pattern-javascript-module">
-                          Singleton Pattern In JavaScript
-                        </a>
-                    </p>
-                    <p class="other-articles">
-                        <a href="/scopes">
-                          Scopes in JavaScript
-                        </a>
-                    </p>
-                    <p class="other-articles">
-                        <a href="/create-javascript-object-string-literal-new-keyword-new-object">
-                          Creating Object In JavaScript
-                        </a>
-                    </p>
-                    <p class="other-articles">
-                        <a href="/function-and-variable-hoisting-javascript-closures">
-                          Hoisting in JavaScript
-                        </a>
-                    </p>
-                    <p class="other-articles">
-                        <a href="/prototype-pattern-javascript-function-prototype">
-                          Prototype Pattern JavaScript
-                        </a>
-                    </p>
-                    <p class="other-articles">
-                      <a href="/delete-keyword-javascript-properties-object">
-                      Delete Keyword in JavaScript
-                      </a>
-                    </p>
-                  </div>
+  });
 
-                </div>
-                <!-- end .content -->
-                <div class="image" style="background-image: url('images/javascript-logo-large.jpg');"></div>
-              </header>
-              <!-- end .blog-header -->
-              <div class="blog-post">
-                <div class="blog-post-content">
-                  <h2><b>Scopes in JavaScript</b></h2>
-                  <div> </div>
-                  <div>It is important to understand the concept of scopes in JavaScript.</div>
-                  <div> </div>
-                  <div>Scope help us determine the availibility and accessibility of variable. </div>
-                  <div> </div>
-                  <p>There are basically 2 different scopes in JavaScipt:</p>
-                  <p>1. Global Scope </p>
-                  <p>2. Function Scope</p>
-                  <p><br></p>
-                  <h3><b>Variable Declaration and Definition</b></h3>
-                  <p>Lets first understand the concept of <b>Function Declaration and Function Definition</b></p>
-                  <p><br></p>
-                  <h5><b>1. var Name;</b></h5>
-                  <p>This is a simple variable Declaration. Function is simply Declared here.</p>
-                  <p>Here we can see that no value is assigned to the variable, therefore its a simple Declaration</p>
-                  <p>The initial value of variable is taken as "undefined"</p>
-                  <p><br></p>
-                  <h5><b>2. Name = "Mayank"</b></h5>
-                  <p>This is a variable definition, Variable is defined with a value.</p>
-                  <p>Assigning value to a variable is called as Variable Declaration. </p>
-                  <p>Variable was initially containing "undefined", now value changed to "Mayank</p>
-                  <p><br></p>
-                  <h5><b>3. var Name = "Mayank"</b></h5>
-                  <p>In this case we can see that the declaration and the definitionis given in the same line.</p>
-                  <p>This is the tricky Part, JavaScript implicitely break it into the following Code:</p>
-                  <h5>var Name;</h5>
-                  <h5>Name = "Mayank"</h5>
-                  <p><br></p>
-                  <p>This is the simple explaination of Function Definition and Declaration.</p>
-                  <p>For now this is enough for understanding the article.</p>
-                  <p><br></p>
-                  <h3><b>How Scopes are Determined in JavaScript</b></h3>
-                  <p>When JavaScript executes the code, it does the following</p>
-                  <p>1. It traverse accross the code to find the Variable Declarations.</p>
-                  <p>2. On the basis of where the variable is declared, variable scope is defined.</p>
-                  <p>3. JavaScript then start Executing the Code with prior knoledge about the scopes.</p>
-                  <p><br></p>
-                  <h3><b>Different Scopes in JavaScript</b></h3>
-                  <h5><b>Global Scope Variables:</b></h5>
-                  <p>Any variable which is declared outside a function definition is a <b>Global Scope Variable</b>. </p>
-                  <p>These variables can be accessed and modified throughtout the program.</p>
-                  <p><br></p>
-                  <p>var Name = "Mayank"</p>
-                  <p>var Age = 28;</p>
-                  <p><br></p>
-                  <p>Since these 2 variables are not defined inside any function, it is assigned to the Global Scope</p>
-                  <p>JavaScript while initial traversing, will add these variable to the Global Scope.</p>
-                  <p>Adding the variables to the global Scope shall allow them to be accessed anywhere.</p>
-                  <p><br></p>
-                  <h5><b>Function Scope Variable</b></h5>
-                  <p>Whereas the variables that are declared inside a function are <b>Function Scope Variable</b>.</p>
-                  <p>These Function Scope variables are destroyed as soon as function is executed.</p>
-                  <p><br></p>
-                  <p>function showDetails() {</p>
-                  <p>  var Name = "Mayank";</p>
-                  <p>  var Age = 28;</p>
-                  <p>}</p>
-                  <p>Here in the above code, we can see that the variables are declared inside the Function.</p>
-                  <p>Variables declared inside the functions are assigned with the function Scope</p>
-                  <p>Function scope variables cannot be accessed outside the function definition.</p>
-                  <p>Variable "Name" and &Auml;ge"cannot be accessed outside the "showDetails" function</p>
-                  <p><br></p>
-                  <p>function showDetails() {</p>
-                  <p>  var Name = "Mayank";</p>
-                  <p>  var Age = 28;</p>
-                  <p>}</p>
-                  <p>console.log(Name);</p>
-                  <p><br></p>
-                  <p>The above code shall result in error, since "Name" is not available outside the "showDetails"function</p>
-                  <p><br></p>
-                  <p>We can refer to Global scope Variable inside the Function Scope</p>
-                  <p>var Name = "Mayank"</p>
-                  <p>function showDetails() {</p>
-                  <p>  console.log(Name)</p>
-                  <p>}</p>
-                  <p>In the above code "Name" is assigned to the Global Scope therefore it can be accessed inside the Function</p>
-                  <p><br></p>
-                  <p>Also Consider the following Case:</p>
-                  <p>var Name = "Mayank</p>
-                  <p>function showDetails() {</p>
-                  <p>  Age = 28;</p>
-                  <p>}</p>
-                  <p>console.log(Age);</p>
-                  <p>In the above code, we cannot see the declaration of the &Auml;ge"variable in the Global Scope. </p>
-                  <p>This variable is Defined inside the Function, without "var"keyword</p>
-                  <p>Such Variables are assigned to the Global Scope.</p>
-                  <p><br></p>
-                  <h5>How Scopes are defined in JavaScript</h5>
-                  <p><br></p>
-                  <p>Compiler traverse the Entire JavaScript before execution.</p>
-                  <p>Before actual Run the scope of Variables are defined.</p>
-                  <p>While Execution of JavaScript Code, compiler has prior information about  variable Scopes.</p>
-                  <p><br></p>
-                  <p>The following operations are done when a JavaScript is Executed:</p>
-                  <p>1. Before Executing a JavaScript, it first looks for all the variable declarations.</p>
-                  <p>2. JavaScript compler evaluates the entire code and look for all the Declarations.</p>
-                  <p>3. On thebasis of where the Variable is Declared, scope is assigned to the variable.</p>
-                  <p>4. If variable is declared inside the Function, it is added to the Function Scope</p>
-                  <p>5. If the Variable is not defined inside the Function, it is assigned to the GLobal Scope.</p>
-                  <p><br></p>
-                  <p><b>** Note: </b></p>
-                  <p>Any variable if not declared in Global Scope and provide the definition directly inside a function, the variable is added to the Global Scope by the Compiler. This is demonstrated in the last Example provided.</p>
-                </div>
 
-                <!-- end .leave-comment -->
-              </div>
-              <!-- end .blog-post -->
 
-              <!-- end .blog-details -->
-            </div>
-            <!-- end .single-blog-post -->
-          </div>
-          <!-- end .container -->
-        </section>
-      </div>
-      <!-- end .sections-wrapper -->
-    </div>
-    <!-- end .sections -->
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="top">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-4">
-              <h4>Address</h4>
-              <p>A-8, Milansar Appartment, Rohini<br />Delhi, India</p>
-            </div>
-            <!-- end .col-sm-4 -->
-            <div class="col-sm-4">
-              <h4>Connect</h4>
-              <div class="social-icons">
-                <a href="" class="social-icon"><i class="fa fa-facebook"></i></a>
-                <a href="" class="social-icon"><i class="fa fa-twitter"></i></a>
-                <a href="" class="social-icon"><i class="fa fa-google-plus"></i></a>
-                <a href="" class="social-icon"><i class="fa fa-behance"></i></a>
-                <a href="" class="social-icon"><i class="fa fa-dribbble"></i></a>
-              </div>
-              <!-- end .social-icons -->
-            </div>
-            <!-- end .col-sm-4 -->
-            <div class="col-sm-4">
-              <h4>Contact</h4>
-              <p>Tel: +91 9711083089<br />Mail: mayankgupta688@gmail.com</p>
-            </div>
-            <!-- end .col-sm-4 -->
-          </div>
-          <!-- end .row -->
-        </div>
-        <!-- end .container -->
-      </div>
-      <!-- end .footer -->
-      <div class="bottom">Copyright &copy; Sility. All Rights Reserved.</div>
-      <!-- end .bottom -->
-    </footer>
-    <script async src="js/analytics.js"></script>
-  </body>
-</html>
+  @html.block("body", function(model) {
+
+    <div class="blog-post-content">
+  <h2><b>Scopes in JavaScript</b></h2>
+  <div> </div>
+  <div>It is important to understand the concept of scopes in JavaScript.</div>
+  <div> </div>
+  <div>Scope help us determine the availibility and accessibility of variable. </div>
+  <div> </div>
+  <p>There are basically 2 different scopes in JavaScipt:</p>
+  <p>1. Global Scope </p>
+  <p>2. Function Scope</p>
+  <p><br></p>
+  <h3><b>Variable Declaration and Definition</b></h3>
+  <p>Lets first understand the concept of <b>Function Declaration and Function Definition</b></p>
+  <p><br></p>
+  <h5><b>1. var Name;</b></h5>
+  <p>This is a simple variable Declaration. Function is simply Declared here.</p>
+  <p>Here we can see that no value is assigned to the variable, therefore its a simple Declaration</p>
+  <p>The initial value of variable is taken as "undefined"</p>
+  <p><br></p>
+  <h5><b>2. Name = "Mayank"</b></h5>
+  <p>This is a variable definition, Variable is defined with a value.</p>
+  <p>Assigning value to a variable is called as Variable Declaration. </p>
+  <p>Variable was initially containing "undefined", now value changed to "Mayank</p>
+  <p><br></p>
+  <h5><b>3. var Name = "Mayank"</b></h5>
+  <p>In this case we can see that the declaration and the definitionis given in the same line.</p>
+  <p>This is the tricky Part, JavaScript implicitely break it into the following Code:</p>
+  <h5>var Name;</h5>
+  <h5>Name = "Mayank"</h5>
+  <p><br></p>
+  <p>This is the simple explaination of Function Definition and Declaration.</p>
+  <p>For now this is enough for understanding the article.</p>
+  <p><br></p>
+  <h3><b>How Scopes are Determined in JavaScript</b></h3>
+  <p>When JavaScript executes the code, it does the following</p>
+  <p>1. It traverse accross the code to find the Variable Declarations.</p>
+  <p>2. On the basis of where the variable is declared, variable scope is defined.</p>
+  <p>3. JavaScript then start Executing the Code with prior knoledge about the scopes.</p>
+  <p><br></p>
+  <h3><b>Different Scopes in JavaScript</b></h3>
+  <h5><b>Global Scope Variables:</b></h5>
+  <p>Any variable which is declared outside a function definition is a <b>Global Scope Variable</b>. </p>
+  <p>These variables can be accessed and modified throughtout the program.</p>
+  <p><br></p>
+  <p>var Name = "Mayank"</p>
+  <p>var Age = 28;</p>
+  <p><br></p>
+  <p>Since these 2 variables are not defined inside any function, it is assigned to the Global Scope</p>
+  <p>JavaScript while initial traversing, will add these variable to the Global Scope.</p>
+  <p>Adding the variables to the global Scope shall allow them to be accessed anywhere.</p>
+  <p><br></p>
+  <h5><b>Function Scope Variable</b></h5>
+  <p>Whereas the variables that are declared inside a function are <b>Function Scope Variable</b>.</p>
+  <p>These Function Scope variables are destroyed as soon as function is executed.</p>
+  <p><br></p>
+  <p>function showDetails() {</p>
+  <p>  var Name = "Mayank";</p>
+  <p>  var Age = 28;</p>
+  <p>}</p>
+  <p>Here in the above code, we can see that the variables are declared inside the Function.</p>
+  <p>Variables declared inside the functions are assigned with the function Scope</p>
+  <p>Function scope variables cannot be accessed outside the function definition.</p>
+  <p>Variable "Name" and &Auml;ge"cannot be accessed outside the "showDetails" function</p>
+  <p><br></p>
+  <p>function showDetails() {</p>
+  <p>  var Name = "Mayank";</p>
+  <p>  var Age = 28;</p>
+  <p>}</p>
+  <p>console.log(Name);</p>
+  <p><br></p>
+  <p>The above code shall result in error, since "Name" is not available outside the "showDetails"function</p>
+  <p><br></p>
+  <p>We can refer to Global scope Variable inside the Function Scope</p>
+  <p>var Name = "Mayank"</p>
+  <p>function showDetails() {</p>
+  <p>  console.log(Name)</p>
+  <p>}</p>
+  <p>In the above code "Name" is assigned to the Global Scope therefore it can be accessed inside the Function</p>
+  <p><br></p>
+  <p>Also Consider the following Case:</p>
+  <p>var Name = "Mayank</p>
+  <p>function showDetails() {</p>
+  <p>  Age = 28;</p>
+  <p>}</p>
+  <p>console.log(Age);</p>
+  <p>In the above code, we cannot see the declaration of the &Auml;ge"variable in the Global Scope. </p>
+  <p>This variable is Defined inside the Function, without "var"keyword</p>
+  <p>Such Variables are assigned to the Global Scope.</p>
+  <p><br></p>
+  <h5>How Scopes are defined in JavaScript</h5>
+  <p><br></p>
+  <p>Compiler traverse the Entire JavaScript before execution.</p>
+  <p>Before actual Run the scope of Variables are defined.</p>
+  <p>While Execution of JavaScript Code, compiler has prior information about  variable Scopes.</p>
+  <p><br></p>
+  <p>The following operations are done when a JavaScript is Executed:</p>
+  <p>1. Before Executing a JavaScript, it first looks for all the variable declarations.</p>
+  <p>2. JavaScript compler evaluates the entire code and look for all the Declarations.</p>
+  <p>3. On thebasis of where the Variable is Declared, scope is assigned to the variable.</p>
+  <p>4. If variable is declared inside the Function, it is added to the Function Scope</p>
+  <p>5. If the Variable is not defined inside the Function, it is assigned to the GLobal Scope.</p>
+  <p><br></p>
+  <p><b>** Note: </b></p>
+  <p>Any variable if not declared in Global Scope and provide the definition directly inside a function, the variable is added to the Global Scope by the Compiler. This is demonstrated in the last Example provided.</p>
+</div>
+
+  });
+
+});

@@ -44,7 +44,7 @@
       res.render('prototype', { 'count': routeConroller.count });
     });
 
-    app.get('/scopes', function(req, res) {
+    app.get('/javascript-scopes-function-scope-global-scope', function(req, res) {
       routeConroller.count++;
       res.render('scopes', { 'count': routeConroller.count });
     });
