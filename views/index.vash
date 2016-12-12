@@ -105,7 +105,7 @@
                       <div class="image" style="background-image: url('images/JavaScript-logo.png');" alt="IIFE Immediately Invokable Function Expression JavaScript"></div>
                   </a>
                   <div class="content">
-                    <h1><a href="/iife-immediately-invoked-function-expressions-javascript-singleton-design-pattern-closures">Immediately Invokable Function Expression (IIFE)</a></h1>
+                    <h1><a href="/iife-immediately-invoked-function-expressions-javascript-singleton-design-pattern-closures">Immediately Invokable Function Expression</a></h1>
                     <p class="details">
                       <b>IIFE (Immediately Invokable Function Expressions)</b> are self invoking function expressions. This <b>Design Pattern</b> should be used in case function is required to be called just once.
                     </p>
@@ -195,9 +195,21 @@
                       <div class="image" style="background-image: url('images/JavaScript-logo.png');" alt="IIFE Immediately Invokable Function Expression JavaScript"></div>
                   </a>
                   <div class="content">
-                    <h1><a href="/iife-immediately-invoked-function-expressions-javascript-singleton-design-pattern-closures">Function Chaining in JavaScript</a></h1>
+                    <h1><a href="/javascript-function-chaining-jquery-chaining">Function Chaining in JavaScript</a></h1>
                     <p class="details">
                       <b>Function Chaining</b> is the concept which is followed by Framework Like JQuery. Function can be chained together and called in a single line. We can utilize function chaining concept to build efficient code.
+                    </p>
+                  </div> <!-- end .content -->
+                </div> <!-- end .inner -->
+              </div> <!-- end .blog-post -->
+
+
+              <div class="blog-post" style="display: none;">
+                <div class="inner">
+                  <div class="content">
+                    <h1><a href="/function-and-variable-hoisting-javascript-closures">Context vs Scope in JavaScript</a></h1>
+                    <p class="details">
+                      <b>Scope and Context</b> are often confused as the same thing in JavaScript. This document shall help you understand the difference between the Context and the Scopes in JavaScript. This is important to understand the difference between the two.
                     </p>
                   </div> <!-- end .content -->
                 </div> <!-- end .inner -->

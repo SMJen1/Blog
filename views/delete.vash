@@ -9,6 +9,293 @@
   });
 
   @html.block("body", function(model) {
+
+  <div class="blog-post-content">
+  <h1 class="heading">Delete Keyword in JavaScript</h1>
+  <p></p>
+  <br>
+  <p>This article shall help you understand the following:</p>
+  <p>1. Using <strong>Delete Keyword</strong> in JavaScript</p>
+  <p>2. Deleting Object Properties</p>
+  <p>3. Cases where the Properties of JavaScript cannot be Deleted</p>
+  <p>4. Correctly Using <strong>Delete Keyword</strong></p>
+  <p></p>
+  <br>
+  <h2 class="topic"><strong>Using Delete Keyword:</strong></h2>
+  <p><strong>Delete Keyword</strong> is basically used to delete properties in JavaScript Object.</p>
+  <p>One of the misconception is that "<strong>delete keyword</strong>" is used to free my memory.</p>
+  <p></p>
+  <br>
+  <p>How <strong>delete keyword</strong> works:</p>
+  <p>1. It de-references the property from the Object</p>
+  <p>2. The de-referenced property is then available to Garbage Collector.</p>
+  <p>** Delete Keyword has nothing to do with directly freeing the momory for Garbage Collection</p>
+  <p></p>
+  <br>
+  <p>delete keyword returns:</p>
+  <p>1. "true" in case the property is deleted and also when property is not found</p>
+  <p>2. "false" in case properties cannot be deleted</p>
+  <p></p>
+  <br>
+  <h2 class="topic"><strong>Syntax for Deleting Keyword</strong></h2>
+  <pre>
+<code class="lang-javascript">
+var Sales = {
+
+  products: 'Paste',
+
+  Quantity: 10
+
+}
+
+console.log(delete Sales.Quantity);    // returns "true"
+
+console.log(Sales.Quantity)            // returns "undefined"</code></pre>
+  <p>This is a simple scenerio where:</p>
+  <p>1. Properties "product" and "Quantity" are added to "Sales" Object.</p>
+  <p>2. "Quantity" property is deleted from Sales Object and "true" is returned.</p>
+  <p>3. When user try to access "Quantity", it is "undefined".</p>
+  <p></p>
+  <br>
+  <h2 class="topic"><strong>Non-configurable properties</strong></h2>
+  <p>We can mark the property of an object as "Non Configurable". </p>
+  <p>Non-Configurable properties cannot be deleted.</p>
+  <p></p>
+  <br>
+  <p>Each property defined for an Object contains 4 properties:</p>
+  <p>1. <strong>value</strong>: contains value of the property</p>
+  <p>2. <strong>writable: </strong>indicates whether the property can be edited/changed</p>
+  <p>3. <strong>enumerable: </strong>states whether the property can be enumerated or not</p>
+  <p>4. <strong>configurable: </strong>indicates whether we can change the configuration of the property</p>
+  <p></p>
+  <br>
+  <pre>
+<code class="lang-javascript">
+// An empty Object Employee is Defined
+
+var Employee = { };
+
+// Add a property "name" to "Employee" and mark it "non-configurable"
+
+Object.defineProperty(Employee, "name", { configurable: false });</code></pre>
+  <p>In the above example, a new property "name" is added to "Employee" Object.</p>
+  <p>This property is marked as "Non Configurable".</p>
+  <p></p>
+  <br>
+  <p>Here is the code to check the Properties of a variable:</p>
+  <pre>
+<code class="lang-javascript">
+// Check if property is Configurable or not
+
+var name = "Mayank";
+
+var propDescriptor = Object.getOwnPropertyDescriptor(window, 'name')
+
+console.log(propDescriptor);
+
+output: {
+  value: "Mayank",
+  writable: true,
+  enumerable: true,
+  configurable: false
+}</code></pre>
+  <p>In the above code, we can see that the variable "name" is marked as "non-configurable" property.</p>
+  <p>Since it is defined with "var" keyword.</p>
+  <p></p>
+  <br>
+  <pre>
+<code class="lang-javascript">
+// Check if property is Configurable or not
+
+name = "Mayank";
+
+var propDescriptor = Object.getOwnPropertyDescriptor(window, 'name')
+
+console.log(propDescriptor);
+
+output: {
+  value: "Mayank",
+  writable: true,
+  enumerable: true,
+  configurable: true
+}</code></pre>
+  <p>Here the property is marked as "non-configurable", since it is declared without "var" keyword.</p>
+  <p></p>
+  <br>
+  <h2 class="topic">Special Cases for <strong>"Delete Keyword"</strong></h2>
+  <p><strong>Object Properties that does not Exists returns "true"</strong></p>
+  <p>When the property which user is trying to delete does not exists, it return "true". </p>
+  <p>This is important to consider since it can create confusion</p>
+  <pre>
+<code class="lang-javascript">
+var Sales = {
+
+  products: 'Paste',
+
+  Quantity: 10
+
+}
+
+console.log(delete Sales.Cost);        // returns "true"</code></pre>
+  <p></p>
+  <br>
+  <p><strong>Variables declared with "var" keyword cannot be deleted</strong></p>
+  <p>Any variable declared inside function or global scope with keyword "var", cannot be deleted.</p>
+  <p>Since we cannot delete any non-configurable properties.</p>
+  <pre>
+<code class="lang-javascript">
+var Name = "Ankit";
+
+var Designation = "Developer"
+
+console.log(delete Designation); // returns "false"
+
+console.log(delete Name); // returns "false"</code></pre>
+  <p></p>
+  <br>
+  <p>Whereas, if a property is added without to global scope without "var" keyword, it can be deleted.</p>
+  <p>Property added without "var" keyword are marked as configurable</p>
+  <pre>
+<code class="lang-javascript">
+// variable Name and Designation is added without "var" keyword
+
+// These variables are added to the Global Scope
+
+Name = "Ankit";
+
+Designation = "Developer"
+
+//variable that are not declared using "var" keyword, can be deleted
+
+console.log(delete Designation); // returns "true"
+
+console.log(delete Name); // returns "true
+</code></pre>
+  <p></p>
+  <br>
+  <p>Whenever a variable is declared with "var" keyword, it is marked as "non-configurable".</p>
+  <p>We shall be discussing about "non-configurable" properties below.</p>
+  <p></p>
+  <br>
+  <p><strong>Lets try delete Objects instead of Variables:</strong></p>
+  <p></p>
+  <br>
+  <p>We can even delete Objects from "Global Object" if not declared with "var" keyword</p>
+  <p>Again, the same logic goes here, Global Objects without "var" are declared "non-configurable"</p>
+  <pre>
+<code class="lang-javascript">
+// Lets an an Object to Global Scope.
+
+// It is added to global scope with "var"
+
+// Therefore it cannot be deleted from "window" object
+
+var EmployeeDetails = {
+
+  empName: 'Abc',
+
+  empAge: 20;
+
+};
+
+console.log(delete window.EmployeeDetails;)     // returns false
+</code></pre>
+  <p>In the above code, we saw that Object "EmployeeDetails" cannot be deteted.</p>
+  <p></p>
+  <br>
+  <p>Lets take another Example where we add an Object without "var" keyword:</p>
+  <pre>
+<code class="lang-javascript">
+// Lets an an Object to Global Scope without using "var"
+
+EmployeeDetails = {
+
+empName: 'Abc',
+
+  empAge: 20;
+
+};
+
+console.log(delete window.EmployeeDetails;) // returns true</code></pre>
+  <p>In the above case, we are able to delete object from Global Object since iit is configurable property.</p>
+  <p>Here the Object is marked as "Configurable".</p>
+  <p></p>
+  <br>
+  <p><strong>Cannot delete Build-In Objects</strong></p>
+  <p>We cannot delete any "built-in" Object and related property.</p>
+  <p>It includes Objects Like "Array", "Math" and "Object".</p>
+  <pre>
+<code class="lang-javascript">
+// Lets try to delete Built-In Object and its Properties
+
+delete window.Array     // return false
+
+delete Math.round       // return false
+
+delete window.Object    // return false
+
+</code></pre>
+  <p></p>
+  <br>
+  <p><strong>Deleting Array Elements</strong></p>
+  <p>When an array element is deleted, its length does not change</p>
+  <p>Deleting the element from Array shall assign "undefined" to element value</p>
+  <p></p>
+  <br>
+  <p>Lets evaluate with an Example</p>
+  <pre>
+<code class="lang-javascript">
+delete window.Array // return false
+
+var elementArray = ["1", "2", "3"]
+
+delete elementArray[1];
+
+console.log(elementArray)
+
+output: ["1", undefined, "2"]
+
+</code></pre>
+  <p>In the above example, we can see that the element value is replaced by "undefined"</p>
+  <p>The length of Array is still the same.</p>
+  <p></p>
+  <br>
+  <p><strong>Using "use strict"</strong></p>
+  <p>This is the special case which needs extra attension.</p>
+  <p></p>
+  <br>
+  <p>Strict Mode shall give "Syntax Error" in case it references to:</p>
+  <p>1. Variable </p>
+  <p>2. Function Argument</p>
+  <p>3. Function Name</p>
+  <p><br />
+    So, in case of "Strict Mode", we cannot apply "delete keyword" on any of these situation.
+  </p>
+  <p></p>
+  <br>
+  <pre>
+<code class="lang-javascript">
+function Employee() { }
+
+delete Employee                        // Syntax Error
+
+var myData = "";
+
+delete myData;                         // Syntax error
+
+function getSalary(int salary) {
+
+delete salary;                         // Syntax error
+
+}
+</code></pre>
+  <p></p>
+  <br>
+  <h1 class="heading">Other References:</h1>
+  <p>You can refer following Documents for more Information:</p>
+  <p>1. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete</p>
+  <br><br>
+</div>
   });
 
 });

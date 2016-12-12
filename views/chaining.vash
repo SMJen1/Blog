@@ -1,314 +1,214 @@
 @html.extend('layout', function(model) {
+
+  @html.block("header", function(model) {
+    <title>JavaScript Function Chaining</title>
+    <meta name="title" content="Function Chaining in JavaScript" />
+    <meta name="description" content="Function Chaining can be achieved in JavaScript. Function can return "this" (Current Context) back from the function call />
+    <meta name="keywords" content="JavaScript Function Chaining, Returning Function Context, Function Chaining in JavaScript"/>
+  });
+
+
+
   @html.block("body", function(model) {
     <div>
+      <div class="blog-post-content">
 
 
-                <div class="blog-post-content">
-                  <h1 class="heading">Immediately Invokable Function Expression</h1>
-                  <div>
-                    <b>IIFE (Immediately Invokable Function Expression)</b> is a important concept in JavaScript. It is a commonly used <b>JavaScript Design Pattern</b> which is used to wrap set of variables and functions which cannot be accessed outside the enclosed scope.
-                  </div>
-                  <div> </div>
-                  <div>These are <b>JavaScript Anonymous Function</b> that is wrapped inside a set of paranthesis and is called immediately.</div>
-                  <div> </div>
-                  <div>The advantage of IIFE is that any Function or Variable defined inside IIFE, cannot be accessed outside the IIFE block, thus preventing global scope from getting polluted. Also helps us manage memory in an efficient manner.</div>
-                  <div> </div>
-                  <div>In order to understand the concept of IIFE, we need to understand the difference between the following:</div>
-                  <p>1. Function Definition</p>
-                  <p>2. Function Expression</p>
-                  <p> </p><br>
-                  <h2 class="topic">Function Definition: </h2>
-                  <p>Lets look at a very simple <b>Function Definition</b>:</p>
-                  <pre>
+
+
+
+
+
+
+      <h1>Function Chaining</h1>
+<p><strong>The intend of the Article is to:</strong></p>
+<p>1. Understand Function Chaining</p>
+<p>2. Achieve function chaining in JavaScript</p>
+<p>&nbsp;</p>
+<p>Function Chaining is a pattern in JavaScript where we can call multiple function on a same object consecutively.</p>
+<p>It allows multiple commands to run one after other on same element.</p>
+<p>Function Chaining increases readibility of the code and also less redundency.</p><br>
+<h2>JQuery Function Chaining</h2>
+<p>Lets work on the following requirement:</p>
+<p>1. Select a &quot;div&quot; in HTML</p>
+<p>2. Change its color to Red</p>
+<p>3. Add Height to the Element to 100px</p>
+<p>4. Add Width to the Element</p>
+<p>&nbsp;</p>
+<p>Conventionally this can be achieved by following way:</p>
+<pre>
 <code class="lang-javascript">
-function demoFunction(){
+var selectedDiv = $(&quot;#myDiv&quot;);
 
-  alert("This is the function Definition");
+selectedDiv.css(&#39;color: red&#39;)
+
+selectedDiv.height(&#39;100px&#39;)
+
+selectedDiv.width(&#39;100px&#39;)</code></pre>
+<p>But since JQuery supports Function Chaining.&nbsp;</p>
+<p>The above specified functionality can be achieved efficiently by Chaining:</p>
+<pre>
+<code class="lang-javascript">
+var selectedDiv = $(&quot;#myDiv&quot;);
+
+selectedDiv.css(&#39;color: red&#39;).height(&#39;100px&#39;).width(&#39;100px&#39;);
+</code></pre>
+<p>Jquery&nbsp;return us Object on which it executes the function back after each execution.</p>
+<p>After executing each command the current Context is returned, hence enabling Function Chaining.</p>
+<pre>
+<code class="lang-javascript">
+var mainDiv = $(&quot;#selectedDiv&quot;);
+
+var selectedDiv = selectedDiv.css(&#39;color: red&#39;)
+
+// Here the Object returned from JQuery Function is same as &quot;mainDiv&quot;
+
+console(mainDiv == selectedDiv)    // returns true;
+</code></pre>
+<p><strong>JQuery is able to achive the functionality because of following reason:</strong></p>
+<p>1. JQuery returns the same Object back, on which it executes once it is completed</p>
+<p>2. The returned element from the function can then operate on another function.</p>
+<p>&nbsp;</p>
+<h2>Achieving Chaining In JavaScript</h2>
+<p>We can achieve Function Chaining&nbsp;by returning the current Object back from the Executing Function.</p>
+<p>The current Executing Context is returned can be returned from the previous function and act as a Context for next function to be executed. Since the context is the same Object on which previous function was executed, we can achieve chaining functionality.</p>
+<p>&nbsp;</p>
+<b>Lets consider following requirement and Implement Chaining on it.</b>
+<p>1. Create a Variable &quot;Obj&quot; containing a variable &quot;output&quot;.</p>
+<p>2. Write a function to add 2 variable and assign to &quot;output&quot;</p>
+<p>3. Multiply the &quot;output&quot; by &quot;10&quot;</p>
+<p>4. Substract 20 from it and display the result.</p>
+<p>&nbsp;</p>
+<pre>
+<code class="lang-javascript">
+var Obj = {
+
+  result: 0,
+
+  addNumber(a, b) { this.result = a + b; }
 
 };
 
+Obj.addNumber(10, 20);
+
+console.log(Obj.result);
+
 </code></pre>
-                  <p>So the simplest way to understand <b>Function Declaration</b> is that, it starts with "<b>function</b>" keyword.</p><br>
-                  <p>The biggest benefit of <b>Function Definition</b> over <b>Function Expressions</b> is that they are <b>"Hoisted"</b> by the JavaScript Compiler. This also means that a variable can be called before it&#39;s declared. This behavior is called "<b>Hoisting</b>"</p><br>
-                  <p>Hoisting is when a JS declaration is lifted (&ldquo;hoisted&rdquo;) to the top of it&rsquo;s scope. What this really means is that a variable or function isn&rsquo;t necessarily declared where you think it is. Function Definition and Variable Declaration are always Hoisted on the top of the Function Scope or Global Scope.</p><br/>
-                  <p>This can be understood by this small example:</p>
-                  <pre>
+
+<p>Once the &quot;addNumber&quot; function is executed, we want to chain &quot;multiplyNumber&quot; functionality.</p>
+<pre>
 <code class="lang-javascript">
-demoFunction();
+// Our requirement is to chain the &quot;multiplyNumber&quot; function with &quot;addNumber&quot;
 
-var demoFunction = function(){
+Obj.addNumber(10, 20).multiplyNumber(10);</code></pre>
 
-  alert("This is the function Definition");
+<p>On order to achieve the required functionality, we need to return the &quot;Object Reference&quot; from &quot;addNumber&quot;</p>
+<p>Lets try to return &quot;<strong>Current Object Reference</strong>&quot; from &quot;addNumber&quot; function</p>
+<pre>
+<code class="lang-javascript">
+
+var Obj = {
+
+  result: 0,
+
+&nbsp; addNumber: function(a, b) {
+&nbsp;  
+&nbsp;   this.result = a + b; 
+
+    return this;
+
+&nbsp; },
+
+  multiplyNumber: function(a) {
+&nbsp;
+&nbsp;   this.result = this.result * a;
+
+    return this;
+
+&nbsp; } 
 
 };
 
-</code></pre>
-                  <p>Here we can see that the user is trying to access "demoFunction()" even before the compiler reaches its "Function Definition", In this case function will be executed. It will be called by the compliler and shall output a alert message. The function definition is hoisted on the top of the Scope by the compiler, therefore it is available even before its Function Definition during script execution. </p><br/>
-                  <p>The concept of Hoisting does not adher to Function Expressions. Function Expressions are never Hoisted.</p>
-                  <p>Look for the following link to learn more about <a href="/function-and-variable-hoisting-javascript-closures">Function Hoisting</a></p>
-                  <h4> </h4>
+Obj.addNumber(10, 20).multiplyNumber(10)
+
+console.log(Obj.result)</code></pre>
+<p>&nbsp;</p>
+<p><strong>Lets just drill into what exactly the above code is doing</strong></p><br>
+
+<p>"addNumber" was executed on "Obj", therefore context of "addNumber" is set to "Obj"</p>
+<p>Since the context of "addNumber" is set to "Obj", "this" keyword inside the function would point to "Obj"</p>
+<p>Once the "addNumber" function is finished executed, it returns the current context on which it executes.</b><br>
+<p>"multiplyNumber" would execute on the same context, and "this" inside "multiplyNumber" would refer to same Object.</p><br>
 
 
-                  <h2 class="topic">Function Expressions:</h2>
-                  <p>"<b>Function Expression"</b> would be any function which does not start with "function" keyword.</p><br>
-                  <p>Common way to define a function expression is to assign a function to a variable. </p><br>
-
-                  <pre>
+<p><b>The last 2 lines of code is Equivalent to:</b></p>
+<pre>
 <code class="lang-javascript">
-var demoFunction = function(){
+var element = Obj.addNumber(10, 20)
 
-  alert("This is function Expression");
+element.multiplyNumber(10);
 
-};
+console.log(Obj == element) // returns true</code></pre>
+<p><strong>The code, can be summarized as:</strong></p>
+<p>1. &quot;addNumber&quot; operated on &quot;Obj&quot; Object</p>
+<p>2. On adding the 2 Number, it returns &quot;this&quot; which represent the current Context</p>
+<p>3. This Context Represents &quot;Obj&quot; which is then used to invoke &quot;multiplyNumber&quot; function.</p>
+<p>4. Passing the Object reference ensures that the functions executes on same Context / Object</p>
+<p>5. Hence we can achieve &quot;Function Chaining&quot;</p>
+<p>&nbsp;</p>
+<p>Now lets complete the Intended functionality:</p>
 
-demoFunction();
-
-</code></pre>
-                  <p>Since the above function does start the keyword "function", its a <b>"Function Expression"</b> </p>
-                  <p>The above code assigns a function definition to a variable "demoFunction". </p>
-                  <p>This would mean that the variable <b>"demoFunction"</b> shall now represent a function expression.</p>
-                  <p>The function can now be called using following line of code: <b>"demoFunction()"</b> </p>
-                  <p> </p><br>
-                  <h2 class="topic"><b>What are IIFE ...</b></h2>
-                  <p><b>IIFE </b>(<b>Immediately Invoked Function Expression</b>) is a  JavaScript function that runs as soon as it is defined. </p>
-                  <pre>
+<pre>
 <code class="lang-javascript">
-(function(){
 
-  alert("Function does not start with keyword function");
+var Obj = {
 
-})();
-</code></pre>
-                  <p>This is a simple function in which anything written inside the function block shall be executed immediately. </p>
-                  <p> </p>
-                  <p>In the above example, once the code is executed, following events occur:</p>
-                  <p>1. A function Instance is created.</p>
-                  <p>2. Function is Executed.</p>
-                  <p>3. Function along with variable declared inside it is Garbage Colloected. </p>
-                  <p> </p>
-                  <p>The variable and functions that were declared in the scope of IIFE are available for garbage collection, once the IIFE is executed. Hence managing Memory in an efficient manner and ensures that the function and variables do not bind itself to the global scope.</p>
-                  <p> </p>
-                  <p>In order to understand, we can break down the above code into 2 parts:</p>
-                  <p>1. Creating Function Expression</p>
-                  <p>2. Invoking the Function Expression</p>
-                  <p> </p><br>
-                  <h2 class="topic"><b>Part One: (Function Expression)</b></h3>
-                  <p>Breaking the code further, we will get a "Function Expression" enclosed within "Brackets".</p><br>
-                  <p>When a function definition does not contain "function" keyword in the starting of an executable line of code, it is called Function Expression.</p>
-                  <p>In this code we can see that the function definition starts with "(", therefore its a function Expression.</p>
-                  <pre>
-<code class="lang-javascript">
-(function(){
+  result: 0,
 
-  alert("Function enclosed within Simple Brackets, therefore Expression");
+&nbsp; addNumber: function(a, b) {
+&nbsp;
+&nbsp;   this.result = a + b;
 
-});
-</code></pre>
-                  <p>This is a simple Function Expression.</p>
-                  <p>Similarly, IIFE it does starting the keyword "function", it is also a "<b>Function Expression</b>". </p>
-                  <p> </p>
-                  <p>So, we first get a <b>"Function Expression"</b> that contain some code enclosed in it.</p>
-                  <pre>
-<code class="lang-javascript">
-(function(){
+    return this;
 
-  alert("Function enclosed within Simple Brackets, therefore Expression");
+&nbsp; },
 
-});
-</code></pre>
-                  <p>The next step will be calling the "Function Expression" just like any other function using"()".</p>
-                  <p> </p>
-                  <p>** Note: Important difference between Function Expression and Function Declaration is:</p>
-                  <p><em>"Function Declaration can be Hoisted, but Function Expressions cannot be Hoisted". </em> </p>
-                  <p> </p><br>
-                  <h2 class="topic"><b>Part Two: (Function Invocation)</b></h2>
-                  <p>Once the function Expression is defined, it is invoked using "()", in the same manner as we call a function.</p>
-                  <pre>
-<code class="lang-javascript">
-(function(){
+  multiplyNumber: function(a) {
+&nbsp;
+&nbsp;   this.result = this.result * a;
 
-  alert("Function Expression Invoked using () at the end");
+    return this;
 
-})();
+&nbsp; },
+&nbsp;
+&nbsp; divideNumber: function(a) {
+&nbsp;
+&nbsp;   this.result = this.result / a;
 
-// Here the function call in made using &#39;()&#39;
-</code></pre>
-                  <p>Once the Function Expression is invoked, the code inside the function expression shall execute.</p>
-                  <p> </p>
-                  <p>So the above discussion about the IIFE can be compiled as:</p>
-                  <p><b>A Function Expression immediately invoked using "()".</b> </p>
-                  <p>So here we can see that a IIFE is a "Function Expression" called immediately after its definition.</p>
-                  <p> </p><br>
-                  <h2 class="topic">Breaking IIFE into parts:</h2>
-                  <p>So the above IIFE code can be rewritten as:</p>
-                  <pre>
-<code class="lang-javascript">
-var functionExpression = (function(){
-
-  alert("Function Expression assigned to variable.");
-
-});
-
-functionExpression();
-</code></pre>
-                  <p>This code can be analysed in the following way:</p>
-                  <p>1. "Function Expression" is created and stored in a variable "functionExpression"</p>
-                  <p>2. Function Expression is called just like any other function.</p>
-                  <p> </p><br>
-                  <h2 class="topic">Why do we require IIFE..</h2>
-                  <p>Benefits of IIFE are:</p><br>
-                  <b>1. Avoids Global Scope from getting Polluted.</b><br><br>
-                  <p>One of the main reason to create IIFE is to avoid global scope from getting polluted.</p>
-                  <p>Lets understand this with a simple example:</p>
-                  <pre>
-<code class="lang-javascript">
-(function(){
-
-  var sampleVariable = "test Variable";
-
-  var sampleVariable = function(){
-
-    alert("Function does not start with keyword function");
+&nbsp;   return this;
 
   }
 
-})();
+}
+
+Obj.addNumber(10, 20).multiplyNumber(10).divideNumber(10)
 </code></pre>
-                  <p>Here in the above function, we have created a "Variable" and a "Function", this variables and function are enclosed within an IIFE Expression, therefore the scope of the variable and function lies within the IIFE. These variables and functions are not added to Global Scope.</p>
-                  <p>We may use IIFE when we want to define some functions and variable that are just required to be executed for a single time on a page. </p>
-                  <p>Lets say that we have a device and we have to set the Theme according to the device that is used by the user. Here when the user logs into our Application, we need to check the Device just once since the device wont change. In such a case, variables and functions required to detect the Device wont be required once executed. In such a case wee would not like to add these variables and function to the global scope and consume Browser space. So these functionalities can be enclosed within an IIFE, so that once executed, all the variables and function defined for the same can be made available for Garbage Collection.</p>
-                  <p> </p><br>
-                  <p><b>2. Manage Browser Memory:</b> </p><br>
-                  <p>If the functions are such that they require single execution, as specified in above example, we need not to add those function and variable to the gobal scope. Adding them to global scope would consume space on the Browser Memory. </p>
-                  <p>So once these functions are executed, we would like them to be Garbage Collected.</p>
-                  <p>Following Events occur when a IIFE is encountered:</p>
-                  <p>1. A function Instance is created.</p>
-                  <p>2. Function is Executed.</p>
-                  <p>3. Function created is discarded. </p>
-                  <p>When the IIFE is executed, the required functions and variables are created, used and once IIFE has finished execution, they are available for Garbage Collection, Hence freeing the Browser Memory.</p>
-                  <p> </p><br>
-                  <p><b>3. Minification Optimization</b> </p><br>
-                  <p>IIFE also helps us with the minification. Since we can paas values to the arguments in IIFE, we areable to reduce the name of each global object to a one letter word.</p>
-                  <p>The Example shall help you understand it better:</p>
-                  <pre>
-<code class="lang-javascript">
-(function(w){
+<p>This is how we have achieves <strong>&quot;Function Chaining&quot;</strong></p>
+<p>&nbsp;</p>
+<p><strong>Each of the Function in &quot;Function Chaining&quot; returns the current &quot;Execution Context&quot;</strong></p>
+<p><strong>Hence enabling the chained function to Operate on the same Context and achieve Chaining</strong></p>
+<p>​​​​​​​</p>
 
-  alert(&#39;Window object is now renamed to "w"&#39;);
 
-})(window);
-</code></pre>
-                  <p>Here we can see that the "Window" object is passed as to the IIFE, "Window" object is passed to an argument "w". So now the window object shall be refered as "w" instead of "window", hence helping us with the minification process. </p><br>
-                  <h2 class="topic">Passing Arguments to IIFE Function:</h3>
-                  <p>We can simply pass arguments to IIFE in the following manner:</p>
-                  <pre>
-<code class="lang-javascript">
-var Name = "Mayank";
 
-var Age = 27;
 
-(function(name, age){
 
-  alert("Name: " + name);
 
-})(Name, Age);
 
-Here the Arguments are enclosed within "()" brackets.
-</code></pre>
-                  <p>In the above example we can see:</p>
-                  <p>1. We have variable "Name" and "Age" at Global Level</p>
-                  <p>2. We need to pass these variable to "IIFE", </p>
-                  <p>3. IIFE accepts 2 parameters "name" and "age".</p>
-                  <p>4. Global Variable "Name" and "Age" are enclosed withing the Function Invokation Brackets.</p>
-                  <p>5. "Name and Age" shall now be available to IIFE as arguments passed from outside enviroment.</p>
-                  <p> </p><br>
-                  <b style="color: red;">**Note:</b>
-                  <p>Please do not confuse between the following implementation of IIFE.</p>
-                  <p>Both shall represent the same IIFE Expression.</p>
-                  <p>Please see the difference in placement of Brackets "()" while function invocation.</p>
-                  <pre>
-<code class="lang-javascript">
-(function(){
 
-  alert("Name: " + name);
 
-})();
-</code></pre>
-                  <div>The above implementation of IIFE is same as the one below. The onle difference is the placement of brackets during function Invokation</div>
-                  <pre>
-<code class="lang-javascript">
-(function(){
-
-  alert("Name: " + name);
-
-}());
-</code></pre>
-                  <p> </p>
-                  <p><b>IIFE is an amazing Design Pattern offering Lots of Benefits. Try using IIFE in your Code to Optimise it Further. Hope the article shall provide help to people who are trtying to understand the concept. </b> </p>
-                  <p> </p>
-                </div>
-                <!-- end .blog-post-content -->
-                <div  ng-app="myApp" ng-controller="commentController"  style="display: none;">
-                  <div class="blog-post-comments"  ng-show="commentList.length > 0">
-                    <h4>{{Count}} Comments</h4>
-                    <div class="comment" ng-repeat="comment in commentList">
-                      <div class="inner clearfix">
-                        <div class="content">
-                          <h5>{{comment.user}}</h5>
-                          <p>{{comment.message}}</p>
-                          <span style="margin-right: 20px" class="meta">{{comment.date.substring(0, 10)}}</span>
-                          <a href="" class="reply"><i></i></a>
-                        </div>
-                        <!-- end .content -->
-                      </div>
-                      <!-- end .comment -->
-                    </div>
-                  </div>
-                  <!-- end .blog-post-comments -->
-                  <div class="leave-comment" style="display: none;">
-                    <h4>Leave A Comment</h4>
-                    <div class="inner">
-                      <form class="form-horizontal" name="commentForm">
-                        <div class="form-group">
-                          <label class="col-sm-2 control-label">Name</label>
-                          <div class="col-sm-10">
-                            <input type="text" required class="contact-name" name="contact-name" ng-model="commentData.user" placeholder="Enter User Name"/>
-                          </div>
-                          <!-- end .col-sm-10 -->
-                        </div>
-                        <!-- end .form-group -->
-                        <div class="form-group">
-                          <label class="col-sm-2 control-label">Email</label>
-                          <div class="col-sm-10">
-                            <input type="email" required class="contact-email" name="contact-email" ng-model="commentData.email" placeholder="Enter Email"/>
-                          </div>
-                          <!-- end .col-sm-10 -->
-                        </div>
-                        <!-- end .form-group -->
-                        <div class="form-group">
-                          <label class="col-sm-2 control-label">Comment
-                          </label>
-                          <div class="col-sm-10">
-                            <textarea required name="contact-message" class="contact-message" rows="3" ng-model="commentData.message" placeholder="Enter Comment"></textarea>
-                          </div>
-                          <!-- end .col-sm-10 -->
-                        </div>
-                        <!-- end .form-group -->
-                        <div class="form-group">
-                          <div class="col-sm-10 col-sm-offset-2">
-                            <input ng-disabled="commentForm.$invalid" type="submit" ng-click="addComment()" value="Hi All" />
-                          </div>
-                          <!-- end .col-sm-10 -->
-                        </div>
-                        <!-- end .form-group -->
-                      </form>
-                    </div>
-                    <!-- end .inner -->
-                  </div>
-                  <!-- end .leave-comment -->
-                </div>
-                
-
+        
+      </div>
     </div>
   })
 })
