@@ -278,68 +278,7 @@ Here the Arguments are enclosed within "()" brackets.
     <p> </p>
   </div>
   <!-- end .blog-post-content -->
-  <div  ng-app="myApp" ng-controller="commentController"  style="display: none;">
-    <div class="blog-post-comments"  ng-show="commentList.length > 0">
-      <h4>{{Count}} Comments</h4>
-      <div class="comment" ng-repeat="comment in commentList">
-        <div class="inner clearfix">
-          <div class="content">
-            <h5>{{comment.user}}</h5>
-            <p>{{comment.message}}</p>
-            <span style="margin-right: 20px" class="meta">{{comment.date.substring(0, 10)}}</span>
-            <a href="" class="reply"><i></i></a>
-          </div>
-          <!-- end .content -->
-        </div>
-        <!-- end .comment -->
-      </div>
-    </div>
-    <!-- end .blog-post-comments -->
-    <div class="leave-comment" style="display: none;">
-      <h4>Leave A Comment</h4>
-      <div class="inner">
-        <form class="form-horizontal" name="commentForm">
-          <div class="form-group">
-            <label class="col-sm-2 control-label">Name</label>
-            <div class="col-sm-10">
-              <input type="text" required class="contact-name" name="contact-name" ng-model="commentData.user" placeholder="Enter User Name"/>
-            </div>
-            <!-- end .col-sm-10 -->
-          </div>
-          <!-- end .form-group -->
-          <div class="form-group">
-            <label class="col-sm-2 control-label">Email</label>
-            <div class="col-sm-10">
-              <input type="email" required class="contact-email" name="contact-email" ng-model="commentData.email" placeholder="Enter Email"/>
-            </div>
-            <!-- end .col-sm-10 -->
-          </div>
-          <!-- end .form-group -->
-          <div class="form-group">
-            <label class="col-sm-2 control-label">Comment
-            </label>
-            <div class="col-sm-10">
-              <textarea required name="contact-message" class="contact-message" rows="3" ng-model="commentData.message" placeholder="Enter Comment"></textarea>
-            </div>
-            <!-- end .col-sm-10 -->
-          </div>
-          <!-- end .form-group -->
-          <div class="form-group">
-            <div class="col-sm-10 col-sm-offset-2">
-              <input ng-disabled="commentForm.$invalid" type="submit" ng-click="addComment()" value="Hi All" />
-            </div>
-            <!-- end .col-sm-10 -->
-          </div>
-          <!-- end .form-group -->
-        </form>
-      </div>
-      <!-- end .inner -->
-    </div>
-    <!-- end .leave-comment -->
-  </div>
 </div>
-
-
 
   })
 })

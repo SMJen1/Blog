@@ -1,10 +1,8 @@
 (function(index) {
 
 	var mongodb = require('mongodb');
-	var mongoUrl = "mongodb://mayankguptablog:a110cate@ds033116.mlab.com:33116/mayankguptablog";
+	var mongoUrl = "mongodb://learnjavascript:A110c@te@ds133418.mlab.com:33418/learnjavascript";
 	var theDb = null;
-
-	index.Name = "Mayank";
 
 	index.getDb = function(next) {
 		if (theDb) {
@@ -18,8 +16,7 @@
 				else {
 					theDb = {
 						db: db,
-						users: db.collection('users'),
-						iife: db.collection('iife')
+						comments: db.collection('comments'),
 					};
 					next(null, theDb)
 				}
