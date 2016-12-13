@@ -35,3 +35,5 @@ h6{font-size:14px;line-height:32px;font-weight:500}
 .search-input .gsc-search-button {visibility: hidden;}
 .search-input .gsst_a {visibility: hidden;}
 .blog-post {padding-bottom: 160px; !mportant;}
+.preview {position: absolute;right: 10px;bottom: 10px;}
+.ui-dialog {max-width: 600px !important;}
