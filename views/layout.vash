@@ -205,6 +205,11 @@
                     </a>
                   </p>
                   <p class="other-articles">
+                    <a href="/node-aynch-execution-single-threaded-event-loop-callback-non-blocking-architecture">
+                      Node Basic Architecture
+                    </a>
+                  </p>
+                  <p class="other-articles">
                     <a href="/javascript-module-pattern-design-singleton">
                     Module Pattern in JavaScript
                     </a>
@@ -274,8 +279,8 @@
                       </div>
                     </div>
                     <!-- end .blog-post-comments -->
-                    <div class="leave-comment">
-                      <h4>Leave A Comment</h4>
+                    <div class="leave-comment" style="border-top: 1px solid black; padding-top:15px;">
+                      <h4 style="color: red">Leave A Comment</h4>
                       <div class="inner">
                         <form class="form-horizontal" name="commentForm">
                           <div class="form-group">

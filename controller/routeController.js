@@ -64,6 +64,13 @@
       res.render('chaining', { 'count': routeConroller.count });
     });
 
+     app.get('/node-aynch-execution-single-threaded-event-loop-callback-non-blocking-architecture', function(req, res) {
+      routeConroller.count++;
+      res.render('node', { 'count': routeConroller.count });
+    });
+
+     
+
 	};
 
 })(module.exports);

@@ -1,0 +1,98 @@
+@html.extend('layout', function(model) {
+
+
+  @html.block("header", function(model) {
+    <title>Node.js Single Threaded Event Loop Based Architecture</title>
+    <meta name="title" content="Node.js Basic Architecture" />
+    <meta name="description" content="Node.js Single Threaded Event Loop Based Architecture" />
+    <meta name="keywords" content="Single Threaded Event Loop Based Architecture, Node Architecture, Node vs C#/Java Architecture, Java vs Node"/>
+  });
+
+  @html.block("body", function(model) {
+
+<div id="documentation">
+<h1 class="heading">Node is Event-Driven, Non-Blocking I/O Model</h1>
+<p>The Following Article shall focus on giving a brief detail of How Node.js Works Internally.</p>
+<p>&nbsp;</p>
+<p>Official Documentation of Node.js states:</p>
+<p><strong>&quot;Node.js&reg; is a JavaScript runtime built on&nbsp;Chrome&#39;s V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient.&quot;</strong></p>
+<p>&nbsp;</p>
+<p>The Keypoints to take from the Description are</p>
+<p><strong>1. Event Driven Architecture</strong></p>
+<p><strong>2. Non Blocking I/O Model</strong></p><br>
+<p>&nbsp;</p>
+<h2 class="topic">Node.js is Centered around resolving the Following Problems:</h2>
+<h2 class="topicNodeProb">1. Expensive I/O Operations</h2>
+<p>Lots of Thread Processing time is wasted while waiting for I/O Operations and Other Asynchronous Tasks like Database Access, File Access, Api Access etc. Thread is wasting time waiting for Async Request to Complete and once the Request is Processed, further Processing is Resumed. This waste Lot of resources and Thread Time.</p>
+<p>&nbsp;</p>
+<p>Node ensures that these Async Tasks are <strong>Event Based and Asynchronous</strong>. Creating Event Based architecture ensures that the Main Thread is not waiting for the Asynchronous Request to complete. While the Asynch request is processed, Main Thread can switch to another task. This ensures that the Main Thread is always busy. An <strong>Event is Fired</strong> specifying that the Asynchronous Request is complete and further Processing of the Request can be resumed by the Main Thread.</p>
+<p>&nbsp;</p>
+<p>We all frequently visit Restaurants. Lets understand this concept with Scenerio at Restraurant:</p>
+<p>1. You place an Order to the Waiter.</p>
+<p>2. Once the Order is placed, the Waiter&nbsp;goes to Chef and place the Order for Preparation.</p>
+<p>3. Meanwhile, the Waiter&nbsp;goes to other Tables for taking further Orders.</p>
+<p>4. Once the Order is Prepared and Ready, Server brings that Order to you.</p>
+<p>&nbsp;</p>
+<p>In the above scenerio, Waiter&nbsp;is available to take more Requests while the Order is getting Prepared. In Contary, Imagine situation where&nbsp;Waiter&nbsp;waits on your Seat while your Order is getting Prepared, He wont be available to take up other Orders and would end up wasting time waiting for Order to get Prepared.&nbsp;</p>
+<p>&nbsp;</p>
+<p>Similarly, I/O Operation require time to process since it involves external Resources, therefore in case the Thread is Waiting for I/O Request to complete, it will end up wasting Time and Resources. Node.js moves to the <strong>Event Based Architecture</strong> where <strong>I/O Requests are Event Based </strong>and once the Request is complete, it will notify the Main Thread to take care of the Further Processing.</p>
+<p>&nbsp;</p>
+<h2 class="topicNodeProb">2. One Request One Thread Architecture is Expensive</h2>
+<p>Assigning Independent Threads to Each Request is an Expensive Task. In technologies like C#&nbsp;and Java, each request is processed with an independent Thread. The problem with the approach is that Server has Fixed No&nbsp;of Threads in the Thread Pool. Therefore at any moment of time, Maximum Request processed are equal to number of Threads in Thread Pool.</p>
+<p>While processing a Request, it may involve Asynchronous I/O Operations, In that case, the Thread remains busy waiting for the Async Request to complete. This wastes lot of Thread Processing Time waiting for I/O Operations.</p>
+<p>Thread might be Idle for maximum time, hence wasting the resources.</p>
+<p>&nbsp;</p>
+<p>Considering the Above Example of Restraurant Again:</p>
+<p>1. Hotel with the Capacity of 50 Tables&nbsp;decides to hire Waiters&nbsp;to Cater Every Visiter Independently</p>
+<p>2.&nbsp;In that case Hotel need to Hire 50 Waiter to serve the Visitor independently.</p>
+<p>In this case, each Waiter shall be wasting Majority of Time Waiting for Order to get Prepared.</p>
+<p>This would result in wastage of Resources and Time, which Waiter would have utilized to take other Requests</p>
+<p>&nbsp;</p>
+<p>Thus considering an Architecture, where we have Dedicated Thread to Process Request&nbsp;Single Ended, would waste lots of Resource and Time while waiting for Async Operations. Node.js uses architecture where the I/O Request are handled by the Threads is the Background and a Single Event Loop Thread continuesly runs to take up new request. These request may also be Callback Functions from I/O Operations.&nbsp;</p>
+<p>&nbsp;</p>
+<h2>Detailed Node Architecture</h2>
+<h2 class="topicNode">Node.js is Single Threaded Event Loop Based Architecture</h2>
+
+<p>It is often <strong>Mistaken that Node is Multi-Threaded</strong>. It is based on <strong>Single Threaded Event Loop</strong> Architecture.</p>
+<p>&nbsp;</p>
+<p>This Event Loop is Single Threaded. All the Requests are recieved on this Event Thread. Every Requests consists&nbsp;of Asynchronous and Synchronous Execution. The Main Thread is responsible to Execute Only the Synchronous Part of the Request. As soon as Asynch I/O Operation is encountered, the Main Thread allocates a Background thread to process the I/O Operation.</p>
+<p>&nbsp;</p>
+<p>Although we have Multiple Threads in the Background, Node is still said to be Single Threaded since all the Requests are Recieved on the Single Thread and Node internally manages the Execution of Async Process on the Background Threads. At any moment of Time, Main Thread is Executing a Single Request, although there might be multiple threads in the Background working to process Async Task.</p>
+<p>&nbsp;</p>
+<h2 class="topicNode">Node has Non Blocking I/O Model&nbsp;</h2>
+
+<p>Node&#39;s <strong>Main Thread does not Wait for Async Process&nbsp;</strong>to Complete.</p>
+<p>&nbsp;</p>
+<p>While the Background Thread is Executing the Async Function, the Main Thread does not wait for Async Task to complete. It assigns a Background Thread to execute the Asynchronous Task. While the Async Task is executed in the Background, the Main Thread is free to take other Requests. Once the Execution of Background Thread is complete, it returns to the Main Thread for Further Execution.</p>
+<p>&nbsp;</p>
+<p>So considering the Architecture of Node, the Main Thread is always available to process the Requests Synchronously and it is ensured that the Thread is not waiting for Background Process to Complete.&nbsp;Node&#39;s Main Thread is continuesly switching between different Requests to execute its Synchronous Part.</p>
+<p>&nbsp;</p>
+<h2 class="topicNode">It uses a Event Loop Instead of Waiting for I/O Operation</h2>
+
+<div>The Background Thread uses <strong>Event Based Approach to Notify Main Thread</strong></div>
+<div>&nbsp;</div>
+<div>Each Async Task consists of some Callback Function associated with it, once the Async Task is Complete, Background Thread raises Event to Notify the Main Thread about the completion of the Async Task.&nbsp;Main Thread might be busy processing some Other Request, Meanwhile the Request waits on the Main Thread, and as soon as Main Thread is free, it takes up the Callback Request for the Further Execution.&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+
+
+</div>
+
+<style>
+
+  #documentation h2.topicNode {
+    font-size: 16px !important;
+  }
+
+  .topicNodeProb {
+    font-size: 14px;
+  }
+
+</style>
+
+
+
+  });
+
+});
