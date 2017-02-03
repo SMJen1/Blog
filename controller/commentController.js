@@ -13,7 +13,8 @@
 		});
 
 		app.post('/api/comment', function(req, res) {
-			database.getDb(function(err, theDb) {
+			database.getDb(function(err, theDb) {		
+				console.log("Value of " + err)	
 				theDb.comments.insert(req.body, function() {
 					res.send(req.body);
 				});

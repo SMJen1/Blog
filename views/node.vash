@@ -50,14 +50,14 @@
 <p>&nbsp;</p>
 <p>Thus considering an Architecture, where we have Dedicated Thread to Process Request&nbsp;Single Ended, would waste lots of Resource and Time while waiting for Async Operations. Node.js uses architecture where the I/O Request are handled by the Threads is the Background and a Single Event Loop Thread continuesly runs to take up new request. These request may also be Callback Functions from I/O Operations.&nbsp;</p>
 <p>&nbsp;</p>
-<h2>Detailed Node Architecture</h2>
+<h2 class="topic">Detailed Node Architecture</h2>
 <h2 class="topicNode">Node.js is Single Threaded Event Loop Based Architecture</h2>
 
 <p>It is often <strong>Mistaken that Node is Multi-Threaded</strong>. It is based on <strong>Single Threaded Event Loop</strong> Architecture.</p>
 <p>&nbsp;</p>
-<p>This Event Loop is Single Threaded. All the Requests are recieved on this Event Thread. Every Requests consists&nbsp;of Asynchronous and Synchronous Execution. The Main Thread is responsible to Execute Only the Synchronous Part of the Request. As soon as Asynch I/O Operation is encountered, the Main Thread allocates a Background thread to process the I/O Operation.</p>
+<p>This <b>Event Loop is Single Threaded</b>. All the Requests are recieved on this Event Thread. Every Requests consists&nbsp;of Asynchronous and Synchronous Execution. The Main Thread is responsible to Execute Only the Synchronous Part of the Request. As soon as Asynch I/O Operation is encountered, the Main Thread allocates a Background thread to process the I/O Operation.</p>
 <p>&nbsp;</p>
-<p>Although we have Multiple Threads in the Background, Node is still said to be Single Threaded since all the Requests are Recieved on the Single Thread and Node internally manages the Execution of Async Process on the Background Threads. At any moment of Time, Main Thread is Executing a Single Request, although there might be multiple threads in the Background working to process Async Task.</p>
+<p>Although we have <b>Multiple Threads</b> in the Background, Node is still said to be Single Threaded since all the Requests are Recieved on the Single Thread and Node internally manages the Execution of Async Process on the Background Threads. At any moment of Time, <b>Main Thread is Executing a Single Request</b>, although there might be multiple threads in the Background working to process Async Task.</p>
 <p>&nbsp;</p>
 <h2 class="topicNode">Node has Non Blocking I/O Model&nbsp;</h2>
 
@@ -67,7 +67,7 @@
 <p>&nbsp;</p>
 <p>So considering the Architecture of Node, the Main Thread is always available to process the Requests Synchronously and it is ensured that the Thread is not waiting for Background Process to Complete.&nbsp;Node&#39;s Main Thread is continuesly switching between different Requests to execute its Synchronous Part.</p>
 <p>&nbsp;</p>
-<h2 class="topicNode">It uses a Event Loop Instead of Waiting for I/O Operation</h2>
+<h2 class="topicNode">Event Based, Instead of Waiting for I/O Operation</h2>
 
 <div>The Background Thread uses <strong>Event Based Approach to Notify Main Thread</strong></div>
 <div>&nbsp;</div>
@@ -79,20 +79,20 @@
 
 </div>
 
-<style>
+  });
 
-  #documentation h2.topicNode {
-    font-size: 16px !important;
-  }
+  @html.block("style", function(model) {
+    <style>
+      #documentation h2.topicNode {
+        font-size: 14px !important;
+        font-family: "Segoe UI",Arial,Sans-Serif;
+      }
 
-  .topicNodeProb {
-    font-size: 14px;
-  }
+      .topicNodeProb {
+        font-size: 14px;
+      }
 
-</style>
-
-
-
+    </style>
   });
 
 });

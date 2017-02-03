@@ -379,6 +379,8 @@
       <div class="bottom">Copyright &copy; Sility. All Rights Reserved.</div>
       <!-- end .bottom -->
     </footer>
+
+      @html.block("style")
     <!-- end .footer -->
     <script defer src="js/rainbow.js"></script>
     <script defer src="js/analytics.js"></script>
