@@ -262,7 +262,7 @@
                 <div style="padding-left:20px; background-color: white; padding: 48px 40px;">
                   @html.block("body")
 
-                  <div  ng-app="myApp" ng-controller="commentController">
+                  <div  ng-app="myApp" ng-controller="commentController" style="display: none;">
                     <div class="blog-post-comments" ng-show="commentList.length > 0">
                       <h4>{{Count}} Comments</h4>
                       <div class="comment" ng-repeat="comment in commentList">
