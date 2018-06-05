@@ -230,6 +230,28 @@
                   </div> <!-- end .content -->
                 </div> <!-- end .inner -->
               </div> <!-- end .blog-post -->
+			  
+			  <div class="blog-post">
+                <div class="inner">
+                  <div class="content">
+                    <h1><a href="https://www.codeproject.com/Articles/483055/XML-Serialization-and-Deserialization-Part">C# Serialization Basics</a></h1>
+                    <p class="details">
+                      <b>Serialization</b> is a process by which an object's state is transformed in some serial data format, such as XML or binary format. Deserialization on the other hand is used to convert the byte of data, such as XML or binary data, to object type.
+                    </p>
+                  </div> <!-- end .content -->
+                </div> <!-- end .inner -->
+              </div> <!-- end .blog-post -->
+			  
+			  <div class="blog-post">
+                <div class="inner">
+                  <div class="content">
+                    <h1><a href="https://www.codeproject.com/Articles/487571/XML-Serialization-and-Deserialization-Part">C# Deserialization Basics</a></h1>
+                    <p class="details">
+                      <b>Deserialization</b> is used to convert bytes of data, such as XML or binary data, to "Object" type. An XML file can be reconverted back to an Object using deserialization. 
+                    </p>
+                  </div> <!-- end .content -->
+                </div> <!-- end .inner -->
+              </div> <!-- end .blog-post -->
 
             </div> <!-- end .blog-posts -->
 
