@@ -16,7 +16,12 @@ app.use(compression());
 
 app.set("view engine", "vash");
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public', {
+  maxAge: 86400000,
+  setHeaders: function (res, path) {
+    res.setHeader("Expires", new Date(Date.now() + 2592000000 * 30).toUTCString());
+  }
+}));
 
 //app.use(express.static(__dirname + '/public', { maxAge: 31536000000 }));
 
