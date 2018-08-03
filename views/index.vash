@@ -13,7 +13,8 @@
 
     <meta name="keywords" content="object oriented javascript,javascript design patterns,learn javascript,prototype pattern,closures,singleton pattern,iife,module pattern"/>
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/shrink.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
 
     <meta name="msvalidate.01" content="F77C0434F58CEA255020E3CCDE1B58D6" />
 
@@ -295,13 +296,13 @@
       <div class="bottom">Copyright &copy; Sility. All Rights Reserved.</div> <!-- end .bottom -->
     </footer> <!-- end .footer -->
 
-    <script src="js/jquery-1.11.2.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/scriptRefined.js"></script>
-    <script src="js/analytics.js"></script>
+    <script defer src="js/jquery-1.11.2.min.js"></script>
+    <script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script defer src="js/bootstrap.min.js"></script>
+    <script defer src="js/isotope.pkgd.min.js"></script>
+    <script defer src="js/imagesloaded.pkgd.min.js"></script>
+    <script defer src="js/scriptRefined.js"></script>
+    <script defer src="js/analytics.js"></script>
     <script>
       function openPreview(dialogName) {
         $("#" + dialogName).dialog({

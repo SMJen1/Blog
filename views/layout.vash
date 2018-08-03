@@ -7,7 +7,8 @@
     <meta name="robots" content="index, follow">
     @html.block("header")
     <meta name="msvalidate.01" content="F77C0434F58CEA255020E3CCDE1B58D6" />
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/shrink.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
   </head>
   <body>
     <!-- Search -->
