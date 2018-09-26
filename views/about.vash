@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Software Developer with 5+ Years Experience in Technologies Like AngularJS, Mean Stack, TypeScript, Node, JavaScript, Knockout and other related Frameworks." />
+    <meta name="description" content="Software Developer with 7+ Years Experience in Technologies Like AngularJS, Mean Stack, TypeScript, Node, JavaScript, Knockout and other related Frameworks." />
     <meta name="keywords" content="JOB, Delhi NCR, 5 Years Experience, Gurgaon,typescript deleloper, angular2 developer, looking for job, seeking for job, working in google, mayank gupta, guptamayank, mayankgupta688, Angularjs Developer, Mean Stack Developer, Freelancer, JavaScript Developer, JS Developer, Mayank Gupta"/>
     <meta name="robots" content="index,follow" />
     <meta name="msvalidate.01" content="F77C0434F58CEA255020E3CCDE1B58D6" />
@@ -234,7 +234,7 @@
                             I have 7+ years of experience in different Client side and Server Side Technologies. <br><br>
                             Working on Client Side Technologies like Angularjs, Angular2, Knockout.js, JavaScript, JQuery. <br><br>
                             I have worked with MEAN Stack Applications.<br><br>
-                            <b><a href="Files/ResumeMayank.doc">Download Resume</a></b><br><br>
+                            <b><a href="Files/ResumeMayank.docx">Download Resume</a></b><br><br>
                         </p>
                         <div class="signature">
                         </div>
@@ -337,7 +337,7 @@
                             <a class="col-sm-4" href="https://www.typescriptlang.org/">
                                 <div class="service">
                                     <div class="icon">
-                                        <img src="images/typescript.png" style="height: 90px;" alt="Mayank Gupta TypeScript Developer">
+                                        <img src="images/typescript.png" style="height: 90px; width: 150px;" alt="Mayank Gupta TypeScript Developer">
                                     </div>
                                     <h5>TypeScript
                                     </h5>
@@ -552,12 +552,35 @@
         <!-- Experience -->
         <section id="section4">
           <div class="container">
-            <h2>5+ Years Experience
+            <h2>7+ Years Experience
             </h2>
             <div class="experience-timeline">
               <div class="experience-block clearfix">
                 <div class="meta">
-                  <span class="year">2015 - Current
+                  <span class="year">2016 - Current
+                  </span>
+                  <span class="company">ION Trading
+                  </span>
+                </div>
+                <!-- end .meta -->
+                <div class="content">
+                  <h5>Senior Software Developer
+                  </h5>
+                  <p>Working with ION Trading with their product ARC ("Aggregation and Reporting Component") build on Angular and TypeScript Framework. Working on the User Interface for the Web Application.
+                  </p>
+                </div>
+                <!-- end .content -->
+                <div class="icon">
+                  <i class="ion-easel">
+                  </i>
+                </div>
+                <!-- end .icon -->
+                <div class="line">
+                </div>
+              </div>
+              <div class="experience-block clearfix">
+                <div class="meta">
+                  <span class="year">2015 - 2016
                   </span>
                   <span class="company">Global Logic
                   </span>
