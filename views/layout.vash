@@ -258,7 +258,7 @@
                 </div>
               </div>
               <!-- end .content -->
-              <div style="width:70%; display:inline-block;padding-bottom: 160px;">
+              <div style="width:70%; display:inline-block;padding-bottom: 160px;" class="blog-data-div">
                 <img src="images/javascript-logo-large.jpg" style="height:400px; width:100%">
                 <div style="padding-left:20px; background-color: white; padding: 48px 40px;">
                   @html.block("body")
