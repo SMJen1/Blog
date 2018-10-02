@@ -52,11 +52,6 @@ p{font-family: "Segoe UI",Arial,Sans-Serif;}
 		width: 100% !important;
 	}
 
-	.sections-wrapper .section {
-		padding: 0px !important;
-		padding-top: 20px !important;
-	}
-
 	#index-page .blog-post .content {
 		padding: 10px !important;
 	}
@@ -77,14 +72,18 @@ p{font-family: "Segoe UI",Arial,Sans-Serif;}
 }
 
 @media all and (max-width:1000px) {  
-	.sections-wrapper .section {
+	.sections-wrapper.clearfix>section {
 		padding: 0px !important;
 		padding-top: 20px !important;
-		width: 95%;
+		width: 95% !important;
 	}
 
-	.sections-wrapper .section .container {
-		width: 100%;
+	.sections-wrapper.clearfix>section .container {
+		width: 100% !important;
 	}
 }
+
+
+
+
 
