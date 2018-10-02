@@ -105,8 +105,8 @@
                   <a href="/node-aynch-execution-single-threaded-event-loop-callback-non-blocking-architecture">
                       <div class="image" style="background-image: url('images/JavaScript-logo.png');" alt="Node.js Single Threaded Event Loop Based Architecture"></div>
                   </a>
-                  <div class="content" style="display: relative">
-                    <h1><a href="/node-aynch-execution-single-threaded-event-loop-callback-non-blocking-architecture">Node.js Single Threaded Event Loop Based Architecture</a></h1>
+                  <div class="content" style="display: flex; flex-direction: column;">
+                    <h1><a href="/node-aynch-execution-single-threaded-event-loop-callback-non-blocking-architecture">Node.js Architecture</a></h1>
                     <p class="details">
                       <b>Node.js is Single Threaded Event Loop Architecture</b>. This Article shall enable you to understand the basic Architecture of Node.js, it also focusses on <b>"How Node.js is Different from other Languages"</b><br>
                       <button class="preview" style="display: none" onclick="openPreview('iifeDialog')">Preview</button>
@@ -170,7 +170,7 @@
               <div class="blog-post image-left">
                 <div class="inner">
                   <a href="/prototype-pattern-javascript-function-prototype"><div class="image" style="background-image: url('images/es6.jpg');"></div></a>
-                  <div class="content">
+                  <div class="content" style="display: flex; flex-direction: column;">
                     <h1><a href="/prototype-pattern-javascript-function-prototype">JavaScript Prototype Pattern</a></h1>
                     <p class="details">
                       <b>Prototype Pattern</b> is used at the places where we need to create multiple Objects of a specicif type. It is a <b>constructor function</b> using which multiple instances of the same type can be created.
@@ -196,7 +196,7 @@
                   <a href="/javascript-function-chaining-jquery-chaining">
                       <div class="image" style="background-image: url('images/JavaScript-logo.png');" alt="IIFE Immediately Invokable Function Expression JavaScript"></div>
                   </a>
-                  <div class="content">
+                  <div class="content" style="display: flex; flex-direction: column">
                     <h1><a href="/javascript-function-chaining-jquery-chaining">Function Chaining in JavaScript</a></h1>
                     <p class="details">
                       <b>Function Chaining</b> is the concept which is followed by Framework Like JQuery. Function can be chained together and called in a single line. We can utilize function chaining concept to build efficient code.
@@ -222,7 +222,7 @@
                   <a href="/iife-immediately-invoked-function-expressions-javascript-singleton-design-pattern-closures">
                       <div class="image" style="background-image: url('images/JavaScript-logo.png');" alt="IIFE Immediately Invokable Function Expression JavaScript"></div>
                   </a>
-                  <div class="content" style="display: relative">
+                  <div class="content" style="display: flex; flex-direction: column;">
                     <h1><a href="/iife-immediately-invoked-function-expressions-javascript-singleton-design-pattern-closures">Immediately Invokable Function Expression</a></h1>
                     <p class="details">
                       <b>IIFE (Immediately Invokable Function Expressions)</b> are self invoking function expressions. This <b>Design Pattern</b> should be used in case function is required to be called just once.<br>

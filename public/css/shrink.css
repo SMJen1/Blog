@@ -56,5 +56,35 @@ p{font-family: "Segoe UI",Arial,Sans-Serif;}
 		padding: 0px !important;
 		padding-top: 20px !important;
 	}
+
+	#index-page .blog-post .content {
+		padding: 10px !important;
+	}
+
+	#index-page .blog-post .content .details{
+		flex-grow: 1;
+	}
+}
+
+@media all and (max-width:1000px) { 
+	#index-page .blog-post .content {
+		padding: 15px !important;
+	}
+
+	#index-page .blog-post .content .details{
+		flex-grow: 1;
+	}
+}
+
+@media all and (max-width:1000px) {  
+	.sections-wrapper .section {
+		padding: 0px !important;
+		padding-top: 20px !important;
+		width: 95%;
+	}
+
+	.sections-wrapper .section .container {
+		width: 100%;
+	}
 }
 
