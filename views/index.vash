@@ -194,7 +194,7 @@
               <div class="blog-post image-left">
                 <div class="inner">
                   <a href="/javascript-function-chaining-jquery-chaining">
-                      <div class="image" style="background-image: url('images/JavaScript-logo.png');" alt="IIFE Immediately Invokable Function Expression JavaScript"></div>
+                      <div class="image" style="background-image: url('images/JavaScript-logo.png');" alt="IIFE Immediately Invoked Function Expression JavaScript"></div>
                   </a>
                   <div class="content" style="display: flex; flex-direction: column">
                     <h1><a href="/javascript-function-chaining-jquery-chaining">Function Chaining in JavaScript</a></h1>
@@ -220,12 +220,12 @@
               <div class="blog-post image-left">
                 <div class="inner">
                   <a href="/iife-immediately-invoked-function-expressions-javascript-singleton-design-pattern-closures">
-                      <div class="image" style="background-image: url('images/JavaScript-logo.png');" alt="IIFE Immediately Invokable Function Expression JavaScript"></div>
+                      <div class="image" style="background-image: url('images/JavaScript-logo.png');" alt="IIFE Immediately Invoked Function Expression JavaScript"></div>
                   </a>
                   <div class="content" style="display: flex; flex-direction: column;">
-                    <h1><a href="/iife-immediately-invoked-function-expressions-javascript-singleton-design-pattern-closures">Immediately Invokable Function Expression</a></h1>
+                    <h1><a href="/iife-immediately-invoked-function-expressions-javascript-singleton-design-pattern-closures">Immediately Invoked Function Expression</a></h1>
                     <p class="details">
-                      <b>IIFE (Immediately Invokable Function Expressions)</b> are self invoking function expressions. This <b>Design Pattern</b> should be used in case function is required to be called just once.<br>
+                      <b>IIFE (Immediately Invoked Function Expressions)</b> are self invoking function expressions. This <b>Design Pattern</b> should be used in case function is required to be called just once.<br>
                       <button class="preview" onclick="openPreview('iifeDialog')" style="display: none">Preview</button>
                     </p>
                   </div> <!-- end .content -->

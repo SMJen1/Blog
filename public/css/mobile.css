@@ -16,7 +16,7 @@
 		padding: 10px !important;
 	}
 
-	#index-page .blog-post .content .details{
+	#index-page .blog-post .content .details {
 		flex-grow: 1;
 	}
 }
@@ -40,7 +40,11 @@
 
 	.sections-wrapper.clearfix>section .container {
 		width: 100% !important;
-	}
+    }
+    
+    .body-container {
+        padding: 15px;
+    }
 }
 
 footer.footer {
@@ -61,5 +65,13 @@ body {
 }
 
 .sections-wrapper > section {
-	padding: 0px
+	padding: 0px;
+}
+
+.body-container {
+    padding: 48px 40px;
+}
+
+pre {
+    min-width: 100% !important;
 }

@@ -2,11 +2,11 @@
 
 
   @html.block("header", function(model) {
-    <title>Immediately Invokable Function Expression (IIFE)</title>
-    <meta content="Immediately Invokable Function Expression (IIFE)" name="title" />
-    <meta name="title" content="(IIFE) Immediately Invokable Function Expressions JavaScript" />
-    <meta name="description" content="Immediately Invokable Function Expression (IIFE) is a JavaScript Design Pattern. It's an Anonymous Function Expression which is Self Invoking. It is invoked as soon as it is Initialized" />
-    <meta name="keywords" content="iife javascript,immediately invokable function expression,IIFE javascript,learn javascript design patterns,function definition,function exressions"/>
+    <title>Immediately Invoked Function Expression (IIFE)</title>
+    <meta content="Immediately Invoked Function Expression (IIFE)" name="title" />
+    <meta name="title" content="(IIFE) Immediately Invoked Function Expressions JavaScript" />
+    <meta name="description" content="Immediately Invoked Function Expression (IIFE) is a JavaScript Design Pattern. It's an Anonymous Function Expression which is Self Invoking. It is invoked as soon as it is Initialized" />
+    <meta name="keywords" content="iife javascript,Immediately Invoked function expression,IIFE javascript,learn javascript design patterns,function definition,function exressions"/>
   });
 
 
@@ -15,9 +15,9 @@
 
     <div>
   <div class="blog-post-content">
-    <h1 class="heading">Immediately Invokable Function Expression</h1>
+    <h1 class="heading">Immediately Invoked Function Expression</h1>
     <div>
-      <b>IIFE (Immediately Invokable Function Expression)</b> is a important concept in JavaScript. It is a commonly used <b>JavaScript Design Pattern</b> which is used to wrap set of variables and functions which cannot be accessed outside the enclosed scope.
+      <b>IIFE (Immediately Invoked Function Expression)</b> is a important concept in JavaScript. It is a commonly used <b>JavaScript Design Pattern</b> which is used to wrap set of variables and functions which cannot be accessed outside the enclosed scope.
     </div>
     <div> </div>
     <div>These are <b>JavaScript Anonymous Function</b> that is wrapped inside a set of paranthesis and is called immediately.</div>
@@ -51,7 +51,7 @@ function demoFunction(){
 <code class="lang-javascript">
 demoFunction();
 
-var demoFunction = function(){
+function demoFunction(){
 
   alert("This is the function Definition");
 

@@ -198,7 +198,7 @@
             <header class="blog-header clearfix">
               <div class="content" style="width:30%; height:100%;box-shadow: 0 1px 5px rgba(0,0,0,.2)">
                 <span class="date">March 11, 2015</span>
-                <h3 style="font-size: 14px"><b>Immediately Invokable Function Expression</b></h3>
+                <h3 style="font-size: 14px"><b>Immediately Invoked Function Expression</b></h3>
                 <div>
                   <h6>Other Related JavaScript Articles:</h6>
                   <p class="other-articles">

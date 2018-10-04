@@ -41,8 +41,8 @@
   <p> </p>
   <br>
   <br>
-  <h2 class="topic">IIFE (Immediately Invokable function Expressions)</h2>
-  <p>In order to understand about the module pattern, we need to first understand about function Expressions and IIFE (Immediately Invokable Function Expression). Here is a small implementation of IIFE</p>
+  <h2 class="topic">IIFE (Immediately Invoked function Expressions)</h2>
+  <p>In order to understand about the module pattern, we need to first understand about function Expressions and IIFE (Immediately Invoked Function Expression). Here is a small implementation of IIFE</p>
   <pre>
 <code class="lang-javascript">
 (function(){
