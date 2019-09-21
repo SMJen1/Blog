@@ -10,7 +10,7 @@ var express = require('express');
 
 var vash = require('vash');
 
-var app = express();
+var app = express();    
 
 app.use(compression());
 
