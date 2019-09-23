@@ -26,9 +26,9 @@
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
     <style>
       .education .item {
@@ -70,6 +70,7 @@
 
     </style>
   </head>
+
   <body>
     <!-- Search -->
     <div class="search-overlay">
@@ -101,8 +102,7 @@
         <a href="#section8" class="available">
           <i class="ion-ios-email-outline">
           </i>
-          <span>Available For Freelance
-          </span>
+          <span>Online and Corporate Trainer</span>
         </a>
         <div class="right-icons">
           <a href="" class="open-search header-open-search">
@@ -231,9 +231,8 @@
                         <h5>Senior Software Developer
                         </h5>
                         <p>Currently working as Senior Software Developer in ION Trading. <br><br>
-                            I have 7+ years of experience in different Client side and Server Side Technologies. <br><br>
-                            Working on Client Side Technologies like Angularjs, Angular2, Knockout.js, JavaScript, JQuery. <br><br>
-                            I have worked with MEAN Stack Applications.<br><br>
+                            I have 8.5+ years of experience in different Client side and Server Side Technologies. <br><br>
+                            Working on Client Side Technologies like React, Vue.js, Angularjs, Angular8, Node.js, GraphQL, MEAN and MERN Stack, Knockout.js, JavaScript, JQuery. <br><br>
                             <b><a href="Files/ResumeMayank.docx">Download Resume</a></b><br><br>
                         </p>
                         <div class="signature">
@@ -241,7 +240,7 @@
                         <ul class="list-unstyled">
                             <li>
                                 <b>Years of Experience:
-                                </b> 7+ Years
+                                </b> 8.5+ Years
                             </li>
                             <li>
                                 <b>Date Of Birth:
@@ -256,8 +255,8 @@
                                 </b> <a href="mailto:mayankgupta688@gmail.com">MayankGupta688@gmail.com</a>
                             </li>
                             <li>
-                                <b>CodeProject Articles:
-                                </b>  <a href="http://www.codeproject.com/script/Articles/MemberArticles.aspx?amid=7572025">http://www.codeproject.com/script/Articles/MemberArticles.aspx?amid=7572025</a>
+                                <b>Medium Articles:
+                                </b>  <a href="https://medium.com/@@mayank.gupta.6.88">https://medium.com/@@mayank.gupta.6.88</a>
                             </li>
 
                             <li>
@@ -292,7 +291,7 @@
                                     <div class="icon">
                                         <img src="images/angular.png" alt="Mayank Gupta Angularjs Developer" style="height: 90px;">
                                     </div>
-                                    <h5>Angular.js
+                                    <h5>Angular 8
                                     </h5>
                                 </div>
                                 <!-- end .service -->
