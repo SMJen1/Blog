@@ -6,6 +6,7 @@
     <meta name="title" content="Module Pattern in JavaScript" />
     <meta name="description" content="Module Pattern is most used Design Pattern in JavaScript. An Object is returned back from the function. It also creates a Singleton Object." />
     <meta name="keywords" content="Module Pattern, Design Patterns in JavaScript, JavaScript Module Pattern, Module in JavaScript, Creating Modules in JavaScript, What is Module Pattern, Understanding Module Pattern, Modules in JavaScript, JavaScript Modules, Modules JavaScript"/>
+    <link rel="canonical" href="http://learn-javascript.in/javascript-module-pattern-design-singleton" />
   });
 
   @html.block("body", function(model) {

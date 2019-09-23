@@ -3,6 +3,7 @@
 
   @html.block("header", function(model) {
     <title>Node.js Single Threaded Event Loop Based Architecture</title>
+    <link rel="canonical" href="http://learn-javascript.in/node-aynch-execution-single-threaded-event-loop-callback-non-blocking-architecture" />
     <meta name="title" content="Node.js Basic Architecture" />
     <meta name="description" content="Node.js Single Threaded Event Loop Based Architecture" />
     <meta name="keywords" content="Single Threaded Event Loop Based Architecture, Node Architecture, Node vs C#/Java Architecture, Java vs Node"/>

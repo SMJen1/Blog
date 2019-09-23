@@ -5,6 +5,7 @@
     <meta name="title" content="Function Chaining in JavaScript" />
     <meta name="description" content="Function Chaining can be achieved in JavaScript. Function can return "this" (Current Context) back from the function call />
     <meta name="keywords" content="JavaScript Function Chaining, Returning Function Context, Function Chaining in JavaScript"/>
+    <link rel="canonical" href="http://learn-javascript.in/javascript-function-chaining-jquery-chaining" />
   });
 
 

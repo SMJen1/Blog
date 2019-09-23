@@ -36,5 +36,5 @@ if (cluster.isMaster) {
     cluster.fork();
   }
 } else {
-  app.listen(process.env.PORT);
+  app.listen(80);
 }

@@ -3,7 +3,7 @@
 
   @html.block("header", function(model) {
     <meta name="title" content="Creating Objects in JavaScript" />
-    
+    <link rel="canonical" href="http://learn-javascript.in/create-javascript-object-string-literal-new-keyword-new-object" />
     <title>Creating Objects in JavaScript</title>
     <meta name="description" content="Creating Objects in JavaScript" />
     <meta name="keywords" content="Patterns, Object Literals, creating new Object, Constructor Function, Object Creation, Objects in JavaScript, JavaScript Objects, Creating Objects in JavaScript, Object in JavaScipt, new Object in JavaScript, constructor function in JavaScript, Constructor Method in JavaScript, developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript" />
