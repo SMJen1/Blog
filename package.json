@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "Demo Application",
   "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
   "author": {
     "name": "Mayank",
     "email": "mayankgupta688@gmail.com"

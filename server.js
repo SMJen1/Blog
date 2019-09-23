@@ -10,7 +10,7 @@ var express = require('express');
 
 var vash = require('vash');
 
-var app = express();
+var app = express();    
 
 app.use(compression());
 
@@ -36,5 +36,5 @@ if (cluster.isMaster) {
     cluster.fork();
   }
 } else {
-  app.listen(80);
+  app.listen(process.env.PORT);
 }
