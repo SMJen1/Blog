@@ -4,7 +4,7 @@
   @html.block("header", function(model) {
     <title>JavaScript Delete Function</title>
     <meta content="Delete Function in JavaScript" name="title" />
-    <link rel="canonical" href="http://learn-javascript.in/javascript-scopes-function-scope-global-scope" />
+    <link rel="canonical" href="http://learn-javascript.in/prototype-pattern-javascript-function-prototype" />
     <meta name="title" content="JavaScript Delete Function. Delete Object and Properties" />
     <meta name="description" content="Delete Keyword is used to delete Objects anf Properties inside an Object. In this article, we shall be disscussing about using Delete in JavaScript." />
     <meta name="keywords" content="delete keyword,delete object in javascript, delete properties, delete strict mode, delete array element"/>

@@ -6,6 +6,7 @@
     <meta name="title" content="Function Hoisting and Variable Hoisting JavaScript" />
     <meta name="description" content="Functions and Variables are Hoisted in JavaScript. Variable and Function Hoisting enables the user to access variable before its Initialization." />
     <meta name="keywords" content="Hoisting, JavaScript Hoisting, Function Hoisting, Variable Hoisting, Hoisting in JavaScript, JavaScript Hoisting, Hoisting Concepts, Variable Declaration, variable Definition, Function Expressions, Function Declaration, Expression in JavaScript, Expressions, Function Expression"/>
+    <link rel="canonical" href="http://learn-javascript.in/delete-keyword-javascript-properties-object" />
   });
 
   @html.block("body", function(model) {

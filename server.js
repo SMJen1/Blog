@@ -31,10 +31,5 @@ var controller = require("./controller");
 
 controller.init(app);
 
-if (cluster.isMaster) {
-  for (var i = 0; i < cpuCount; i++) {
-    cluster.fork();
-  }
-} else {
-  app.listen(80);
-}
+
+app.listen(process.env.PORT);

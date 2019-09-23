@@ -4,6 +4,7 @@
   @html.block("header", function(model) {
     <meta content="Scopes in JavaScript" name="title" />
     <title>Understanding Scopes in JavaScipt</title>
+    <link rel="canonical" href="http://learn-javascript.in/javascript-scopes-function-scope-global-scope" />
     <meta name="description" content="Understand Scopes in JavaScipts" />
     <meta name="keywords" content="Functional Scopes, Lexical Scope, Scope in JavaScipt, JavaScript Scope, Global Scope, Function Scope, Scoping in JavaScript,toddmotto.com/everything-you-wanted-to-know-about-javascript-scope/"/>
   });

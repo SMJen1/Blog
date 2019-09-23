@@ -3,6 +3,7 @@
 
   @html.block("header", function(model) {
     <title>Understanding Singleton Patterns in JavaScript</title>
+    <link rel="canonical" href="http://learn-javascript.in/singleton-design-pattern-javascript-module" />
     <meta content="Immediately Invoked Function Expression (IIFE)" name="title" />
     <meta name="title" content="Singleton Pattern in JavaScript" />
     <meta name="description" content="Singleton Pattern in JavaScript ina design Pattern to ensure that the Object contains only a single copy and cannot be used to create Further Objects." />
