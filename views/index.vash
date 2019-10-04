@@ -510,7 +510,7 @@
                 <div class="inner">
                   <a href="https://www.codeproject.com/Articles/487571/XML-Serialization-and-Deserialization-Part"
                   <div class="content">
-                    <h1 class="content-heading">>C# Deserialization Basics</h1>
+                    <h1 class="content-heading">C# Deserialization Basics</h1>
                     <p class="details">
                       <b>Deserialization</b> is used to convert bytes of data, such as XML or binary data, to "Object" type. An XML file can be reconverted back to an Object using deserialization. 
                     </p>
