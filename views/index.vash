@@ -381,7 +381,7 @@
               <!-- end .blog-post -->
               <div class="blog-post image-right">
                 <div class="inner">
-                  <a href="/singleton-design-pattern-javascript-module">
+                  <a href="https://medium.com/better-programming/introduction-to-rxjs-3f17e1009527">
                     <div class="image" style="background-image: url('images/objects.jpg');"></div>
                     <div class="content">
                       <h1 class="content-heading">RxJS and Reactive Programming</h1>
