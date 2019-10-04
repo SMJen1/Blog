@@ -6,24 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow">
     <title>JavaScript Design Patterns and Concepts</title>
-
     <meta name="description" content="Learn JavaScript Design Patterns and Object Oriented Concepts like Module Pattern, Prototype, Singleton Pattern, IIFE, Object Creation, Hoisting." />
-
     <meta name="title" content="Learn JavaScript Design Patterns like Module, Prototype, Singleton, Object Creation, Hoisting, IIFE" />
-
     <meta name="keywords" content="object oriented javascript,javascript design patterns,learn javascript,prototype pattern,closures,singleton pattern,iife,module pattern"/>
-
     <link rel="stylesheet" href="css/shrink.css">
     <link rel="stylesheet" href="css/font-awesome.css">
-
     <meta name="msvalidate.01" content="F77C0434F58CEA255020E3CCDE1B58D6" />
-
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.min.css">
-
-
   </head>
   <body id="index-page">
-
     <!-- Search -->
     <div class="search-overlay"></div>
     <div class="search">
@@ -33,13 +24,15 @@
           <h4>Just Start Typing Text and Press Enter</h4>
           <form class="search-form">
             <input type="text" id="search" name="search" class="text-center" />
-          </form> <!-- end .search-form -->
-        </div> <!-- end .col-sm-6 -->
-      </div> <!-- end .row -->
-    </div> <!-- end .row -->
+          </form>
+          <!-- end .search-form -->
+        </div>
+        <!-- end .col-sm-6 -->
+      </div>
+      <!-- end .row -->
+    </div>
+    <!-- end .row -->
     <!-- Slide Out -->
-
-
     <!-- Header -->
     <header class="header">
       <div class="top clearfix">
@@ -48,12 +41,12 @@
           <a href="" class="open-search header-open-search"><i class="md md-search"></i></a>
           <a href="" class="download"><i class="md md-file-download"></i></a>
           <a href="" class="share"><i class="md md-more-vert"></i></a>
-        </div> <!-- end .right-icons -->
-
-      </div> <!-- end .top -->
+        </div>
+        <!-- end .right-icons -->
+      </div>
+      <!-- end .top -->
       <div class="bottom clearfix">
         <div class="title"></div>
-
         <a href="" class="responsive-menu-open">Menu <i class="fa fa-bars"></i></a>
         <div style="inline-block; float: left; width:50%; margin-left: 30px;" class="search-input">
           <script>
@@ -74,456 +67,499 @@
             <li class="active"><a href="/">Home</a></li>
             <li><a href="/about">About</a></li>
           </ul>
-        </nav> <!-- end .main-nav -->
-      </div> <!-- end .bottom -->
-    </header> <!-- end .header -->
+        </nav>
+        <!-- end .main-nav -->
+      </div>
+      <!-- end .bottom -->
+    </header>
+    <!-- end .header -->
     <div class="responsive-menu">
       <a href="" class="responsive-menu-close">Close <i class="ion-android-close"></i></a>
-      <nav class="responsive-nav"></nav> <!-- end .responsive-nav -->
-    </div> <!-- end .responsive-menu -->
-
+      <nav class="responsive-nav"></nav>
+      <!-- end .responsive-nav -->
+    </div>
+    <!-- end .responsive-menu -->
     <!-- Section Navigation -->
     <div class="section-nav">
       <nav class="section1">
       </nav>
-    </div> <!-- end .section-nav -->
-
+    </div>
+    <!-- end .section-nav -->
     <!-- Sections -->
     <div class="sections" style="margin-bottom:200px;">
       <div class="sections-wrapper clearfix">
-
-
         <section>
           <div class="container">
             <b style="font-size: 25px;">Learn Object Oriented JavaScript and Design Patterns</b>
             <div class="blog-posts masonry" id="blog-masonry">
               <div class="blog-grid-sizer"></div>
-
-
               <div class="blog-post image-left">
                 <div class="inner">
                   <a href="https://medium.com/better-programming/https-medium-com-mayank-gupta-6-88-21-performance-optimizations-techniques-for-react-d15fa52c2349">
-                      <div class="image" style="background-image: url('images/JavaScript-logo.png');" alt="Node.js Single Threaded Event Loop Based Architecture"></div>
+                    <div class="image" style="background-image: url('images/JavaScript-logo.png');" alt="React 22 Optimization Techniques..."></div>
+                    <div class="content" style="display: flex; flex-direction: column;">
+                      <h1 class="content-heading">22 React Optimization Techniques</h1>
+                      <p class="details">
+                        <b>Article is focussed on React Optimizations</b>. 
+                        Easy and Simple Techniques to Optimize the React Application. 
+                        <b>Covers most of the Interview Question regarding React.js</b> 
+                        Must read for every React Developer<br>
+                      </p>
+                    </div>
+                    <!-- end .content -->
                   </a>
-                  <div class="content" style="display: flex; flex-direction: column;">
-                    <h1><a href="/node-aynch-execution-single-threaded-event-loop-callback-non-blocking-architecture">21 React Optimization Techniques</a></h1>
-                    <p class="details">
-                      <b>Article is focussed on React Optimizations</b>. 
-                      Easy and Simple Techniques to Optimize the React Application. 
-                      <b>Covers most of the Interview Question regarding React.js</b> 
-                      Must read for every React Developer<br>
-                    </p>
-                  </div> <!-- end .content -->
-                </div> <!-- end .inner -->
-              </div> <!-- end .blog-post -->
-
-
-
+                </div>
+                <!-- end .inner -->
+              </div>
+              <!-- end .blog-post -->
               <div class="blog-post">
                 <div class="inner">
-                  <div class="content">
-                    <h1><a href="https://medium.com/better-programming/angular-viewchild-and-viewchildren-fde2d252b9ab">
-                      ViewChild and ViewChildren...</a>
-                    </h1>
-                    <p class="details">
-                      This article is focused on understanding the usage of <b>ViewChild and ViewChildren</b> inside Angular components. 
-                      We will look at how to effectively use these functionalities to achieve your desired results.
-                    </p>
-                  </div> <!-- end .content -->
-                </div> <!-- end .inner -->
-              </div> <!-- end .blog-post -->
-
-
+                  <a href="https://medium.com/better-programming/angular-viewchild-and-viewchildren-fde2d252b9ab">
+                    <div class="content">
+                      <h1 class="content-heading">ViewChild and ViewChildren...</h1>
+                      <p class="details">
+                        This article is focused on understanding the usage of <b>ViewChild and ViewChildren</b> inside Angular components. 
+                        We will look at how to effectively use these functionalities to achieve your desired results.
+                      </p>
+                    </div>
+                    <!-- end .content -->
+                  </a>
+                </div>
+                <!-- end .inner -->
+              </div>
+              <!-- end .blog-post -->
               <div class="blog-post image-top">
                 <div class="inner">
-                  <a href="https://medium.com/better-programming/deep-and-shallow-copy-in-javascript-110f395330c5"><div class="image" style="background-image: url('images/node.jpg');"></div></a>
-                  <div class="content">
-                    <h1><a href="/javascript-scopes-function-scope-global-scope">JavaScript Deep and Shallow Copy</a></h1>
-                    <p class="details">
-                      <b>Scopes</b> 
-                      Often, to create an exact copy of an object in JavaScript, we need to create a new Object from existing objects. 
-                      There are various methods to achieve this. This article is focused on the different ways in which an object can be cloned/copied.
-                    </p>
-                  </div> <!-- end .content -->
-                </div> <!-- end .inner -->
-              </div> <!-- end .blog-post -->
-
-
+                  <a href="https://medium.com/better-programming/deep-and-shallow-copy-in-javascript-110f395330c5">
+                    <div class="image" style="background-image: url('images/node.jpg');"></div>
+                    <div class="content">
+                      <h1 class="content-heading">JavaScript Deep and Shallow Copy</h1>
+                      <p class="details">
+                        <b>Scopes</b> 
+                        Often, to create an exact copy of an object in JavaScript, we need to create a new Object from existing objects. 
+                        There are various methods to achieve this. This article is focused on the different ways in which an object can be cloned/copied.
+                      </p>
+                    </div>
+                    <!-- end .content -->
+                  </a>
+                </div>
+                <!-- end .inner -->
+              </div>
+              <!-- end .blog-post -->
               <div class="blog-post image-top">
                 <div class="inner">
                   <a href="https://medium.com/better-programming/working-with-react-pure-components-166ded26ae48">
                     <div class="image" style="background-image: url('images/javascript.jpg');"></div>
+                    <div class="content">
+                      <h1 class="content-heading">React Pure Components</h1>
+                      <p class="details">
+                        <b>Pure Components </b>do not depend or modify the state of variables outside their scope. These are the building blocks of Functional Programming. 
+                        Before we get into the details of Pure Components in React, we need to understand the concept of Pure Functions in JavaScript.
+                      </p>
+                    </div>
+                    <!-- end .content -->
                   </a>
-                  <div class="content">
-                    <h1><a href="https://medium.com/better-programming/working-with-react-pure-components-166ded26ae48">React Pure Components</a></h1>
-                    <p class="details">
-                      <b>Pure Components </b>do not depend or modify the state of variables outside their scope. These are the building blocks of Functional Programming. 
-                      Before we get into the details of Pure Components in React, we need to understand the concept of Pure Functions in JavaScript.
-                    </p>
-                  </div> <!-- end .content -->
-                </div> <!-- end .inner -->
-              </div> <!-- end .blog-post -->
-
-
+                </div>
+                <!-- end .inner -->
+              </div>
+              <!-- end .blog-post -->
               <div class="blog-post">
                 <div class="inner">
-                  <div class="content">
-                    <a href="https://medium.com/@@mayank.gupta.6.88/usememo-hook-in-react-d8d0eda6598a">
-                      <h1>“useMemo” Hook in React</h1>
+                  <a href="https://medium.com/@@mayank.gupta.6.88/usememo-hook-in-react-d8d0eda6598a">
+                    <div class="content">
+                      <h1 class="content-heading">“useMemo” Hook in React</h1>
                       <p class="details">
                         <b>React 16.8, introduced the concepts of Hooks</b> 
                         One of the Hook added to React is “useMemo”. It enables Memoization in React Hook Functions.
                         It is basically used to improve the performance of the React Application
                       </p>
-                    </a>
-                  </div> <!-- end .content -->
-                </div> <!-- end .inner -->
-              </div> <!-- end .blog-post -->
-
-              
-
+                    </div>
+                    <!-- end .content -->
+                  </a>
+                </div>
+                <!-- end .inner -->
+              </div>
+              <!-- end .blog-post -->
               <div class="blog-post">
                 <div class="inner">
                   <div class="content">
                     <a href="https://medium.com/better-programming/handling-missing-data-in-python-using-scikit-imputer-7607c8957740">
-                      <h1>Impute Missing Values With SciKit’s Imputer </h1>
+                      <h1 class="content-heading">Impute Missing Values With SciKit’s Imputer </h1>
                       <p class="details">
                         <b>Missing values can lead to inconsistent results.</b>  
                         We can either ignore the rows with missing data columns or substitute the values with some calculated output.
                         When the dataset is too small, we can’t afford to lose the row data even if it contains missing columns. In those cases, we will look at substituting the column data with some values. 
                       </p>
                     </a>
-                  </div> <!-- end .content -->
-                </div> <!-- end .inner -->
-              </div> <!-- end .blog-post -->
-
-
-
+                  </div>
+                  <!-- end .content -->
+                </div>
+                <!-- end .inner -->
+              </div>
+              <!-- end .blog-post -->
               <div class="blog-post">
                 <div class="inner">
                   <div class="content">
                     <a href="https://medium.com/swlh/javascript-inheritance-with-object-create-958b921e9d81">
-                      <h1>JavaScript Inheritance with “Object.create”</h1>
+                      <h1 class="content-heading">JavaScript Inheritance with “Object.create”</h1>
                       <p class="details">
                         <b>Using “Object.create” is the most basic way to create an Inheritance Model in JavaScript.</b> 
-                         Object.create can be used to create new object using the existing object as a prototype
+                        Object.create can be used to create new object using the existing object as a prototype
                       </p>
                     </a>
-                  </div> <!-- end .content -->
-                </div> <!-- end .inner -->
-              </div> <!-- end .blog-post -->
-
-
-
+                  </div>
+                  <!-- end .content -->
+                </div>
+                <!-- end .inner -->
+              </div>
+              <!-- end .blog-post -->
               <div class="blog-post image-left">
                 <div class="inner">
                   <a href="https://medium.com/better-programming/working-with-ecmascript-2019-asynchronous-iteration-using-for-of-b9d3e14621ea">
                     <div class="image" style="background-image: url('images/es6.jpg');"></div>
                     <div class="content" style="display: flex; flex-direction: column;">
-                      <h1>Asynchronous Iteration Using “for-of”</h1>
+                      <h1 class="content-heading">Asynchronous Iteration Using “for-of”</h1>
                       <p class="details">
                         <b>The“for-of” loop</b> 
                         is often used to iterate through the list of items inside a loop. 
                         We can now use the “for-of” loop in JavaScript to iterate through the list of Promises and provide the 
                         value received when the Promise is resolved.
                       </p>
-                    </div> <!-- end .content -->
+                    </div>
+                    <!-- end .content -->
                   </a>
-                </div> <!-- end .inner -->
-              </div> <!-- end .blog-post -->
-
-
+                </div>
+                <!-- end .inner -->
+              </div>
+              <!-- end .blog-post -->
               <div class="blog-post">
                 <div class="inner">
                   <div class="content">
                     <a href="https://medium.com/better-programming/the-basics-of-javascript-generators-f89c9b0e8d72">
-                      <h1>Basics of JavaScript Generators</h1>
+                      <h1 class="content-heading">Basics of JavaScript Generators</h1>
                       <p class="details">
                         <b>ES6 generator functions</b> are those that can stop their execution in the middle and resume execution further from the same point. 
                         These functions do not return a single value; instead, they’re capable of returning multiple values. They’re based on the concept of iterators.
                       </p>
                     </a>
-                  </div> <!-- end .content -->
-                </div> <!-- end .inner -->
-              </div> <!-- end .blog-post -->
-
-
+                  </div>
+                  <!-- end .content -->
+                </div>
+                <!-- end .inner -->
+              </div>
+              <!-- end .blog-post -->
               <div class="blog-post image-left">
                 <div class="inner">
                   <a href="https://medium.com/better-programming/https-medium-com-mayank-gupta-6-88-react-useeffect-hooks-in-action-2da971cfe83f">
                     <div class="image" style="background-image: url('images/JavaScript-logo.png');" alt="IIFE Immediately Invoked Function Expression JavaScript"></div>
-                  
                     <div class="content" style="display: flex; flex-direction: column">
-                      <h1>React useEffect Hooks</h1>
+                      <h1 class="content-heading">React useEffect Hooks</h1>
                       <p class="details">
                         <b>Hooks are the new features</b> of React 16.8. We can create state variables and other features of React without using Class-Based Components. Hooks are used for Function Components.
                         It takes a function as input, which is executed after the initial rendering, as well as re-rendering, of the component.
                       </p>
-                    </div> <!-- end .content -->
+                    </div>
+                    <!-- end .content -->
                   </a>
-                </div> <!-- end .inner -->
-              </div> <!-- end .blog-post -->
-
-
+                </div>
+                <!-- end .inner -->
+              </div>
+              <!-- end .blog-post -->
               <div class="blog-post">
                 <div class="inner">
-                  <div class="content">
-                    <h1><a href="https://medium.com/better-programming/introduction-to-react-hooks-e0102c038bf1">Introduction to React Hooks</a></h1>
-                    <p class="details">
-                      <b>React Hooks</b> is the latest addition to React in Version 16.8.0, and many React developers are excited about this addition.
-                      We’re going to talk about the State Hook that enables users to create state variables without classes.
-                    </p>
-                  </div> <!-- end .content -->
-                </div> <!-- end .inner -->
-              </div> <!-- end .blog-post -->
-
-
+                  <a href="https://medium.com/better-programming/introduction-to-react-hooks-e0102c038bf1">
+                    <div class="content">
+                      <h1 class="content-heading">Introduction to React Hooks</h1>
+                      <p class="details">
+                        <b>React Hooks</b> is the latest addition to React in Version 16.8.0, and many React developers are excited about this addition.
+                        We’re going to talk about the State Hook that enables users to create state variables without classes.
+                      </p>
+                    </div>
+                    <!-- end .content -->
+                  </a>
+                </div>
+                <!-- end .inner -->
+              </div>
+              <!-- end .blog-post -->
               <div class="blog-post image-left">
                 <div class="inner">
                   <a href="https://medium.com/better-programming/introduction-to-reacts-higher-order-components-hocs-c42182fb634">
                     <div class="image" style="background-image: url('images/JavaScript-logo.png');" alt="IIFE Immediately Invoked Function Expression JavaScript"></div>
                     <div class="content" style="display: flex; flex-direction: column;">
-                      <h1>React’s Higher-Order Components</h1>
+                      <h1 class="content-heading">React’s Higher-Order Components</h1>
                       <p class="details">
                         <b>Higher-Order Function</b> is one that takes a function as an input parameter or returns a new function as output. 
                         In the context of React, higher-order components (HOCs) are the components that take a component as input and return another component as output.
                       </p>
-                    </div> <!-- end .content -->
+                    </div>
+                    <!-- end .content -->
                   </a>
-                </div> <!-- end .inner -->
-              </div> <!-- end .blog-post -->
-
-
+                </div>
+                <!-- end .inner -->
+              </div>
+              <!-- end .blog-post -->
               <div class="blog-post image-left">
                 <div class="inner">
-                  <a href="https://medium.com/better-programming/introduction-to-rxjs-3f17e1009527">
+                  <a href="/node-aynch-execution-single-threaded-event-loop-callback-non-blocking-architecture">
                     <div class="image" style="background-image: url('images/JavaScript-logo.png');" alt="Node.js Single Threaded Event Loop Based Architecture"></div>
-                  
                     <div class="content" style="display: flex; flex-direction: column;">
-                      <h1>Node.js Architecture</h1>
+                      <h1 class="content-heading">Node.js Architecture</h1>
                       <p class="details">
                         <b>Node.js is Single Threaded Event Loop Architecture</b>. This Article shall enable you to understand the basic Architecture of Node.js, it also focusses on <b>"How Node.js is Different from other Languages"</b><br>
                         <button class="preview" style="display: none" onclick="openPreview('iifeDialog')">Preview</button>
                       </p>
-                    </div> <!-- end .content -->
+                    </div>
+                    <!-- end .content -->
                   </a>
-                </div> <!-- end .inner -->
-              </div> <!-- end .blog-post -->
-
-
+                </div>
+                <!-- end .inner -->
+              </div>
+              <!-- end .blog-post -->
               <div class="blog-post image-left">
                 <div class="inner">
                   <a href="https://levelup.gitconnected.com/creating-custom-observable-with-rxjs-379692f08f76">
-                    <div class="image" style="background-image: url('images/JavaScript-logo.png');" alt="Node.js Single Threaded Event Loop Based Architecture"></div>
+                    <div class="image" style="background-image: url('images/JavaScript-logo.png');" alt="Rxjs Custom Observable"></div>
                     <div class="content" style="display: flex; flex-direction: column;">
-                      <h1>Introduction to the RxJS Custom Observable</h1>
+                      <h1 class="content-heading">Introduction to the RxJS Custom Observable</h1>
                       <p class="details">
                         <b>Observables </b>are the Objects which maintain a list of dependents called Observers, who are notified about any state changes in the Observable.
                         For each state change in Observable, a method is called on the Observer. Observers subscribe to the Observable and respond to events.
                       </p>
-                    </div> <!-- end .content -->
+                    </div>
+                    <!-- end .content -->
                   </a>
-                </div> <!-- end .inner -->
-              </div> <!-- end .blog-post -->
-
-
+                </div>
+                <!-- end .inner -->
+              </div>
+              <!-- end .blog-post -->
               <div class="blog-post">
                 <div class="inner">
                   <div class="content">
-                    <h1><a href="/javascript-module-pattern-design-singleton">Module Pattern in JavaScript</a></h1>
-                    <p class="details">
-                      <b>Module Pattern</b>
-                      is a commonly used Design Pattern which is used to wrap a set of variables and functions together in a single scope.
-                      It is used to define objects and specify the variables and the functions that can be accessed from outside the scope of the function.
-                    </p>
-                  </div> <!-- end .content -->
-                </div> <!-- end .inner -->
-              </div> <!-- end .blog-post -->
-
-
+                    <a href="/javascript-module-pattern-design-singleton">
+                      <h1 class="content-heading">Module Pattern in JavaScript</h1>
+                      <p class="details">
+                        <b>Module Pattern</b>
+                        is a commonly used Design Pattern which is used to wrap a set of variables and functions together in a single scope.
+                        It is used to define objects and specify the variables and the functions that can be accessed from outside the scope of the function.
+                      </p>
+                  </div>
+                  <!-- end .content -->
+                  </a>
+                </div>
+                <!-- end .inner -->
+              </div>
+              <!-- end .blog-post -->
               <div class="blog-post image-top">
                 <div class="inner">
-                  <a href="/javascript-scopes-function-scope-global-scope"><div class="image" style="background-image: url('images/node.jpg');"></div></a>
+                  <a href="/javascript-scopes-function-scope-global-scope">
+                    <div class="image" style="background-image: url('images/node.jpg');"></div>
+                  </a>
                   <div class="content">
-                    <h1><a href="/javascript-scopes-function-scope-global-scope">Scopes in JavaScript</a></h1>
+                    <h1 class="content-heading">Scopes in JavaScript</h1>
                     <p class="details"><b>Scopes</b> in Javascript determine the accessibility of a declared variable. Variables cannot be accessed outside the scope in which it is defined. We can have "block", "function" and "global" scopes.</p>
-                  </div> <!-- end .content -->
-                </div> <!-- end .inner -->
-              </div> <!-- end .blog-post -->
-
-
+                  </div>
+                  <!-- end .content -->
+                </div>
+                <!-- end .inner -->
+              </div>
+              <!-- end .blog-post -->
               <div class="blog-post image-top">
-
                 <a href="https://levelup.gitconnected.com/data-hiding-with-javascript-module-pattern-62b71520bddd">
                   <div class="inner">
-                    <a href="/"><div class="image" style="background-image: url('images/javascript.jpg');"></div></a>
+                    <div class="image" style="background-image: url('images/javascript.jpg');"></div>
                     <div class="content">
-                      <h1>JavaScript Object Creation</h1>
+                      <h1 class="content-heading">JavaScript Object Creation</h1>
                       <p class="details">
                         <b>Objects can be created</b> in different ways. In the following article we shall be learning about the different ways in which they can be created and associated advantages and disadvantages.
                       </p>
-                    </div> <!-- end .content -->
-                  </div> <!-- end .inner -->
+                    </div>
+                    <!-- end .content -->
+                  </div>
+                  <!-- end .inner -->
                 </a>
-              </div> <!-- end .blog-post -->
-
-
+              </div>
+              <!-- end .blog-post -->
               <div class="blog-post image-right">
                 <div class="inner">
-                  <a><div class="image" style="background-image: url('images/objects.jpg');"></div></a>
-                  <div class="content">
-                    <h1><a href="/singleton-design-pattern-javascript-module">RxJS and Reactive Programming</a></h1>
-                    <p class="details">
-                      <b>RxJS introduces the concept </b>of Reactive Programming to JavaScript. 
-                      Data streams are the core of reactive programming.
-                      In this article, we’ll talk about the basics of reactive programming. We’ll also try creating some Observable data streams and an Observer which can react to the incoming stream of data.
-                    </p>
-                  </div> <!-- end .content -->
-                </div> <!-- end .inner -->
-              </div> <!-- end .blog-post -->
-
-
+                  <a href="/singleton-design-pattern-javascript-module">
+                    <div class="image" style="background-image: url('images/objects.jpg');"></div>
+                    <div class="content">
+                      <h1 class="content-heading">RxJS and Reactive Programming</h1>
+                      <p class="details">
+                        <b>RxJS introduces the concept </b>of Reactive Programming to JavaScript. 
+                        Data streams are the core of reactive programming.
+                        In this article, we’ll talk about the basics of reactive programming. We’ll also try creating some Observable data streams and an Observer which can react to the incoming stream of data.
+                      </p>
+                    </div>
+                    <!-- end .content -->
+                  </a>
+                </div>
+                <!-- end .inner -->
+              </div>
+              <!-- end .blog-post -->
               <div class="blog-post">
                 <div class="inner">
-                  <div class="content">
-                    <h1><a href="/function-and-variable-hoisting-javascript-closures">Hoisting in JavaScript</a></h1>
-                    <p class="details">
-                      <b>Hoisting</b> is one of the most important features of JavaScript. Function Definition and Variable Declarations are by default moved to the top of function Definition. Hence making it accessible even before it is declared.
-                    </p>
-                  </div> <!-- end .content -->
-                </div> <!-- end .inner -->
-              </div> <!-- end .blog-post -->
-
-
+                  <a href="/function-and-variable-hoisting-javascript-closures">
+                    <div class="content">
+                      <h1 class="content-heading">Hoisting in JavaScript</h1>
+                      <p class="details">
+                        <b>Hoisting</b> is one of the most important features of JavaScript. Function Definition and Variable Declarations are by default moved to the top of function Definition. Hence making it accessible even before it is declared.
+                      </p>
+                    </div>
+                    <!-- end .content -->
+                  </a>
+                </div>
+                <!-- end .inner -->
+              </div>
+              <!-- end .blog-post -->
               <div class="blog-post image-left">
                 <div class="inner">
-                  <a href="/prototype-pattern-javascript-function-prototype"><div class="image" style="background-image: url('images/es6.jpg');"></div></a>
-                  <div class="content" style="display: flex; flex-direction: column;">
-                    <h1><a href="/prototype-pattern-javascript-function-prototype">JavaScript Prototype Pattern</a></h1>
-                    <p class="details">
-                      <b>Prototype Pattern</b> is used at the places where we need to create multiple Objects of a specicif type. It is a <b>constructor function</b> using which multiple instances of the same type can be created.
-                    </p>
-
-                  </div> <!-- end .content -->
-                </div> <!-- end .inner -->
-              </div> <!-- end .blog-post -->
-
-
+                  <a href="/prototype-pattern-javascript-function-prototype">
+                    <div class="image" style="background-image: url('images/es6.jpg');"></div>
+                    <div class="content" style="display: flex; flex-direction: column;">
+                      <h1 class="content-heading">JavaScript Prototype Pattern</h1>
+                      <p class="details">
+                        <b>Prototype Pattern</b> is used at the places where we need to create multiple Objects of a specicif type. It is a <b>constructor function</b> using which multiple instances of the same type can be created.
+                      </p>
+                    </div>
+                    <!-- end .content -->
+                  </a>
+                </div>
+                <!-- end .inner -->
+              </div>
+              <!-- end .blog-post -->
               <div class="blog-post">
                 <div class="inner">
-                  <div class="content">
-                    <h1><a href="/delete-keyword-javascript-properties-object">Delete Keyword JavaScript</a></h1>
-                    <p class="details">
-                      <b>Delete Keyword</b> in used in JavaScript in order to delete properties and Objects. However <b>delete</b> cannot be used in case where we have non-configurable properties.
-                    </p>
-                  </div> <!-- end .content -->
-                </div> <!-- end .inner -->
-              </div> <!-- end .blog-post -->
-
-
+                  <a href="/delete-keyword-javascript-properties-object">
+                    <div class="content">
+                      <h1 class="content-heading">Delete Keyword JavaScript</h1>
+                      <p class="details">
+                        <b>Delete Keyword</b> in used in JavaScript in order to delete properties and Objects. However <b>delete</b> cannot be used in case where we have non-configurable properties.
+                      </p>
+                    </div>
+                    <!-- end .content -->
+                  </a>
+                </div>
+                <!-- end .inner -->
+              </div>
+              <!-- end .blog-post -->
               <div class="blog-post image-left">
                 <div class="inner">
                   <a href="/javascript-function-chaining-jquery-chaining">
-                      <div class="image" style="background-image: url('images/JavaScript-logo.png');" alt="IIFE Immediately Invoked Function Expression JavaScript"></div>
+                    <div class="image" style="background-image: url('images/JavaScript-logo.png');" alt="IIFE Immediately Invoked Function Expression JavaScript"></div>
+                    <div class="content" style="display: flex; flex-direction: column">
+                      <h1 class="content-heading">Function Chaining in JavaScript</h1>
+                      <p class="details">
+                        <b>Function Chaining</b> is the concept which is followed by Framework Like JQuery. Function can be chained together and called in a single line. We can utilize function chaining concept to build efficient code.
+                      </p>
+                    </div>
+                    <!-- end .content -->
                   </a>
-                  <div class="content" style="display: flex; flex-direction: column">
-                    <h1><a href="/javascript-function-chaining-jquery-chaining">Function Chaining in JavaScript</a></h1>
-                    <p class="details">
-                      <b>Function Chaining</b> is the concept which is followed by Framework Like JQuery. Function can be chained together and called in a single line. We can utilize function chaining concept to build efficient code.
-                    </p>
-                  </div> <!-- end .content -->
-                </div> <!-- end .inner -->
-              </div> <!-- end .blog-post -->
-
-
+                </div>
+                <!-- end .inner -->
+              </div>
+              <!-- end .blog-post -->
               <div class="blog-post">
                 <div class="inner">
-                  <div class="content">
-                    <h1><a href="/function-and-variable-hoisting-javascript-closures">Context vs Scope in JavaScript</a></h1>
-                    <p class="details">
-                      <b>Scope and Context</b> are often confused as the same thing in JavaScript. This document shall help you understand the difference between the Context and the Scopes in JavaScript. This is important to understand the difference between the two.
-                    </p>
-                  </div> <!-- end .content -->
-                </div> <!-- end .inner -->
-              </div> <!-- end .blog-post -->
-
-
+                  <a href="/function-and-variable-hoisting-javascript-closures">
+                    <div class="content">
+                      <h1 class="content-heading">Context vs Scope in JavaScript</h1>
+                      <p class="details">
+                        <b>Scope and Context</b> are often confused as the same thing in JavaScript. This document shall help you understand the difference between the Context and the Scopes in JavaScript. This is important to understand the difference between the two.
+                      </p>
+                    </div>
+                    <!-- end .content -->
+                  </a>
+                </div>
+                <!-- end .inner -->
+              </div>
+              <!-- end .blog-post -->
               <div class="blog-post image-left">
                 <div class="inner">
                   <a href="/iife-immediately-invoked-function-expressions-javascript-singleton-design-pattern-closures">
-                      <div class="image" style="background-image: url('images/JavaScript-logo.png');" alt="IIFE Immediately Invoked Function Expression JavaScript"></div>
+                    <div class="image" style="background-image: url('images/JavaScript-logo.png');" alt="IIFE Immediately Invoked Function Expression JavaScript"></div>
+                    <div class="content" style="display: flex; flex-direction: column;">
+                      <h1 class="content-heading">Immediately Invoked Function Expression</h1>
+                      <p class="details">
+                        <b>IIFE (Immediately Invoked Function Expressions)</b> are self invoking function expressions. This <b>Design Pattern</b> should be used in case function is required to be called just once.<br>
+                        <button class="preview" onclick="openPreview('iifeDialog')" style="display: none">Preview</button>
+                      </p>
+                    </div>
+                    <!-- end .content -->
                   </a>
-                  <div class="content" style="display: flex; flex-direction: column;">
-                    <h1><a href="/iife-immediately-invoked-function-expressions-javascript-singleton-design-pattern-closures">Immediately Invoked Function Expression</a></h1>
-                    <p class="details">
-                      <b>IIFE (Immediately Invoked Function Expressions)</b> are self invoking function expressions. This <b>Design Pattern</b> should be used in case function is required to be called just once.<br>
-                      <button class="preview" onclick="openPreview('iifeDialog')" style="display: none">Preview</button>
-                    </p>
-                  </div> <!-- end .content -->
-                </div> <!-- end .inner -->
-              </div> <!-- end .blog-post -->
-
-			  
-			        <div class="blog-post">
+                </div>
+                <!-- end .inner -->
+              </div>
+              <!-- end .blog-post -->
+              <div class="blog-post">
                 <div class="inner">
-                  <div class="content">
-                    <h1><a href="https://www.codeproject.com/Articles/483055/XML-Serialization-and-Deserialization-Part">C# Serialization Basics</a></h1>
-                    <p class="details">
-                      <b>Serialization</b> is a process by which an object's state is transformed in some serial data format, such as XML or binary format. Deserialization on the other hand is used to convert the byte of data, such as XML or binary data, to object type.
-                    </p>
-                  </div> <!-- end .content -->
-                </div> <!-- end .inner -->
-              </div> <!-- end .blog-post -->
-
-			  
-			        <div class="blog-post">
+                  <a href="https://www.codeproject.com/Articles/483055/XML-Serialization-and-Deserialization-Part">
+                    <div class="content">
+                      <h1 class="content-heading">C# Serialization Basics</h1>
+                      <p class="details">
+                        <b>Serialization</b> is a process by which an object's state is transformed in some serial data format, such as XML or binary format. Deserialization on the other hand is used to convert the byte of data, such as XML or binary data, to object type.
+                      </p>
+                    </div>
+                    <!-- end .content -->
+                  </a>
+                </div>
+                <!-- end .inner -->
+              </div>
+              <!-- end .blog-post -->
+              <div class="blog-post">
                 <div class="inner">
+                  <a href="https://www.codeproject.com/Articles/487571/XML-Serialization-and-Deserialization-Part"
                   <div class="content">
-                    <h1><a href="https://www.codeproject.com/Articles/487571/XML-Serialization-and-Deserialization-Part">C# Deserialization Basics</a></h1>
+                    <h1 class="content-heading">>C# Deserialization Basics</h1>
                     <p class="details">
                       <b>Deserialization</b> is used to convert bytes of data, such as XML or binary data, to "Object" type. An XML file can be reconverted back to an Object using deserialization. 
                     </p>
-                  </div> <!-- end .content -->
-                </div> <!-- end .inner -->
-              </div> <!-- end .blog-post -->
-
-
+                  </div>
+                  <!-- end .content -->
+                  </a>
+                </div>
+                <!-- end .inner -->
+              </div>
+              <!-- end .blog-post -->
               <div class="blog-post image-right">
                 <div class="inner">
-                  <a><div class="image" style="background-image: url('images/objects.jpg');"></div></a>
-                  <div class="content">
-                    <h1><a href="/singleton-design-pattern-javascript-module">Singleton in JavaScript</a></h1>
-                    <p class="details">
-                      <b>Singleton Design Pattern</b> ensures that we cannot have multiple instances of a particular Object. Singleton Design Pattern are set of functions and variables exposed from a function.
-                    </p>
-                  </div> <!-- end .content -->
-                </div> <!-- end .inner -->
-              </div> <!-- end .blog-post -->
-
-
+                  <a href="/singleton-design-pattern-javascript-module">
+                    <div class="image" style="background-image: url('images/objects.jpg');"></div>
+                    <div class="content">
+                      <h1 class="content-heading">Singleton in JavaScript</h1>
+                      <p class="details">
+                        <b>Singleton Design Pattern</b> ensures that we cannot have multiple instances of a particular Object. Singleton Design Pattern are set of functions and variables exposed from a function.
+                      </p>
+                    </div>
+                    <!-- end .content -->
+                  </a>
+                </div>
+                <!-- end .inner -->
+              </div>
+              <!-- end .blog-post -->
               <div class="blog-post image-right">
                 <div class="inner">
-                  <a><div class="image" style="background-image: url('images/objects.jpg');"></div></a>
+                  <div class="image" style="background-image: url('images/objects.jpg');"></div>
                   <div class="content">
-                    <h1><a>Stay Tuned For More...</a></h1>
-                  </div> <!-- end .content -->
-                </div> <!-- end .inner -->
-              </div> <!-- end .blog-post -->
-
-
+                    <h1>Stay Tuned For More...</h1>
+                  </div>
+                  <!-- end .content -->
+                </div>
+                <!-- end .inner -->
+              </div>
+              <!-- end .blog-post -->
             </div>
-          </div> <!-- end .container -->
-        </section> <!-- end #section1 -->
-
-
-      </div> <!-- end .sections-wrapper -->
-    </div> <!-- end .sections -->
-
+          </div>
+          <!-- end .container -->
+        </section>
+        <!-- end #section1 -->
+      </div>
+      <!-- end .sections-wrapper -->
+    </div>
+    <!-- end .sections -->
     <div id="iifeDialog" title="Basic dialog">
       <p></p>
     </div>
-
-
     <footer class="footer">
       <div class="top">
         <div class="container">
@@ -531,7 +567,8 @@
             <div class="col-sm-4">
               <h4>Address</h4>
               <p>A-8, Milansar Appartment, Rohini<br />Delhi, India</p>
-            </div> <!-- end .col-sm-4 -->
+            </div>
+            <!-- end .col-sm-4 -->
             <div class="col-sm-4">
               <h4>Connect</h4>
               <div class="social-icons">
@@ -540,18 +577,25 @@
                 <a href="" class="social-icon"><i class="fa fa-google-plus"></i></a>
                 <a href="" class="social-icon"><i class="fa fa-behance"></i></a>
                 <a href="" class="social-icon"><i class="fa fa-dribbble"></i></a>
-              </div> <!-- end .social-icons -->
-            </div> <!-- end .col-sm-4 -->
+              </div>
+              <!-- end .social-icons -->
+            </div>
+            <!-- end .col-sm-4 -->
             <div class="col-sm-4">
               <h4>Contact</h4>
               <p>Tel: +91 9711083089<br />Mail: mayankgupta688@gmail.com</p>
-            </div> <!-- end .col-sm-4 -->
-          </div> <!-- end .row -->
-        </div> <!-- end .container -->
-      </div> <!-- end .footer -->
-      <div class="bottom">Copyright &copy; Sility. All Rights Reserved.</div> <!-- end .bottom -->
-    </footer> <!-- end .footer -->
-
+            </div>
+            <!-- end .col-sm-4 -->
+          </div>
+          <!-- end .row -->
+        </div>
+        <!-- end .container -->
+      </div>
+      <!-- end .footer -->
+      <div class="bottom">Copyright &copy; Sility. All Rights Reserved.</div>
+      <!-- end .bottom -->
+    </footer>
+    <!-- end .footer -->
     <script defer src="js/jquery-1.11.2.min.js"></script>
     <script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <script defer src="js/bootstrap.min.js"></script>
@@ -567,8 +611,5 @@
         });
       }
     </script>
-
   </body>
 </html>
-
-
