@@ -218,18 +218,16 @@
         <!-- About -->
         <section id="section2" class="no-padding-bottom active">
             <div class="container">
-                <h2>About Me
-                </h2>
                 <div class="row">
                     <div class="col-sm-3">
                         <img src="images/mayank.png" alt="Mayank Gupta" class="img-responsive section-img">
                     </div>
                     <!-- end .col-sm-3 -->
                     <div class="col-sm-9">
-                        <h3 class="small-margin-bottom">Mayank Gupta
-                        </h3>
-                        <h5>Senior Software Developer
-                        </h5>
+                        <h2 class="small-margin-bottom">Mayank Gupta
+                        </h2>
+                        <b>Senior Software Developer
+                        </b><br><br/>
                         <p>Currently working as Senior Software Developer in ION Trading. <br><br>
                             I have 8.5+ years of experience in different Client side and Server Side Technologies. <br><br>
                             Working on Client Side Technologies React, Vue.js, Angularjs, Angular8, Knockout.js, JavaScript, JQuery. <br><br>
@@ -249,7 +247,7 @@
                             </li>
                             <li>
                                 <b>Phone:
-                                </b> 971-108-3089
+                                </b> +91-9711083089
                             </li>
                             <li>
                                 <b>Email:
