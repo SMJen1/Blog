@@ -232,7 +232,8 @@
                         </h5>
                         <p>Currently working as Senior Software Developer in ION Trading. <br><br>
                             I have 8.5+ years of experience in different Client side and Server Side Technologies. <br><br>
-                            Working on Client Side Technologies like React, Vue.js, Angularjs, Angular8, Node.js, GraphQL, MEAN and MERN Stack, Knockout.js, JavaScript, JQuery. <br><br>
+                            Working on Client Side Technologies React, Vue.js, Angularjs, Angular8, Knockout.js, JavaScript, JQuery. <br><br>
+                            Along with the above Client Side Technologies, I am working with Golang, Node, GraphQL, MEAN and MERN Stack <br><br>
                             <b><a href="Files/ResumeMayank.docx">Download Resume</a></b><br><br>
                         </p>
                         <div class="signature">
@@ -289,6 +290,41 @@
                             <a class="col-sm-4" href="https://angular.io/">
                                 <div class="service">
                                     <div class="icon">
+                                        <img src="images/React.jpeg" alt="Mayank Gupta Angularjs Developer" style="height: 90px;">
+                                    </div>
+                                    <h5>React
+                                    </h5>
+                                </div>
+                                <!-- end .service -->
+                            </a>
+                            <!-- end .col-sm-4 -->
+                            <a class="col-sm-4" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                                <div class="service">
+                                    <div class="icon">
+                                        <img src="images/Vue.jpeg" alt="Mayank Gupta JavaScript Developer" style="height: 90px;">
+                                    </div>
+                                    <h5>Vue.js
+                                    </h5>
+                                </div>
+                                <!-- end .service -->
+                            </a>
+                            <!-- end .col-sm-4 -->
+                            <a class="col-sm-4" href="https://www.codeschool.com/mean">
+                                <div class="service">
+                                    <div class="icon">
+                                        <img src="images/Golang.png" alt="Mayank Gupta Mean Stack Developer" style="height: 90px;">
+                                    </div>
+                                    <h5>Golang
+                                    </h5>
+                                </div>
+                                <!-- end .service -->
+                            </a>
+                            <!-- end .col-sm-4 -->
+                        </div>
+                        <div class="row">
+                            <a class="col-sm-4" href="https://angular.io/">
+                                <div class="service">
+                                    <div class="icon">
                                         <img src="images/angular.png" alt="Mayank Gupta Angularjs Developer" style="height: 90px;">
                                     </div>
                                     <h5>Angular 8
@@ -302,7 +338,7 @@
                                     <div class="icon">
                                         <img src="images/JavaScript-logo.png" alt="Mayank Gupta JavaScript Developer" style="height: 90px;">
                                     </div>
-                                    <h5>JavaScript Development
+                                    <h5>JavaScript
                                     </h5>
                                 </div>
                                 <!-- end .service -->
