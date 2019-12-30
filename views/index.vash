@@ -93,6 +93,8 @@
             <b style="font-size: 25px;">Learn Object Oriented JavaScript and Design Patterns</b>
             <div class="blog-posts masonry" id="blog-masonry">
               <div class="blog-grid-sizer"></div>
+
+
               <div class="blog-post image-left">
                 <div class="inner">
                   <a href="https://medium.com/better-programming/https-medium-com-mayank-gupta-6-88-21-performance-optimizations-techniques-for-react-d15fa52c2349">
@@ -111,6 +113,63 @@
                 </div>
                 <!-- end .inner -->
               </div>
+
+              <div class="blog-post image-left">
+                <div class="inner">
+                  <a href="https://medium.com/better-programming/understanding-golang-and-goroutines-72ac3c9a014d">
+                    <div class="image" style="background-image: url('images/Golang.png');" alt="Understanding Golang and Goroutines"></div>
+                    <div class="content" style="display: flex; flex-direction: column;">
+                      <h1 class="content-heading">Understanding Golang and Goroutines</h1>
+                      <p class="details">
+                        <b>This article is focussed on understanding the basics of Golang. We will talk about the performance aspect of Golang and we will try to scale up the application by creating simple Goroutines.</b> 
+                        Must read for every Golang Developer<br>
+                      </p>
+                    </div>
+                    <!-- end .content -->
+                  </a>
+                </div>
+                <!-- end .inner -->
+              </div>
+
+
+              <div class="blog-post image-left">
+                <div class="inner">
+                  <a href="https://medium.com/better-programming/understanding-goroutine-go-channels-in-detail-9c5a28f08e0d">
+                    <div class="image" style="background-image: url('images/Golang.png');" alt="Getting Started With Golang Channels"></div>
+                    <div class="content" style="display: flex; flex-direction: column;">
+                      <h1 class="content-heading">Getting Started With Golang Channels</h1>
+                      <p class="details">
+                        <b>These goroutines require a mechanism to communicate within themselves — the communication channel between the goroutines is referred to as channels. Channels ensure that the goroutines and the main thread can communicate with each other.</b> 
+                        Helps Understanding goroutine channels in detail<br>
+                      </p>
+                    </div>
+                    <!-- end .content -->
+                  </a>
+                </div>
+                <!-- end .inner -->
+              </div>
+
+
+
+              <!-- end .blog-post -->
+              <div class="blog-post">
+                <div class="inner">
+                  <a href="https://medium.com/better-programming/error-handling-in-golang-with-panic-defer-and-recover-d77db7ae3875">
+                    <div class="content">
+                      <h1 class="content-heading">Error Handling in Golang with Panic, Defer, and “Recover”</h1>
+                      <p class="details">
+                        This piece is focussed on Error Handling in Golang. We will be talking about simple ways to create and capture custom and runtime Errors in Golang. Golang provides a simple approach to this.
+                      </p>
+                    </div>
+                    <!-- end .content -->
+                  </a>
+                </div>
+                <!-- end .inner -->
+              </div>
+
+
+
+
               <!-- end .blog-post -->
               <div class="blog-post">
                 <div class="inner">
@@ -127,6 +186,8 @@
                 </div>
                 <!-- end .inner -->
               </div>
+
+
               <!-- end .blog-post -->
               <div class="blog-post image-top">
                 <div class="inner">
