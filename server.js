@@ -32,6 +32,6 @@ var controller = require("./controller");
 controller.init(app);
 
 
-//app.listen(3000);
+app.listen(3000);
 
-app.listen(process.env.PORT);
+//app.listen(process.env.PORT);
