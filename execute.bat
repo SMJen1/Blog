@@ -1,5 +1,5 @@
-npm install
-npm install pm2 -g
-npm stop all
-npm start
-npm stop all
+CALL npm install
+CALL npm install pm2 -g
+CALL npm stop all
+CALL npm start
+CALL npm stop all
