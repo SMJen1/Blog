@@ -4,7 +4,8 @@
   "description": "Demo Application",
   "main": "server.js",
   "scripts": {
-    "start": "pm2 start server.js"
+    "start": "pm2 start server.js",
+    "stop": "pm2 stop"
   },
   "author": {
     "name": "Mayank",
