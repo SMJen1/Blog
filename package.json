@@ -4,7 +4,7 @@
   "description": "Demo Application",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "forever start server.js"
   },
   "author": {
     "name": "Mayank",
