@@ -90,7 +90,7 @@
       <div class="sections-wrapper clearfix">
         <section>
           <div class="container">
-            <b style="font-size: 25px;">Learn Object Oriented JavaScript and Design Patterns</b>
+            <b style="font-size: 25px;">Learn Object Oriented JavaScript and JavaScript Design Patterns</b>
             <div class="blog-posts masonry" id="blog-masonry">
               <div class="blog-grid-sizer"></div>
 
