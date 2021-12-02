@@ -1,4 +1,4 @@
-CALL "C:\Program Files\nodejs\node.exe"    install
-CALL "C:\Program Files\nodejs\node.exe" install pm2 -g
-CALL "C:\Program Files\nodejs\node.exe"  stop all
-CALL "C:\Program Files\nodejs\node.exe" start
+CALL npm    install
+CALL npm install pm2 -g
+CALL npm stop all
+CALL npm start
