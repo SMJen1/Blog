@@ -1,4 +1,4 @@
-CALL npm.cmd install
-CALL npm.cmd install pm2 -g
-CALL npm.cmd stop all
-CALL npm.cmd start
+CALL npm install
+CALL npm install pm2 -g
+CALL npm stop all
+CALL npm start
